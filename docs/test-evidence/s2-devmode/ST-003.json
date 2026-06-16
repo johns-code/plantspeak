@@ -1,0 +1,86 @@
+{
+  "SW-001": {
+    "command": "describe-icd",
+    "implementation_status": "modeled",
+    "requirement_id": "SW-001",
+    "verification_method": "unit-test-and-dev-mode-cli"
+  },
+  "SW-002": {
+    "command": "set-user-led",
+    "implementation_status": "dev-board-led-substitute",
+    "requirement_id": "SW-002",
+    "verification_method": "unit-test-and-dev-mode-cli"
+  },
+  "SW-003": {
+    "command": "read-user-button",
+    "implementation_status": "dev-board-unavailable",
+    "requirement_id": "SW-003",
+    "verification_method": "requirements-trace-and-target-hardware-deferred-test"
+  },
+  "SW-004": {
+    "command": "set-peripheral-enable",
+    "implementation_status": "dev-board-unavailable",
+    "requirement_id": "SW-004",
+    "verification_method": "requirements-trace-and-target-hardware-deferred-test"
+  },
+  "SW-005": {
+    "command": "scan-i2c-bus",
+    "implementation_status": "dev-board-unavailable",
+    "requirement_id": "SW-005",
+    "verification_method": "requirements-trace-and-target-hardware-deferred-test"
+  },
+  "SW-006": {
+    "command": "read-light-sensors",
+    "implementation_status": "canned-data",
+    "requirement_id": "SW-006",
+    "verification_method": "unit-test-and-dev-mode-cli"
+  },
+  "SW-007": {
+    "command": "drive-wavelength-leds",
+    "implementation_status": "canned-data",
+    "requirement_id": "SW-007",
+    "verification_method": "unit-test-and-dev-mode-cli"
+  },
+  "SW-008": {
+    "command": "read-leaf-temperature",
+    "implementation_status": "canned-data",
+    "requirement_id": "SW-008",
+    "verification_method": "unit-test-and-dev-mode-cli"
+  },
+  "SW-009": {
+    "command": "read-ambient-climate",
+    "implementation_status": "canned-data",
+    "requirement_id": "SW-009",
+    "verification_method": "unit-test-and-dev-mode-cli"
+  },
+  "SW-010": {
+    "command": "read-acceleration",
+    "implementation_status": "canned-data",
+    "requirement_id": "SW-010",
+    "verification_method": "unit-test-and-dev-mode-cli"
+  },
+  "SW-011": {
+    "command": "set-dev-board-led",
+    "implementation_status": "dev-board-led-substitute",
+    "requirement_id": "SW-011",
+    "verification_method": "unit-test-and-dev-mode-cli"
+  },
+  "SW-012": {
+    "command": "report-peripheral-enable-unavailable",
+    "implementation_status": "dev-board-unavailable",
+    "requirement_id": "SW-012",
+    "verification_method": "requirements-trace-and-target-hardware-deferred-test"
+  },
+  "SW-013": {
+    "command": "read-canned-sensor-data",
+    "implementation_status": "canned-data",
+    "requirement_id": "SW-013",
+    "verification_method": "unit-test-and-dev-mode-cli"
+  },
+  "SW-014": {
+    "command": "report-user-button-unavailable",
+    "implementation_status": "dev-board-unavailable",
+    "requirement_id": "SW-014",
+    "verification_method": "requirements-trace-and-target-hardware-deferred-test"
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "button_wake_deferred": true,
+  "external_i2c_uses_canned_data": true,
+  "icd_capabilities_present": true
+}

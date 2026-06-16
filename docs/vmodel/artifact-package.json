@@ -1,0 +1,295 @@
+{
+  "project_name": "PlantSpeak",
+  "created_at": "2026-06-16T04:21:28+00:00",
+  "source_brief": "- Users must be able to record basic plant observations from a command-line interface.\n- The app should store plant observation entries in a local file.\n- Users must be able to list previously recorded plant observations.\n- The system should provide a traceable test plan for each plant observation requirement.\n- Final acceptance should require human review before release.",
+  "user_needs": [
+    {
+      "id": "UN-001",
+      "statement": "users must be able to record basic plant observations from a command-line interface.",
+      "rationale": "Captured from the submitted high-level requirements brief.",
+      "source": "user_brief"
+    },
+    {
+      "id": "UN-002",
+      "statement": "the app should store plant observation entries in a local file.",
+      "rationale": "Captured from the submitted high-level requirements brief.",
+      "source": "user_brief"
+    },
+    {
+      "id": "UN-003",
+      "statement": "users must be able to list previously recorded plant observations.",
+      "rationale": "Captured from the submitted high-level requirements brief.",
+      "source": "user_brief"
+    },
+    {
+      "id": "UN-004",
+      "statement": "the system should provide a traceable test plan for each plant observation requirement.",
+      "rationale": "Captured from the submitted high-level requirements brief.",
+      "source": "user_brief"
+    },
+    {
+      "id": "UN-005",
+      "statement": "final acceptance should require human review before release.",
+      "rationale": "Captured from the submitted high-level requirements brief.",
+      "source": "user_brief"
+    }
+  ],
+  "system_requirements": [
+    {
+      "id": "SYS-001",
+      "parent_id": "UN-001",
+      "statement": "The system shall support: users must be able to record basic plant observations from a command-line interface.",
+      "priority": "must",
+      "acceptance_criteria": [
+        "The capability is represented in structured requirements.",
+        "The capability has trace links to design, task, and test artifacts."
+      ]
+    },
+    {
+      "id": "SYS-002",
+      "parent_id": "UN-002",
+      "statement": "The system shall support: the app should store plant observation entries in a local file.",
+      "priority": "should",
+      "acceptance_criteria": [
+        "The capability is represented in structured requirements.",
+        "The capability has trace links to design, task, and test artifacts."
+      ]
+    },
+    {
+      "id": "SYS-003",
+      "parent_id": "UN-003",
+      "statement": "The system shall support: users must be able to list previously recorded plant observations.",
+      "priority": "must",
+      "acceptance_criteria": [
+        "The capability is represented in structured requirements.",
+        "The capability has trace links to design, task, and test artifacts."
+      ]
+    },
+    {
+      "id": "SYS-004",
+      "parent_id": "UN-004",
+      "statement": "The system shall support: the system should provide a traceable test plan for each plant observation requirement.",
+      "priority": "should",
+      "acceptance_criteria": [
+        "The capability is represented in structured requirements.",
+        "The capability has trace links to design, task, and test artifacts."
+      ]
+    },
+    {
+      "id": "SYS-005",
+      "parent_id": "UN-005",
+      "statement": "The system shall support: final acceptance should require human review before release.",
+      "priority": "should",
+      "acceptance_criteria": [
+        "The capability is represented in structured requirements.",
+        "The capability has trace links to design, task, and test artifacts."
+      ]
+    }
+  ],
+  "software_requirements": [
+    {
+      "id": "SW-001",
+      "parent_id": "SYS-001",
+      "statement": "The software shall implement: users must be able to record basic plant observations from a command-line interface.",
+      "priority": "must",
+      "acceptance_criteria": [
+        "Automated or manual tests can verify the behavior.",
+        "Verification evidence is recorded before release."
+      ]
+    },
+    {
+      "id": "SW-002",
+      "parent_id": "SYS-002",
+      "statement": "The software shall implement: the app should store plant observation entries in a local file.",
+      "priority": "should",
+      "acceptance_criteria": [
+        "Automated or manual tests can verify the behavior.",
+        "Verification evidence is recorded before release."
+      ]
+    },
+    {
+      "id": "SW-003",
+      "parent_id": "SYS-003",
+      "statement": "The software shall implement: users must be able to list previously recorded plant observations.",
+      "priority": "must",
+      "acceptance_criteria": [
+        "Automated or manual tests can verify the behavior.",
+        "Verification evidence is recorded before release."
+      ]
+    },
+    {
+      "id": "SW-004",
+      "parent_id": "SYS-004",
+      "statement": "The software shall implement: the system should provide a traceable test plan for each plant observation requirement.",
+      "priority": "should",
+      "acceptance_criteria": [
+        "Automated or manual tests can verify the behavior.",
+        "Verification evidence is recorded before release."
+      ]
+    },
+    {
+      "id": "SW-005",
+      "parent_id": "SYS-005",
+      "statement": "The software shall implement: final acceptance should require human review before release.",
+      "priority": "should",
+      "acceptance_criteria": [
+        "Automated or manual tests can verify the behavior.",
+        "Verification evidence is recorded before release."
+      ]
+    }
+  ],
+  "implementation_tasks": [
+    {
+      "id": "TASK-001",
+      "title": "Implement SW-001",
+      "description": "Design, implement, and verify capability for The software shall implement: users must be able to record basic plant observations from a command-line interface.",
+      "requirement_ids": [
+        "SW-001"
+      ],
+      "suggested_owner_role": "development_agent",
+      "status": "planned",
+      "external_ref": null
+    },
+    {
+      "id": "TASK-002",
+      "title": "Implement SW-002",
+      "description": "Design, implement, and verify capability for The software shall implement: the app should store plant observation entries in a local file.",
+      "requirement_ids": [
+        "SW-002"
+      ],
+      "suggested_owner_role": "development_agent",
+      "status": "planned",
+      "external_ref": null
+    },
+    {
+      "id": "TASK-003",
+      "title": "Implement SW-003",
+      "description": "Design, implement, and verify capability for The software shall implement: users must be able to list previously recorded plant observations.",
+      "requirement_ids": [
+        "SW-003"
+      ],
+      "suggested_owner_role": "development_agent",
+      "status": "planned",
+      "external_ref": null
+    },
+    {
+      "id": "TASK-004",
+      "title": "Implement SW-004",
+      "description": "Design, implement, and verify capability for The software shall implement: the system should provide a traceable test plan for each plant observation requirement.",
+      "requirement_ids": [
+        "SW-004"
+      ],
+      "suggested_owner_role": "development_agent",
+      "status": "planned",
+      "external_ref": null
+    },
+    {
+      "id": "TASK-005",
+      "title": "Implement SW-005",
+      "description": "Design, implement, and verify capability for The software shall implement: final acceptance should require human review before release.",
+      "requirement_ids": [
+        "SW-005"
+      ],
+      "suggested_owner_role": "development_agent",
+      "status": "planned",
+      "external_ref": null
+    }
+  ],
+  "traceability": [
+    {
+      "requirement_id": "SW-001",
+      "user_need_id": "UN-001",
+      "design_refs": [
+        "DES-001"
+      ],
+      "task_refs": [
+        "TASK-001"
+      ],
+      "test_refs": [
+        "UT-001",
+        "ST-001",
+        "AT-001"
+      ],
+      "verification_refs": [
+        "VER-001"
+      ],
+      "status": "planned"
+    },
+    {
+      "requirement_id": "SW-002",
+      "user_need_id": "UN-002",
+      "design_refs": [
+        "DES-002"
+      ],
+      "task_refs": [
+        "TASK-002"
+      ],
+      "test_refs": [
+        "UT-002",
+        "ST-002",
+        "AT-002"
+      ],
+      "verification_refs": [
+        "VER-002"
+      ],
+      "status": "planned"
+    },
+    {
+      "requirement_id": "SW-003",
+      "user_need_id": "UN-003",
+      "design_refs": [
+        "DES-003"
+      ],
+      "task_refs": [
+        "TASK-003"
+      ],
+      "test_refs": [
+        "UT-003",
+        "ST-003",
+        "AT-003"
+      ],
+      "verification_refs": [
+        "VER-003"
+      ],
+      "status": "planned"
+    },
+    {
+      "requirement_id": "SW-004",
+      "user_need_id": "UN-004",
+      "design_refs": [
+        "DES-004"
+      ],
+      "task_refs": [
+        "TASK-004"
+      ],
+      "test_refs": [
+        "UT-004",
+        "ST-004",
+        "AT-004"
+      ],
+      "verification_refs": [
+        "VER-004"
+      ],
+      "status": "planned"
+    },
+    {
+      "requirement_id": "SW-005",
+      "user_need_id": "UN-005",
+      "design_refs": [
+        "DES-005"
+      ],
+      "task_refs": [
+        "TASK-005"
+      ],
+      "test_refs": [
+        "UT-005",
+        "ST-005",
+        "AT-005"
+      ],
+      "verification_refs": [
+        "VER-005"
+      ],
+      "status": "planned"
+    }
+  ]
+}

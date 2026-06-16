@@ -27,6 +27,7 @@ PASS
 - Dev-board unavailable hardware is modeled as unavailable or substituted.
 - External I2C sensor behavior uses canned data in dev mode.
 - S2 dev-mode system evidence generation creates ST-001 through ST-004 artifacts from the harness.
+- S3 hardware adapter interfaces are verified with mocked I2C success and explicit fault paths.
 
 ## S1 Verification Evidence
 
@@ -47,6 +48,16 @@ PASS
 | `docs/test-evidence/s2-devmode/ST-002.txt` | Requirement trace command evidence. |
 | `docs/test-evidence/s2-devmode/ST-003.json` | ICD capability summary evidence. |
 | `docs/test-evidence/s2-devmode/ST-004.json` | Dev-mode measurement evidence. |
+
+## S3 Verification Evidence
+
+| Evidence | Purpose |
+| --- | --- |
+| `docs/test-evidence/S3-pytest.txt` | Local pytest output for 24 tests including adapter success and fault-path verification. |
+| `tests/test_adapters.py` | Verifies mocked I2C responses, NACK, timeout, missing device, invalid data, mux/LED validation, and target measurement service assembly. |
+| `plantspeak/adapters/i2c.py` | Defines transaction and explicit I2C fault contract. |
+| `plantspeak/adapters/devices.py` | Defines ADS1115, PCA9846, LP5816, MLX90632, HDC2010, and MXC4005 adapter contracts. |
+| `plantspeak/adapters/measurement.py` | Assembles target-style measurement snapshot from adapter contracts. |
 
 ## Deferred Verification
 

@@ -2,21 +2,23 @@
 
 Project: PlantSpeak
 
-Generated: 2026-06-16T06:09:07+00:00
+## Task Policy
 
-| ID | Title | Requirements | Owner Role | Status |
-| --- | --- | --- | --- | --- |
-| TASK-001 | Implement SW-001 | SW-001 | development_agent | planned |
-| TASK-002 | Implement SW-002 | SW-002 | development_agent | planned |
-| TASK-003 | Implement SW-003 | SW-003 | development_agent | planned |
-| TASK-004 | Implement SW-004 | SW-004 | development_agent | planned |
-| TASK-005 | Implement SW-005 | SW-005 | development_agent | planned |
-| TASK-006 | Implement SW-006 | SW-006 | development_agent | planned |
-| TASK-007 | Implement SW-007 | SW-007 | development_agent | planned |
-| TASK-008 | Implement SW-008 | SW-008 | development_agent | planned |
-| TASK-009 | Implement SW-009 | SW-009 | development_agent | planned |
-| TASK-010 | Implement SW-010 | SW-010 | development_agent | planned |
-| TASK-011 | Implement SW-011 | SW-011 | development_agent | planned |
-| TASK-012 | Implement SW-012 | SW-012 | development_agent | planned |
-| TASK-013 | Implement SW-013 | SW-013 | development_agent | planned |
-| TASK-014 | Implement SW-014 | SW-014 | development_agent | planned |
+The Software Lead owns sequencing. Development may proceed when a task has an issue, requirement link, design target, test evidence, and deterministic gate. Test and security agents can block release evidence; the Software Lead arbitrates but cannot waive deterministic gates.
+
+| Task | Issue | Requirement | Primary Code | Status | Exit Gate |
+| --- | --- | --- | --- | --- | --- |
+| TASK-001 | #99 | SW-001 | plantspeak/icd.py | implemented-dev-mode | pytest, CI, human review |
+| TASK-002 | #100 | SW-002 | plantspeak/pins.py, plantspeak/devices.py | implemented-dev-mode | pytest, CI, human review |
+| TASK-003 | #101 | SW-003 | plantspeak/pins.py, plantspeak/devices.py | modeled-or-deferred | pytest, CI, human review |
+| TASK-004 | #102 | SW-004 | plantspeak/pins.py, plantspeak/devices.py | modeled-or-deferred | pytest, CI, human review |
+| TASK-005 | #103 | SW-005 | plantspeak/pins.py, plantspeak/devices.py | modeled-or-deferred | pytest, CI, human review |
+| TASK-006 | #104 | SW-006 | plantspeak/devices.py | implemented-dev-mode | pytest, CI, human review |
+| TASK-007 | #105 | SW-007 | plantspeak/icd.py, plantspeak/devices.py | modeled-or-deferred | pytest, CI, human review |
+| TASK-008 | #106 | SW-008 | plantspeak/devices.py | modeled-or-deferred | pytest, CI, human review |
+| TASK-009 | #107 | SW-009 | plantspeak/devices.py | modeled-or-deferred | pytest, CI, human review |
+| TASK-010 | #108 | SW-010 | plantspeak/devices.py | modeled-or-deferred | pytest, CI, human review |
+| TASK-011 | #109 | SW-011 | plantspeak/devices.py | implemented-dev-mode | pytest, CI, human review |
+| TASK-012 | #110 | SW-012 | plantspeak/devices.py | modeled-or-deferred | pytest, CI, human review |
+| TASK-013 | #111 | SW-013 | plantspeak/devices.py | implemented-dev-mode | pytest, CI, human review |
+| TASK-014 | #112 | SW-014 | plantspeak/devices.py, plantspeak/icd.py | modeled-or-deferred | pytest, CI, human review |

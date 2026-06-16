@@ -25,9 +25,10 @@ Project: PlantSpeak
 
 ## Gate Status
 
-- Local tests: PASS
+- Local tests: 39 passed, 3 skipped
 - PR CI: required and tracked in GitHub Actions
 - Human release approval: pending
+- Release candidate manifest: `docs/release-evidence/release-candidate-manifest.json`
 
 ## Not Included
 

@@ -27,6 +27,15 @@ PlantSpeak will implement DA14531 ICD-facing capabilities while supporting a dev
 | `plantspeak.data` | Requirements and GitHub issue traceability bundled with the package. | All |
 | `tests/` | Deterministic unit and behavior checks used by local and CI gates. | All |
 
+## Interface Contracts
+
+| Interface | Current Contract | Future Adapter |
+| --- | --- | --- |
+| ICD command catalog | `plantspeak.icd.COMMANDS_BY_REQUIREMENT` maps SW IDs to command names and maturity. | Firmware command table and BLE command IDs in S4/S5. |
+| Measurement snapshot | `SensorSnapshot.to_dict()` emits stable JSON fields and units. | ADS1115, LP5816/PCA9846, MLX90632, HDC2010, MXC4005XC adapters fill the same shape in S3/S6. |
+| Pin/device registry | `PIN_ASSIGNMENTS` and `DevBoardProfile` separate target intent from dev-board availability. | DA14531 firmware pin configuration in S5. |
+| PC harness transport | CLI currently executes local dev-mode commands. | BLE transport adapter introduced in S4 with malformed-payload tests. |
+
 ## Human Approval Gate
 
 The branch can be reviewed and merged only after the human accepts the dev-mode scope and acknowledges that target-board hardware-in-loop evidence is deferred.

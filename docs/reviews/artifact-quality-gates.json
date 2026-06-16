@@ -80,6 +80,54 @@
       "message": "Rollback and defect actions are defined."
     },
     {
+      "artifact": "runs\\plantspeak-detailed-fresh\\delivery-checkout\\docs\\vmodel\\08-unit-test-plan.md",
+      "check": "unit-test-plan-required-columns",
+      "passed": true,
+      "message": "Unit test plan includes fixture, assertion, negative case, evidence, and stage columns."
+    },
+    {
+      "artifact": "runs\\plantspeak-detailed-fresh\\delivery-checkout\\docs\\vmodel\\08-unit-test-plan.md",
+      "check": "unit-test-plan-row-count",
+      "passed": true,
+      "message": "Unit test plan defines one or more rows for each software requirement."
+    },
+    {
+      "artifact": "runs\\plantspeak-detailed-fresh\\delivery-checkout\\docs\\vmodel\\08-unit-test-plan.md",
+      "check": "unit-test-plan-no-shallow-status-only-rows",
+      "passed": true,
+      "message": "Unit test rows include detailed design intent instead of status-only evidence."
+    },
+    {
+      "artifact": "runs\\plantspeak-detailed-fresh\\delivery-checkout\\docs\\vmodel\\08-unit-test-plan.md",
+      "check": "unit-test-plan-behavior-specificity",
+      "passed": true,
+      "message": "Unit test plan names assertions, fixtures, edge/fault cases, and source metadata."
+    },
+    {
+      "artifact": "runs\\plantspeak-detailed-fresh\\delivery-checkout\\docs\\vmodel\\09-integration-test-plan.md",
+      "check": "integration-test-plan-required-columns",
+      "passed": true,
+      "message": "Integration test plan includes setup, procedure, observability, negative case, evidence, and promotion gate columns."
+    },
+    {
+      "artifact": "runs\\plantspeak-detailed-fresh\\delivery-checkout\\docs\\vmodel\\09-integration-test-plan.md",
+      "check": "integration-test-plan-row-count",
+      "passed": true,
+      "message": "Integration test plan defines staged boundaries beyond the S0 harness."
+    },
+    {
+      "artifact": "runs\\plantspeak-detailed-fresh\\delivery-checkout\\docs\\vmodel\\09-integration-test-plan.md",
+      "check": "integration-test-plan-no-vague-coverage-ranges",
+      "passed": true,
+      "message": "Integration test plan avoids vague requirement ranges and status-only rows."
+    },
+    {
+      "artifact": "runs\\plantspeak-detailed-fresh\\delivery-checkout\\docs\\vmodel\\09-integration-test-plan.md",
+      "check": "integration-test-plan-fault-and-gate-specificity",
+      "passed": true,
+      "message": "Integration test plan names fault paths and promotion gates."
+    },
+    {
       "artifact": "docs/vmodel/01-user-needs.md",
       "check": "detailed-design-input-content",
       "passed": true,

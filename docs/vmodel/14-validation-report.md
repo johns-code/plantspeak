@@ -28,6 +28,10 @@ Human approval is required before final acceptance, release tagging, or any clai
 - Firmware build/flash behavior.
 - Push-button wake-from-sleep behavior.
 
+## HIL Validation Gate
+
+S6 adds the target-board HIL procedure and gated pytest tests. These tests are skipped by default and only run when the operator explicitly sets `PLANTSPEAK_TARGET_BOARD=1` or invokes pytest with `--target-board`. Final target-board validation remains deferred until real hardware evidence is captured.
+
 ## Review Remediation Closure
 
 | Review Theme | Resolution |

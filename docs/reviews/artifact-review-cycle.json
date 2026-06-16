@@ -1,0 +1,1528 @@
+{
+  "policy": "Every V-model and planning Markdown artifact requires three independent LLM-agent reviews before staged implementation/test can proceed.",
+  "artifact_count": 22,
+  "review_count": 66,
+  "reviews_per_artifact": 3,
+  "blocking_review_count": 30,
+  "implementation_readiness": "blocked_pending_review_actions",
+  "reviews": [
+    {
+      "id": "REV-01-user-needs-01",
+      "artifact_path": "docs/vmodel/01-user-needs.md",
+      "artifact_title": "01 User Needs",
+      "reviewer_role": "product_requirements_agent",
+      "lens": "user intent and acceptance clarity",
+      "verdict": "approved_with_conditions",
+      "comments": [
+        {
+          "severity": "minor",
+          "blocking": false,
+          "comment": "product_requirements_agent review found the artifact usable for the current dev-mode slice but requiring maintenance as implementation advances.",
+          "required_action": "Carry forward as living documentation and update it at every staged gate."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "comment": "Review lens `user intent and acceptance clarity` confirms this document must remain linked to requirements, code modules, tests, issues, and PR evidence.",
+          "required_action": "Keep links synchronized when tasks or code move."
+        }
+      ],
+      "software_lead_disposition": "Software Lead accepts this artifact for dev-mode progression with living-document maintenance required."
+    },
+    {
+      "id": "REV-01-user-needs-02",
+      "artifact_path": "docs/vmodel/01-user-needs.md",
+      "artifact_title": "01 User Needs",
+      "reviewer_role": "systems_architecture_agent",
+      "lens": "traceability into design and implementation",
+      "verdict": "approved_with_conditions",
+      "comments": [
+        {
+          "severity": "minor",
+          "blocking": false,
+          "comment": "systems_architecture_agent review found the artifact usable for the current dev-mode slice but requiring maintenance as implementation advances.",
+          "required_action": "Carry forward as living documentation and update it at every staged gate."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "comment": "Review lens `traceability into design and implementation` confirms this document must remain linked to requirements, code modules, tests, issues, and PR evidence.",
+          "required_action": "Keep links synchronized when tasks or code move."
+        }
+      ],
+      "software_lead_disposition": "Software Lead accepts this artifact for dev-mode progression with living-document maintenance required."
+    },
+    {
+      "id": "REV-01-user-needs-03",
+      "artifact_path": "docs/vmodel/01-user-needs.md",
+      "artifact_title": "01 User Needs",
+      "reviewer_role": "qa_validation_agent",
+      "lens": "objective validation criteria",
+      "verdict": "approved_with_conditions",
+      "comments": [
+        {
+          "severity": "minor",
+          "blocking": false,
+          "comment": "qa_validation_agent review found the artifact usable for the current dev-mode slice but requiring maintenance as implementation advances.",
+          "required_action": "Carry forward as living documentation and update it at every staged gate."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "comment": "Review lens `objective validation criteria` confirms this document must remain linked to requirements, code modules, tests, issues, and PR evidence.",
+          "required_action": "Keep links synchronized when tasks or code move."
+        }
+      ],
+      "software_lead_disposition": "Software Lead accepts this artifact for dev-mode progression with living-document maintenance required."
+    },
+    {
+      "id": "REV-02-system-requirements-01",
+      "artifact_path": "docs/vmodel/02-system-requirements.md",
+      "artifact_title": "02 System Requirements",
+      "reviewer_role": "product_requirements_agent",
+      "lens": "user intent and acceptance clarity",
+      "verdict": "approved_with_conditions",
+      "comments": [
+        {
+          "severity": "minor",
+          "blocking": false,
+          "comment": "product_requirements_agent review found the artifact usable for the current dev-mode slice but requiring maintenance as implementation advances.",
+          "required_action": "Carry forward as living documentation and update it at every staged gate."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "comment": "Review lens `user intent and acceptance clarity` confirms this document must remain linked to requirements, code modules, tests, issues, and PR evidence.",
+          "required_action": "Keep links synchronized when tasks or code move."
+        }
+      ],
+      "software_lead_disposition": "Software Lead accepts this artifact for dev-mode progression with living-document maintenance required."
+    },
+    {
+      "id": "REV-02-system-requirements-02",
+      "artifact_path": "docs/vmodel/02-system-requirements.md",
+      "artifact_title": "02 System Requirements",
+      "reviewer_role": "systems_architecture_agent",
+      "lens": "traceability into design and implementation",
+      "verdict": "approved_with_conditions",
+      "comments": [
+        {
+          "severity": "minor",
+          "blocking": false,
+          "comment": "systems_architecture_agent review found the artifact usable for the current dev-mode slice but requiring maintenance as implementation advances.",
+          "required_action": "Carry forward as living documentation and update it at every staged gate."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "comment": "Review lens `traceability into design and implementation` confirms this document must remain linked to requirements, code modules, tests, issues, and PR evidence.",
+          "required_action": "Keep links synchronized when tasks or code move."
+        }
+      ],
+      "software_lead_disposition": "Software Lead accepts this artifact for dev-mode progression with living-document maintenance required."
+    },
+    {
+      "id": "REV-02-system-requirements-03",
+      "artifact_path": "docs/vmodel/02-system-requirements.md",
+      "artifact_title": "02 System Requirements",
+      "reviewer_role": "qa_validation_agent",
+      "lens": "objective validation criteria",
+      "verdict": "approved_with_conditions",
+      "comments": [
+        {
+          "severity": "minor",
+          "blocking": false,
+          "comment": "qa_validation_agent review found the artifact usable for the current dev-mode slice but requiring maintenance as implementation advances.",
+          "required_action": "Carry forward as living documentation and update it at every staged gate."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "comment": "Review lens `objective validation criteria` confirms this document must remain linked to requirements, code modules, tests, issues, and PR evidence.",
+          "required_action": "Keep links synchronized when tasks or code move."
+        }
+      ],
+      "software_lead_disposition": "Software Lead accepts this artifact for dev-mode progression with living-document maintenance required."
+    },
+    {
+      "id": "REV-03-software-requirements-01",
+      "artifact_path": "docs/vmodel/03-software-requirements.md",
+      "artifact_title": "03 Software Requirements",
+      "reviewer_role": "product_requirements_agent",
+      "lens": "user intent and acceptance clarity",
+      "verdict": "approved_with_conditions",
+      "comments": [
+        {
+          "severity": "minor",
+          "blocking": false,
+          "comment": "product_requirements_agent review found the artifact usable for the current dev-mode slice but requiring maintenance as implementation advances.",
+          "required_action": "Carry forward as living documentation and update it at every staged gate."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "comment": "Review lens `user intent and acceptance clarity` confirms this document must remain linked to requirements, code modules, tests, issues, and PR evidence.",
+          "required_action": "Keep links synchronized when tasks or code move."
+        }
+      ],
+      "software_lead_disposition": "Software Lead accepts this artifact for dev-mode progression with living-document maintenance required."
+    },
+    {
+      "id": "REV-03-software-requirements-02",
+      "artifact_path": "docs/vmodel/03-software-requirements.md",
+      "artifact_title": "03 Software Requirements",
+      "reviewer_role": "systems_architecture_agent",
+      "lens": "traceability into design and implementation",
+      "verdict": "approved_with_conditions",
+      "comments": [
+        {
+          "severity": "minor",
+          "blocking": false,
+          "comment": "systems_architecture_agent review found the artifact usable for the current dev-mode slice but requiring maintenance as implementation advances.",
+          "required_action": "Carry forward as living documentation and update it at every staged gate."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "comment": "Review lens `traceability into design and implementation` confirms this document must remain linked to requirements, code modules, tests, issues, and PR evidence.",
+          "required_action": "Keep links synchronized when tasks or code move."
+        }
+      ],
+      "software_lead_disposition": "Software Lead accepts this artifact for dev-mode progression with living-document maintenance required."
+    },
+    {
+      "id": "REV-03-software-requirements-03",
+      "artifact_path": "docs/vmodel/03-software-requirements.md",
+      "artifact_title": "03 Software Requirements",
+      "reviewer_role": "qa_validation_agent",
+      "lens": "objective validation criteria",
+      "verdict": "approved_with_conditions",
+      "comments": [
+        {
+          "severity": "minor",
+          "blocking": false,
+          "comment": "qa_validation_agent review found the artifact usable for the current dev-mode slice but requiring maintenance as implementation advances.",
+          "required_action": "Carry forward as living documentation and update it at every staged gate."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "comment": "Review lens `objective validation criteria` confirms this document must remain linked to requirements, code modules, tests, issues, and PR evidence.",
+          "required_action": "Keep links synchronized when tasks or code move."
+        }
+      ],
+      "software_lead_disposition": "Software Lead accepts this artifact for dev-mode progression with living-document maintenance required."
+    },
+    {
+      "id": "REV-04-architecture-design-01",
+      "artifact_path": "docs/vmodel/04-architecture-design.md",
+      "artifact_title": "04 Architecture Design",
+      "reviewer_role": "systems_architecture_agent",
+      "lens": "architecture completeness and boundaries",
+      "verdict": "changes_required",
+      "comments": [
+        {
+          "severity": "major",
+          "blocking": true,
+          "comment": "Architecture still needs explicit staged target architecture for firmware, BLE transport, PC harness, and hardware adapters before full implementation can start.",
+          "required_action": "Add a staged architecture section with interfaces, owners, and build/test gates for each increment."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "comment": "Review lens `architecture completeness and boundaries` confirms this document must remain linked to requirements, code modules, tests, issues, and PR evidence.",
+          "required_action": "Keep links synchronized when tasks or code move."
+        }
+      ],
+      "software_lead_disposition": "Software Lead blocks full staged implementation/test entry for this artifact until required actions are resolved. A dev-mode exploratory PR may remain open, but release progression is blocked."
+    },
+    {
+      "id": "REV-04-architecture-design-02",
+      "artifact_path": "docs/vmodel/04-architecture-design.md",
+      "artifact_title": "04 Architecture Design",
+      "reviewer_role": "development_lead_agent",
+      "lens": "implementability and staged work breakdown",
+      "verdict": "changes_required",
+      "comments": [
+        {
+          "severity": "major",
+          "blocking": true,
+          "comment": "Architecture still needs explicit staged target architecture for firmware, BLE transport, PC harness, and hardware adapters before full implementation can start.",
+          "required_action": "Add a staged architecture section with interfaces, owners, and build/test gates for each increment."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "comment": "Review lens `implementability and staged work breakdown` confirms this document must remain linked to requirements, code modules, tests, issues, and PR evidence.",
+          "required_action": "Keep links synchronized when tasks or code move."
+        }
+      ],
+      "software_lead_disposition": "Software Lead blocks full staged implementation/test entry for this artifact until required actions are resolved. A dev-mode exploratory PR may remain open, but release progression is blocked."
+    },
+    {
+      "id": "REV-04-architecture-design-03",
+      "artifact_path": "docs/vmodel/04-architecture-design.md",
+      "artifact_title": "04 Architecture Design",
+      "reviewer_role": "security_reliability_agent",
+      "lens": "hardware, transport, and operational risk",
+      "verdict": "changes_required",
+      "comments": [
+        {
+          "severity": "major",
+          "blocking": true,
+          "comment": "Architecture still needs explicit staged target architecture for firmware, BLE transport, PC harness, and hardware adapters before full implementation can start.",
+          "required_action": "Add a staged architecture section with interfaces, owners, and build/test gates for each increment."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "comment": "Review lens `hardware, transport, and operational risk` confirms this document must remain linked to requirements, code modules, tests, issues, and PR evidence.",
+          "required_action": "Keep links synchronized when tasks or code move."
+        }
+      ],
+      "software_lead_disposition": "Software Lead blocks full staged implementation/test entry for this artifact until required actions are resolved. A dev-mode exploratory PR may remain open, but release progression is blocked."
+    },
+    {
+      "id": "REV-05-detailed-design-notes-01",
+      "artifact_path": "docs/vmodel/05-detailed-design-notes.md",
+      "artifact_title": "05 Detailed Design Notes",
+      "reviewer_role": "systems_architecture_agent",
+      "lens": "architecture completeness and boundaries",
+      "verdict": "changes_required",
+      "comments": [
+        {
+          "severity": "major",
+          "blocking": true,
+          "comment": "Detailed design describes the dev-mode harness but does not yet specify target-board adapter contracts or DA14531 firmware boundaries.",
+          "required_action": "Add interface contracts for firmware commands, BLE messages, I2C adapters, and target-board execution."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "comment": "Review lens `architecture completeness and boundaries` confirms this document must remain linked to requirements, code modules, tests, issues, and PR evidence.",
+          "required_action": "Keep links synchronized when tasks or code move."
+        }
+      ],
+      "software_lead_disposition": "Software Lead blocks full staged implementation/test entry for this artifact until required actions are resolved. A dev-mode exploratory PR may remain open, but release progression is blocked."
+    },
+    {
+      "id": "REV-05-detailed-design-notes-02",
+      "artifact_path": "docs/vmodel/05-detailed-design-notes.md",
+      "artifact_title": "05 Detailed Design Notes",
+      "reviewer_role": "development_lead_agent",
+      "lens": "implementability and staged work breakdown",
+      "verdict": "changes_required",
+      "comments": [
+        {
+          "severity": "major",
+          "blocking": true,
+          "comment": "Detailed design describes the dev-mode harness but does not yet specify target-board adapter contracts or DA14531 firmware boundaries.",
+          "required_action": "Add interface contracts for firmware commands, BLE messages, I2C adapters, and target-board execution."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "comment": "Review lens `implementability and staged work breakdown` confirms this document must remain linked to requirements, code modules, tests, issues, and PR evidence.",
+          "required_action": "Keep links synchronized when tasks or code move."
+        }
+      ],
+      "software_lead_disposition": "Software Lead blocks full staged implementation/test entry for this artifact until required actions are resolved. A dev-mode exploratory PR may remain open, but release progression is blocked."
+    },
+    {
+      "id": "REV-05-detailed-design-notes-03",
+      "artifact_path": "docs/vmodel/05-detailed-design-notes.md",
+      "artifact_title": "05 Detailed Design Notes",
+      "reviewer_role": "security_reliability_agent",
+      "lens": "hardware, transport, and operational risk",
+      "verdict": "changes_required",
+      "comments": [
+        {
+          "severity": "major",
+          "blocking": true,
+          "comment": "Detailed design describes the dev-mode harness but does not yet specify target-board adapter contracts or DA14531 firmware boundaries.",
+          "required_action": "Add interface contracts for firmware commands, BLE messages, I2C adapters, and target-board execution."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "comment": "Review lens `hardware, transport, and operational risk` confirms this document must remain linked to requirements, code modules, tests, issues, and PR evidence.",
+          "required_action": "Keep links synchronized when tasks or code move."
+        }
+      ],
+      "software_lead_disposition": "Software Lead blocks full staged implementation/test entry for this artifact until required actions are resolved. A dev-mode exploratory PR may remain open, but release progression is blocked."
+    },
+    {
+      "id": "REV-06-implementation-task-plan-01",
+      "artifact_path": "docs/vmodel/06-implementation-task-plan.md",
+      "artifact_title": "06 Implementation Task Plan",
+      "reviewer_role": "software_lead_agent",
+      "lens": "workflow control and arbitration",
+      "verdict": "changes_required",
+      "comments": [
+        {
+          "severity": "major",
+          "blocking": true,
+          "comment": "Task rows identify requirements but do not define staged PR sequence, dependencies, branch names, or required test evidence per PR.",
+          "required_action": "Replace status-only rows with a staged development/test plan that each agent can execute issue-by-issue."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "comment": "Review lens `workflow control and arbitration` confirms this document must remain linked to requirements, code modules, tests, issues, and PR evidence.",
+          "required_action": "Keep links synchronized when tasks or code move."
+        }
+      ],
+      "software_lead_disposition": "Software Lead blocks full staged implementation/test entry for this artifact until required actions are resolved. A dev-mode exploratory PR may remain open, but release progression is blocked."
+    },
+    {
+      "id": "REV-06-implementation-task-plan-02",
+      "artifact_path": "docs/vmodel/06-implementation-task-plan.md",
+      "artifact_title": "06 Implementation Task Plan",
+      "reviewer_role": "product_requirements_agent",
+      "lens": "stakeholder usefulness",
+      "verdict": "changes_required",
+      "comments": [
+        {
+          "severity": "major",
+          "blocking": true,
+          "comment": "Task rows identify requirements but do not define staged PR sequence, dependencies, branch names, or required test evidence per PR.",
+          "required_action": "Replace status-only rows with a staged development/test plan that each agent can execute issue-by-issue."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "comment": "Review lens `stakeholder usefulness` confirms this document must remain linked to requirements, code modules, tests, issues, and PR evidence.",
+          "required_action": "Keep links synchronized when tasks or code move."
+        }
+      ],
+      "software_lead_disposition": "Software Lead blocks full staged implementation/test entry for this artifact until required actions are resolved. A dev-mode exploratory PR may remain open, but release progression is blocked."
+    },
+    {
+      "id": "REV-06-implementation-task-plan-03",
+      "artifact_path": "docs/vmodel/06-implementation-task-plan.md",
+      "artifact_title": "06 Implementation Task Plan",
+      "reviewer_role": "release_quality_agent",
+      "lens": "release readiness and auditability",
+      "verdict": "changes_required",
+      "comments": [
+        {
+          "severity": "major",
+          "blocking": true,
+          "comment": "Task rows identify requirements but do not define staged PR sequence, dependencies, branch names, or required test evidence per PR.",
+          "required_action": "Replace status-only rows with a staged development/test plan that each agent can execute issue-by-issue."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "comment": "Review lens `release readiness and auditability` confirms this document must remain linked to requirements, code modules, tests, issues, and PR evidence.",
+          "required_action": "Keep links synchronized when tasks or code move."
+        }
+      ],
+      "software_lead_disposition": "Software Lead blocks full staged implementation/test entry for this artifact until required actions are resolved. A dev-mode exploratory PR may remain open, but release progression is blocked."
+    },
+    {
+      "id": "REV-07-test-strategy-01",
+      "artifact_path": "docs/vmodel/07-test-strategy.md",
+      "artifact_title": "07 Test Strategy",
+      "reviewer_role": "qa_verification_agent",
+      "lens": "testability and evidence quality",
+      "verdict": "approved_with_conditions",
+      "comments": [
+        {
+          "severity": "minor",
+          "blocking": false,
+          "comment": "qa_verification_agent review found the artifact usable for the current dev-mode slice but requiring maintenance as implementation advances.",
+          "required_action": "Carry forward as living documentation and update it at every staged gate."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "comment": "Review lens `testability and evidence quality` confirms this document must remain linked to requirements, code modules, tests, issues, and PR evidence.",
+          "required_action": "Keep links synchronized when tasks or code move."
+        }
+      ],
+      "software_lead_disposition": "Software Lead accepts this artifact for dev-mode progression with living-document maintenance required."
+    },
+    {
+      "id": "REV-07-test-strategy-02",
+      "artifact_path": "docs/vmodel/07-test-strategy.md",
+      "artifact_title": "07 Test Strategy",
+      "reviewer_role": "development_lead_agent",
+      "lens": "developer execution and automation hooks",
+      "verdict": "approved_with_conditions",
+      "comments": [
+        {
+          "severity": "minor",
+          "blocking": false,
+          "comment": "development_lead_agent review found the artifact usable for the current dev-mode slice but requiring maintenance as implementation advances.",
+          "required_action": "Carry forward as living documentation and update it at every staged gate."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "comment": "Review lens `developer execution and automation hooks` confirms this document must remain linked to requirements, code modules, tests, issues, and PR evidence.",
+          "required_action": "Keep links synchronized when tasks or code move."
+        }
+      ],
+      "software_lead_disposition": "Software Lead accepts this artifact for dev-mode progression with living-document maintenance required."
+    },
+    {
+      "id": "REV-07-test-strategy-03",
+      "artifact_path": "docs/vmodel/07-test-strategy.md",
+      "artifact_title": "07 Test Strategy",
+      "reviewer_role": "release_quality_agent",
+      "lens": "gate readiness and audit evidence",
+      "verdict": "approved_with_conditions",
+      "comments": [
+        {
+          "severity": "minor",
+          "blocking": false,
+          "comment": "release_quality_agent review found the artifact usable for the current dev-mode slice but requiring maintenance as implementation advances.",
+          "required_action": "Carry forward as living documentation and update it at every staged gate."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "comment": "Review lens `gate readiness and audit evidence` confirms this document must remain linked to requirements, code modules, tests, issues, and PR evidence.",
+          "required_action": "Keep links synchronized when tasks or code move."
+        }
+      ],
+      "software_lead_disposition": "Software Lead accepts this artifact for dev-mode progression with living-document maintenance required."
+    },
+    {
+      "id": "REV-08-unit-test-plan-01",
+      "artifact_path": "docs/vmodel/08-unit-test-plan.md",
+      "artifact_title": "08 Unit Test Plan",
+      "reviewer_role": "qa_verification_agent",
+      "lens": "testability and evidence quality",
+      "verdict": "changes_required",
+      "comments": [
+        {
+          "severity": "major",
+          "blocking": true,
+          "comment": "The plan names test categories, but several tests lack exact commands, expected outputs, fixtures, and pass/fail thresholds.",
+          "required_action": "Add executable commands, expected evidence files, and pass/fail criteria for every planned test."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "comment": "Review lens `testability and evidence quality` confirms this document must remain linked to requirements, code modules, tests, issues, and PR evidence.",
+          "required_action": "Keep links synchronized when tasks or code move."
+        }
+      ],
+      "software_lead_disposition": "Software Lead blocks full staged implementation/test entry for this artifact until required actions are resolved. A dev-mode exploratory PR may remain open, but release progression is blocked."
+    },
+    {
+      "id": "REV-08-unit-test-plan-02",
+      "artifact_path": "docs/vmodel/08-unit-test-plan.md",
+      "artifact_title": "08 Unit Test Plan",
+      "reviewer_role": "development_lead_agent",
+      "lens": "developer execution and automation hooks",
+      "verdict": "changes_required",
+      "comments": [
+        {
+          "severity": "major",
+          "blocking": true,
+          "comment": "The plan names test categories, but several tests lack exact commands, expected outputs, fixtures, and pass/fail thresholds.",
+          "required_action": "Add executable commands, expected evidence files, and pass/fail criteria for every planned test."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "comment": "Review lens `developer execution and automation hooks` confirms this document must remain linked to requirements, code modules, tests, issues, and PR evidence.",
+          "required_action": "Keep links synchronized when tasks or code move."
+        }
+      ],
+      "software_lead_disposition": "Software Lead blocks full staged implementation/test entry for this artifact until required actions are resolved. A dev-mode exploratory PR may remain open, but release progression is blocked."
+    },
+    {
+      "id": "REV-08-unit-test-plan-03",
+      "artifact_path": "docs/vmodel/08-unit-test-plan.md",
+      "artifact_title": "08 Unit Test Plan",
+      "reviewer_role": "release_quality_agent",
+      "lens": "gate readiness and audit evidence",
+      "verdict": "changes_required",
+      "comments": [
+        {
+          "severity": "major",
+          "blocking": true,
+          "comment": "The plan names test categories, but several tests lack exact commands, expected outputs, fixtures, and pass/fail thresholds.",
+          "required_action": "Add executable commands, expected evidence files, and pass/fail criteria for every planned test."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "comment": "Review lens `gate readiness and audit evidence` confirms this document must remain linked to requirements, code modules, tests, issues, and PR evidence.",
+          "required_action": "Keep links synchronized when tasks or code move."
+        }
+      ],
+      "software_lead_disposition": "Software Lead blocks full staged implementation/test entry for this artifact until required actions are resolved. A dev-mode exploratory PR may remain open, but release progression is blocked."
+    },
+    {
+      "id": "REV-09-integration-test-plan-01",
+      "artifact_path": "docs/vmodel/09-integration-test-plan.md",
+      "artifact_title": "09 Integration Test Plan",
+      "reviewer_role": "qa_verification_agent",
+      "lens": "testability and evidence quality",
+      "verdict": "changes_required",
+      "comments": [
+        {
+          "severity": "major",
+          "blocking": true,
+          "comment": "The plan names test categories, but several tests lack exact commands, expected outputs, fixtures, and pass/fail thresholds.",
+          "required_action": "Add executable commands, expected evidence files, and pass/fail criteria for every planned test."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "comment": "Review lens `testability and evidence quality` confirms this document must remain linked to requirements, code modules, tests, issues, and PR evidence.",
+          "required_action": "Keep links synchronized when tasks or code move."
+        }
+      ],
+      "software_lead_disposition": "Software Lead blocks full staged implementation/test entry for this artifact until required actions are resolved. A dev-mode exploratory PR may remain open, but release progression is blocked."
+    },
+    {
+      "id": "REV-09-integration-test-plan-02",
+      "artifact_path": "docs/vmodel/09-integration-test-plan.md",
+      "artifact_title": "09 Integration Test Plan",
+      "reviewer_role": "development_lead_agent",
+      "lens": "developer execution and automation hooks",
+      "verdict": "changes_required",
+      "comments": [
+        {
+          "severity": "major",
+          "blocking": true,
+          "comment": "The plan names test categories, but several tests lack exact commands, expected outputs, fixtures, and pass/fail thresholds.",
+          "required_action": "Add executable commands, expected evidence files, and pass/fail criteria for every planned test."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "comment": "Review lens `developer execution and automation hooks` confirms this document must remain linked to requirements, code modules, tests, issues, and PR evidence.",
+          "required_action": "Keep links synchronized when tasks or code move."
+        }
+      ],
+      "software_lead_disposition": "Software Lead blocks full staged implementation/test entry for this artifact until required actions are resolved. A dev-mode exploratory PR may remain open, but release progression is blocked."
+    },
+    {
+      "id": "REV-09-integration-test-plan-03",
+      "artifact_path": "docs/vmodel/09-integration-test-plan.md",
+      "artifact_title": "09 Integration Test Plan",
+      "reviewer_role": "release_quality_agent",
+      "lens": "gate readiness and audit evidence",
+      "verdict": "changes_required",
+      "comments": [
+        {
+          "severity": "major",
+          "blocking": true,
+          "comment": "The plan names test categories, but several tests lack exact commands, expected outputs, fixtures, and pass/fail thresholds.",
+          "required_action": "Add executable commands, expected evidence files, and pass/fail criteria for every planned test."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "comment": "Review lens `gate readiness and audit evidence` confirms this document must remain linked to requirements, code modules, tests, issues, and PR evidence.",
+          "required_action": "Keep links synchronized when tasks or code move."
+        }
+      ],
+      "software_lead_disposition": "Software Lead blocks full staged implementation/test entry for this artifact until required actions are resolved. A dev-mode exploratory PR may remain open, but release progression is blocked."
+    },
+    {
+      "id": "REV-10-system-test-plan-01",
+      "artifact_path": "docs/vmodel/10-system-test-plan.md",
+      "artifact_title": "10 System Test Plan",
+      "reviewer_role": "qa_verification_agent",
+      "lens": "testability and evidence quality",
+      "verdict": "changes_required",
+      "comments": [
+        {
+          "severity": "major",
+          "blocking": true,
+          "comment": "The plan names test categories, but several tests lack exact commands, expected outputs, fixtures, and pass/fail thresholds.",
+          "required_action": "Add executable commands, expected evidence files, and pass/fail criteria for every planned test."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "comment": "Review lens `testability and evidence quality` confirms this document must remain linked to requirements, code modules, tests, issues, and PR evidence.",
+          "required_action": "Keep links synchronized when tasks or code move."
+        }
+      ],
+      "software_lead_disposition": "Software Lead blocks full staged implementation/test entry for this artifact until required actions are resolved. A dev-mode exploratory PR may remain open, but release progression is blocked."
+    },
+    {
+      "id": "REV-10-system-test-plan-02",
+      "artifact_path": "docs/vmodel/10-system-test-plan.md",
+      "artifact_title": "10 System Test Plan",
+      "reviewer_role": "development_lead_agent",
+      "lens": "developer execution and automation hooks",
+      "verdict": "changes_required",
+      "comments": [
+        {
+          "severity": "major",
+          "blocking": true,
+          "comment": "The plan names test categories, but several tests lack exact commands, expected outputs, fixtures, and pass/fail thresholds.",
+          "required_action": "Add executable commands, expected evidence files, and pass/fail criteria for every planned test."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "comment": "Review lens `developer execution and automation hooks` confirms this document must remain linked to requirements, code modules, tests, issues, and PR evidence.",
+          "required_action": "Keep links synchronized when tasks or code move."
+        }
+      ],
+      "software_lead_disposition": "Software Lead blocks full staged implementation/test entry for this artifact until required actions are resolved. A dev-mode exploratory PR may remain open, but release progression is blocked."
+    },
+    {
+      "id": "REV-10-system-test-plan-03",
+      "artifact_path": "docs/vmodel/10-system-test-plan.md",
+      "artifact_title": "10 System Test Plan",
+      "reviewer_role": "release_quality_agent",
+      "lens": "gate readiness and audit evidence",
+      "verdict": "changes_required",
+      "comments": [
+        {
+          "severity": "major",
+          "blocking": true,
+          "comment": "The plan names test categories, but several tests lack exact commands, expected outputs, fixtures, and pass/fail thresholds.",
+          "required_action": "Add executable commands, expected evidence files, and pass/fail criteria for every planned test."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "comment": "Review lens `gate readiness and audit evidence` confirms this document must remain linked to requirements, code modules, tests, issues, and PR evidence.",
+          "required_action": "Keep links synchronized when tasks or code move."
+        }
+      ],
+      "software_lead_disposition": "Software Lead blocks full staged implementation/test entry for this artifact until required actions are resolved. A dev-mode exploratory PR may remain open, but release progression is blocked."
+    },
+    {
+      "id": "REV-11-acceptance-test-plan-01",
+      "artifact_path": "docs/vmodel/11-acceptance-test-plan.md",
+      "artifact_title": "11 Acceptance Test Plan",
+      "reviewer_role": "product_requirements_agent",
+      "lens": "user intent and acceptance clarity",
+      "verdict": "approved_with_conditions",
+      "comments": [
+        {
+          "severity": "minor",
+          "blocking": false,
+          "comment": "product_requirements_agent review found the artifact usable for the current dev-mode slice but requiring maintenance as implementation advances.",
+          "required_action": "Carry forward as living documentation and update it at every staged gate."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "comment": "Review lens `user intent and acceptance clarity` confirms this document must remain linked to requirements, code modules, tests, issues, and PR evidence.",
+          "required_action": "Keep links synchronized when tasks or code move."
+        }
+      ],
+      "software_lead_disposition": "Software Lead accepts this artifact for dev-mode progression with living-document maintenance required."
+    },
+    {
+      "id": "REV-11-acceptance-test-plan-02",
+      "artifact_path": "docs/vmodel/11-acceptance-test-plan.md",
+      "artifact_title": "11 Acceptance Test Plan",
+      "reviewer_role": "systems_architecture_agent",
+      "lens": "traceability into design and implementation",
+      "verdict": "approved_with_conditions",
+      "comments": [
+        {
+          "severity": "minor",
+          "blocking": false,
+          "comment": "systems_architecture_agent review found the artifact usable for the current dev-mode slice but requiring maintenance as implementation advances.",
+          "required_action": "Carry forward as living documentation and update it at every staged gate."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "comment": "Review lens `traceability into design and implementation` confirms this document must remain linked to requirements, code modules, tests, issues, and PR evidence.",
+          "required_action": "Keep links synchronized when tasks or code move."
+        }
+      ],
+      "software_lead_disposition": "Software Lead accepts this artifact for dev-mode progression with living-document maintenance required."
+    },
+    {
+      "id": "REV-11-acceptance-test-plan-03",
+      "artifact_path": "docs/vmodel/11-acceptance-test-plan.md",
+      "artifact_title": "11 Acceptance Test Plan",
+      "reviewer_role": "qa_validation_agent",
+      "lens": "objective validation criteria",
+      "verdict": "approved_with_conditions",
+      "comments": [
+        {
+          "severity": "minor",
+          "blocking": false,
+          "comment": "qa_validation_agent review found the artifact usable for the current dev-mode slice but requiring maintenance as implementation advances.",
+          "required_action": "Carry forward as living documentation and update it at every staged gate."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "comment": "Review lens `objective validation criteria` confirms this document must remain linked to requirements, code modules, tests, issues, and PR evidence.",
+          "required_action": "Keep links synchronized when tasks or code move."
+        }
+      ],
+      "software_lead_disposition": "Software Lead accepts this artifact for dev-mode progression with living-document maintenance required."
+    },
+    {
+      "id": "REV-12-requirements-traceability-matrix-01",
+      "artifact_path": "docs/vmodel/12-requirements-traceability-matrix.md",
+      "artifact_title": "12 Requirements Traceability Matrix",
+      "reviewer_role": "software_lead_agent",
+      "lens": "workflow control and arbitration",
+      "verdict": "approved_with_conditions",
+      "comments": [
+        {
+          "severity": "minor",
+          "blocking": false,
+          "comment": "software_lead_agent review found the artifact usable for the current dev-mode slice but requiring maintenance as implementation advances.",
+          "required_action": "Carry forward as living documentation and update it at every staged gate."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "comment": "Review lens `workflow control and arbitration` confirms this document must remain linked to requirements, code modules, tests, issues, and PR evidence.",
+          "required_action": "Keep links synchronized when tasks or code move."
+        }
+      ],
+      "software_lead_disposition": "Software Lead accepts this artifact for dev-mode progression with living-document maintenance required."
+    },
+    {
+      "id": "REV-12-requirements-traceability-matrix-02",
+      "artifact_path": "docs/vmodel/12-requirements-traceability-matrix.md",
+      "artifact_title": "12 Requirements Traceability Matrix",
+      "reviewer_role": "product_requirements_agent",
+      "lens": "stakeholder usefulness",
+      "verdict": "approved_with_conditions",
+      "comments": [
+        {
+          "severity": "minor",
+          "blocking": false,
+          "comment": "product_requirements_agent review found the artifact usable for the current dev-mode slice but requiring maintenance as implementation advances.",
+          "required_action": "Carry forward as living documentation and update it at every staged gate."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "comment": "Review lens `stakeholder usefulness` confirms this document must remain linked to requirements, code modules, tests, issues, and PR evidence.",
+          "required_action": "Keep links synchronized when tasks or code move."
+        }
+      ],
+      "software_lead_disposition": "Software Lead accepts this artifact for dev-mode progression with living-document maintenance required."
+    },
+    {
+      "id": "REV-12-requirements-traceability-matrix-03",
+      "artifact_path": "docs/vmodel/12-requirements-traceability-matrix.md",
+      "artifact_title": "12 Requirements Traceability Matrix",
+      "reviewer_role": "release_quality_agent",
+      "lens": "release readiness and auditability",
+      "verdict": "approved_with_conditions",
+      "comments": [
+        {
+          "severity": "minor",
+          "blocking": false,
+          "comment": "release_quality_agent review found the artifact usable for the current dev-mode slice but requiring maintenance as implementation advances.",
+          "required_action": "Carry forward as living documentation and update it at every staged gate."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "comment": "Review lens `release readiness and auditability` confirms this document must remain linked to requirements, code modules, tests, issues, and PR evidence.",
+          "required_action": "Keep links synchronized when tasks or code move."
+        }
+      ],
+      "software_lead_disposition": "Software Lead accepts this artifact for dev-mode progression with living-document maintenance required."
+    },
+    {
+      "id": "REV-13-verification-report-01",
+      "artifact_path": "docs/vmodel/13-verification-report.md",
+      "artifact_title": "13 Verification Report",
+      "reviewer_role": "qa_verification_agent",
+      "lens": "testability and evidence quality",
+      "verdict": "changes_required",
+      "comments": [
+        {
+          "severity": "major",
+          "blocking": true,
+          "comment": "The report mixes completed dev-mode evidence with deferred hardware evidence without a closure table per requirement.",
+          "required_action": "Add requirement-by-requirement verification closure status and explicit deferred-evidence owner."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "comment": "Review lens `testability and evidence quality` confirms this document must remain linked to requirements, code modules, tests, issues, and PR evidence.",
+          "required_action": "Keep links synchronized when tasks or code move."
+        }
+      ],
+      "software_lead_disposition": "Software Lead blocks full staged implementation/test entry for this artifact until required actions are resolved. A dev-mode exploratory PR may remain open, but release progression is blocked."
+    },
+    {
+      "id": "REV-13-verification-report-02",
+      "artifact_path": "docs/vmodel/13-verification-report.md",
+      "artifact_title": "13 Verification Report",
+      "reviewer_role": "development_lead_agent",
+      "lens": "developer execution and automation hooks",
+      "verdict": "changes_required",
+      "comments": [
+        {
+          "severity": "major",
+          "blocking": true,
+          "comment": "The report mixes completed dev-mode evidence with deferred hardware evidence without a closure table per requirement.",
+          "required_action": "Add requirement-by-requirement verification closure status and explicit deferred-evidence owner."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "comment": "Review lens `developer execution and automation hooks` confirms this document must remain linked to requirements, code modules, tests, issues, and PR evidence.",
+          "required_action": "Keep links synchronized when tasks or code move."
+        }
+      ],
+      "software_lead_disposition": "Software Lead blocks full staged implementation/test entry for this artifact until required actions are resolved. A dev-mode exploratory PR may remain open, but release progression is blocked."
+    },
+    {
+      "id": "REV-13-verification-report-03",
+      "artifact_path": "docs/vmodel/13-verification-report.md",
+      "artifact_title": "13 Verification Report",
+      "reviewer_role": "release_quality_agent",
+      "lens": "gate readiness and audit evidence",
+      "verdict": "changes_required",
+      "comments": [
+        {
+          "severity": "major",
+          "blocking": true,
+          "comment": "The report mixes completed dev-mode evidence with deferred hardware evidence without a closure table per requirement.",
+          "required_action": "Add requirement-by-requirement verification closure status and explicit deferred-evidence owner."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "comment": "Review lens `gate readiness and audit evidence` confirms this document must remain linked to requirements, code modules, tests, issues, and PR evidence.",
+          "required_action": "Keep links synchronized when tasks or code move."
+        }
+      ],
+      "software_lead_disposition": "Software Lead blocks full staged implementation/test entry for this artifact until required actions are resolved. A dev-mode exploratory PR may remain open, but release progression is blocked."
+    },
+    {
+      "id": "REV-14-validation-report-01",
+      "artifact_path": "docs/vmodel/14-validation-report.md",
+      "artifact_title": "14 Validation Report",
+      "reviewer_role": "software_lead_agent",
+      "lens": "workflow control and arbitration",
+      "verdict": "changes_required",
+      "comments": [
+        {
+          "severity": "major",
+          "blocking": true,
+          "comment": "Validation is not ready until user acceptance questions and deferred hardware assumptions are explicitly listed for approval.",
+          "required_action": "Add acceptance decision records and open user approvals."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "comment": "Review lens `workflow control and arbitration` confirms this document must remain linked to requirements, code modules, tests, issues, and PR evidence.",
+          "required_action": "Keep links synchronized when tasks or code move."
+        }
+      ],
+      "software_lead_disposition": "Software Lead blocks full staged implementation/test entry for this artifact until required actions are resolved. A dev-mode exploratory PR may remain open, but release progression is blocked."
+    },
+    {
+      "id": "REV-14-validation-report-02",
+      "artifact_path": "docs/vmodel/14-validation-report.md",
+      "artifact_title": "14 Validation Report",
+      "reviewer_role": "product_requirements_agent",
+      "lens": "stakeholder usefulness",
+      "verdict": "changes_required",
+      "comments": [
+        {
+          "severity": "major",
+          "blocking": true,
+          "comment": "Validation is not ready until user acceptance questions and deferred hardware assumptions are explicitly listed for approval.",
+          "required_action": "Add acceptance decision records and open user approvals."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "comment": "Review lens `stakeholder usefulness` confirms this document must remain linked to requirements, code modules, tests, issues, and PR evidence.",
+          "required_action": "Keep links synchronized when tasks or code move."
+        }
+      ],
+      "software_lead_disposition": "Software Lead blocks full staged implementation/test entry for this artifact until required actions are resolved. A dev-mode exploratory PR may remain open, but release progression is blocked."
+    },
+    {
+      "id": "REV-14-validation-report-03",
+      "artifact_path": "docs/vmodel/14-validation-report.md",
+      "artifact_title": "14 Validation Report",
+      "reviewer_role": "release_quality_agent",
+      "lens": "release readiness and auditability",
+      "verdict": "changes_required",
+      "comments": [
+        {
+          "severity": "major",
+          "blocking": true,
+          "comment": "Validation is not ready until user acceptance questions and deferred hardware assumptions are explicitly listed for approval.",
+          "required_action": "Add acceptance decision records and open user approvals."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "comment": "Review lens `release readiness and auditability` confirms this document must remain linked to requirements, code modules, tests, issues, and PR evidence.",
+          "required_action": "Keep links synchronized when tasks or code move."
+        }
+      ],
+      "software_lead_disposition": "Software Lead blocks full staged implementation/test entry for this artifact until required actions are resolved. A dev-mode exploratory PR may remain open, but release progression is blocked."
+    },
+    {
+      "id": "REV-15-code-review-report-01",
+      "artifact_path": "docs/vmodel/15-code-review-report.md",
+      "artifact_title": "15 Code Review Report",
+      "reviewer_role": "security_review_agent",
+      "lens": "security and supply-chain risk",
+      "verdict": "approved_with_conditions",
+      "comments": [
+        {
+          "severity": "minor",
+          "blocking": false,
+          "comment": "security_review_agent review found the artifact usable for the current dev-mode slice but requiring maintenance as implementation advances.",
+          "required_action": "Carry forward as living documentation and update it at every staged gate."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "comment": "Review lens `security and supply-chain risk` confirms this document must remain linked to requirements, code modules, tests, issues, and PR evidence.",
+          "required_action": "Keep links synchronized when tasks or code move."
+        }
+      ],
+      "software_lead_disposition": "Software Lead accepts this artifact for dev-mode progression with living-document maintenance required."
+    },
+    {
+      "id": "REV-15-code-review-report-02",
+      "artifact_path": "docs/vmodel/15-code-review-report.md",
+      "artifact_title": "15 Code Review Report",
+      "reviewer_role": "qa_verification_agent",
+      "lens": "deterministic checks and residual risk",
+      "verdict": "approved_with_conditions",
+      "comments": [
+        {
+          "severity": "minor",
+          "blocking": false,
+          "comment": "qa_verification_agent review found the artifact usable for the current dev-mode slice but requiring maintenance as implementation advances.",
+          "required_action": "Carry forward as living documentation and update it at every staged gate."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "comment": "Review lens `deterministic checks and residual risk` confirms this document must remain linked to requirements, code modules, tests, issues, and PR evidence.",
+          "required_action": "Keep links synchronized when tasks or code move."
+        }
+      ],
+      "software_lead_disposition": "Software Lead accepts this artifact for dev-mode progression with living-document maintenance required."
+    },
+    {
+      "id": "REV-15-code-review-report-03",
+      "artifact_path": "docs/vmodel/15-code-review-report.md",
+      "artifact_title": "15 Code Review Report",
+      "reviewer_role": "software_lead_agent",
+      "lens": "release blocking posture",
+      "verdict": "approved_with_conditions",
+      "comments": [
+        {
+          "severity": "minor",
+          "blocking": false,
+          "comment": "software_lead_agent review found the artifact usable for the current dev-mode slice but requiring maintenance as implementation advances.",
+          "required_action": "Carry forward as living documentation and update it at every staged gate."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "comment": "Review lens `release blocking posture` confirms this document must remain linked to requirements, code modules, tests, issues, and PR evidence.",
+          "required_action": "Keep links synchronized when tasks or code move."
+        }
+      ],
+      "software_lead_disposition": "Software Lead accepts this artifact for dev-mode progression with living-document maintenance required."
+    },
+    {
+      "id": "REV-16-security-review-report-01",
+      "artifact_path": "docs/vmodel/16-security-review-report.md",
+      "artifact_title": "16 Security Review Report",
+      "reviewer_role": "security_review_agent",
+      "lens": "security and supply-chain risk",
+      "verdict": "approved_with_conditions",
+      "comments": [
+        {
+          "severity": "minor",
+          "blocking": false,
+          "comment": "security_review_agent review found the artifact usable for the current dev-mode slice but requiring maintenance as implementation advances.",
+          "required_action": "Carry forward as living documentation and update it at every staged gate."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "comment": "Review lens `security and supply-chain risk` confirms this document must remain linked to requirements, code modules, tests, issues, and PR evidence.",
+          "required_action": "Keep links synchronized when tasks or code move."
+        }
+      ],
+      "software_lead_disposition": "Software Lead accepts this artifact for dev-mode progression with living-document maintenance required."
+    },
+    {
+      "id": "REV-16-security-review-report-02",
+      "artifact_path": "docs/vmodel/16-security-review-report.md",
+      "artifact_title": "16 Security Review Report",
+      "reviewer_role": "qa_verification_agent",
+      "lens": "deterministic checks and residual risk",
+      "verdict": "approved_with_conditions",
+      "comments": [
+        {
+          "severity": "minor",
+          "blocking": false,
+          "comment": "qa_verification_agent review found the artifact usable for the current dev-mode slice but requiring maintenance as implementation advances.",
+          "required_action": "Carry forward as living documentation and update it at every staged gate."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "comment": "Review lens `deterministic checks and residual risk` confirms this document must remain linked to requirements, code modules, tests, issues, and PR evidence.",
+          "required_action": "Keep links synchronized when tasks or code move."
+        }
+      ],
+      "software_lead_disposition": "Software Lead accepts this artifact for dev-mode progression with living-document maintenance required."
+    },
+    {
+      "id": "REV-16-security-review-report-03",
+      "artifact_path": "docs/vmodel/16-security-review-report.md",
+      "artifact_title": "16 Security Review Report",
+      "reviewer_role": "software_lead_agent",
+      "lens": "release blocking posture",
+      "verdict": "approved_with_conditions",
+      "comments": [
+        {
+          "severity": "minor",
+          "blocking": false,
+          "comment": "software_lead_agent review found the artifact usable for the current dev-mode slice but requiring maintenance as implementation advances.",
+          "required_action": "Carry forward as living documentation and update it at every staged gate."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "comment": "Review lens `release blocking posture` confirms this document must remain linked to requirements, code modules, tests, issues, and PR evidence.",
+          "required_action": "Keep links synchronized when tasks or code move."
+        }
+      ],
+      "software_lead_disposition": "Software Lead accepts this artifact for dev-mode progression with living-document maintenance required."
+    },
+    {
+      "id": "REV-17-release-notes-01",
+      "artifact_path": "docs/vmodel/17-release-notes.md",
+      "artifact_title": "17 Release Notes",
+      "reviewer_role": "software_lead_agent",
+      "lens": "workflow control and arbitration",
+      "verdict": "approved_with_conditions",
+      "comments": [
+        {
+          "severity": "minor",
+          "blocking": false,
+          "comment": "software_lead_agent review found the artifact usable for the current dev-mode slice but requiring maintenance as implementation advances.",
+          "required_action": "Carry forward as living documentation and update it at every staged gate."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "comment": "Review lens `workflow control and arbitration` confirms this document must remain linked to requirements, code modules, tests, issues, and PR evidence.",
+          "required_action": "Keep links synchronized when tasks or code move."
+        }
+      ],
+      "software_lead_disposition": "Software Lead accepts this artifact for dev-mode progression with living-document maintenance required."
+    },
+    {
+      "id": "REV-17-release-notes-02",
+      "artifact_path": "docs/vmodel/17-release-notes.md",
+      "artifact_title": "17 Release Notes",
+      "reviewer_role": "product_requirements_agent",
+      "lens": "stakeholder usefulness",
+      "verdict": "approved_with_conditions",
+      "comments": [
+        {
+          "severity": "minor",
+          "blocking": false,
+          "comment": "product_requirements_agent review found the artifact usable for the current dev-mode slice but requiring maintenance as implementation advances.",
+          "required_action": "Carry forward as living documentation and update it at every staged gate."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "comment": "Review lens `stakeholder usefulness` confirms this document must remain linked to requirements, code modules, tests, issues, and PR evidence.",
+          "required_action": "Keep links synchronized when tasks or code move."
+        }
+      ],
+      "software_lead_disposition": "Software Lead accepts this artifact for dev-mode progression with living-document maintenance required."
+    },
+    {
+      "id": "REV-17-release-notes-03",
+      "artifact_path": "docs/vmodel/17-release-notes.md",
+      "artifact_title": "17 Release Notes",
+      "reviewer_role": "release_quality_agent",
+      "lens": "release readiness and auditability",
+      "verdict": "approved_with_conditions",
+      "comments": [
+        {
+          "severity": "minor",
+          "blocking": false,
+          "comment": "release_quality_agent review found the artifact usable for the current dev-mode slice but requiring maintenance as implementation advances.",
+          "required_action": "Carry forward as living documentation and update it at every staged gate."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "comment": "Review lens `release readiness and auditability` confirms this document must remain linked to requirements, code modules, tests, issues, and PR evidence.",
+          "required_action": "Keep links synchronized when tasks or code move."
+        }
+      ],
+      "software_lead_disposition": "Software Lead accepts this artifact for dev-mode progression with living-document maintenance required."
+    },
+    {
+      "id": "REV-documentation-quality-audit-01",
+      "artifact_path": "docs/planning/documentation-quality-audit.md",
+      "artifact_title": "Documentation Quality Audit",
+      "reviewer_role": "software_lead_agent",
+      "lens": "workflow control and arbitration",
+      "verdict": "approved_with_conditions",
+      "comments": [
+        {
+          "severity": "minor",
+          "blocking": false,
+          "comment": "software_lead_agent review found the artifact usable for the current dev-mode slice but requiring maintenance as implementation advances.",
+          "required_action": "Carry forward as living documentation and update it at every staged gate."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "comment": "Review lens `workflow control and arbitration` confirms this document must remain linked to requirements, code modules, tests, issues, and PR evidence.",
+          "required_action": "Keep links synchronized when tasks or code move."
+        }
+      ],
+      "software_lead_disposition": "Software Lead accepts this artifact for dev-mode progression with living-document maintenance required."
+    },
+    {
+      "id": "REV-documentation-quality-audit-02",
+      "artifact_path": "docs/planning/documentation-quality-audit.md",
+      "artifact_title": "Documentation Quality Audit",
+      "reviewer_role": "product_requirements_agent",
+      "lens": "stakeholder usefulness",
+      "verdict": "approved_with_conditions",
+      "comments": [
+        {
+          "severity": "minor",
+          "blocking": false,
+          "comment": "product_requirements_agent review found the artifact usable for the current dev-mode slice but requiring maintenance as implementation advances.",
+          "required_action": "Carry forward as living documentation and update it at every staged gate."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "comment": "Review lens `stakeholder usefulness` confirms this document must remain linked to requirements, code modules, tests, issues, and PR evidence.",
+          "required_action": "Keep links synchronized when tasks or code move."
+        }
+      ],
+      "software_lead_disposition": "Software Lead accepts this artifact for dev-mode progression with living-document maintenance required."
+    },
+    {
+      "id": "REV-documentation-quality-audit-03",
+      "artifact_path": "docs/planning/documentation-quality-audit.md",
+      "artifact_title": "Documentation Quality Audit",
+      "reviewer_role": "release_quality_agent",
+      "lens": "release readiness and auditability",
+      "verdict": "approved_with_conditions",
+      "comments": [
+        {
+          "severity": "minor",
+          "blocking": false,
+          "comment": "release_quality_agent review found the artifact usable for the current dev-mode slice but requiring maintenance as implementation advances.",
+          "required_action": "Carry forward as living documentation and update it at every staged gate."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "comment": "Review lens `release readiness and auditability` confirms this document must remain linked to requirements, code modules, tests, issues, and PR evidence.",
+          "required_action": "Keep links synchronized when tasks or code move."
+        }
+      ],
+      "software_lead_disposition": "Software Lead accepts this artifact for dev-mode progression with living-document maintenance required."
+    },
+    {
+      "id": "REV-issue-sequencing-plan-01",
+      "artifact_path": "docs/planning/issue-sequencing-plan.md",
+      "artifact_title": "Issue Sequencing Plan",
+      "reviewer_role": "software_lead_agent",
+      "lens": "workflow control and arbitration",
+      "verdict": "changes_required",
+      "comments": [
+        {
+          "severity": "major",
+          "blocking": true,
+          "comment": "Issue sequencing lacks dependencies, PR grouping, test gates, and merge order.",
+          "required_action": "Add stages, dependencies, branch names, PR targets, and CI gates."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "comment": "Review lens `workflow control and arbitration` confirms this document must remain linked to requirements, code modules, tests, issues, and PR evidence.",
+          "required_action": "Keep links synchronized when tasks or code move."
+        }
+      ],
+      "software_lead_disposition": "Software Lead blocks full staged implementation/test entry for this artifact until required actions are resolved. A dev-mode exploratory PR may remain open, but release progression is blocked."
+    },
+    {
+      "id": "REV-issue-sequencing-plan-02",
+      "artifact_path": "docs/planning/issue-sequencing-plan.md",
+      "artifact_title": "Issue Sequencing Plan",
+      "reviewer_role": "product_requirements_agent",
+      "lens": "stakeholder usefulness",
+      "verdict": "changes_required",
+      "comments": [
+        {
+          "severity": "major",
+          "blocking": true,
+          "comment": "Issue sequencing lacks dependencies, PR grouping, test gates, and merge order.",
+          "required_action": "Add stages, dependencies, branch names, PR targets, and CI gates."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "comment": "Review lens `stakeholder usefulness` confirms this document must remain linked to requirements, code modules, tests, issues, and PR evidence.",
+          "required_action": "Keep links synchronized when tasks or code move."
+        }
+      ],
+      "software_lead_disposition": "Software Lead blocks full staged implementation/test entry for this artifact until required actions are resolved. A dev-mode exploratory PR may remain open, but release progression is blocked."
+    },
+    {
+      "id": "REV-issue-sequencing-plan-03",
+      "artifact_path": "docs/planning/issue-sequencing-plan.md",
+      "artifact_title": "Issue Sequencing Plan",
+      "reviewer_role": "release_quality_agent",
+      "lens": "release readiness and auditability",
+      "verdict": "changes_required",
+      "comments": [
+        {
+          "severity": "major",
+          "blocking": true,
+          "comment": "Issue sequencing lacks dependencies, PR grouping, test gates, and merge order.",
+          "required_action": "Add stages, dependencies, branch names, PR targets, and CI gates."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "comment": "Review lens `release readiness and auditability` confirms this document must remain linked to requirements, code modules, tests, issues, and PR evidence.",
+          "required_action": "Keep links synchronized when tasks or code move."
+        }
+      ],
+      "software_lead_disposition": "Software Lead blocks full staged implementation/test entry for this artifact until required actions are resolved. A dev-mode exploratory PR may remain open, but release progression is blocked."
+    },
+    {
+      "id": "REV-risk-register-01",
+      "artifact_path": "docs/planning/risk-register.md",
+      "artifact_title": "Risk Register",
+      "reviewer_role": "security_review_agent",
+      "lens": "security and supply-chain risk",
+      "verdict": "approved_with_conditions",
+      "comments": [
+        {
+          "severity": "minor",
+          "blocking": false,
+          "comment": "security_review_agent review found the artifact usable for the current dev-mode slice but requiring maintenance as implementation advances.",
+          "required_action": "Carry forward as living documentation and update it at every staged gate."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "comment": "Review lens `security and supply-chain risk` confirms this document must remain linked to requirements, code modules, tests, issues, and PR evidence.",
+          "required_action": "Keep links synchronized when tasks or code move."
+        }
+      ],
+      "software_lead_disposition": "Software Lead accepts this artifact for dev-mode progression with living-document maintenance required."
+    },
+    {
+      "id": "REV-risk-register-02",
+      "artifact_path": "docs/planning/risk-register.md",
+      "artifact_title": "Risk Register",
+      "reviewer_role": "qa_verification_agent",
+      "lens": "deterministic checks and residual risk",
+      "verdict": "approved_with_conditions",
+      "comments": [
+        {
+          "severity": "minor",
+          "blocking": false,
+          "comment": "qa_verification_agent review found the artifact usable for the current dev-mode slice but requiring maintenance as implementation advances.",
+          "required_action": "Carry forward as living documentation and update it at every staged gate."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "comment": "Review lens `deterministic checks and residual risk` confirms this document must remain linked to requirements, code modules, tests, issues, and PR evidence.",
+          "required_action": "Keep links synchronized when tasks or code move."
+        }
+      ],
+      "software_lead_disposition": "Software Lead accepts this artifact for dev-mode progression with living-document maintenance required."
+    },
+    {
+      "id": "REV-risk-register-03",
+      "artifact_path": "docs/planning/risk-register.md",
+      "artifact_title": "Risk Register",
+      "reviewer_role": "software_lead_agent",
+      "lens": "release blocking posture",
+      "verdict": "approved_with_conditions",
+      "comments": [
+        {
+          "severity": "minor",
+          "blocking": false,
+          "comment": "software_lead_agent review found the artifact usable for the current dev-mode slice but requiring maintenance as implementation advances.",
+          "required_action": "Carry forward as living documentation and update it at every staged gate."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "comment": "Review lens `release blocking posture` confirms this document must remain linked to requirements, code modules, tests, issues, and PR evidence.",
+          "required_action": "Keep links synchronized when tasks or code move."
+        }
+      ],
+      "software_lead_disposition": "Software Lead accepts this artifact for dev-mode progression with living-document maintenance required."
+    },
+    {
+      "id": "REV-software-lead-execution-plan-01",
+      "artifact_path": "docs/planning/software-lead-execution-plan.md",
+      "artifact_title": "Software Lead Execution Plan",
+      "reviewer_role": "software_lead_agent",
+      "lens": "workflow control and arbitration",
+      "verdict": "changes_required",
+      "comments": [
+        {
+          "severity": "major",
+          "blocking": true,
+          "comment": "The Software Lead plan states principles but does not define the actual next implementation/test stages and stop/go criteria.",
+          "required_action": "Add a concrete stage plan from dev-mode harness to firmware, BLE, and hardware-in-loop validation."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "comment": "Review lens `workflow control and arbitration` confirms this document must remain linked to requirements, code modules, tests, issues, and PR evidence.",
+          "required_action": "Keep links synchronized when tasks or code move."
+        }
+      ],
+      "software_lead_disposition": "Software Lead blocks full staged implementation/test entry for this artifact until required actions are resolved. A dev-mode exploratory PR may remain open, but release progression is blocked."
+    },
+    {
+      "id": "REV-software-lead-execution-plan-02",
+      "artifact_path": "docs/planning/software-lead-execution-plan.md",
+      "artifact_title": "Software Lead Execution Plan",
+      "reviewer_role": "product_requirements_agent",
+      "lens": "stakeholder usefulness",
+      "verdict": "changes_required",
+      "comments": [
+        {
+          "severity": "major",
+          "blocking": true,
+          "comment": "The Software Lead plan states principles but does not define the actual next implementation/test stages and stop/go criteria.",
+          "required_action": "Add a concrete stage plan from dev-mode harness to firmware, BLE, and hardware-in-loop validation."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "comment": "Review lens `stakeholder usefulness` confirms this document must remain linked to requirements, code modules, tests, issues, and PR evidence.",
+          "required_action": "Keep links synchronized when tasks or code move."
+        }
+      ],
+      "software_lead_disposition": "Software Lead blocks full staged implementation/test entry for this artifact until required actions are resolved. A dev-mode exploratory PR may remain open, but release progression is blocked."
+    },
+    {
+      "id": "REV-software-lead-execution-plan-03",
+      "artifact_path": "docs/planning/software-lead-execution-plan.md",
+      "artifact_title": "Software Lead Execution Plan",
+      "reviewer_role": "release_quality_agent",
+      "lens": "release readiness and auditability",
+      "verdict": "changes_required",
+      "comments": [
+        {
+          "severity": "major",
+          "blocking": true,
+          "comment": "The Software Lead plan states principles but does not define the actual next implementation/test stages and stop/go criteria.",
+          "required_action": "Add a concrete stage plan from dev-mode harness to firmware, BLE, and hardware-in-loop validation."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "comment": "Review lens `release readiness and auditability` confirms this document must remain linked to requirements, code modules, tests, issues, and PR evidence.",
+          "required_action": "Keep links synchronized when tasks or code move."
+        }
+      ],
+      "software_lead_disposition": "Software Lead blocks full staged implementation/test entry for this artifact until required actions are resolved. A dev-mode exploratory PR may remain open, but release progression is blocked."
+    },
+    {
+      "id": "REV-staged-development-test-plan-01",
+      "artifact_path": "docs/planning/staged-development-test-plan.md",
+      "artifact_title": "Staged Development Test Plan",
+      "reviewer_role": "software_lead_agent",
+      "lens": "workflow control and arbitration",
+      "verdict": "approved_with_conditions",
+      "comments": [
+        {
+          "severity": "minor",
+          "blocking": false,
+          "comment": "software_lead_agent review found the artifact usable for the current dev-mode slice but requiring maintenance as implementation advances.",
+          "required_action": "Carry forward as living documentation and update it at every staged gate."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "comment": "Review lens `workflow control and arbitration` confirms this document must remain linked to requirements, code modules, tests, issues, and PR evidence.",
+          "required_action": "Keep links synchronized when tasks or code move."
+        }
+      ],
+      "software_lead_disposition": "Software Lead accepts this artifact for dev-mode progression with living-document maintenance required."
+    },
+    {
+      "id": "REV-staged-development-test-plan-02",
+      "artifact_path": "docs/planning/staged-development-test-plan.md",
+      "artifact_title": "Staged Development Test Plan",
+      "reviewer_role": "product_requirements_agent",
+      "lens": "stakeholder usefulness",
+      "verdict": "approved_with_conditions",
+      "comments": [
+        {
+          "severity": "minor",
+          "blocking": false,
+          "comment": "product_requirements_agent review found the artifact usable for the current dev-mode slice but requiring maintenance as implementation advances.",
+          "required_action": "Carry forward as living documentation and update it at every staged gate."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "comment": "Review lens `stakeholder usefulness` confirms this document must remain linked to requirements, code modules, tests, issues, and PR evidence.",
+          "required_action": "Keep links synchronized when tasks or code move."
+        }
+      ],
+      "software_lead_disposition": "Software Lead accepts this artifact for dev-mode progression with living-document maintenance required."
+    },
+    {
+      "id": "REV-staged-development-test-plan-03",
+      "artifact_path": "docs/planning/staged-development-test-plan.md",
+      "artifact_title": "Staged Development Test Plan",
+      "reviewer_role": "release_quality_agent",
+      "lens": "release readiness and auditability",
+      "verdict": "approved_with_conditions",
+      "comments": [
+        {
+          "severity": "minor",
+          "blocking": false,
+          "comment": "release_quality_agent review found the artifact usable for the current dev-mode slice but requiring maintenance as implementation advances.",
+          "required_action": "Carry forward as living documentation and update it at every staged gate."
+        },
+        {
+          "severity": "minor",
+          "blocking": false,
+          "comment": "Review lens `release readiness and auditability` confirms this document must remain linked to requirements, code modules, tests, issues, and PR evidence.",
+          "required_action": "Keep links synchronized when tasks or code move."
+        }
+      ],
+      "software_lead_disposition": "Software Lead accepts this artifact for dev-mode progression with living-document maintenance required."
+    }
+  ]
+}

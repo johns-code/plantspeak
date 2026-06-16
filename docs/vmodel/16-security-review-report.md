@@ -11,6 +11,7 @@ Project: PlantSpeak
 | Secrets | No tokens or credentials embedded in generated source. |
 | Dependencies | Runtime has no third-party package dependency; dev extra uses pytest. |
 | Future BLE/device command surface | Deferred security review required in S4 before transport merge. |
+| Mocked transport parser | Malformed JSON, invalid field types, oversized payloads, unsupported commands, and timeouts are tested. |
 
 ## Required Future Checks
 
@@ -23,7 +24,7 @@ Project: PlantSpeak
 
 | Risk | Disposition |
 | --- | --- |
-| BLE command surface is not implemented yet. | Deferred to S4 security review and malformed payload tests. |
+| BLE command surface is not connected to physical BLE yet. | Mocked S4 transport parser is tested; physical BLE review remains due before target-board transport release. |
 | Firmware flashing/build path is not implemented yet. | Deferred to S5 build evidence and toolchain review. |
 | Target-board hardware execution is not verified yet. | Deferred to S6 HIL evidence and human approval. |
 

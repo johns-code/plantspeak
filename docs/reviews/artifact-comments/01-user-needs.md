@@ -2,14 +2,14 @@
 
 ## product_requirements_agent - user intent and acceptance clarity
 
-Verdict: approved_with_conditions
+Verdict: changes_required
 
 ### Comment 1
 
-- Severity: minor
-- Blocking: no
-- Comment: product_requirements_agent review found the artifact usable for the current dev-mode slice but requiring maintenance as implementation advances.
-- Required action: Carry forward as living documentation and update it at every staged gate.
+- Severity: major
+- Blocking: yes
+- Comment: User needs are mostly raw hardware notes rather than user-verifiable PlantSpeak outcomes.
+- Required action: Rewrite needs around desired ICD/product behaviors, separating target behavior from dev-board constraints and source evidence.
 
 ### Comment 2
 
@@ -20,18 +20,18 @@ Verdict: approved_with_conditions
 
 Software Lead disposition:
 
-Software Lead accepts this artifact for dev-mode progression with living-document maintenance required.
+Software Lead blocks full staged implementation/test entry for this artifact until required actions are resolved. A dev-mode exploratory PR may remain open, but release progression is blocked.
 
 ## systems_architecture_agent - traceability into design and implementation
 
-Verdict: approved_with_conditions
+Verdict: changes_required
 
 ### Comment 1
 
-- Severity: minor
-- Blocking: no
-- Comment: systems_architecture_agent review found the artifact usable for the current dev-mode slice but requiring maintenance as implementation advances.
-- Required action: Carry forward as living documentation and update it at every staged gate.
+- Severity: major
+- Blocking: yes
+- Comment: User needs are mostly raw hardware notes rather than user-verifiable PlantSpeak outcomes.
+- Required action: Rewrite needs around desired ICD/product behaviors, separating target behavior from dev-board constraints and source evidence.
 
 ### Comment 2
 
@@ -42,18 +42,18 @@ Verdict: approved_with_conditions
 
 Software Lead disposition:
 
-Software Lead accepts this artifact for dev-mode progression with living-document maintenance required.
+Software Lead blocks full staged implementation/test entry for this artifact until required actions are resolved. A dev-mode exploratory PR may remain open, but release progression is blocked.
 
 ## qa_validation_agent - objective validation criteria
 
-Verdict: approved_with_conditions
+Verdict: changes_required
 
 ### Comment 1
 
-- Severity: minor
-- Blocking: no
-- Comment: qa_validation_agent review found the artifact usable for the current dev-mode slice but requiring maintenance as implementation advances.
-- Required action: Carry forward as living documentation and update it at every staged gate.
+- Severity: major
+- Blocking: yes
+- Comment: User needs are mostly raw hardware notes rather than user-verifiable PlantSpeak outcomes.
+- Required action: Rewrite needs around desired ICD/product behaviors, separating target behavior from dev-board constraints and source evidence.
 
 ### Comment 2
 
@@ -64,4 +64,4 @@ Verdict: approved_with_conditions
 
 Software Lead disposition:
 
-Software Lead accepts this artifact for dev-mode progression with living-document maintenance required.
+Software Lead blocks full staged implementation/test entry for this artifact until required actions are resolved. A dev-mode exploratory PR may remain open, but release progression is blocked.

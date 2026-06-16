@@ -2,14 +2,14 @@
 
 ## security_review_agent - security and supply-chain risk
 
-Verdict: approved_with_conditions
+Verdict: changes_required
 
 ### Comment 1
 
-- Severity: minor
-- Blocking: no
-- Comment: security_review_agent review found the artifact usable for the current dev-mode slice but requiring maintenance as implementation advances.
-- Required action: Carry forward as living documentation and update it at every staged gate.
+- Severity: major
+- Blocking: yes
+- Comment: Code review is pending and has no reviewer, reviewed commit, checklist, findings, or disposition.
+- Required action: Complete code review against plantspeak CLI, ICD, pins, devices, requirements, and tests with findings tied to requirement IDs.
 
 ### Comment 2
 
@@ -20,18 +20,18 @@ Verdict: approved_with_conditions
 
 Software Lead disposition:
 
-Software Lead accepts this artifact for dev-mode progression with living-document maintenance required.
+Software Lead blocks full staged implementation/test entry for this artifact until required actions are resolved. A dev-mode exploratory PR may remain open, but release progression is blocked.
 
 ## qa_verification_agent - deterministic checks and residual risk
 
-Verdict: approved_with_conditions
+Verdict: changes_required
 
 ### Comment 1
 
-- Severity: minor
-- Blocking: no
-- Comment: qa_verification_agent review found the artifact usable for the current dev-mode slice but requiring maintenance as implementation advances.
-- Required action: Carry forward as living documentation and update it at every staged gate.
+- Severity: major
+- Blocking: yes
+- Comment: Code review is pending and has no reviewer, reviewed commit, checklist, findings, or disposition.
+- Required action: Complete code review against plantspeak CLI, ICD, pins, devices, requirements, and tests with findings tied to requirement IDs.
 
 ### Comment 2
 
@@ -42,18 +42,18 @@ Verdict: approved_with_conditions
 
 Software Lead disposition:
 
-Software Lead accepts this artifact for dev-mode progression with living-document maintenance required.
+Software Lead blocks full staged implementation/test entry for this artifact until required actions are resolved. A dev-mode exploratory PR may remain open, but release progression is blocked.
 
 ## software_lead_agent - release blocking posture
 
-Verdict: approved_with_conditions
+Verdict: changes_required
 
 ### Comment 1
 
-- Severity: minor
-- Blocking: no
-- Comment: software_lead_agent review found the artifact usable for the current dev-mode slice but requiring maintenance as implementation advances.
-- Required action: Carry forward as living documentation and update it at every staged gate.
+- Severity: major
+- Blocking: yes
+- Comment: Code review is pending and has no reviewer, reviewed commit, checklist, findings, or disposition.
+- Required action: Complete code review against plantspeak CLI, ICD, pins, devices, requirements, and tests with findings tied to requirement IDs.
 
 ### Comment 2
 
@@ -64,4 +64,4 @@ Verdict: approved_with_conditions
 
 Software Lead disposition:
 
-Software Lead accepts this artifact for dev-mode progression with living-document maintenance required.
+Software Lead blocks full staged implementation/test entry for this artifact until required actions are resolved. A dev-mode exploratory PR may remain open, but release progression is blocked.

@@ -13,6 +13,13 @@ Verdict: changes_required
 
 ### Comment 2
 
+- Severity: critical
+- Blocking: yes
+- Comment: The RTM references IT-004 through IT-014 but this plan defines only IT-001 through IT-003.
+- Required action: Either define the missing integration tests or repair RTM mappings to use only existing evidence.
+
+### Comment 3
+
 - Severity: minor
 - Blocking: no
 - Comment: Review lens `testability and evidence quality` confirms this document must remain linked to requirements, code modules, tests, issues, and PR evidence.
@@ -35,6 +42,13 @@ Verdict: changes_required
 
 ### Comment 2
 
+- Severity: critical
+- Blocking: yes
+- Comment: The RTM references IT-004 through IT-014 but this plan defines only IT-001 through IT-003.
+- Required action: Either define the missing integration tests or repair RTM mappings to use only existing evidence.
+
+### Comment 3
+
 - Severity: minor
 - Blocking: no
 - Comment: Review lens `developer execution and automation hooks` confirms this document must remain linked to requirements, code modules, tests, issues, and PR evidence.
@@ -56,6 +70,13 @@ Verdict: changes_required
 - Required action: Add executable commands, expected evidence files, and pass/fail criteria for every planned test.
 
 ### Comment 2
+
+- Severity: critical
+- Blocking: yes
+- Comment: The RTM references IT-004 through IT-014 but this plan defines only IT-001 through IT-003.
+- Required action: Either define the missing integration tests or repair RTM mappings to use only existing evidence.
+
+### Comment 3
 
 - Severity: minor
 - Blocking: no

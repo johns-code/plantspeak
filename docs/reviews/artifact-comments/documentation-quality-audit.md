@@ -2,14 +2,14 @@
 
 ## software_lead_agent - workflow control and arbitration
 
-Verdict: approved_with_conditions
+Verdict: changes_required
 
 ### Comment 1
 
-- Severity: minor
-- Blocking: no
-- Comment: software_lead_agent review found the artifact usable for the current dev-mode slice but requiring maintenance as implementation advances.
-- Required action: Carry forward as living documentation and update it at every staged gate.
+- Severity: major
+- Blocking: yes
+- Comment: The audit must not mark traceability or evidence ready while blocking review comments remain open.
+- Required action: Keep readiness checks downgraded until RTM IDs, test evidence, and interface contracts are corrected.
 
 ### Comment 2
 
@@ -20,18 +20,18 @@ Verdict: approved_with_conditions
 
 Software Lead disposition:
 
-Software Lead accepts this artifact for dev-mode progression with living-document maintenance required.
+Software Lead blocks full staged implementation/test entry for this artifact until required actions are resolved. A dev-mode exploratory PR may remain open, but release progression is blocked.
 
 ## product_requirements_agent - stakeholder usefulness
 
-Verdict: approved_with_conditions
+Verdict: changes_required
 
 ### Comment 1
 
-- Severity: minor
-- Blocking: no
-- Comment: product_requirements_agent review found the artifact usable for the current dev-mode slice but requiring maintenance as implementation advances.
-- Required action: Carry forward as living documentation and update it at every staged gate.
+- Severity: major
+- Blocking: yes
+- Comment: The audit must not mark traceability or evidence ready while blocking review comments remain open.
+- Required action: Keep readiness checks downgraded until RTM IDs, test evidence, and interface contracts are corrected.
 
 ### Comment 2
 
@@ -42,18 +42,18 @@ Verdict: approved_with_conditions
 
 Software Lead disposition:
 
-Software Lead accepts this artifact for dev-mode progression with living-document maintenance required.
+Software Lead blocks full staged implementation/test entry for this artifact until required actions are resolved. A dev-mode exploratory PR may remain open, but release progression is blocked.
 
 ## release_quality_agent - release readiness and auditability
 
-Verdict: approved_with_conditions
+Verdict: changes_required
 
 ### Comment 1
 
-- Severity: minor
-- Blocking: no
-- Comment: release_quality_agent review found the artifact usable for the current dev-mode slice but requiring maintenance as implementation advances.
-- Required action: Carry forward as living documentation and update it at every staged gate.
+- Severity: major
+- Blocking: yes
+- Comment: The audit must not mark traceability or evidence ready while blocking review comments remain open.
+- Required action: Keep readiness checks downgraded until RTM IDs, test evidence, and interface contracts are corrected.
 
 ### Comment 2
 
@@ -64,4 +64,4 @@ Verdict: approved_with_conditions
 
 Software Lead disposition:
 
-Software Lead accepts this artifact for dev-mode progression with living-document maintenance required.
+Software Lead blocks full staged implementation/test entry for this artifact until required actions are resolved. A dev-mode exploratory PR may remain open, but release progression is blocked.

@@ -26,7 +26,7 @@ tests\test_devices.py ....                                               [ 72%]
 tests\test_icd.py ..                                                     [ 90%]
 tests\test_requirements.py .                                             [100%]
 
-============================= 11 passed in 0.11s ==============================
+============================= 11 passed in 0.10s ==============================
 ```
 
 ## Requirement Coverage

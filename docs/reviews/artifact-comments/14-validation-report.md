@@ -2,66 +2,66 @@
 
 ## software_lead_agent - workflow control and arbitration
 
-Verdict: approved_with_conditions
+Verdict: changes_required
 
 ### Comment 1
 
-- Severity: minor
-- Blocking: no
-- Comment: software_lead_agent confirms prior blocking review themes have an explicit remediation closure in this artifact.
-- Required action: Maintain this closure section as implementation and evidence evolve.
+- Severity: major
+- Blocking: yes
+- Comment: software_lead_agent found missing review evidence markers: Validation Status, Human Approval, Deferred.
+- Required action: Add acceptance decision records and open user approvals.
 
 ### Comment 2
 
 - Severity: minor
 - Blocking: no
-- Comment: Review lens `workflow control and arbitration` confirms this document is cleared for the next controlled stage, subject to CI and Software Lead gate enforcement.
+- Comment: Lens `workflow control and arbitration` checked this artifact for concrete links to requirements, code modules, tests, issues, and PR evidence.
 - Required action: Keep links synchronized when tasks or code move.
 
 Software Lead disposition:
 
-Software Lead accepts this artifact for dev-mode progression with living-document maintenance required.
+Software Lead blocks full staged implementation/test entry for this artifact until required actions are resolved. A dev-mode exploratory PR may remain open, but release progression is blocked.
 
 ## product_requirements_agent - stakeholder usefulness
 
-Verdict: approved_with_conditions
+Verdict: changes_required
 
 ### Comment 1
 
-- Severity: minor
-- Blocking: no
-- Comment: product_requirements_agent confirms prior blocking review themes have an explicit remediation closure in this artifact.
-- Required action: Maintain this closure section as implementation and evidence evolve.
+- Severity: major
+- Blocking: yes
+- Comment: product_requirements_agent found missing review evidence markers: Validation Status, Human Approval, Deferred.
+- Required action: Add acceptance decision records and open user approvals.
 
 ### Comment 2
 
 - Severity: minor
 - Blocking: no
-- Comment: Review lens `stakeholder usefulness` confirms this document is cleared for the next controlled stage, subject to CI and Software Lead gate enforcement.
+- Comment: Lens `stakeholder usefulness` checked this artifact for concrete links to requirements, code modules, tests, issues, and PR evidence.
 - Required action: Keep links synchronized when tasks or code move.
 
 Software Lead disposition:
 
-Software Lead accepts this artifact for dev-mode progression with living-document maintenance required.
+Software Lead blocks full staged implementation/test entry for this artifact until required actions are resolved. A dev-mode exploratory PR may remain open, but release progression is blocked.
 
 ## release_quality_agent - release readiness and auditability
 
-Verdict: approved_with_conditions
+Verdict: changes_required
 
 ### Comment 1
 
-- Severity: minor
-- Blocking: no
-- Comment: release_quality_agent confirms prior blocking review themes have an explicit remediation closure in this artifact.
-- Required action: Maintain this closure section as implementation and evidence evolve.
+- Severity: major
+- Blocking: yes
+- Comment: release_quality_agent found missing review evidence markers: Validation Status, Human Approval, Deferred.
+- Required action: Add acceptance decision records and open user approvals.
 
 ### Comment 2
 
 - Severity: minor
 - Blocking: no
-- Comment: Review lens `release readiness and auditability` confirms this document is cleared for the next controlled stage, subject to CI and Software Lead gate enforcement.
+- Comment: Lens `release readiness and auditability` checked this artifact for concrete links to requirements, code modules, tests, issues, and PR evidence.
 - Required action: Keep links synchronized when tasks or code move.
 
 Software Lead disposition:
 
-Software Lead accepts this artifact for dev-mode progression with living-document maintenance required.
+Software Lead blocks full staged implementation/test entry for this artifact until required actions are resolved. A dev-mode exploratory PR may remain open, but release progression is blocked.

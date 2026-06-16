@@ -8,14 +8,14 @@ Verdict: approved_with_conditions
 
 - Severity: minor
 - Blocking: no
-- Comment: systems_architecture_agent confirms prior blocking review themes have an explicit remediation closure in this artifact.
-- Required action: Maintain this closure section as implementation and evidence evolve.
+- Comment: systems_architecture_agent accepts because architecture defines interfaces, staged firmware/BLE boundaries, and approval limits.
+- Required action: Maintain these fields as implementation and evidence evolve.
 
 ### Comment 2
 
 - Severity: minor
 - Blocking: no
-- Comment: Review lens `architecture completeness and boundaries` confirms this document is cleared for the next controlled stage, subject to CI and Software Lead gate enforcement.
+- Comment: Lens `architecture completeness and boundaries` checked this artifact for concrete links to requirements, code modules, tests, issues, and PR evidence.
 - Required action: Keep links synchronized when tasks or code move.
 
 Software Lead disposition:
@@ -30,14 +30,14 @@ Verdict: approved_with_conditions
 
 - Severity: minor
 - Blocking: no
-- Comment: development_lead_agent confirms prior blocking review themes have an explicit remediation closure in this artifact.
-- Required action: Maintain this closure section as implementation and evidence evolve.
+- Comment: development_lead_agent accepts because architecture defines interfaces, staged firmware/BLE boundaries, and approval limits.
+- Required action: Maintain these fields as implementation and evidence evolve.
 
 ### Comment 2
 
 - Severity: minor
 - Blocking: no
-- Comment: Review lens `implementability and staged work breakdown` confirms this document is cleared for the next controlled stage, subject to CI and Software Lead gate enforcement.
+- Comment: Lens `implementability and staged work breakdown` checked this artifact for concrete links to requirements, code modules, tests, issues, and PR evidence.
 - Required action: Keep links synchronized when tasks or code move.
 
 Software Lead disposition:
@@ -52,14 +52,14 @@ Verdict: approved_with_conditions
 
 - Severity: minor
 - Blocking: no
-- Comment: security_reliability_agent confirms prior blocking review themes have an explicit remediation closure in this artifact.
-- Required action: Maintain this closure section as implementation and evidence evolve.
+- Comment: security_reliability_agent accepts because architecture defines interfaces, staged firmware/BLE boundaries, and approval limits.
+- Required action: Maintain these fields as implementation and evidence evolve.
 
 ### Comment 2
 
 - Severity: minor
 - Blocking: no
-- Comment: Review lens `hardware, transport, and operational risk` confirms this document is cleared for the next controlled stage, subject to CI and Software Lead gate enforcement.
+- Comment: Lens `hardware, transport, and operational risk` checked this artifact for concrete links to requirements, code modules, tests, issues, and PR evidence.
 - Required action: Keep links synchronized when tasks or code move.
 
 Software Lead disposition:

@@ -3,8 +3,8 @@
   "artifact_count": 22,
   "review_count": 66,
   "reviews_per_artifact": 3,
-  "blocking_review_count": 0,
-  "implementation_readiness": "ready_for_staged_implementation",
+  "blocking_review_count": 15,
+  "implementation_readiness": "blocked_pending_review_actions",
   "reviews": [
     {
       "id": "REV-01-user-needs-01",
@@ -17,13 +17,13 @@
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "product_requirements_agent confirms prior blocking review themes have an explicit remediation closure in this artifact.",
-          "required_action": "Maintain this closure section as implementation and evidence evolve."
+          "comment": "product_requirements_agent accepts because user needs connect stakeholder intent to success conditions and scope limits.",
+          "required_action": "Maintain these fields as implementation and evidence evolve."
         },
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "Review lens `user intent and acceptance clarity` confirms this document is cleared for the next controlled stage, subject to CI and Software Lead gate enforcement.",
+          "comment": "Lens `user intent and acceptance clarity` checked this artifact for concrete links to requirements, code modules, tests, issues, and PR evidence.",
           "required_action": "Keep links synchronized when tasks or code move."
         }
       ],
@@ -40,13 +40,13 @@
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "systems_architecture_agent confirms prior blocking review themes have an explicit remediation closure in this artifact.",
-          "required_action": "Maintain this closure section as implementation and evidence evolve."
+          "comment": "systems_architecture_agent accepts because user needs connect stakeholder intent to success conditions and scope limits.",
+          "required_action": "Maintain these fields as implementation and evidence evolve."
         },
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "Review lens `traceability into design and implementation` confirms this document is cleared for the next controlled stage, subject to CI and Software Lead gate enforcement.",
+          "comment": "Lens `traceability into design and implementation` checked this artifact for concrete links to requirements, code modules, tests, issues, and PR evidence.",
           "required_action": "Keep links synchronized when tasks or code move."
         }
       ],
@@ -63,13 +63,13 @@
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "qa_validation_agent confirms prior blocking review themes have an explicit remediation closure in this artifact.",
-          "required_action": "Maintain this closure section as implementation and evidence evolve."
+          "comment": "qa_validation_agent accepts because user needs connect stakeholder intent to success conditions and scope limits.",
+          "required_action": "Maintain these fields as implementation and evidence evolve."
         },
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "Review lens `objective validation criteria` confirms this document is cleared for the next controlled stage, subject to CI and Software Lead gate enforcement.",
+          "comment": "Lens `objective validation criteria` checked this artifact for concrete links to requirements, code modules, tests, issues, and PR evidence.",
           "required_action": "Keep links synchronized when tasks or code move."
         }
       ],
@@ -86,13 +86,13 @@
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "product_requirements_agent confirms prior blocking review themes have an explicit remediation closure in this artifact.",
-          "required_action": "Maintain this closure section as implementation and evidence evolve."
+          "comment": "product_requirements_agent accepts because system requirements include priorities and measurable acceptance criteria.",
+          "required_action": "Maintain these fields as implementation and evidence evolve."
         },
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "Review lens `user intent and acceptance clarity` confirms this document is cleared for the next controlled stage, subject to CI and Software Lead gate enforcement.",
+          "comment": "Lens `user intent and acceptance clarity` checked this artifact for concrete links to requirements, code modules, tests, issues, and PR evidence.",
           "required_action": "Keep links synchronized when tasks or code move."
         }
       ],
@@ -109,13 +109,13 @@
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "systems_architecture_agent confirms prior blocking review themes have an explicit remediation closure in this artifact.",
-          "required_action": "Maintain this closure section as implementation and evidence evolve."
+          "comment": "systems_architecture_agent accepts because system requirements include priorities and measurable acceptance criteria.",
+          "required_action": "Maintain these fields as implementation and evidence evolve."
         },
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "Review lens `traceability into design and implementation` confirms this document is cleared for the next controlled stage, subject to CI and Software Lead gate enforcement.",
+          "comment": "Lens `traceability into design and implementation` checked this artifact for concrete links to requirements, code modules, tests, issues, and PR evidence.",
           "required_action": "Keep links synchronized when tasks or code move."
         }
       ],
@@ -132,13 +132,13 @@
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "qa_validation_agent confirms prior blocking review themes have an explicit remediation closure in this artifact.",
-          "required_action": "Maintain this closure section as implementation and evidence evolve."
+          "comment": "qa_validation_agent accepts because system requirements include priorities and measurable acceptance criteria.",
+          "required_action": "Maintain these fields as implementation and evidence evolve."
         },
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "Review lens `objective validation criteria` confirms this document is cleared for the next controlled stage, subject to CI and Software Lead gate enforcement.",
+          "comment": "Lens `objective validation criteria` checked this artifact for concrete links to requirements, code modules, tests, issues, and PR evidence.",
           "required_action": "Keep links synchronized when tasks or code move."
         }
       ],
@@ -155,13 +155,13 @@
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "product_requirements_agent confirms prior blocking review themes have an explicit remediation closure in this artifact.",
-          "required_action": "Maintain this closure section as implementation and evidence evolve."
+          "comment": "product_requirements_agent accepts because software requirements name observable behavior and verification evidence.",
+          "required_action": "Maintain these fields as implementation and evidence evolve."
         },
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "Review lens `user intent and acceptance clarity` confirms this document is cleared for the next controlled stage, subject to CI and Software Lead gate enforcement.",
+          "comment": "Lens `user intent and acceptance clarity` checked this artifact for concrete links to requirements, code modules, tests, issues, and PR evidence.",
           "required_action": "Keep links synchronized when tasks or code move."
         }
       ],
@@ -178,13 +178,13 @@
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "systems_architecture_agent confirms prior blocking review themes have an explicit remediation closure in this artifact.",
-          "required_action": "Maintain this closure section as implementation and evidence evolve."
+          "comment": "systems_architecture_agent accepts because software requirements name observable behavior and verification evidence.",
+          "required_action": "Maintain these fields as implementation and evidence evolve."
         },
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "Review lens `traceability into design and implementation` confirms this document is cleared for the next controlled stage, subject to CI and Software Lead gate enforcement.",
+          "comment": "Lens `traceability into design and implementation` checked this artifact for concrete links to requirements, code modules, tests, issues, and PR evidence.",
           "required_action": "Keep links synchronized when tasks or code move."
         }
       ],
@@ -201,13 +201,13 @@
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "qa_validation_agent confirms prior blocking review themes have an explicit remediation closure in this artifact.",
-          "required_action": "Maintain this closure section as implementation and evidence evolve."
+          "comment": "qa_validation_agent accepts because software requirements name observable behavior and verification evidence.",
+          "required_action": "Maintain these fields as implementation and evidence evolve."
         },
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "Review lens `objective validation criteria` confirms this document is cleared for the next controlled stage, subject to CI and Software Lead gate enforcement.",
+          "comment": "Lens `objective validation criteria` checked this artifact for concrete links to requirements, code modules, tests, issues, and PR evidence.",
           "required_action": "Keep links synchronized when tasks or code move."
         }
       ],
@@ -224,13 +224,13 @@
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "systems_architecture_agent confirms prior blocking review themes have an explicit remediation closure in this artifact.",
-          "required_action": "Maintain this closure section as implementation and evidence evolve."
+          "comment": "systems_architecture_agent accepts because architecture defines interfaces, staged firmware/BLE boundaries, and approval limits.",
+          "required_action": "Maintain these fields as implementation and evidence evolve."
         },
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "Review lens `architecture completeness and boundaries` confirms this document is cleared for the next controlled stage, subject to CI and Software Lead gate enforcement.",
+          "comment": "Lens `architecture completeness and boundaries` checked this artifact for concrete links to requirements, code modules, tests, issues, and PR evidence.",
           "required_action": "Keep links synchronized when tasks or code move."
         }
       ],
@@ -247,13 +247,13 @@
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "development_lead_agent confirms prior blocking review themes have an explicit remediation closure in this artifact.",
-          "required_action": "Maintain this closure section as implementation and evidence evolve."
+          "comment": "development_lead_agent accepts because architecture defines interfaces, staged firmware/BLE boundaries, and approval limits.",
+          "required_action": "Maintain these fields as implementation and evidence evolve."
         },
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "Review lens `implementability and staged work breakdown` confirms this document is cleared for the next controlled stage, subject to CI and Software Lead gate enforcement.",
+          "comment": "Lens `implementability and staged work breakdown` checked this artifact for concrete links to requirements, code modules, tests, issues, and PR evidence.",
           "required_action": "Keep links synchronized when tasks or code move."
         }
       ],
@@ -270,13 +270,13 @@
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "security_reliability_agent confirms prior blocking review themes have an explicit remediation closure in this artifact.",
-          "required_action": "Maintain this closure section as implementation and evidence evolve."
+          "comment": "security_reliability_agent accepts because architecture defines interfaces, staged firmware/BLE boundaries, and approval limits.",
+          "required_action": "Maintain these fields as implementation and evidence evolve."
         },
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "Review lens `hardware, transport, and operational risk` confirms this document is cleared for the next controlled stage, subject to CI and Software Lead gate enforcement.",
+          "comment": "Lens `hardware, transport, and operational risk` checked this artifact for concrete links to requirements, code modules, tests, issues, and PR evidence.",
           "required_action": "Keep links synchronized when tasks or code move."
         }
       ],
@@ -293,13 +293,13 @@
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "systems_architecture_agent confirms prior blocking review themes have an explicit remediation closure in this artifact.",
-          "required_action": "Maintain this closure section as implementation and evidence evolve."
+          "comment": "systems_architecture_agent accepts because detailed design names component contracts, error behavior, and mappings into test design.",
+          "required_action": "Maintain these fields as implementation and evidence evolve."
         },
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "Review lens `architecture completeness and boundaries` confirms this document is cleared for the next controlled stage, subject to CI and Software Lead gate enforcement.",
+          "comment": "Lens `architecture completeness and boundaries` checked this artifact for concrete links to requirements, code modules, tests, issues, and PR evidence.",
           "required_action": "Keep links synchronized when tasks or code move."
         }
       ],
@@ -316,13 +316,13 @@
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "development_lead_agent confirms prior blocking review themes have an explicit remediation closure in this artifact.",
-          "required_action": "Maintain this closure section as implementation and evidence evolve."
+          "comment": "development_lead_agent accepts because detailed design names component contracts, error behavior, and mappings into test design.",
+          "required_action": "Maintain these fields as implementation and evidence evolve."
         },
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "Review lens `implementability and staged work breakdown` confirms this document is cleared for the next controlled stage, subject to CI and Software Lead gate enforcement.",
+          "comment": "Lens `implementability and staged work breakdown` checked this artifact for concrete links to requirements, code modules, tests, issues, and PR evidence.",
           "required_action": "Keep links synchronized when tasks or code move."
         }
       ],
@@ -339,13 +339,13 @@
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "security_reliability_agent confirms prior blocking review themes have an explicit remediation closure in this artifact.",
-          "required_action": "Maintain this closure section as implementation and evidence evolve."
+          "comment": "security_reliability_agent accepts because detailed design names component contracts, error behavior, and mappings into test design.",
+          "required_action": "Maintain these fields as implementation and evidence evolve."
         },
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "Review lens `hardware, transport, and operational risk` confirms this document is cleared for the next controlled stage, subject to CI and Software Lead gate enforcement.",
+          "comment": "Lens `hardware, transport, and operational risk` checked this artifact for concrete links to requirements, code modules, tests, issues, and PR evidence.",
           "required_action": "Keep links synchronized when tasks or code move."
         }
       ],
@@ -362,13 +362,13 @@
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "software_lead_agent confirms prior blocking review themes have an explicit remediation closure in this artifact.",
-          "required_action": "Maintain this closure section as implementation and evidence evolve."
+          "comment": "software_lead_agent accepts because task plan links requirements to task gates and staged exit criteria.",
+          "required_action": "Maintain these fields as implementation and evidence evolve."
         },
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "Review lens `workflow control and arbitration` confirms this document is cleared for the next controlled stage, subject to CI and Software Lead gate enforcement.",
+          "comment": "Lens `workflow control and arbitration` checked this artifact for concrete links to requirements, code modules, tests, issues, and PR evidence.",
           "required_action": "Keep links synchronized when tasks or code move."
         }
       ],
@@ -385,13 +385,13 @@
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "product_requirements_agent confirms prior blocking review themes have an explicit remediation closure in this artifact.",
-          "required_action": "Maintain this closure section as implementation and evidence evolve."
+          "comment": "product_requirements_agent accepts because task plan links requirements to task gates and staged exit criteria.",
+          "required_action": "Maintain these fields as implementation and evidence evolve."
         },
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "Review lens `stakeholder usefulness` confirms this document is cleared for the next controlled stage, subject to CI and Software Lead gate enforcement.",
+          "comment": "Lens `stakeholder usefulness` checked this artifact for concrete links to requirements, code modules, tests, issues, and PR evidence.",
           "required_action": "Keep links synchronized when tasks or code move."
         }
       ],
@@ -408,13 +408,13 @@
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "release_quality_agent confirms prior blocking review themes have an explicit remediation closure in this artifact.",
-          "required_action": "Maintain this closure section as implementation and evidence evolve."
+          "comment": "release_quality_agent accepts because task plan links requirements to task gates and staged exit criteria.",
+          "required_action": "Maintain these fields as implementation and evidence evolve."
         },
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "Review lens `release readiness and auditability` confirms this document is cleared for the next controlled stage, subject to CI and Software Lead gate enforcement.",
+          "comment": "Lens `release readiness and auditability` checked this artifact for concrete links to requirements, code modules, tests, issues, and PR evidence.",
           "required_action": "Keep links synchronized when tasks or code move."
         }
       ],
@@ -431,13 +431,13 @@
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "qa_verification_agent confirms prior blocking review themes have an explicit remediation closure in this artifact.",
-          "required_action": "Maintain this closure section as implementation and evidence evolve."
+          "comment": "qa_verification_agent found no artifact-specific rule for `07-test-strategy.md`; review is limited to living-document maintenance.",
+          "required_action": "Add an artifact-specific review rule before this artifact can act as a release gate."
         },
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "Review lens `testability and evidence quality` confirms this document is cleared for the next controlled stage, subject to CI and Software Lead gate enforcement.",
+          "comment": "Lens `testability and evidence quality` checked this artifact for concrete links to requirements, code modules, tests, issues, and PR evidence.",
           "required_action": "Keep links synchronized when tasks or code move."
         }
       ],
@@ -454,13 +454,13 @@
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "development_lead_agent confirms prior blocking review themes have an explicit remediation closure in this artifact.",
-          "required_action": "Maintain this closure section as implementation and evidence evolve."
+          "comment": "development_lead_agent found no artifact-specific rule for `07-test-strategy.md`; review is limited to living-document maintenance.",
+          "required_action": "Add an artifact-specific review rule before this artifact can act as a release gate."
         },
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "Review lens `developer execution and automation hooks` confirms this document is cleared for the next controlled stage, subject to CI and Software Lead gate enforcement.",
+          "comment": "Lens `developer execution and automation hooks` checked this artifact for concrete links to requirements, code modules, tests, issues, and PR evidence.",
           "required_action": "Keep links synchronized when tasks or code move."
         }
       ],
@@ -477,13 +477,13 @@
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "release_quality_agent confirms prior blocking review themes have an explicit remediation closure in this artifact.",
-          "required_action": "Maintain this closure section as implementation and evidence evolve."
+          "comment": "release_quality_agent found no artifact-specific rule for `07-test-strategy.md`; review is limited to living-document maintenance.",
+          "required_action": "Add an artifact-specific review rule before this artifact can act as a release gate."
         },
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "Review lens `gate readiness and audit evidence` confirms this document is cleared for the next controlled stage, subject to CI and Software Lead gate enforcement.",
+          "comment": "Lens `gate readiness and audit evidence` checked this artifact for concrete links to requirements, code modules, tests, issues, and PR evidence.",
           "required_action": "Keep links synchronized when tasks or code move."
         }
       ],
@@ -500,13 +500,13 @@
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "qa_verification_agent confirms prior blocking review themes have an explicit remediation closure in this artifact.",
-          "required_action": "Maintain this closure section as implementation and evidence evolve."
+          "comment": "qa_verification_agent accepts because unit test plan names fixtures, assertions, negative/fault cases, and one row per software requirement.",
+          "required_action": "Maintain these fields as implementation and evidence evolve."
         },
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "Review lens `testability and evidence quality` confirms this document is cleared for the next controlled stage, subject to CI and Software Lead gate enforcement.",
+          "comment": "Lens `testability and evidence quality` checked this artifact for concrete links to requirements, code modules, tests, issues, and PR evidence.",
           "required_action": "Keep links synchronized when tasks or code move."
         }
       ],
@@ -523,13 +523,13 @@
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "development_lead_agent confirms prior blocking review themes have an explicit remediation closure in this artifact.",
-          "required_action": "Maintain this closure section as implementation and evidence evolve."
+          "comment": "development_lead_agent accepts because unit test plan names fixtures, assertions, negative/fault cases, and one row per software requirement.",
+          "required_action": "Maintain these fields as implementation and evidence evolve."
         },
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "Review lens `developer execution and automation hooks` confirms this document is cleared for the next controlled stage, subject to CI and Software Lead gate enforcement.",
+          "comment": "Lens `developer execution and automation hooks` checked this artifact for concrete links to requirements, code modules, tests, issues, and PR evidence.",
           "required_action": "Keep links synchronized when tasks or code move."
         }
       ],
@@ -546,13 +546,13 @@
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "release_quality_agent confirms prior blocking review themes have an explicit remediation closure in this artifact.",
-          "required_action": "Maintain this closure section as implementation and evidence evolve."
+          "comment": "release_quality_agent accepts because unit test plan names fixtures, assertions, negative/fault cases, and one row per software requirement.",
+          "required_action": "Maintain these fields as implementation and evidence evolve."
         },
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "Review lens `gate readiness and audit evidence` confirms this document is cleared for the next controlled stage, subject to CI and Software Lead gate enforcement.",
+          "comment": "Lens `gate readiness and audit evidence` checked this artifact for concrete links to requirements, code modules, tests, issues, and PR evidence.",
           "required_action": "Keep links synchronized when tasks or code move."
         }
       ],
@@ -569,13 +569,13 @@
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "qa_verification_agent confirms prior blocking review themes have an explicit remediation closure in this artifact.",
-          "required_action": "Maintain this closure section as implementation and evidence evolve."
+          "comment": "qa_verification_agent accepts because integration test plan covers staged boundaries with setup, observability, fault cases, and promotion gates.",
+          "required_action": "Maintain these fields as implementation and evidence evolve."
         },
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "Review lens `testability and evidence quality` confirms this document is cleared for the next controlled stage, subject to CI and Software Lead gate enforcement.",
+          "comment": "Lens `testability and evidence quality` checked this artifact for concrete links to requirements, code modules, tests, issues, and PR evidence.",
           "required_action": "Keep links synchronized when tasks or code move."
         }
       ],
@@ -592,13 +592,13 @@
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "development_lead_agent confirms prior blocking review themes have an explicit remediation closure in this artifact.",
-          "required_action": "Maintain this closure section as implementation and evidence evolve."
+          "comment": "development_lead_agent accepts because integration test plan covers staged boundaries with setup, observability, fault cases, and promotion gates.",
+          "required_action": "Maintain these fields as implementation and evidence evolve."
         },
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "Review lens `developer execution and automation hooks` confirms this document is cleared for the next controlled stage, subject to CI and Software Lead gate enforcement.",
+          "comment": "Lens `developer execution and automation hooks` checked this artifact for concrete links to requirements, code modules, tests, issues, and PR evidence.",
           "required_action": "Keep links synchronized when tasks or code move."
         }
       ],
@@ -615,13 +615,13 @@
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "release_quality_agent confirms prior blocking review themes have an explicit remediation closure in this artifact.",
-          "required_action": "Maintain this closure section as implementation and evidence evolve."
+          "comment": "release_quality_agent accepts because integration test plan covers staged boundaries with setup, observability, fault cases, and promotion gates.",
+          "required_action": "Maintain these fields as implementation and evidence evolve."
         },
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "Review lens `gate readiness and audit evidence` confirms this document is cleared for the next controlled stage, subject to CI and Software Lead gate enforcement.",
+          "comment": "Lens `gate readiness and audit evidence` checked this artifact for concrete links to requirements, code modules, tests, issues, and PR evidence.",
           "required_action": "Keep links synchronized when tasks or code move."
         }
       ],
@@ -638,13 +638,13 @@
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "qa_verification_agent confirms prior blocking review themes have an explicit remediation closure in this artifact.",
-          "required_action": "Maintain this closure section as implementation and evidence evolve."
+          "comment": "qa_verification_agent accepts because system test plan separates dev-mode evidence from target-board HIL and names failure actions.",
+          "required_action": "Maintain these fields as implementation and evidence evolve."
         },
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "Review lens `testability and evidence quality` confirms this document is cleared for the next controlled stage, subject to CI and Software Lead gate enforcement.",
+          "comment": "Lens `testability and evidence quality` checked this artifact for concrete links to requirements, code modules, tests, issues, and PR evidence.",
           "required_action": "Keep links synchronized when tasks or code move."
         }
       ],
@@ -661,13 +661,13 @@
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "development_lead_agent confirms prior blocking review themes have an explicit remediation closure in this artifact.",
-          "required_action": "Maintain this closure section as implementation and evidence evolve."
+          "comment": "development_lead_agent accepts because system test plan separates dev-mode evidence from target-board HIL and names failure actions.",
+          "required_action": "Maintain these fields as implementation and evidence evolve."
         },
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "Review lens `developer execution and automation hooks` confirms this document is cleared for the next controlled stage, subject to CI and Software Lead gate enforcement.",
+          "comment": "Lens `developer execution and automation hooks` checked this artifact for concrete links to requirements, code modules, tests, issues, and PR evidence.",
           "required_action": "Keep links synchronized when tasks or code move."
         }
       ],
@@ -684,13 +684,13 @@
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "release_quality_agent confirms prior blocking review themes have an explicit remediation closure in this artifact.",
-          "required_action": "Maintain this closure section as implementation and evidence evolve."
+          "comment": "release_quality_agent accepts because system test plan separates dev-mode evidence from target-board HIL and names failure actions.",
+          "required_action": "Maintain these fields as implementation and evidence evolve."
         },
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "Review lens `gate readiness and audit evidence` confirms this document is cleared for the next controlled stage, subject to CI and Software Lead gate enforcement.",
+          "comment": "Lens `gate readiness and audit evidence` checked this artifact for concrete links to requirements, code modules, tests, issues, and PR evidence.",
           "required_action": "Keep links synchronized when tasks or code move."
         }
       ],
@@ -707,13 +707,13 @@
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "product_requirements_agent confirms prior blocking review themes have an explicit remediation closure in this artifact.",
-          "required_action": "Maintain this closure section as implementation and evidence evolve."
+          "comment": "product_requirements_agent accepts because acceptance plan names human approval conditions and deferred scope.",
+          "required_action": "Maintain these fields as implementation and evidence evolve."
         },
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "Review lens `user intent and acceptance clarity` confirms this document is cleared for the next controlled stage, subject to CI and Software Lead gate enforcement.",
+          "comment": "Lens `user intent and acceptance clarity` checked this artifact for concrete links to requirements, code modules, tests, issues, and PR evidence.",
           "required_action": "Keep links synchronized when tasks or code move."
         }
       ],
@@ -730,13 +730,13 @@
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "systems_architecture_agent confirms prior blocking review themes have an explicit remediation closure in this artifact.",
-          "required_action": "Maintain this closure section as implementation and evidence evolve."
+          "comment": "systems_architecture_agent accepts because acceptance plan names human approval conditions and deferred scope.",
+          "required_action": "Maintain these fields as implementation and evidence evolve."
         },
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "Review lens `traceability into design and implementation` confirms this document is cleared for the next controlled stage, subject to CI and Software Lead gate enforcement.",
+          "comment": "Lens `traceability into design and implementation` checked this artifact for concrete links to requirements, code modules, tests, issues, and PR evidence.",
           "required_action": "Keep links synchronized when tasks or code move."
         }
       ],
@@ -753,13 +753,13 @@
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "qa_validation_agent confirms prior blocking review themes have an explicit remediation closure in this artifact.",
-          "required_action": "Maintain this closure section as implementation and evidence evolve."
+          "comment": "qa_validation_agent accepts because acceptance plan names human approval conditions and deferred scope.",
+          "required_action": "Maintain these fields as implementation and evidence evolve."
         },
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "Review lens `objective validation criteria` confirms this document is cleared for the next controlled stage, subject to CI and Software Lead gate enforcement.",
+          "comment": "Lens `objective validation criteria` checked this artifact for concrete links to requirements, code modules, tests, issues, and PR evidence.",
           "required_action": "Keep links synchronized when tasks or code move."
         }
       ],
@@ -776,13 +776,13 @@
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "software_lead_agent confirms prior blocking review themes have an explicit remediation closure in this artifact.",
-          "required_action": "Maintain this closure section as implementation and evidence evolve."
+          "comment": "software_lead_agent accepts because traceability matrix links requirements to code modules and tests.",
+          "required_action": "Maintain these fields as implementation and evidence evolve."
         },
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "Review lens `workflow control and arbitration` confirms this document is cleared for the next controlled stage, subject to CI and Software Lead gate enforcement.",
+          "comment": "Lens `workflow control and arbitration` checked this artifact for concrete links to requirements, code modules, tests, issues, and PR evidence.",
           "required_action": "Keep links synchronized when tasks or code move."
         }
       ],
@@ -799,13 +799,13 @@
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "product_requirements_agent confirms prior blocking review themes have an explicit remediation closure in this artifact.",
-          "required_action": "Maintain this closure section as implementation and evidence evolve."
+          "comment": "product_requirements_agent accepts because traceability matrix links requirements to code modules and tests.",
+          "required_action": "Maintain these fields as implementation and evidence evolve."
         },
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "Review lens `stakeholder usefulness` confirms this document is cleared for the next controlled stage, subject to CI and Software Lead gate enforcement.",
+          "comment": "Lens `stakeholder usefulness` checked this artifact for concrete links to requirements, code modules, tests, issues, and PR evidence.",
           "required_action": "Keep links synchronized when tasks or code move."
         }
       ],
@@ -822,13 +822,13 @@
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "release_quality_agent confirms prior blocking review themes have an explicit remediation closure in this artifact.",
-          "required_action": "Maintain this closure section as implementation and evidence evolve."
+          "comment": "release_quality_agent accepts because traceability matrix links requirements to code modules and tests.",
+          "required_action": "Maintain these fields as implementation and evidence evolve."
         },
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "Review lens `release readiness and auditability` confirms this document is cleared for the next controlled stage, subject to CI and Software Lead gate enforcement.",
+          "comment": "Lens `release readiness and auditability` checked this artifact for concrete links to requirements, code modules, tests, issues, and PR evidence.",
           "required_action": "Keep links synchronized when tasks or code move."
         }
       ],
@@ -840,22 +840,22 @@
       "artifact_title": "13 Verification Report",
       "reviewer_role": "qa_verification_agent",
       "lens": "testability and evidence quality",
-      "verdict": "approved_with_conditions",
+      "verdict": "changes_required",
       "comments": [
         {
-          "severity": "minor",
-          "blocking": false,
-          "comment": "qa_verification_agent confirms prior blocking review themes have an explicit remediation closure in this artifact.",
-          "required_action": "Maintain this closure section as implementation and evidence evolve."
+          "severity": "major",
+          "blocking": true,
+          "comment": "qa_verification_agent found missing review evidence markers: Verification Summary, Local Test Result.",
+          "required_action": "Add requirement-by-requirement verification closure status and explicit deferred-evidence owner."
         },
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "Review lens `testability and evidence quality` confirms this document is cleared for the next controlled stage, subject to CI and Software Lead gate enforcement.",
+          "comment": "Lens `testability and evidence quality` checked this artifact for concrete links to requirements, code modules, tests, issues, and PR evidence.",
           "required_action": "Keep links synchronized when tasks or code move."
         }
       ],
-      "software_lead_disposition": "Software Lead accepts this artifact for dev-mode progression with living-document maintenance required."
+      "software_lead_disposition": "Software Lead blocks full staged implementation/test entry for this artifact until required actions are resolved. A dev-mode exploratory PR may remain open, but release progression is blocked."
     },
     {
       "id": "REV-13-verification-report-02",
@@ -863,22 +863,22 @@
       "artifact_title": "13 Verification Report",
       "reviewer_role": "development_lead_agent",
       "lens": "developer execution and automation hooks",
-      "verdict": "approved_with_conditions",
+      "verdict": "changes_required",
       "comments": [
         {
-          "severity": "minor",
-          "blocking": false,
-          "comment": "development_lead_agent confirms prior blocking review themes have an explicit remediation closure in this artifact.",
-          "required_action": "Maintain this closure section as implementation and evidence evolve."
+          "severity": "major",
+          "blocking": true,
+          "comment": "development_lead_agent found missing review evidence markers: Verification Summary, Local Test Result.",
+          "required_action": "Add requirement-by-requirement verification closure status and explicit deferred-evidence owner."
         },
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "Review lens `developer execution and automation hooks` confirms this document is cleared for the next controlled stage, subject to CI and Software Lead gate enforcement.",
+          "comment": "Lens `developer execution and automation hooks` checked this artifact for concrete links to requirements, code modules, tests, issues, and PR evidence.",
           "required_action": "Keep links synchronized when tasks or code move."
         }
       ],
-      "software_lead_disposition": "Software Lead accepts this artifact for dev-mode progression with living-document maintenance required."
+      "software_lead_disposition": "Software Lead blocks full staged implementation/test entry for this artifact until required actions are resolved. A dev-mode exploratory PR may remain open, but release progression is blocked."
     },
     {
       "id": "REV-13-verification-report-03",
@@ -886,22 +886,22 @@
       "artifact_title": "13 Verification Report",
       "reviewer_role": "release_quality_agent",
       "lens": "gate readiness and audit evidence",
-      "verdict": "approved_with_conditions",
+      "verdict": "changes_required",
       "comments": [
         {
-          "severity": "minor",
-          "blocking": false,
-          "comment": "release_quality_agent confirms prior blocking review themes have an explicit remediation closure in this artifact.",
-          "required_action": "Maintain this closure section as implementation and evidence evolve."
+          "severity": "major",
+          "blocking": true,
+          "comment": "release_quality_agent found missing review evidence markers: Verification Summary, Local Test Result.",
+          "required_action": "Add requirement-by-requirement verification closure status and explicit deferred-evidence owner."
         },
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "Review lens `gate readiness and audit evidence` confirms this document is cleared for the next controlled stage, subject to CI and Software Lead gate enforcement.",
+          "comment": "Lens `gate readiness and audit evidence` checked this artifact for concrete links to requirements, code modules, tests, issues, and PR evidence.",
           "required_action": "Keep links synchronized when tasks or code move."
         }
       ],
-      "software_lead_disposition": "Software Lead accepts this artifact for dev-mode progression with living-document maintenance required."
+      "software_lead_disposition": "Software Lead blocks full staged implementation/test entry for this artifact until required actions are resolved. A dev-mode exploratory PR may remain open, but release progression is blocked."
     },
     {
       "id": "REV-14-validation-report-01",
@@ -909,22 +909,22 @@
       "artifact_title": "14 Validation Report",
       "reviewer_role": "software_lead_agent",
       "lens": "workflow control and arbitration",
-      "verdict": "approved_with_conditions",
+      "verdict": "changes_required",
       "comments": [
         {
-          "severity": "minor",
-          "blocking": false,
-          "comment": "software_lead_agent confirms prior blocking review themes have an explicit remediation closure in this artifact.",
-          "required_action": "Maintain this closure section as implementation and evidence evolve."
+          "severity": "major",
+          "blocking": true,
+          "comment": "software_lead_agent found missing review evidence markers: Validation Status, Human Approval, Deferred.",
+          "required_action": "Add acceptance decision records and open user approvals."
         },
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "Review lens `workflow control and arbitration` confirms this document is cleared for the next controlled stage, subject to CI and Software Lead gate enforcement.",
+          "comment": "Lens `workflow control and arbitration` checked this artifact for concrete links to requirements, code modules, tests, issues, and PR evidence.",
           "required_action": "Keep links synchronized when tasks or code move."
         }
       ],
-      "software_lead_disposition": "Software Lead accepts this artifact for dev-mode progression with living-document maintenance required."
+      "software_lead_disposition": "Software Lead blocks full staged implementation/test entry for this artifact until required actions are resolved. A dev-mode exploratory PR may remain open, but release progression is blocked."
     },
     {
       "id": "REV-14-validation-report-02",
@@ -932,22 +932,22 @@
       "artifact_title": "14 Validation Report",
       "reviewer_role": "product_requirements_agent",
       "lens": "stakeholder usefulness",
-      "verdict": "approved_with_conditions",
+      "verdict": "changes_required",
       "comments": [
         {
-          "severity": "minor",
-          "blocking": false,
-          "comment": "product_requirements_agent confirms prior blocking review themes have an explicit remediation closure in this artifact.",
-          "required_action": "Maintain this closure section as implementation and evidence evolve."
+          "severity": "major",
+          "blocking": true,
+          "comment": "product_requirements_agent found missing review evidence markers: Validation Status, Human Approval, Deferred.",
+          "required_action": "Add acceptance decision records and open user approvals."
         },
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "Review lens `stakeholder usefulness` confirms this document is cleared for the next controlled stage, subject to CI and Software Lead gate enforcement.",
+          "comment": "Lens `stakeholder usefulness` checked this artifact for concrete links to requirements, code modules, tests, issues, and PR evidence.",
           "required_action": "Keep links synchronized when tasks or code move."
         }
       ],
-      "software_lead_disposition": "Software Lead accepts this artifact for dev-mode progression with living-document maintenance required."
+      "software_lead_disposition": "Software Lead blocks full staged implementation/test entry for this artifact until required actions are resolved. A dev-mode exploratory PR may remain open, but release progression is blocked."
     },
     {
       "id": "REV-14-validation-report-03",
@@ -955,22 +955,22 @@
       "artifact_title": "14 Validation Report",
       "reviewer_role": "release_quality_agent",
       "lens": "release readiness and auditability",
-      "verdict": "approved_with_conditions",
+      "verdict": "changes_required",
       "comments": [
         {
-          "severity": "minor",
-          "blocking": false,
-          "comment": "release_quality_agent confirms prior blocking review themes have an explicit remediation closure in this artifact.",
-          "required_action": "Maintain this closure section as implementation and evidence evolve."
+          "severity": "major",
+          "blocking": true,
+          "comment": "release_quality_agent found missing review evidence markers: Validation Status, Human Approval, Deferred.",
+          "required_action": "Add acceptance decision records and open user approvals."
         },
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "Review lens `release readiness and auditability` confirms this document is cleared for the next controlled stage, subject to CI and Software Lead gate enforcement.",
+          "comment": "Lens `release readiness and auditability` checked this artifact for concrete links to requirements, code modules, tests, issues, and PR evidence.",
           "required_action": "Keep links synchronized when tasks or code move."
         }
       ],
-      "software_lead_disposition": "Software Lead accepts this artifact for dev-mode progression with living-document maintenance required."
+      "software_lead_disposition": "Software Lead blocks full staged implementation/test entry for this artifact until required actions are resolved. A dev-mode exploratory PR may remain open, but release progression is blocked."
     },
     {
       "id": "REV-15-code-review-report-01",
@@ -978,22 +978,22 @@
       "artifact_title": "15 Code Review Report",
       "reviewer_role": "security_review_agent",
       "lens": "security and supply-chain risk",
-      "verdict": "approved_with_conditions",
+      "verdict": "changes_required",
       "comments": [
         {
-          "severity": "minor",
-          "blocking": false,
-          "comment": "security_review_agent confirms prior blocking review themes have an explicit remediation closure in this artifact.",
-          "required_action": "Maintain this closure section as implementation and evidence evolve."
+          "severity": "major",
+          "blocking": true,
+          "comment": "security_review_agent found missing review evidence markers: Reviewed Areas.",
+          "required_action": "Complete code review against CLI, ICD, pins, devices, requirements, and tests with findings tied to requirement IDs."
         },
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "Review lens `security and supply-chain risk` confirms this document is cleared for the next controlled stage, subject to CI and Software Lead gate enforcement.",
+          "comment": "Lens `security and supply-chain risk` checked this artifact for concrete links to requirements, code modules, tests, issues, and PR evidence.",
           "required_action": "Keep links synchronized when tasks or code move."
         }
       ],
-      "software_lead_disposition": "Software Lead accepts this artifact for dev-mode progression with living-document maintenance required."
+      "software_lead_disposition": "Software Lead blocks full staged implementation/test entry for this artifact until required actions are resolved. A dev-mode exploratory PR may remain open, but release progression is blocked."
     },
     {
       "id": "REV-15-code-review-report-02",
@@ -1001,22 +1001,22 @@
       "artifact_title": "15 Code Review Report",
       "reviewer_role": "qa_verification_agent",
       "lens": "deterministic checks and residual risk",
-      "verdict": "approved_with_conditions",
+      "verdict": "changes_required",
       "comments": [
         {
-          "severity": "minor",
-          "blocking": false,
-          "comment": "qa_verification_agent confirms prior blocking review themes have an explicit remediation closure in this artifact.",
-          "required_action": "Maintain this closure section as implementation and evidence evolve."
+          "severity": "major",
+          "blocking": true,
+          "comment": "qa_verification_agent found missing review evidence markers: Reviewed Areas.",
+          "required_action": "Complete code review against CLI, ICD, pins, devices, requirements, and tests with findings tied to requirement IDs."
         },
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "Review lens `deterministic checks and residual risk` confirms this document is cleared for the next controlled stage, subject to CI and Software Lead gate enforcement.",
+          "comment": "Lens `deterministic checks and residual risk` checked this artifact for concrete links to requirements, code modules, tests, issues, and PR evidence.",
           "required_action": "Keep links synchronized when tasks or code move."
         }
       ],
-      "software_lead_disposition": "Software Lead accepts this artifact for dev-mode progression with living-document maintenance required."
+      "software_lead_disposition": "Software Lead blocks full staged implementation/test entry for this artifact until required actions are resolved. A dev-mode exploratory PR may remain open, but release progression is blocked."
     },
     {
       "id": "REV-15-code-review-report-03",
@@ -1024,22 +1024,22 @@
       "artifact_title": "15 Code Review Report",
       "reviewer_role": "software_lead_agent",
       "lens": "release blocking posture",
-      "verdict": "approved_with_conditions",
+      "verdict": "changes_required",
       "comments": [
         {
-          "severity": "minor",
-          "blocking": false,
-          "comment": "software_lead_agent confirms prior blocking review themes have an explicit remediation closure in this artifact.",
-          "required_action": "Maintain this closure section as implementation and evidence evolve."
+          "severity": "major",
+          "blocking": true,
+          "comment": "software_lead_agent found missing review evidence markers: Reviewed Areas.",
+          "required_action": "Complete code review against CLI, ICD, pins, devices, requirements, and tests with findings tied to requirement IDs."
         },
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "Review lens `release blocking posture` confirms this document is cleared for the next controlled stage, subject to CI and Software Lead gate enforcement.",
+          "comment": "Lens `release blocking posture` checked this artifact for concrete links to requirements, code modules, tests, issues, and PR evidence.",
           "required_action": "Keep links synchronized when tasks or code move."
         }
       ],
-      "software_lead_disposition": "Software Lead accepts this artifact for dev-mode progression with living-document maintenance required."
+      "software_lead_disposition": "Software Lead blocks full staged implementation/test entry for this artifact until required actions are resolved. A dev-mode exploratory PR may remain open, but release progression is blocked."
     },
     {
       "id": "REV-16-security-review-report-01",
@@ -1047,22 +1047,22 @@
       "artifact_title": "16 Security Review Report",
       "reviewer_role": "security_review_agent",
       "lens": "security and supply-chain risk",
-      "verdict": "approved_with_conditions",
+      "verdict": "changes_required",
       "comments": [
         {
-          "severity": "minor",
-          "blocking": false,
-          "comment": "security_review_agent confirms prior blocking review themes have an explicit remediation closure in this artifact.",
-          "required_action": "Maintain this closure section as implementation and evidence evolve."
+          "severity": "major",
+          "blocking": true,
+          "comment": "security_review_agent found missing review evidence markers: Security Scope, Residual Risk.",
+          "required_action": "Add dependency/secrets scan evidence, CLI/input review, BLE threat review, malformed payload handling, and risk acceptance path."
         },
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "Review lens `security and supply-chain risk` confirms this document is cleared for the next controlled stage, subject to CI and Software Lead gate enforcement.",
+          "comment": "Lens `security and supply-chain risk` checked this artifact for concrete links to requirements, code modules, tests, issues, and PR evidence.",
           "required_action": "Keep links synchronized when tasks or code move."
         }
       ],
-      "software_lead_disposition": "Software Lead accepts this artifact for dev-mode progression with living-document maintenance required."
+      "software_lead_disposition": "Software Lead blocks full staged implementation/test entry for this artifact until required actions are resolved. A dev-mode exploratory PR may remain open, but release progression is blocked."
     },
     {
       "id": "REV-16-security-review-report-02",
@@ -1070,22 +1070,22 @@
       "artifact_title": "16 Security Review Report",
       "reviewer_role": "qa_verification_agent",
       "lens": "deterministic checks and residual risk",
-      "verdict": "approved_with_conditions",
+      "verdict": "changes_required",
       "comments": [
         {
-          "severity": "minor",
-          "blocking": false,
-          "comment": "qa_verification_agent confirms prior blocking review themes have an explicit remediation closure in this artifact.",
-          "required_action": "Maintain this closure section as implementation and evidence evolve."
+          "severity": "major",
+          "blocking": true,
+          "comment": "qa_verification_agent found missing review evidence markers: Security Scope, Residual Risk.",
+          "required_action": "Add dependency/secrets scan evidence, CLI/input review, BLE threat review, malformed payload handling, and risk acceptance path."
         },
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "Review lens `deterministic checks and residual risk` confirms this document is cleared for the next controlled stage, subject to CI and Software Lead gate enforcement.",
+          "comment": "Lens `deterministic checks and residual risk` checked this artifact for concrete links to requirements, code modules, tests, issues, and PR evidence.",
           "required_action": "Keep links synchronized when tasks or code move."
         }
       ],
-      "software_lead_disposition": "Software Lead accepts this artifact for dev-mode progression with living-document maintenance required."
+      "software_lead_disposition": "Software Lead blocks full staged implementation/test entry for this artifact until required actions are resolved. A dev-mode exploratory PR may remain open, but release progression is blocked."
     },
     {
       "id": "REV-16-security-review-report-03",
@@ -1093,22 +1093,22 @@
       "artifact_title": "16 Security Review Report",
       "reviewer_role": "software_lead_agent",
       "lens": "release blocking posture",
-      "verdict": "approved_with_conditions",
+      "verdict": "changes_required",
       "comments": [
         {
-          "severity": "minor",
-          "blocking": false,
-          "comment": "software_lead_agent confirms prior blocking review themes have an explicit remediation closure in this artifact.",
-          "required_action": "Maintain this closure section as implementation and evidence evolve."
+          "severity": "major",
+          "blocking": true,
+          "comment": "software_lead_agent found missing review evidence markers: Security Scope, Residual Risk.",
+          "required_action": "Add dependency/secrets scan evidence, CLI/input review, BLE threat review, malformed payload handling, and risk acceptance path."
         },
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "Review lens `release blocking posture` confirms this document is cleared for the next controlled stage, subject to CI and Software Lead gate enforcement.",
+          "comment": "Lens `release blocking posture` checked this artifact for concrete links to requirements, code modules, tests, issues, and PR evidence.",
           "required_action": "Keep links synchronized when tasks or code move."
         }
       ],
-      "software_lead_disposition": "Software Lead accepts this artifact for dev-mode progression with living-document maintenance required."
+      "software_lead_disposition": "Software Lead blocks full staged implementation/test entry for this artifact until required actions are resolved. A dev-mode exploratory PR may remain open, but release progression is blocked."
     },
     {
       "id": "REV-17-release-notes-01",
@@ -1116,22 +1116,22 @@
       "artifact_title": "17 Release Notes",
       "reviewer_role": "software_lead_agent",
       "lens": "workflow control and arbitration",
-      "verdict": "approved_with_conditions",
+      "verdict": "changes_required",
       "comments": [
         {
-          "severity": "minor",
-          "blocking": false,
-          "comment": "software_lead_agent confirms prior blocking review themes have an explicit remediation closure in this artifact.",
-          "required_action": "Maintain this closure section as implementation and evidence evolve."
+          "severity": "major",
+          "blocking": true,
+          "comment": "software_lead_agent found missing review evidence markers: Not Included, Known Deferred Scope.",
+          "required_action": "Label this as a dev-mode candidate and list pending gates prominently."
         },
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "Review lens `workflow control and arbitration` confirms this document is cleared for the next controlled stage, subject to CI and Software Lead gate enforcement.",
+          "comment": "Lens `workflow control and arbitration` checked this artifact for concrete links to requirements, code modules, tests, issues, and PR evidence.",
           "required_action": "Keep links synchronized when tasks or code move."
         }
       ],
-      "software_lead_disposition": "Software Lead accepts this artifact for dev-mode progression with living-document maintenance required."
+      "software_lead_disposition": "Software Lead blocks full staged implementation/test entry for this artifact until required actions are resolved. A dev-mode exploratory PR may remain open, but release progression is blocked."
     },
     {
       "id": "REV-17-release-notes-02",
@@ -1139,22 +1139,22 @@
       "artifact_title": "17 Release Notes",
       "reviewer_role": "product_requirements_agent",
       "lens": "stakeholder usefulness",
-      "verdict": "approved_with_conditions",
+      "verdict": "changes_required",
       "comments": [
         {
-          "severity": "minor",
-          "blocking": false,
-          "comment": "product_requirements_agent confirms prior blocking review themes have an explicit remediation closure in this artifact.",
-          "required_action": "Maintain this closure section as implementation and evidence evolve."
+          "severity": "major",
+          "blocking": true,
+          "comment": "product_requirements_agent found missing review evidence markers: Not Included, Known Deferred Scope.",
+          "required_action": "Label this as a dev-mode candidate and list pending gates prominently."
         },
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "Review lens `stakeholder usefulness` confirms this document is cleared for the next controlled stage, subject to CI and Software Lead gate enforcement.",
+          "comment": "Lens `stakeholder usefulness` checked this artifact for concrete links to requirements, code modules, tests, issues, and PR evidence.",
           "required_action": "Keep links synchronized when tasks or code move."
         }
       ],
-      "software_lead_disposition": "Software Lead accepts this artifact for dev-mode progression with living-document maintenance required."
+      "software_lead_disposition": "Software Lead blocks full staged implementation/test entry for this artifact until required actions are resolved. A dev-mode exploratory PR may remain open, but release progression is blocked."
     },
     {
       "id": "REV-17-release-notes-03",
@@ -1162,22 +1162,22 @@
       "artifact_title": "17 Release Notes",
       "reviewer_role": "release_quality_agent",
       "lens": "release readiness and auditability",
-      "verdict": "approved_with_conditions",
+      "verdict": "changes_required",
       "comments": [
         {
-          "severity": "minor",
-          "blocking": false,
-          "comment": "release_quality_agent confirms prior blocking review themes have an explicit remediation closure in this artifact.",
-          "required_action": "Maintain this closure section as implementation and evidence evolve."
+          "severity": "major",
+          "blocking": true,
+          "comment": "release_quality_agent found missing review evidence markers: Not Included, Known Deferred Scope.",
+          "required_action": "Label this as a dev-mode candidate and list pending gates prominently."
         },
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "Review lens `release readiness and auditability` confirms this document is cleared for the next controlled stage, subject to CI and Software Lead gate enforcement.",
+          "comment": "Lens `release readiness and auditability` checked this artifact for concrete links to requirements, code modules, tests, issues, and PR evidence.",
           "required_action": "Keep links synchronized when tasks or code move."
         }
       ],
-      "software_lead_disposition": "Software Lead accepts this artifact for dev-mode progression with living-document maintenance required."
+      "software_lead_disposition": "Software Lead blocks full staged implementation/test entry for this artifact until required actions are resolved. A dev-mode exploratory PR may remain open, but release progression is blocked."
     },
     {
       "id": "REV-documentation-quality-audit-01",
@@ -1190,13 +1190,13 @@
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "software_lead_agent confirms prior blocking review themes have an explicit remediation closure in this artifact.",
-          "required_action": "Maintain this closure section as implementation and evidence evolve."
+          "comment": "software_lead_agent accepts because documentation audit records pass/fail checks tied to review readiness.",
+          "required_action": "Maintain these fields as implementation and evidence evolve."
         },
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "Review lens `workflow control and arbitration` confirms this document is cleared for the next controlled stage, subject to CI and Software Lead gate enforcement.",
+          "comment": "Lens `workflow control and arbitration` checked this artifact for concrete links to requirements, code modules, tests, issues, and PR evidence.",
           "required_action": "Keep links synchronized when tasks or code move."
         }
       ],
@@ -1213,13 +1213,13 @@
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "product_requirements_agent confirms prior blocking review themes have an explicit remediation closure in this artifact.",
-          "required_action": "Maintain this closure section as implementation and evidence evolve."
+          "comment": "product_requirements_agent accepts because documentation audit records pass/fail checks tied to review readiness.",
+          "required_action": "Maintain these fields as implementation and evidence evolve."
         },
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "Review lens `stakeholder usefulness` confirms this document is cleared for the next controlled stage, subject to CI and Software Lead gate enforcement.",
+          "comment": "Lens `stakeholder usefulness` checked this artifact for concrete links to requirements, code modules, tests, issues, and PR evidence.",
           "required_action": "Keep links synchronized when tasks or code move."
         }
       ],
@@ -1236,13 +1236,13 @@
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "release_quality_agent confirms prior blocking review themes have an explicit remediation closure in this artifact.",
-          "required_action": "Maintain this closure section as implementation and evidence evolve."
+          "comment": "release_quality_agent accepts because documentation audit records pass/fail checks tied to review readiness.",
+          "required_action": "Maintain these fields as implementation and evidence evolve."
         },
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "Review lens `release readiness and auditability` confirms this document is cleared for the next controlled stage, subject to CI and Software Lead gate enforcement.",
+          "comment": "Lens `release readiness and auditability` checked this artifact for concrete links to requirements, code modules, tests, issues, and PR evidence.",
           "required_action": "Keep links synchronized when tasks or code move."
         }
       ],
@@ -1259,13 +1259,13 @@
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "software_lead_agent confirms prior blocking review themes have an explicit remediation closure in this artifact.",
-          "required_action": "Maintain this closure section as implementation and evidence evolve."
+          "comment": "software_lead_agent accepts because issue sequencing names dependencies and exit gates.",
+          "required_action": "Maintain these fields as implementation and evidence evolve."
         },
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "Review lens `workflow control and arbitration` confirms this document is cleared for the next controlled stage, subject to CI and Software Lead gate enforcement.",
+          "comment": "Lens `workflow control and arbitration` checked this artifact for concrete links to requirements, code modules, tests, issues, and PR evidence.",
           "required_action": "Keep links synchronized when tasks or code move."
         }
       ],
@@ -1282,13 +1282,13 @@
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "product_requirements_agent confirms prior blocking review themes have an explicit remediation closure in this artifact.",
-          "required_action": "Maintain this closure section as implementation and evidence evolve."
+          "comment": "product_requirements_agent accepts because issue sequencing names dependencies and exit gates.",
+          "required_action": "Maintain these fields as implementation and evidence evolve."
         },
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "Review lens `stakeholder usefulness` confirms this document is cleared for the next controlled stage, subject to CI and Software Lead gate enforcement.",
+          "comment": "Lens `stakeholder usefulness` checked this artifact for concrete links to requirements, code modules, tests, issues, and PR evidence.",
           "required_action": "Keep links synchronized when tasks or code move."
         }
       ],
@@ -1305,13 +1305,13 @@
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "release_quality_agent confirms prior blocking review themes have an explicit remediation closure in this artifact.",
-          "required_action": "Maintain this closure section as implementation and evidence evolve."
+          "comment": "release_quality_agent accepts because issue sequencing names dependencies and exit gates.",
+          "required_action": "Maintain these fields as implementation and evidence evolve."
         },
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "Review lens `release readiness and auditability` confirms this document is cleared for the next controlled stage, subject to CI and Software Lead gate enforcement.",
+          "comment": "Lens `release readiness and auditability` checked this artifact for concrete links to requirements, code modules, tests, issues, and PR evidence.",
           "required_action": "Keep links synchronized when tasks or code move."
         }
       ],
@@ -1328,13 +1328,13 @@
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "security_review_agent confirms prior blocking review themes have an explicit remediation closure in this artifact.",
-          "required_action": "Maintain this closure section as implementation and evidence evolve."
+          "comment": "security_review_agent accepts because risk register names risks, mitigations, and open disposition.",
+          "required_action": "Maintain these fields as implementation and evidence evolve."
         },
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "Review lens `security and supply-chain risk` confirms this document is cleared for the next controlled stage, subject to CI and Software Lead gate enforcement.",
+          "comment": "Lens `security and supply-chain risk` checked this artifact for concrete links to requirements, code modules, tests, issues, and PR evidence.",
           "required_action": "Keep links synchronized when tasks or code move."
         }
       ],
@@ -1351,13 +1351,13 @@
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "qa_verification_agent confirms prior blocking review themes have an explicit remediation closure in this artifact.",
-          "required_action": "Maintain this closure section as implementation and evidence evolve."
+          "comment": "qa_verification_agent accepts because risk register names risks, mitigations, and open disposition.",
+          "required_action": "Maintain these fields as implementation and evidence evolve."
         },
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "Review lens `deterministic checks and residual risk` confirms this document is cleared for the next controlled stage, subject to CI and Software Lead gate enforcement.",
+          "comment": "Lens `deterministic checks and residual risk` checked this artifact for concrete links to requirements, code modules, tests, issues, and PR evidence.",
           "required_action": "Keep links synchronized when tasks or code move."
         }
       ],
@@ -1374,13 +1374,13 @@
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "software_lead_agent confirms prior blocking review themes have an explicit remediation closure in this artifact.",
-          "required_action": "Maintain this closure section as implementation and evidence evolve."
+          "comment": "software_lead_agent accepts because risk register names risks, mitigations, and open disposition.",
+          "required_action": "Maintain these fields as implementation and evidence evolve."
         },
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "Review lens `release blocking posture` confirms this document is cleared for the next controlled stage, subject to CI and Software Lead gate enforcement.",
+          "comment": "Lens `release blocking posture` checked this artifact for concrete links to requirements, code modules, tests, issues, and PR evidence.",
           "required_action": "Keep links synchronized when tasks or code move."
         }
       ],
@@ -1397,13 +1397,13 @@
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "software_lead_agent confirms prior blocking review themes have an explicit remediation closure in this artifact.",
-          "required_action": "Maintain this closure section as implementation and evidence evolve."
+          "comment": "software_lead_agent accepts because software lead plan defines lead actions and exit criteria.",
+          "required_action": "Maintain these fields as implementation and evidence evolve."
         },
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "Review lens `workflow control and arbitration` confirms this document is cleared for the next controlled stage, subject to CI and Software Lead gate enforcement.",
+          "comment": "Lens `workflow control and arbitration` checked this artifact for concrete links to requirements, code modules, tests, issues, and PR evidence.",
           "required_action": "Keep links synchronized when tasks or code move."
         }
       ],
@@ -1420,13 +1420,13 @@
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "product_requirements_agent confirms prior blocking review themes have an explicit remediation closure in this artifact.",
-          "required_action": "Maintain this closure section as implementation and evidence evolve."
+          "comment": "product_requirements_agent accepts because software lead plan defines lead actions and exit criteria.",
+          "required_action": "Maintain these fields as implementation and evidence evolve."
         },
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "Review lens `stakeholder usefulness` confirms this document is cleared for the next controlled stage, subject to CI and Software Lead gate enforcement.",
+          "comment": "Lens `stakeholder usefulness` checked this artifact for concrete links to requirements, code modules, tests, issues, and PR evidence.",
           "required_action": "Keep links synchronized when tasks or code move."
         }
       ],
@@ -1443,13 +1443,13 @@
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "release_quality_agent confirms prior blocking review themes have an explicit remediation closure in this artifact.",
-          "required_action": "Maintain this closure section as implementation and evidence evolve."
+          "comment": "release_quality_agent accepts because software lead plan defines lead actions and exit criteria.",
+          "required_action": "Maintain these fields as implementation and evidence evolve."
         },
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "Review lens `release readiness and auditability` confirms this document is cleared for the next controlled stage, subject to CI and Software Lead gate enforcement.",
+          "comment": "Lens `release readiness and auditability` checked this artifact for concrete links to requirements, code modules, tests, issues, and PR evidence.",
           "required_action": "Keep links synchronized when tasks or code move."
         }
       ],
@@ -1466,13 +1466,13 @@
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "software_lead_agent confirms prior blocking review themes have an explicit remediation closure in this artifact.",
-          "required_action": "Maintain this closure section as implementation and evidence evolve."
+          "comment": "software_lead_agent found no artifact-specific rule for `staged-development-test-plan.md`; review is limited to living-document maintenance.",
+          "required_action": "Add an artifact-specific review rule before this artifact can act as a release gate."
         },
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "Review lens `workflow control and arbitration` confirms this document is cleared for the next controlled stage, subject to CI and Software Lead gate enforcement.",
+          "comment": "Lens `workflow control and arbitration` checked this artifact for concrete links to requirements, code modules, tests, issues, and PR evidence.",
           "required_action": "Keep links synchronized when tasks or code move."
         }
       ],
@@ -1489,13 +1489,13 @@
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "product_requirements_agent confirms prior blocking review themes have an explicit remediation closure in this artifact.",
-          "required_action": "Maintain this closure section as implementation and evidence evolve."
+          "comment": "product_requirements_agent found no artifact-specific rule for `staged-development-test-plan.md`; review is limited to living-document maintenance.",
+          "required_action": "Add an artifact-specific review rule before this artifact can act as a release gate."
         },
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "Review lens `stakeholder usefulness` confirms this document is cleared for the next controlled stage, subject to CI and Software Lead gate enforcement.",
+          "comment": "Lens `stakeholder usefulness` checked this artifact for concrete links to requirements, code modules, tests, issues, and PR evidence.",
           "required_action": "Keep links synchronized when tasks or code move."
         }
       ],
@@ -1512,13 +1512,13 @@
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "release_quality_agent confirms prior blocking review themes have an explicit remediation closure in this artifact.",
-          "required_action": "Maintain this closure section as implementation and evidence evolve."
+          "comment": "release_quality_agent found no artifact-specific rule for `staged-development-test-plan.md`; review is limited to living-document maintenance.",
+          "required_action": "Add an artifact-specific review rule before this artifact can act as a release gate."
         },
         {
           "severity": "minor",
           "blocking": false,
-          "comment": "Review lens `release readiness and auditability` confirms this document is cleared for the next controlled stage, subject to CI and Software Lead gate enforcement.",
+          "comment": "Lens `release readiness and auditability` checked this artifact for concrete links to requirements, code modules, tests, issues, and PR evidence.",
           "required_action": "Keep links synchronized when tasks or code move."
         }
       ],

@@ -8,14 +8,14 @@ Verdict: approved_with_conditions
 
 - Severity: minor
 - Blocking: no
-- Comment: security_review_agent confirms prior blocking review themes have an explicit remediation closure in this artifact.
-- Required action: Maintain this closure section as implementation and evidence evolve.
+- Comment: security_review_agent accepts because risk register names risks, mitigations, and open disposition.
+- Required action: Maintain these fields as implementation and evidence evolve.
 
 ### Comment 2
 
 - Severity: minor
 - Blocking: no
-- Comment: Review lens `security and supply-chain risk` confirms this document is cleared for the next controlled stage, subject to CI and Software Lead gate enforcement.
+- Comment: Lens `security and supply-chain risk` checked this artifact for concrete links to requirements, code modules, tests, issues, and PR evidence.
 - Required action: Keep links synchronized when tasks or code move.
 
 Software Lead disposition:
@@ -30,14 +30,14 @@ Verdict: approved_with_conditions
 
 - Severity: minor
 - Blocking: no
-- Comment: qa_verification_agent confirms prior blocking review themes have an explicit remediation closure in this artifact.
-- Required action: Maintain this closure section as implementation and evidence evolve.
+- Comment: qa_verification_agent accepts because risk register names risks, mitigations, and open disposition.
+- Required action: Maintain these fields as implementation and evidence evolve.
 
 ### Comment 2
 
 - Severity: minor
 - Blocking: no
-- Comment: Review lens `deterministic checks and residual risk` confirms this document is cleared for the next controlled stage, subject to CI and Software Lead gate enforcement.
+- Comment: Lens `deterministic checks and residual risk` checked this artifact for concrete links to requirements, code modules, tests, issues, and PR evidence.
 - Required action: Keep links synchronized when tasks or code move.
 
 Software Lead disposition:
@@ -52,14 +52,14 @@ Verdict: approved_with_conditions
 
 - Severity: minor
 - Blocking: no
-- Comment: software_lead_agent confirms prior blocking review themes have an explicit remediation closure in this artifact.
-- Required action: Maintain this closure section as implementation and evidence evolve.
+- Comment: software_lead_agent accepts because risk register names risks, mitigations, and open disposition.
+- Required action: Maintain these fields as implementation and evidence evolve.
 
 ### Comment 2
 
 - Severity: minor
 - Blocking: no
-- Comment: Review lens `release blocking posture` confirms this document is cleared for the next controlled stage, subject to CI and Software Lead gate enforcement.
+- Comment: Lens `release blocking posture` checked this artifact for concrete links to requirements, code modules, tests, issues, and PR evidence.
 - Required action: Keep links synchronized when tasks or code move.
 
 Software Lead disposition:

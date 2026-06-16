@@ -8,14 +8,14 @@ Verdict: approved_with_conditions
 
 - Severity: minor
 - Blocking: no
-- Comment: product_requirements_agent confirms prior blocking review themes have an explicit remediation closure in this artifact.
-- Required action: Maintain this closure section as implementation and evidence evolve.
+- Comment: product_requirements_agent accepts because software requirements name observable behavior and verification evidence.
+- Required action: Maintain these fields as implementation and evidence evolve.
 
 ### Comment 2
 
 - Severity: minor
 - Blocking: no
-- Comment: Review lens `user intent and acceptance clarity` confirms this document is cleared for the next controlled stage, subject to CI and Software Lead gate enforcement.
+- Comment: Lens `user intent and acceptance clarity` checked this artifact for concrete links to requirements, code modules, tests, issues, and PR evidence.
 - Required action: Keep links synchronized when tasks or code move.
 
 Software Lead disposition:
@@ -30,14 +30,14 @@ Verdict: approved_with_conditions
 
 - Severity: minor
 - Blocking: no
-- Comment: systems_architecture_agent confirms prior blocking review themes have an explicit remediation closure in this artifact.
-- Required action: Maintain this closure section as implementation and evidence evolve.
+- Comment: systems_architecture_agent accepts because software requirements name observable behavior and verification evidence.
+- Required action: Maintain these fields as implementation and evidence evolve.
 
 ### Comment 2
 
 - Severity: minor
 - Blocking: no
-- Comment: Review lens `traceability into design and implementation` confirms this document is cleared for the next controlled stage, subject to CI and Software Lead gate enforcement.
+- Comment: Lens `traceability into design and implementation` checked this artifact for concrete links to requirements, code modules, tests, issues, and PR evidence.
 - Required action: Keep links synchronized when tasks or code move.
 
 Software Lead disposition:
@@ -52,14 +52,14 @@ Verdict: approved_with_conditions
 
 - Severity: minor
 - Blocking: no
-- Comment: qa_validation_agent confirms prior blocking review themes have an explicit remediation closure in this artifact.
-- Required action: Maintain this closure section as implementation and evidence evolve.
+- Comment: qa_validation_agent accepts because software requirements name observable behavior and verification evidence.
+- Required action: Maintain these fields as implementation and evidence evolve.
 
 ### Comment 2
 
 - Severity: minor
 - Blocking: no
-- Comment: Review lens `objective validation criteria` confirms this document is cleared for the next controlled stage, subject to CI and Software Lead gate enforcement.
+- Comment: Lens `objective validation criteria` checked this artifact for concrete links to requirements, code modules, tests, issues, and PR evidence.
 - Required action: Keep links synchronized when tasks or code move.
 
 Software Lead disposition:

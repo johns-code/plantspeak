@@ -2,66 +2,66 @@
 
 ## security_review_agent - security and supply-chain risk
 
-Verdict: approved_with_conditions
+Verdict: changes_required
 
 ### Comment 1
 
-- Severity: minor
-- Blocking: no
-- Comment: security_review_agent confirms prior blocking review themes have an explicit remediation closure in this artifact.
-- Required action: Maintain this closure section as implementation and evidence evolve.
+- Severity: major
+- Blocking: yes
+- Comment: security_review_agent found missing review evidence markers: Reviewed Areas.
+- Required action: Complete code review against CLI, ICD, pins, devices, requirements, and tests with findings tied to requirement IDs.
 
 ### Comment 2
 
 - Severity: minor
 - Blocking: no
-- Comment: Review lens `security and supply-chain risk` confirms this document is cleared for the next controlled stage, subject to CI and Software Lead gate enforcement.
+- Comment: Lens `security and supply-chain risk` checked this artifact for concrete links to requirements, code modules, tests, issues, and PR evidence.
 - Required action: Keep links synchronized when tasks or code move.
 
 Software Lead disposition:
 
-Software Lead accepts this artifact for dev-mode progression with living-document maintenance required.
+Software Lead blocks full staged implementation/test entry for this artifact until required actions are resolved. A dev-mode exploratory PR may remain open, but release progression is blocked.
 
 ## qa_verification_agent - deterministic checks and residual risk
 
-Verdict: approved_with_conditions
+Verdict: changes_required
 
 ### Comment 1
 
-- Severity: minor
-- Blocking: no
-- Comment: qa_verification_agent confirms prior blocking review themes have an explicit remediation closure in this artifact.
-- Required action: Maintain this closure section as implementation and evidence evolve.
+- Severity: major
+- Blocking: yes
+- Comment: qa_verification_agent found missing review evidence markers: Reviewed Areas.
+- Required action: Complete code review against CLI, ICD, pins, devices, requirements, and tests with findings tied to requirement IDs.
 
 ### Comment 2
 
 - Severity: minor
 - Blocking: no
-- Comment: Review lens `deterministic checks and residual risk` confirms this document is cleared for the next controlled stage, subject to CI and Software Lead gate enforcement.
+- Comment: Lens `deterministic checks and residual risk` checked this artifact for concrete links to requirements, code modules, tests, issues, and PR evidence.
 - Required action: Keep links synchronized when tasks or code move.
 
 Software Lead disposition:
 
-Software Lead accepts this artifact for dev-mode progression with living-document maintenance required.
+Software Lead blocks full staged implementation/test entry for this artifact until required actions are resolved. A dev-mode exploratory PR may remain open, but release progression is blocked.
 
 ## software_lead_agent - release blocking posture
 
-Verdict: approved_with_conditions
+Verdict: changes_required
 
 ### Comment 1
 
-- Severity: minor
-- Blocking: no
-- Comment: software_lead_agent confirms prior blocking review themes have an explicit remediation closure in this artifact.
-- Required action: Maintain this closure section as implementation and evidence evolve.
+- Severity: major
+- Blocking: yes
+- Comment: software_lead_agent found missing review evidence markers: Reviewed Areas.
+- Required action: Complete code review against CLI, ICD, pins, devices, requirements, and tests with findings tied to requirement IDs.
 
 ### Comment 2
 
 - Severity: minor
 - Blocking: no
-- Comment: Review lens `release blocking posture` confirms this document is cleared for the next controlled stage, subject to CI and Software Lead gate enforcement.
+- Comment: Lens `release blocking posture` checked this artifact for concrete links to requirements, code modules, tests, issues, and PR evidence.
 - Required action: Keep links synchronized when tasks or code move.
 
 Software Lead disposition:
 
-Software Lead accepts this artifact for dev-mode progression with living-document maintenance required.
+Software Lead blocks full staged implementation/test entry for this artifact until required actions are resolved. A dev-mode exploratory PR may remain open, but release progression is blocked.

@@ -28,6 +28,7 @@ PASS
 - External I2C sensor behavior uses canned data in dev mode.
 - S2 dev-mode system evidence generation creates ST-001 through ST-004 artifacts from the harness.
 - S3 hardware adapter interfaces are verified with mocked I2C success and explicit fault paths.
+- S4 mocked transport and ICD dispatch are verified for valid commands, deferred commands, malformed frames, unsupported commands, oversized payloads, and timeouts.
 
 ## S1 Verification Evidence
 
@@ -58,6 +59,15 @@ PASS
 | `plantspeak/adapters/i2c.py` | Defines transaction and explicit I2C fault contract. |
 | `plantspeak/adapters/devices.py` | Defines ADS1115, PCA9846, LP5816, MLX90632, HDC2010, and MXC4005 adapter contracts. |
 | `plantspeak/adapters/measurement.py` | Assembles target-style measurement snapshot from adapter contracts. |
+
+## S4 Verification Evidence
+
+| Evidence | Purpose |
+| --- | --- |
+| `docs/test-evidence/S4-pytest.txt` | Local pytest output for 34 tests including mocked transport and malformed payload checks. |
+| `tests/test_transport.py` | Verifies ICD frame encode/decode, dispatch, deferred known commands, oversized payloads, unsupported commands, and timeout handling. |
+| `tests/test_security_transport.py` | Verifies malformed payloads do not dispatch and unsupported commands do not produce success side effects. |
+| `plantspeak/transport.py` | Defines mocked transport frame, response, error codes, and dispatch contract. |
 
 ## Deferred Verification
 

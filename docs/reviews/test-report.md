@@ -19,18 +19,20 @@ rootdir: C:\Users\johns\OneDrive\Documents\Software Team\runs\plantspeak-detaile
 configfile: pyproject.toml
 testpaths: tests
 plugins: anyio-4.12.1, langsmith-0.7.30
-collected 24 items
+collected 34 items
 
 tests\test_adapters.py .......                                           [ 29%]
-tests\test_cli.py ....                                                   [ 45%]
-tests\test_contracts.py ..                                               [ 54%]
-tests\test_devices.py ....                                               [ 70%]
-tests\test_icd.py ..                                                     [ 79%]
-tests\test_requirements.py .                                             [ 83%]
-tests\test_system_evidence.py ..                                         [ 91%]
-tests\test_traceability.py ..                                            [100%]
+tests\test_cli.py ....                                                   [ 32%]
+tests\test_contracts.py ..                                               [ 38%]
+tests\test_devices.py ....                                               [ 50%]
+tests\test_icd.py ..                                                     [ 55%]
+tests\test_requirements.py .                                             [ 58%]
+tests\test_security_transport.py ..                                      [ 64%]
+tests\test_system_evidence.py ..                                         [ 70%]
+tests\test_traceability.py ..                                            [ 76%]
+tests\test_transport.py ........                                         [100%]
 
-============================= 24 passed in 0.12s ==============================
+============================= 34 passed in 0.15s ==============================
 ```
 
 ## Requirement Coverage
@@ -42,3 +44,5 @@ tests\test_traceability.py ..                                            [100%]
 - S2 evidence: `docs/test-evidence/S2-pytest.txt`, `docs/test-evidence/s2-devmode/manifest.json`, `docs/test-evidence/s2-devmode/ST-001.json`, `docs/test-evidence/s2-devmode/ST-002.txt`, `docs/test-evidence/s2-devmode/ST-003.json`, `docs/test-evidence/s2-devmode/ST-004.json`
 - S3 evidence: `docs/test-evidence/S3-pytest.txt`
 - S3 covered behavior: mocked I2C bus success, explicit NACK/timeout/missing-device/invalid-data faults, mux channel validation, LED current validation, and target measurement service snapshot assembly.
+- S4 evidence: `docs/test-evidence/S4-pytest.txt`
+- S4 covered behavior: ICD frame encode/decode, describe-ICD dispatch, deferred known commands, malformed payload rejection, oversized payload rejection, unsupported command rejection, timeout handling, and no-dispatch behavior for malformed frames.

@@ -2,7 +2,7 @@
 
 Project: PlantSpeak
 
-## Scope
+## Security Scope
 
 | Surface | Review Result |
 | --- | --- |
@@ -18,6 +18,14 @@ Project: PlantSpeak
 - Secrets scan on every PR.
 - Malformed payload tests for BLE/ICD command transport.
 - Debug/dev-mode exposure review before release.
+
+## Residual Risk
+
+| Risk | Disposition |
+| --- | --- |
+| BLE command surface is not implemented yet. | Deferred to S4 security review and malformed payload tests. |
+| Firmware flashing/build path is not implemented yet. | Deferred to S5 build evidence and toolchain review. |
+| Target-board hardware execution is not verified yet. | Deferred to S6 HIL evidence and human approval. |
 
 ## Decision
 

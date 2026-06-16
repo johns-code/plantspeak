@@ -2,9 +2,17 @@
 
 Project: PlantSpeak
 
+## Validation Status
+
+Conditionally valid for the first PC/dev-mode acceptance slice only.
+
 ## Validation Position
 
 The current PR is valid for the first dev-mode vertical slice if the user accepts that target hardware evidence is deferred. It is not yet a final product release.
+
+## Human Approval
+
+Human approval is required before final acceptance, release tagging, or any claim that target-board behavior has been validated.
 
 ## User Need Coverage
 
@@ -12,6 +20,13 @@ The current PR is valid for the first dev-mode vertical slice if the user accept
 - Dev-board limitations are explicit rather than hidden.
 - PC-side testing can run without unavailable external I2C hardware.
 - Human approval remains required before final acceptance and release.
+
+## Deferred Validation
+
+- Target-board I2C behavior.
+- BLE transport behavior.
+- Firmware build/flash behavior.
+- Push-button wake-from-sleep behavior.
 
 ## Review Remediation Closure
 

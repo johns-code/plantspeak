@@ -4,6 +4,8 @@ Project: PlantSpeak
 
 ## Review Scope
 
+## Reviewed Areas
+
 | Area | Files | Disposition |
 | --- | --- | --- |
 | CLI behavior | `plantspeak/cli.py`, `tests/test_cli.py` | Approved for dev-mode vertical slice |

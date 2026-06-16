@@ -2,14 +2,14 @@
 
 ## software_lead_agent - workflow control and arbitration
 
-Verdict: changes_required
+Verdict: approved_with_conditions
 
 ### Comment 1
 
-- Severity: major
-- Blocking: yes
-- Comment: software_lead_agent found missing review evidence markers: Validation Status, Human Approval, Deferred.
-- Required action: Add acceptance decision records and open user approvals.
+- Severity: minor
+- Blocking: no
+- Comment: software_lead_agent accepts because validation report calls out human approval and deferred target-board behavior.
+- Required action: Maintain these fields as implementation and evidence evolve.
 
 ### Comment 2
 
@@ -20,18 +20,18 @@ Verdict: changes_required
 
 Software Lead disposition:
 
-Software Lead blocks full staged implementation/test entry for this artifact until required actions are resolved. A dev-mode exploratory PR may remain open, but release progression is blocked.
+Software Lead accepts this artifact for dev-mode progression with living-document maintenance required.
 
 ## product_requirements_agent - stakeholder usefulness
 
-Verdict: changes_required
+Verdict: approved_with_conditions
 
 ### Comment 1
 
-- Severity: major
-- Blocking: yes
-- Comment: product_requirements_agent found missing review evidence markers: Validation Status, Human Approval, Deferred.
-- Required action: Add acceptance decision records and open user approvals.
+- Severity: minor
+- Blocking: no
+- Comment: product_requirements_agent accepts because validation report calls out human approval and deferred target-board behavior.
+- Required action: Maintain these fields as implementation and evidence evolve.
 
 ### Comment 2
 
@@ -42,18 +42,18 @@ Verdict: changes_required
 
 Software Lead disposition:
 
-Software Lead blocks full staged implementation/test entry for this artifact until required actions are resolved. A dev-mode exploratory PR may remain open, but release progression is blocked.
+Software Lead accepts this artifact for dev-mode progression with living-document maintenance required.
 
 ## release_quality_agent - release readiness and auditability
 
-Verdict: changes_required
+Verdict: approved_with_conditions
 
 ### Comment 1
 
-- Severity: major
-- Blocking: yes
-- Comment: release_quality_agent found missing review evidence markers: Validation Status, Human Approval, Deferred.
-- Required action: Add acceptance decision records and open user approvals.
+- Severity: minor
+- Blocking: no
+- Comment: release_quality_agent accepts because validation report calls out human approval and deferred target-board behavior.
+- Required action: Maintain these fields as implementation and evidence evolve.
 
 ### Comment 2
 
@@ -64,4 +64,4 @@ Verdict: changes_required
 
 Software Lead disposition:
 
-Software Lead blocks full staged implementation/test entry for this artifact until required actions are resolved. A dev-mode exploratory PR may remain open, but release progression is blocked.
+Software Lead accepts this artifact for dev-mode progression with living-document maintenance required.

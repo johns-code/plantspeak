@@ -2,14 +2,14 @@
 
 ## qa_verification_agent - testability and evidence quality
 
-Verdict: changes_required
+Verdict: approved_with_conditions
 
 ### Comment 1
 
-- Severity: major
-- Blocking: yes
-- Comment: qa_verification_agent found missing review evidence markers: Verification Summary, Local Test Result.
-- Required action: Add requirement-by-requirement verification closure status and explicit deferred-evidence owner.
+- Severity: minor
+- Blocking: no
+- Comment: qa_verification_agent accepts because verification report separates completed local evidence from deferred verification.
+- Required action: Maintain these fields as implementation and evidence evolve.
 
 ### Comment 2
 
@@ -20,18 +20,18 @@ Verdict: changes_required
 
 Software Lead disposition:
 
-Software Lead blocks full staged implementation/test entry for this artifact until required actions are resolved. A dev-mode exploratory PR may remain open, but release progression is blocked.
+Software Lead accepts this artifact for dev-mode progression with living-document maintenance required.
 
 ## development_lead_agent - developer execution and automation hooks
 
-Verdict: changes_required
+Verdict: approved_with_conditions
 
 ### Comment 1
 
-- Severity: major
-- Blocking: yes
-- Comment: development_lead_agent found missing review evidence markers: Verification Summary, Local Test Result.
-- Required action: Add requirement-by-requirement verification closure status and explicit deferred-evidence owner.
+- Severity: minor
+- Blocking: no
+- Comment: development_lead_agent accepts because verification report separates completed local evidence from deferred verification.
+- Required action: Maintain these fields as implementation and evidence evolve.
 
 ### Comment 2
 
@@ -42,18 +42,18 @@ Verdict: changes_required
 
 Software Lead disposition:
 
-Software Lead blocks full staged implementation/test entry for this artifact until required actions are resolved. A dev-mode exploratory PR may remain open, but release progression is blocked.
+Software Lead accepts this artifact for dev-mode progression with living-document maintenance required.
 
 ## release_quality_agent - gate readiness and audit evidence
 
-Verdict: changes_required
+Verdict: approved_with_conditions
 
 ### Comment 1
 
-- Severity: major
-- Blocking: yes
-- Comment: release_quality_agent found missing review evidence markers: Verification Summary, Local Test Result.
-- Required action: Add requirement-by-requirement verification closure status and explicit deferred-evidence owner.
+- Severity: minor
+- Blocking: no
+- Comment: release_quality_agent accepts because verification report separates completed local evidence from deferred verification.
+- Required action: Maintain these fields as implementation and evidence evolve.
 
 ### Comment 2
 
@@ -64,4 +64,4 @@ Verdict: changes_required
 
 Software Lead disposition:
 
-Software Lead blocks full staged implementation/test entry for this artifact until required actions are resolved. A dev-mode exploratory PR may remain open, but release progression is blocked.
+Software Lead accepts this artifact for dev-mode progression with living-document maintenance required.

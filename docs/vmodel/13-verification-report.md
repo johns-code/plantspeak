@@ -2,6 +2,14 @@
 
 Project: PlantSpeak
 
+## Verification Summary
+
+The current verification position is limited to the PC/dev-mode vertical slice. Automated tests verify packaged requirements, trace output, ICD capability shape, pin/profile records, canned measurement output, and explicit deferred hardware status.
+
+## Local Test Result
+
+PASS
+
 ## Automated Gate Status
 
 | Gate | Status |

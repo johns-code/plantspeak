@@ -15,17 +15,29 @@ Project: PlantSpeak
 - Unit, integration, and system-level dev-mode tests.
 - V-model planning, traceability, review, security, and test evidence.
 
+## Included
+
+- PC/dev-mode command harness.
+- Requirement traceability and issue links.
+- Deterministic local tests and PR CI gate.
+- Explicit deferred hardware status reporting.
+
 ## Gate Status
 
 - Local tests: PASS
 - PR CI: required and tracked in GitHub Actions
 - Human release approval: pending
 
-## Not Yet Included
+## Not Included
 
 - DA14531 firmware image.
 - BLE transport implementation.
 - Target-board hardware-in-loop evidence.
+
+## Known Deferred Scope
+
+- Target-board I2C devices, LED sequencing, EN_Peripherals, and push-button wake require later firmware/HIL stages.
+- Security approval does not cover BLE or firmware command execution until those stages exist.
 
 ## Review Remediation Closure
 

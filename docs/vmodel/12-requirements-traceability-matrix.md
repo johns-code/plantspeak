@@ -2,7 +2,7 @@
 
 Project: PlantSpeak
 
-Generated: 2026-06-16T04:25:33+00:00
+Generated: 2026-06-16T04:39:11+00:00
 
 | User Need | Requirement | Design | Tasks | Tests | Verification | Status |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -11,3 +11,77 @@ Generated: 2026-06-16T04:25:33+00:00
 | UN-003 | SW-003 | DES-003 | TASK-003 | UT-003, ST-003, AT-003 | VER-003 | planned |
 | UN-004 | SW-004 | DES-004 | TASK-004 | UT-004, ST-004, AT-004 | VER-004 | planned |
 | UN-005 | SW-005 | DES-005 | TASK-005 | UT-005, ST-005, AT-005 | VER-005 | planned |
+| UN-006 | SW-006 | DES-006 | TASK-006 | UT-006, ST-006, AT-006 | VER-006 | planned |
+| UN-007 | SW-007 | DES-007 | TASK-007 | UT-007, ST-007, AT-007 | VER-007 | planned |
+| UN-008 | SW-008 | DES-008 | TASK-008 | UT-008, ST-008, AT-008 | VER-008 | planned |
+| UN-009 | SW-009 | DES-009 | TASK-009 | UT-009, ST-009, AT-009 | VER-009 | planned |
+| UN-010 | SW-010 | DES-010 | TASK-010 | UT-010, ST-010, AT-010 | VER-010 | planned |
+| UN-011 | SW-011 | DES-011 | TASK-011 | UT-011, ST-011, AT-011 | VER-011 | planned |
+| UN-012 | SW-012 | DES-012 | TASK-012 | UT-012, ST-012, AT-012 | VER-012 | planned |
+| UN-013 | SW-013 | DES-013 | TASK-013 | UT-013, ST-013, AT-013 | VER-013 | planned |
+| UN-014 | SW-014 | DES-014 | TASK-014 | UT-014, ST-014, AT-014 | VER-014 | planned |
+| UN-015 | SW-015 | DES-015 | TASK-015 | UT-015, ST-015, AT-015 | VER-015 | planned |
+| UN-016 | SW-016 | DES-016 | TASK-016 | UT-016, ST-016, AT-016 | VER-016 | planned |
+| UN-017 | SW-017 | DES-017 | TASK-017 | UT-017, ST-017, AT-017 | VER-017 | planned |
+| UN-018 | SW-018 | DES-018 | TASK-018 | UT-018, ST-018, AT-018 | VER-018 | planned |
+| UN-019 | SW-019 | DES-019 | TASK-019 | UT-019, ST-019, AT-019 | VER-019 | planned |
+| UN-020 | SW-020 | DES-020 | TASK-020 | UT-020, ST-020, AT-020 | VER-020 | planned |
+| UN-021 | SW-021 | DES-021 | TASK-021 | UT-021, ST-021, AT-021 | VER-021 | planned |
+| UN-022 | SW-022 | DES-022 | TASK-022 | UT-022, ST-022, AT-022 | VER-022 | planned |
+| UN-023 | SW-023 | DES-023 | TASK-023 | UT-023, ST-023, AT-023 | VER-023 | planned |
+| UN-024 | SW-024 | DES-024 | TASK-024 | UT-024, ST-024, AT-024 | VER-024 | planned |
+| UN-025 | SW-025 | DES-025 | TASK-025 | UT-025, ST-025, AT-025 | VER-025 | planned |
+| UN-026 | SW-026 | DES-026 | TASK-026 | UT-026, ST-026, AT-026 | VER-026 | planned |
+| UN-027 | SW-027 | DES-027 | TASK-027 | UT-027, ST-027, AT-027 | VER-027 | planned |
+| UN-028 | SW-028 | DES-028 | TASK-028 | UT-028, ST-028, AT-028 | VER-028 | planned |
+| UN-029 | SW-029 | DES-029 | TASK-029 | UT-029, ST-029, AT-029 | VER-029 | planned |
+| UN-030 | SW-030 | DES-030 | TASK-030 | UT-030, ST-030, AT-030 | VER-030 | planned |
+| UN-031 | SW-031 | DES-031 | TASK-031 | UT-031, ST-031, AT-031 | VER-031 | planned |
+| UN-032 | SW-032 | DES-032 | TASK-032 | UT-032, ST-032, AT-032 | VER-032 | planned |
+| UN-033 | SW-033 | DES-033 | TASK-033 | UT-033, ST-033, AT-033 | VER-033 | planned |
+| UN-034 | SW-034 | DES-034 | TASK-034 | UT-034, ST-034, AT-034 | VER-034 | planned |
+| UN-035 | SW-035 | DES-035 | TASK-035 | UT-035, ST-035, AT-035 | VER-035 | planned |
+| UN-036 | SW-036 | DES-036 | TASK-036 | UT-036, ST-036, AT-036 | VER-036 | planned |
+| UN-037 | SW-037 | DES-037 | TASK-037 | UT-037, ST-037, AT-037 | VER-037 | planned |
+| UN-038 | SW-038 | DES-038 | TASK-038 | UT-038, ST-038, AT-038 | VER-038 | planned |
+| UN-039 | SW-039 | DES-039 | TASK-039 | UT-039, ST-039, AT-039 | VER-039 | planned |
+| UN-040 | SW-040 | DES-040 | TASK-040 | UT-040, ST-040, AT-040 | VER-040 | planned |
+| UN-041 | SW-041 | DES-041 | TASK-041 | UT-041, ST-041, AT-041 | VER-041 | planned |
+| UN-042 | SW-042 | DES-042 | TASK-042 | UT-042, ST-042, AT-042 | VER-042 | planned |
+| UN-043 | SW-043 | DES-043 | TASK-043 | UT-043, ST-043, AT-043 | VER-043 | planned |
+| UN-044 | SW-044 | DES-044 | TASK-044 | UT-044, ST-044, AT-044 | VER-044 | planned |
+| UN-045 | SW-045 | DES-045 | TASK-045 | UT-045, ST-045, AT-045 | VER-045 | planned |
+| UN-046 | SW-046 | DES-046 | TASK-046 | UT-046, ST-046, AT-046 | VER-046 | planned |
+| UN-047 | SW-047 | DES-047 | TASK-047 | UT-047, ST-047, AT-047 | VER-047 | planned |
+| UN-048 | SW-048 | DES-048 | TASK-048 | UT-048, ST-048, AT-048 | VER-048 | planned |
+| UN-049 | SW-049 | DES-049 | TASK-049 | UT-049, ST-049, AT-049 | VER-049 | planned |
+| UN-050 | SW-050 | DES-050 | TASK-050 | UT-050, ST-050, AT-050 | VER-050 | planned |
+| UN-051 | SW-051 | DES-051 | TASK-051 | UT-051, ST-051, AT-051 | VER-051 | planned |
+| UN-052 | SW-052 | DES-052 | TASK-052 | UT-052, ST-052, AT-052 | VER-052 | planned |
+| UN-053 | SW-053 | DES-053 | TASK-053 | UT-053, ST-053, AT-053 | VER-053 | planned |
+| UN-054 | SW-054 | DES-054 | TASK-054 | UT-054, ST-054, AT-054 | VER-054 | planned |
+| UN-055 | SW-055 | DES-055 | TASK-055 | UT-055, ST-055, AT-055 | VER-055 | planned |
+| UN-056 | SW-056 | DES-056 | TASK-056 | UT-056, ST-056, AT-056 | VER-056 | planned |
+| UN-057 | SW-057 | DES-057 | TASK-057 | UT-057, ST-057, AT-057 | VER-057 | planned |
+| UN-058 | SW-058 | DES-058 | TASK-058 | UT-058, ST-058, AT-058 | VER-058 | planned |
+| UN-059 | SW-059 | DES-059 | TASK-059 | UT-059, ST-059, AT-059 | VER-059 | planned |
+| UN-060 | SW-060 | DES-060 | TASK-060 | UT-060, ST-060, AT-060 | VER-060 | planned |
+| UN-061 | SW-061 | DES-061 | TASK-061 | UT-061, ST-061, AT-061 | VER-061 | planned |
+| UN-062 | SW-062 | DES-062 | TASK-062 | UT-062, ST-062, AT-062 | VER-062 | planned |
+| UN-063 | SW-063 | DES-063 | TASK-063 | UT-063, ST-063, AT-063 | VER-063 | planned |
+| UN-064 | SW-064 | DES-064 | TASK-064 | UT-064, ST-064, AT-064 | VER-064 | planned |
+| UN-065 | SW-065 | DES-065 | TASK-065 | UT-065, ST-065, AT-065 | VER-065 | planned |
+| UN-066 | SW-066 | DES-066 | TASK-066 | UT-066, ST-066, AT-066 | VER-066 | planned |
+| UN-067 | SW-067 | DES-067 | TASK-067 | UT-067, ST-067, AT-067 | VER-067 | planned |
+| UN-068 | SW-068 | DES-068 | TASK-068 | UT-068, ST-068, AT-068 | VER-068 | planned |
+| UN-069 | SW-069 | DES-069 | TASK-069 | UT-069, ST-069, AT-069 | VER-069 | planned |
+| UN-070 | SW-070 | DES-070 | TASK-070 | UT-070, ST-070, AT-070 | VER-070 | planned |
+| UN-071 | SW-071 | DES-071 | TASK-071 | UT-071, ST-071, AT-071 | VER-071 | planned |
+| UN-072 | SW-072 | DES-072 | TASK-072 | UT-072, ST-072, AT-072 | VER-072 | planned |
+| UN-073 | SW-073 | DES-073 | TASK-073 | UT-073, ST-073, AT-073 | VER-073 | planned |
+| UN-074 | SW-074 | DES-074 | TASK-074 | UT-074, ST-074, AT-074 | VER-074 | planned |
+| UN-075 | SW-075 | DES-075 | TASK-075 | UT-075, ST-075, AT-075 | VER-075 | planned |
+| UN-076 | SW-076 | DES-076 | TASK-076 | UT-076, ST-076, AT-076 | VER-076 | planned |
+| UN-077 | SW-077 | DES-077 | TASK-077 | UT-077, ST-077, AT-077 | VER-077 | planned |
+| UN-078 | SW-078 | DES-078 | TASK-078 | UT-078, ST-078, AT-078 | VER-078 | planned |
+| UN-079 | SW-079 | DES-079 | TASK-079 | UT-079, ST-079, AT-079 | VER-079 | planned |

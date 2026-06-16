@@ -2,13 +2,13 @@
   "project_name": "PlantSpeak",
   "project_type": "python-cli",
   "status": "ready_for_human_acceptance",
-  "artifact_dir": "runs\\plantspeak-delivery\\artifacts",
-  "generated_project_dir": "runs\\plantspeak-delivery\\generated-project",
+  "artifact_dir": "runs\\plantspeak-real-delivery\\artifacts",
+  "generated_project_dir": "runs\\plantspeak-real-delivery\\generated-project",
   "work_items": [
     {
       "id": "LOCAL-001",
       "title": "Implement SW-001",
-      "description": "Design, implement, and verify capability for The software shall implement: users must be able to record basic plant observations from a command-line interface.",
+      "description": "Design, implement, and verify capability for The software shall implement: a single bootable image at `0x00000000`",
       "requirement_ids": [
         "SW-001"
       ],
@@ -18,7 +18,7 @@
     {
       "id": "LOCAL-002",
       "title": "Implement SW-002",
-      "description": "Design, implement, and verify capability for The software shall implement: the app should store plant observation entries in a local file.",
+      "description": "Design, implement, and verify capability for The software shall implement: a boot manager plus one or more application slots",
       "requirement_ids": [
         "SW-002"
       ],
@@ -28,7 +28,7 @@
     {
       "id": "LOCAL-003",
       "title": "Implement SW-003",
-      "description": "Design, implement, and verify capability for The software shall implement: users must be able to list previously recorded plant observations.",
+      "description": "Design, implement, and verify capability for The software shall implement: a vendor SUOTA layout",
       "requirement_ids": [
         "SW-003"
       ],
@@ -38,7 +38,7 @@
     {
       "id": "LOCAL-004",
       "title": "Implement SW-004",
-      "description": "Design, implement, and verify capability for The software shall implement: the system should provide a traceable test plan for each plant observation requirement.",
+      "description": "Design, implement, and verify capability for The software shall implement: a custom recovery-loader layout",
       "requirement_ids": [
         "SW-004"
       ],
@@ -48,11 +48,751 @@
     {
       "id": "LOCAL-005",
       "title": "Implement SW-005",
-      "description": "Design, implement, and verify capability for The software shall implement: final acceptance should require human review before release.",
+      "description": "Design, implement, and verify capability for The software shall implement: a RAM-loaded debug image",
       "requirement_ids": [
         "SW-005"
       ],
       "source_task_id": "TASK-005",
+      "status": "open"
+    },
+    {
+      "id": "LOCAL-006",
+      "title": "Implement SW-006",
+      "description": "Design, implement, and verify capability for The software shall implement: which folder is the authoritative project root?",
+      "requirement_ids": [
+        "SW-006"
+      ],
+      "source_task_id": "TASK-006",
+      "status": "open"
+    },
+    {
+      "id": "LOCAL-007",
+      "title": "Implement SW-007",
+      "description": "Design, implement, and verify capability for The software shall implement: does the Keil project rely on relative paths into a DA14531 SDK tree?",
+      "requirement_ids": [
+        "SW-007"
+      ],
+      "source_task_id": "TASK-007",
+      "status": "open"
+    },
+    {
+      "id": "LOCAL-008",
+      "title": "Implement SW-008",
+      "description": "Design, implement, and verify capability for The software shall implement: which Keil target should be built?",
+      "requirement_ids": [
+        "SW-008"
+      ],
+      "source_task_id": "TASK-008",
+      "status": "open"
+    },
+    {
+      "id": "LOCAL-009",
+      "title": "Implement SW-009",
+      "description": "Design, implement, and verify capability for The software shall implement: is the output image raw, bootable, encrypted, signed, compressed, or slot-wrapped?",
+      "requirement_ids": [
+        "SW-009"
+      ],
+      "source_task_id": "TASK-009",
+      "status": "open"
+    },
+    {
+      "id": "LOCAL-010",
+      "title": "Implement SW-010",
+      "description": "Design, implement, and verify capability for The software shall implement: does the board boot from external SPI flash, OTP, UART, or RAM?",
+      "requirement_ids": [
+        "SW-010"
+      ],
+      "source_task_id": "TASK-010",
+      "status": "open"
+    },
+    {
+      "id": "LOCAL-011",
+      "title": "Implement SW-011",
+      "description": "Design, implement, and verify capability for The software shall implement: what is the SPI flash size?",
+      "requirement_ids": [
+        "SW-011"
+      ],
+      "source_task_id": "TASK-011",
+      "status": "open"
+    },
+    {
+      "id": "LOCAL-012",
+      "title": "Implement SW-012",
+      "description": "Design, implement, and verify capability for The software shall implement: what is the expected flash map?",
+      "requirement_ids": [
+        "SW-012"
+      ],
+      "source_task_id": "TASK-012",
+      "status": "open"
+    },
+    {
+      "id": "LOCAL-013",
+      "title": "Implement SW-013",
+      "description": "Design, implement, and verify capability for The software shall implement: is there a boot manager, secondary bootloader, SUOTA flow, or recovery app?",
+      "requirement_ids": [
+        "SW-013"
+      ],
+      "source_task_id": "TASK-013",
+      "status": "open"
+    },
+    {
+      "id": "LOCAL-014",
+      "title": "Implement SW-014",
+      "description": "Design, implement, and verify capability for The software shall implement: which interface is used for testing: BLE, UART, RTT, SWD, USB CDC, log-only, or a vendor tool?",
+      "requirement_ids": [
+        "SW-014"
+      ],
+      "source_task_id": "TASK-014",
+      "status": "open"
+    },
+    {
+      "id": "LOCAL-015",
+      "title": "Implement SW-015",
+      "description": "Design, implement, and verify capability for The software shall implement: what manual reset or power-cycle step is required after programming?",
+      "requirement_ids": [
+        "SW-015"
+      ],
+      "source_task_id": "TASK-015",
+      "status": "open"
+    },
+    {
+      "id": "LOCAL-016",
+      "title": "Implement SW-016",
+      "description": "Design, implement, and verify capability for The software shall implement: open SmartSnippets Toolbox.",
+      "requirement_ids": [
+        "SW-016"
+      ],
+      "source_task_id": "TASK-016",
+      "status": "open"
+    },
+    {
+      "id": "LOCAL-017",
+      "title": "Implement SW-017",
+      "description": "Design, implement, and verify capability for The software shall implement: select the board/chip family if needed.",
+      "requirement_ids": [
+        "SW-017"
+      ],
+      "source_task_id": "TASK-017",
+      "status": "open"
+    },
+    {
+      "id": "LOCAL-018",
+      "title": "Implement SW-018",
+      "description": "Design, implement, and verify capability for The software shall implement: use `Board -> Detect device`.",
+      "requirement_ids": [
+        "SW-018"
+      ],
+      "source_task_id": "TASK-018",
+      "status": "open"
+    },
+    {
+      "id": "LOCAL-019",
+      "title": "Implement SW-019",
+      "description": "Design, implement, and verify capability for The software shall implement: confirm the J-Link/debug interface and any CDC UART port.",
+      "requirement_ids": [
+        "SW-019"
+      ],
+      "source_task_id": "TASK-019",
+      "status": "open"
+    },
+    {
+      "id": "LOCAL-020",
+      "title": "Implement SW-020",
+      "description": "Design, implement, and verify capability for The software shall implement: open the project `.uvprojx` in Keil uVision.",
+      "requirement_ids": [
+        "SW-020"
+      ],
+      "source_task_id": "TASK-020",
+      "status": "open"
+    },
+    {
+      "id": "LOCAL-021",
+      "title": "Implement SW-021",
+      "description": "Design, implement, and verify capability for The software shall implement: select the intended target.",
+      "requirement_ids": [
+        "SW-021"
+      ],
+      "source_task_id": "TASK-021",
+      "status": "open"
+    },
+    {
+      "id": "LOCAL-022",
+      "title": "Implement SW-022",
+      "description": "Design, implement, and verify capability for The software shall implement: build or rebuild.",
+      "requirement_ids": [
+        "SW-022"
+      ],
+      "source_task_id": "TASK-022",
+      "status": "open"
+    },
+    {
+      "id": "LOCAL-023",
+      "title": "Implement SW-023",
+      "description": "Design, implement, and verify capability for The software shall implement: confirm the expected `.axf`, `.bin`, or `.hex` output was generated.",
+      "requirement_ids": [
+        "SW-023"
+      ],
+      "source_task_id": "TASK-023",
+      "status": "open"
+    },
+    {
+      "id": "LOCAL-024",
+      "title": "Implement SW-024",
+      "description": "Design, implement, and verify capability for The software shall implement: check the build log for warnings, image size, RAM usage, and post-build",
+      "requirement_ids": [
+        "SW-024"
+      ],
+      "source_task_id": "TASK-024",
+      "status": "open"
+    },
+    {
+      "id": "LOCAL-025",
+      "title": "Implement SW-025",
+      "description": "Design, implement, and verify capability for The software shall implement: connect to DA14531 through J-Link/SWD.",
+      "requirement_ids": [
+        "SW-025"
+      ],
+      "source_task_id": "TASK-025",
+      "status": "open"
+    },
+    {
+      "id": "LOCAL-026",
+      "title": "Implement SW-026",
+      "description": "Design, implement, and verify capability for The software shall implement: download a temporary DA1453x SPI programmer into DA14531 RAM.",
+      "requirement_ids": [
+        "SW-026"
+      ],
+      "source_task_id": "TASK-026",
+      "status": "open"
+    },
+    {
+      "id": "LOCAL-027",
+      "title": "Implement SW-027",
+      "description": "Design, implement, and verify capability for The software shall implement: use that RAM program to access external SPI flash.",
+      "requirement_ids": [
+        "SW-027"
+      ],
+      "source_task_id": "TASK-027",
+      "status": "open"
+    },
+    {
+      "id": "LOCAL-028",
+      "title": "Implement SW-028",
+      "description": "Design, implement, and verify capability for The software shall implement: erase, write, read, or verify flash.",
+      "requirement_ids": [
+        "SW-028"
+      ],
+      "source_task_id": "TASK-028",
+      "status": "open"
+    },
+    {
+      "id": "LOCAL-029",
+      "title": "Implement SW-029",
+      "description": "Design, implement, and verify capability for The software shall implement: optionally add a DA14531 bootable-image header.",
+      "requirement_ids": [
+        "SW-029"
+      ],
+      "source_task_id": "TASK-029",
+      "status": "open"
+    },
+    {
+      "id": "LOCAL-030",
+      "title": "Implement SW-030",
+      "description": "Design, implement, and verify capability for The software shall implement: reset the device after programming.",
+      "requirement_ids": [
+        "SW-030"
+      ],
+      "source_task_id": "TASK-030",
+      "status": "open"
+    },
+    {
+      "id": "LOCAL-031",
+      "title": "Implement SW-031",
+      "description": "Design, implement, and verify capability for The software shall implement: running the temporary SmartSnippets RAM programmer",
+      "requirement_ids": [
+        "SW-031"
+      ],
+      "source_task_id": "TASK-031",
+      "status": "open"
+    },
+    {
+      "id": "LOCAL-032",
+      "title": "Implement SW-032",
+      "description": "Design, implement, and verify capability for The software shall implement: reset into the newly programmed SPI image",
+      "requirement_ids": [
+        "SW-032"
+      ],
+      "source_task_id": "TASK-032",
+      "status": "open"
+    },
+    {
+      "id": "LOCAL-033",
+      "title": "Implement SW-033",
+      "description": "Design, implement, and verify capability for The software shall implement: halted by the debugger",
+      "requirement_ids": [
+        "SW-033"
+      ],
+      "source_task_id": "TASK-033",
+      "status": "open"
+    },
+    {
+      "id": "LOCAL-034",
+      "title": "Implement SW-034",
+      "description": "Design, implement, and verify capability for The software shall implement: waiting for a manual power cycle",
+      "requirement_ids": [
+        "SW-034"
+      ],
+      "source_task_id": "TASK-034",
+      "status": "open"
+    },
+    {
+      "id": "LOCAL-035",
+      "title": "Implement SW-035",
+      "description": "Design, implement, and verify capability for The software shall implement: advertising over BLE",
+      "requirement_ids": [
+        "SW-035"
+      ],
+      "source_task_id": "TASK-035",
+      "status": "open"
+    },
+    {
+      "id": "LOCAL-036",
+      "title": "Implement SW-036",
+      "description": "Design, implement, and verify capability for The software shall implement: silent because the programmed image is not valid for the selected boot path",
+      "requirement_ids": [
+        "SW-036"
+      ],
+      "source_task_id": "TASK-036",
+      "status": "open"
+    },
+    {
+      "id": "LOCAL-037",
+      "title": "Implement SW-037",
+      "description": "Design, implement, and verify capability for The software shall implement: confirm the write and verify succeeded.",
+      "requirement_ids": [
+        "SW-037"
+      ],
+      "source_task_id": "TASK-037",
+      "status": "open"
+    },
+    {
+      "id": "LOCAL-038",
+      "title": "Implement SW-038",
+      "description": "Design, implement, and verify capability for The software shall implement: confirm the image was programmed at the correct offset.",
+      "requirement_ids": [
+        "SW-038"
+      ],
+      "source_task_id": "TASK-038",
+      "status": "open"
+    },
+    {
+      "id": "LOCAL-039",
+      "title": "Implement SW-039",
+      "description": "Design, implement, and verify capability for The software shall implement: confirm the file was written in the correct mode (`-bootable` vs raw).",
+      "requirement_ids": [
+        "SW-039"
+      ],
+      "source_task_id": "TASK-039",
+      "status": "open"
+    },
+    {
+      "id": "LOCAL-040",
+      "title": "Implement SW-040",
+      "description": "Design, implement, and verify capability for The software shall implement: reset through SmartSnippets/J-Link.",
+      "requirement_ids": [
+        "SW-040"
+      ],
+      "source_task_id": "TASK-040",
+      "status": "open"
+    },
+    {
+      "id": "LOCAL-041",
+      "title": "Implement SW-041",
+      "description": "Design, implement, and verify capability for The software shall implement: if still needed, power-cycle or replug the board.",
+      "requirement_ids": [
+        "SW-041"
+      ],
+      "source_task_id": "TASK-041",
+      "status": "open"
+    },
+    {
+      "id": "LOCAL-042",
+      "title": "Implement SW-042",
+      "description": "Design, implement, and verify capability for The software shall implement: re-read the relevant flash header and compare with the expected bytes.",
+      "requirement_ids": [
+        "SW-042"
+      ],
+      "source_task_id": "TASK-042",
+      "status": "open"
+    },
+    {
+      "id": "LOCAL-043",
+      "title": "Implement SW-043",
+      "description": "Design, implement, and verify capability for The software shall implement: advertised name",
+      "requirement_ids": [
+        "SW-043"
+      ],
+      "source_task_id": "TASK-043",
+      "status": "open"
+    },
+    {
+      "id": "LOCAL-044",
+      "title": "Implement SW-044",
+      "description": "Design, implement, and verify capability for The software shall implement: service UUID",
+      "requirement_ids": [
+        "SW-044"
+      ],
+      "source_task_id": "TASK-044",
+      "status": "open"
+    },
+    {
+      "id": "LOCAL-045",
+      "title": "Implement SW-045",
+      "description": "Design, implement, and verify capability for The software shall implement: rX/control characteristic UUID",
+      "requirement_ids": [
+        "SW-045"
+      ],
+      "source_task_id": "TASK-045",
+      "status": "open"
+    },
+    {
+      "id": "LOCAL-046",
+      "title": "Implement SW-046",
+      "description": "Design, implement, and verify capability for The software shall implement: tX/notify characteristic UUID",
+      "requirement_ids": [
+        "SW-046"
+      ],
+      "source_task_id": "TASK-046",
+      "status": "open"
+    },
+    {
+      "id": "LOCAL-047",
+      "title": "Implement SW-047",
+      "description": "Design, implement, and verify capability for The software shall implement: expected MTU",
+      "requirement_ids": [
+        "SW-047"
+      ],
+      "source_task_id": "TASK-047",
+      "status": "open"
+    },
+    {
+      "id": "LOCAL-048",
+      "title": "Implement SW-048",
+      "description": "Design, implement, and verify capability for The software shall implement: write type expectations",
+      "requirement_ids": [
+        "SW-048"
+      ],
+      "source_task_id": "TASK-048",
+      "status": "open"
+    },
+    {
+      "id": "LOCAL-049",
+      "title": "Implement SW-049",
+      "description": "Design, implement, and verify capability for The software shall implement: command framing and CRC rules",
+      "requirement_ids": [
+        "SW-049"
+      ],
+      "source_task_id": "TASK-049",
+      "status": "open"
+    },
+    {
+      "id": "LOCAL-050",
+      "title": "Implement SW-050",
+      "description": "Design, implement, and verify capability for The software shall implement: reset/reconnect behavior",
+      "requirement_ids": [
+        "SW-050"
+      ],
+      "source_task_id": "TASK-050",
+      "status": "open"
+    },
+    {
+      "id": "LOCAL-051",
+      "title": "Implement SW-051",
+      "description": "Design, implement, and verify capability for The software shall implement: cOM port",
+      "requirement_ids": [
+        "SW-051"
+      ],
+      "source_task_id": "TASK-051",
+      "status": "open"
+    },
+    {
+      "id": "LOCAL-052",
+      "title": "Implement SW-052",
+      "description": "Design, implement, and verify capability for The software shall implement: baud rate",
+      "requirement_ids": [
+        "SW-052"
+      ],
+      "source_task_id": "TASK-052",
+      "status": "open"
+    },
+    {
+      "id": "LOCAL-053",
+      "title": "Implement SW-053",
+      "description": "Design, implement, and verify capability for The software shall implement: line ending",
+      "requirement_ids": [
+        "SW-053"
+      ],
+      "source_task_id": "TASK-053",
+      "status": "open"
+    },
+    {
+      "id": "LOCAL-054",
+      "title": "Implement SW-054",
+      "description": "Design, implement, and verify capability for The software shall implement: shell prompt or binary framing",
+      "requirement_ids": [
+        "SW-054"
+      ],
+      "source_task_id": "TASK-054",
+      "status": "open"
+    },
+    {
+      "id": "LOCAL-055",
+      "title": "Implement SW-055",
+      "description": "Design, implement, and verify capability for The software shall implement: reset behavior",
+      "requirement_ids": [
+        "SW-055"
+      ],
+      "source_task_id": "TASK-055",
+      "status": "open"
+    },
+    {
+      "id": "LOCAL-056",
+      "title": "Implement SW-056",
+      "description": "Design, implement, and verify capability for The software shall implement: clean update from production.",
+      "requirement_ids": [
+        "SW-056"
+      ],
+      "source_task_id": "TASK-056",
+      "status": "open"
+    },
+    {
+      "id": "LOCAL-057",
+      "title": "Implement SW-057",
+      "description": "Design, implement, and verify capability for The software shall implement: reboot into updated production image.",
+      "requirement_ids": [
+        "SW-057"
+      ],
+      "source_task_id": "TASK-057",
+      "status": "open"
+    },
+    {
+      "id": "LOCAL-058",
+      "title": "Implement SW-058",
+      "description": "Design, implement, and verify capability for The software shall implement: bad or interrupted update.",
+      "requirement_ids": [
+        "SW-058"
+      ],
+      "source_task_id": "TASK-058",
+      "status": "open"
+    },
+    {
+      "id": "LOCAL-059",
+      "title": "Implement SW-059",
+      "description": "Design, implement, and verify capability for The software shall implement: recovery/fallback behavior.",
+      "requirement_ids": [
+        "SW-059"
+      ],
+      "source_task_id": "TASK-059",
+      "status": "open"
+    },
+    {
+      "id": "LOCAL-060",
+      "title": "Implement SW-060",
+      "description": "Design, implement, and verify capability for The software shall implement: recovery repair back to production, if supported.",
+      "requirement_ids": [
+        "SW-060"
+      ],
+      "source_task_id": "TASK-060",
+      "status": "open"
+    },
+    {
+      "id": "LOCAL-061",
+      "title": "Implement SW-061",
+      "description": "Design, implement, and verify capability for The software shall implement: final smoke/regression after repair.",
+      "requirement_ids": [
+        "SW-061"
+      ],
+      "source_task_id": "TASK-061",
+      "status": "open"
+    },
+    {
+      "id": "LOCAL-062",
+      "title": "Implement SW-062",
+      "description": "Design, implement, and verify capability for The software shall implement: building from a copied folder while the Keil project expects SDK-relative",
+      "requirement_ids": [
+        "SW-062"
+      ],
+      "source_task_id": "TASK-062",
+      "status": "open"
+    },
+    {
+      "id": "LOCAL-063",
+      "title": "Implement SW-063",
+      "description": "Design, implement, and verify capability for The software shall implement: programming a raw image where a bootable image is required.",
+      "requirement_ids": [
+        "SW-063"
+      ],
+      "source_task_id": "TASK-063",
+      "status": "open"
+    },
+    {
+      "id": "LOCAL-064",
+      "title": "Implement SW-064",
+      "description": "Design, implement, and verify capability for The software shall implement: programming a bootable image where a raw slot image is required.",
+      "requirement_ids": [
+        "SW-064"
+      ],
+      "source_task_id": "TASK-064",
+      "status": "open"
+    },
+    {
+      "id": "LOCAL-065",
+      "title": "Implement SW-065",
+      "description": "Design, implement, and verify capability for The software shall implement: assuming another DA14531 project uses the same flash layout.",
+      "requirement_ids": [
+        "SW-065"
+      ],
+      "source_task_id": "TASK-065",
+      "status": "open"
+    },
+    {
+      "id": "LOCAL-066",
+      "title": "Implement SW-066",
+      "description": "Design, implement, and verify capability for The software shall implement: assuming BLE, UART, SPI, I2C, or a shell exists before inspecting the project.",
+      "requirement_ids": [
+        "SW-066"
+      ],
+      "source_task_id": "TASK-066",
+      "status": "open"
+    },
+    {
+      "id": "LOCAL-067",
+      "title": "Implement SW-067",
+      "description": "Design, implement, and verify capability for The software shall implement: forgetting to verify the J-Link serial number on the current PC.",
+      "requirement_ids": [
+        "SW-067"
+      ],
+      "source_task_id": "TASK-067",
+      "status": "open"
+    },
+    {
+      "id": "LOCAL-068",
+      "title": "Implement SW-068",
+      "description": "Design, implement, and verify capability for The software shall implement: forgetting that SmartSnippets may leave its RAM programmer running until a",
+      "requirement_ids": [
+        "SW-068"
+      ],
+      "source_task_id": "TASK-068",
+      "status": "open"
+    },
+    {
+      "id": "LOCAL-069",
+      "title": "Implement SW-069",
+      "description": "Design, implement, and verify capability for The software shall implement: treating a BLE reconnect failure as firmware failure before checking whether",
+      "requirement_ids": [
+        "SW-069"
+      ],
+      "source_task_id": "TASK-069",
+      "status": "open"
+    },
+    {
+      "id": "LOCAL-070",
+      "title": "Implement SW-070",
+      "description": "Design, implement, and verify capability for The software shall implement: running destructive image-update tests without first verifying the recovery",
+      "requirement_ids": [
+        "SW-070"
+      ],
+      "source_task_id": "TASK-070",
+      "status": "open"
+    },
+    {
+      "id": "LOCAL-071",
+      "title": "Implement SW-071",
+      "description": "Design, implement, and verify capability for The software shall implement: roles and Transport",
+      "requirement_ids": [
+        "SW-071"
+      ],
+      "source_task_id": "TASK-071",
+      "status": "open"
+    },
+    {
+      "id": "LOCAL-072",
+      "title": "Implement SW-072",
+      "description": "Design, implement, and verify capability for The software shall implement: frame Format",
+      "requirement_ids": [
+        "SW-072"
+      ],
+      "source_task_id": "TASK-072",
+      "status": "open"
+    },
+    {
+      "id": "LOCAL-073",
+      "title": "Implement SW-073",
+      "description": "Design, implement, and verify capability for The software shall implement: production Command Set",
+      "requirement_ids": [
+        "SW-073"
+      ],
+      "source_task_id": "TASK-073",
+      "status": "open"
+    },
+    {
+      "id": "LOCAL-074",
+      "title": "Implement SW-074",
+      "description": "Design, implement, and verify capability for The software shall implement: status and Measurement Payloads",
+      "requirement_ids": [
+        "SW-074"
+      ],
+      "source_task_id": "TASK-074",
+      "status": "open"
+    },
+    {
+      "id": "LOCAL-075",
+      "title": "Implement SW-075",
+      "description": "Design, implement, and verify capability for The software shall implement: wavelengths, PPFD, Calibration, and LED Currents",
+      "requirement_ids": [
+        "SW-075"
+      ],
+      "source_task_id": "TASK-075",
+      "status": "open"
+    },
+    {
+      "id": "LOCAL-076",
+      "title": "Implement SW-076",
+      "description": "Design, implement, and verify capability for The software shall implement: diagnostic Flash Log",
+      "requirement_ids": [
+        "SW-076"
+      ],
+      "source_task_id": "TASK-076",
+      "status": "open"
+    },
+    {
+      "id": "LOCAL-077",
+      "title": "Implement SW-077",
+      "description": "Design, implement, and verify capability for The software shall implement: firmware Update and Recovery",
+      "requirement_ids": [
+        "SW-077"
+      ],
+      "source_task_id": "TASK-077",
+      "status": "open"
+    },
+    {
+      "id": "LOCAL-078",
+      "title": "Implement SW-078",
+      "description": "Design, implement, and verify capability for The software shall implement: recommended SmartDevice Flows",
+      "requirement_ids": [
+        "SW-078"
+      ],
+      "source_task_id": "TASK-078",
+      "status": "open"
+    },
+    {
+      "id": "LOCAL-079",
+      "title": "Implement SW-079",
+      "description": "Design, implement, and verify capability for The software shall implement: security and Policy Notes",
+      "requirement_ids": [
+        "SW-079"
+      ],
+      "source_task_id": "TASK-079",
       "status": "open"
     }
   ],
@@ -66,7 +806,7 @@
       ],
       "passed": true,
       "exit_code": 0,
-      "output": "============================= test session starts =============================\nplatform win32 -- Python 3.13.9, pytest-9.1.0, pluggy-1.6.0\nrootdir: C:\\Users\\johns\\OneDrive\\Documents\\Software Team\\runs\\plantspeak-delivery\\generated-project\nconfigfile: pyproject.toml\ntestpaths: tests\nplugins: anyio-4.12.1, langsmith-0.7.30\ncollected 3 items\n\ntests\\test_cli.py ..                                                     [ 66%]\ntests\\test_requirements.py .                                             [100%]\n\n============================== 3 passed in 0.05s =============================="
+      "output": "============================= test session starts =============================\nplatform win32 -- Python 3.13.9, pytest-9.1.0, pluggy-1.6.0\nrootdir: C:\\Users\\johns\\OneDrive\\Documents\\Software Team\\runs\\plantspeak-real-delivery\\generated-project\nconfigfile: pyproject.toml\ntestpaths: tests\nplugins: anyio-4.12.1, langsmith-0.7.30\ncollected 3 items\n\ntests\\test_cli.py ..                                                     [ 66%]\ntests\\test_requirements.py .                                             [100%]\n\n============================== 3 passed in 0.06s =============================="
     },
     {
       "name": "security-smoke-scan",
@@ -74,7 +814,7 @@
         "C:\\Users\\johns\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
         "-m",
         "vmodel_engine.security_scan",
-        "runs\\plantspeak-delivery\\generated-project"
+        "runs\\plantspeak-real-delivery\\generated-project"
       ],
       "passed": true,
       "exit_code": 0,
@@ -135,7 +875,7 @@
       "verdict": "approved_with_conditions",
       "findings": [
         "Architecture/Design Document was reviewed through the user value lens by product_requirements.",
-        "Review covered 5 software requirements and 5 trace links."
+        "Review covered 79 software requirements and 79 trace links."
       ],
       "required_actions": [
         "Confirm wording with the human requester before final acceptance.",
@@ -151,7 +891,7 @@
       "verdict": "approved_with_conditions",
       "findings": [
         "Architecture/Design Document was reviewed through the architecture risk lens by systems_architecture.",
-        "Review covered 5 software requirements and 5 trace links."
+        "Review covered 79 software requirements and 79 trace links."
       ],
       "required_actions": [
         "Keep design decisions traceable to requirements and implementation tasks.",
@@ -167,7 +907,7 @@
       "verdict": "approved_with_conditions",
       "findings": [
         "Architecture/Design Document was reviewed through the threat modeling lens by security_review.",
-        "Review covered 5 software requirements and 5 trace links."
+        "Review covered 79 software requirements and 79 trace links."
       ],
       "required_actions": [
         "Run deterministic security tooling before release.",
@@ -183,7 +923,7 @@
       "verdict": "approved_with_conditions",
       "findings": [
         "Detailed Design Notes was reviewed through the modularity lens by systems_architecture.",
-        "Review covered 5 software requirements and 5 trace links."
+        "Review covered 79 software requirements and 79 trace links."
       ],
       "required_actions": [
         "Keep design decisions traceable to requirements and implementation tasks.",
@@ -199,7 +939,7 @@
       "verdict": "approved_with_conditions",
       "findings": [
         "Detailed Design Notes was reviewed through the testability lens by test_verification.",
-        "Review covered 5 software requirements and 5 trace links."
+        "Review covered 79 software requirements and 79 trace links."
       ],
       "required_actions": [
         "Require executable tests or explicit manual evidence before verification closure.",
@@ -215,7 +955,7 @@
       "verdict": "approved_with_conditions",
       "findings": [
         "Detailed Design Notes was reviewed through the auditability lens by release_quality.",
-        "Review covered 5 software requirements and 5 trace links."
+        "Review covered 79 software requirements and 79 trace links."
       ],
       "required_actions": [
         "Confirm release evidence bundle is complete before approval.",
@@ -231,7 +971,7 @@
       "verdict": "approved_with_conditions",
       "findings": [
         "Test Strategy was reviewed through the acceptance validity lens by product_requirements.",
-        "Review covered 5 software requirements and 5 trace links."
+        "Review covered 79 software requirements and 79 trace links."
       ],
       "required_actions": [
         "Confirm wording with the human requester before final acceptance.",
@@ -247,7 +987,7 @@
       "verdict": "approved_with_conditions",
       "findings": [
         "Test Strategy was reviewed through the coverage lens by test_verification.",
-        "Review covered 5 software requirements and 5 trace links."
+        "Review covered 79 software requirements and 79 trace links."
       ],
       "required_actions": [
         "Require executable tests or explicit manual evidence before verification closure.",
@@ -263,7 +1003,7 @@
       "verdict": "approved_with_conditions",
       "findings": [
         "Test Strategy was reviewed through the dependency risk lens by security_review.",
-        "Review covered 5 software requirements and 5 trace links."
+        "Review covered 79 software requirements and 79 trace links."
       ],
       "required_actions": [
         "Run deterministic security tooling before release.",
@@ -314,5 +1054,5 @@
       "details": "Every software requirement must link to tasks, tests, and verification evidence placeholders."
     }
   ],
-  "created_at": "2026-06-16T04:25:36+00:00"
+  "created_at": "2026-06-16T04:39:15+00:00"
 }

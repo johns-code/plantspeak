@@ -1,0 +1,7 @@
+Build ICD capabilities on DA14531 according to schematics PlanSpeak Schematic V3.pdf
+
+Use Renesas DA14531-00FXDEVKT-U dev board connected to this laptop for initial dev and testing purposes - so have dev mode in code for testing all before moving to target board, but produce code for hardware target board as well (no need to test target HW functions right now)
+
+see GENERIC_DA14531_DEV_BOARD_TOOLCHAIN.md 
+
+Use PC as the smart smartdevice for testing

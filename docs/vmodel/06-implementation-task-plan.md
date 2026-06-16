@@ -2,7 +2,7 @@
 
 Project: PlantSpeak
 
-Generated: 2026-06-16T04:25:33+00:00
+Generated: 2026-06-16T04:39:11+00:00
 
 | ID | Title | Requirements | Owner Role | Status |
 | --- | --- | --- | --- | --- |
@@ -11,3 +11,77 @@ Generated: 2026-06-16T04:25:33+00:00
 | TASK-003 | Implement SW-003 | SW-003 | development_agent | planned |
 | TASK-004 | Implement SW-004 | SW-004 | development_agent | planned |
 | TASK-005 | Implement SW-005 | SW-005 | development_agent | planned |
+| TASK-006 | Implement SW-006 | SW-006 | development_agent | planned |
+| TASK-007 | Implement SW-007 | SW-007 | development_agent | planned |
+| TASK-008 | Implement SW-008 | SW-008 | development_agent | planned |
+| TASK-009 | Implement SW-009 | SW-009 | development_agent | planned |
+| TASK-010 | Implement SW-010 | SW-010 | development_agent | planned |
+| TASK-011 | Implement SW-011 | SW-011 | development_agent | planned |
+| TASK-012 | Implement SW-012 | SW-012 | development_agent | planned |
+| TASK-013 | Implement SW-013 | SW-013 | development_agent | planned |
+| TASK-014 | Implement SW-014 | SW-014 | development_agent | planned |
+| TASK-015 | Implement SW-015 | SW-015 | development_agent | planned |
+| TASK-016 | Implement SW-016 | SW-016 | development_agent | planned |
+| TASK-017 | Implement SW-017 | SW-017 | development_agent | planned |
+| TASK-018 | Implement SW-018 | SW-018 | development_agent | planned |
+| TASK-019 | Implement SW-019 | SW-019 | development_agent | planned |
+| TASK-020 | Implement SW-020 | SW-020 | development_agent | planned |
+| TASK-021 | Implement SW-021 | SW-021 | development_agent | planned |
+| TASK-022 | Implement SW-022 | SW-022 | development_agent | planned |
+| TASK-023 | Implement SW-023 | SW-023 | development_agent | planned |
+| TASK-024 | Implement SW-024 | SW-024 | development_agent | planned |
+| TASK-025 | Implement SW-025 | SW-025 | development_agent | planned |
+| TASK-026 | Implement SW-026 | SW-026 | development_agent | planned |
+| TASK-027 | Implement SW-027 | SW-027 | development_agent | planned |
+| TASK-028 | Implement SW-028 | SW-028 | development_agent | planned |
+| TASK-029 | Implement SW-029 | SW-029 | development_agent | planned |
+| TASK-030 | Implement SW-030 | SW-030 | development_agent | planned |
+| TASK-031 | Implement SW-031 | SW-031 | development_agent | planned |
+| TASK-032 | Implement SW-032 | SW-032 | development_agent | planned |
+| TASK-033 | Implement SW-033 | SW-033 | development_agent | planned |
+| TASK-034 | Implement SW-034 | SW-034 | development_agent | planned |
+| TASK-035 | Implement SW-035 | SW-035 | development_agent | planned |
+| TASK-036 | Implement SW-036 | SW-036 | development_agent | planned |
+| TASK-037 | Implement SW-037 | SW-037 | development_agent | planned |
+| TASK-038 | Implement SW-038 | SW-038 | development_agent | planned |
+| TASK-039 | Implement SW-039 | SW-039 | development_agent | planned |
+| TASK-040 | Implement SW-040 | SW-040 | development_agent | planned |
+| TASK-041 | Implement SW-041 | SW-041 | development_agent | planned |
+| TASK-042 | Implement SW-042 | SW-042 | development_agent | planned |
+| TASK-043 | Implement SW-043 | SW-043 | development_agent | planned |
+| TASK-044 | Implement SW-044 | SW-044 | development_agent | planned |
+| TASK-045 | Implement SW-045 | SW-045 | development_agent | planned |
+| TASK-046 | Implement SW-046 | SW-046 | development_agent | planned |
+| TASK-047 | Implement SW-047 | SW-047 | development_agent | planned |
+| TASK-048 | Implement SW-048 | SW-048 | development_agent | planned |
+| TASK-049 | Implement SW-049 | SW-049 | development_agent | planned |
+| TASK-050 | Implement SW-050 | SW-050 | development_agent | planned |
+| TASK-051 | Implement SW-051 | SW-051 | development_agent | planned |
+| TASK-052 | Implement SW-052 | SW-052 | development_agent | planned |
+| TASK-053 | Implement SW-053 | SW-053 | development_agent | planned |
+| TASK-054 | Implement SW-054 | SW-054 | development_agent | planned |
+| TASK-055 | Implement SW-055 | SW-055 | development_agent | planned |
+| TASK-056 | Implement SW-056 | SW-056 | development_agent | planned |
+| TASK-057 | Implement SW-057 | SW-057 | development_agent | planned |
+| TASK-058 | Implement SW-058 | SW-058 | development_agent | planned |
+| TASK-059 | Implement SW-059 | SW-059 | development_agent | planned |
+| TASK-060 | Implement SW-060 | SW-060 | development_agent | planned |
+| TASK-061 | Implement SW-061 | SW-061 | development_agent | planned |
+| TASK-062 | Implement SW-062 | SW-062 | development_agent | planned |
+| TASK-063 | Implement SW-063 | SW-063 | development_agent | planned |
+| TASK-064 | Implement SW-064 | SW-064 | development_agent | planned |
+| TASK-065 | Implement SW-065 | SW-065 | development_agent | planned |
+| TASK-066 | Implement SW-066 | SW-066 | development_agent | planned |
+| TASK-067 | Implement SW-067 | SW-067 | development_agent | planned |
+| TASK-068 | Implement SW-068 | SW-068 | development_agent | planned |
+| TASK-069 | Implement SW-069 | SW-069 | development_agent | planned |
+| TASK-070 | Implement SW-070 | SW-070 | development_agent | planned |
+| TASK-071 | Implement SW-071 | SW-071 | development_agent | planned |
+| TASK-072 | Implement SW-072 | SW-072 | development_agent | planned |
+| TASK-073 | Implement SW-073 | SW-073 | development_agent | planned |
+| TASK-074 | Implement SW-074 | SW-074 | development_agent | planned |
+| TASK-075 | Implement SW-075 | SW-075 | development_agent | planned |
+| TASK-076 | Implement SW-076 | SW-076 | development_agent | planned |
+| TASK-077 | Implement SW-077 | SW-077 | development_agent | planned |
+| TASK-078 | Implement SW-078 | SW-078 | development_agent | planned |
+| TASK-079 | Implement SW-079 | SW-079 | development_agent | planned |

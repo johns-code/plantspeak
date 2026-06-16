@@ -8,7 +8,7 @@
     "verdict": "approved_with_conditions",
     "findings": [
       "Architecture/Design Document was reviewed through the user value lens by product_requirements.",
-      "Review covered 5 software requirements and 5 trace links."
+      "Review covered 79 software requirements and 79 trace links."
     ],
     "required_actions": [
       "Confirm wording with the human requester before final acceptance.",
@@ -24,7 +24,7 @@
     "verdict": "approved_with_conditions",
     "findings": [
       "Architecture/Design Document was reviewed through the architecture risk lens by systems_architecture.",
-      "Review covered 5 software requirements and 5 trace links."
+      "Review covered 79 software requirements and 79 trace links."
     ],
     "required_actions": [
       "Keep design decisions traceable to requirements and implementation tasks.",
@@ -40,7 +40,7 @@
     "verdict": "approved_with_conditions",
     "findings": [
       "Architecture/Design Document was reviewed through the threat modeling lens by security_review.",
-      "Review covered 5 software requirements and 5 trace links."
+      "Review covered 79 software requirements and 79 trace links."
     ],
     "required_actions": [
       "Run deterministic security tooling before release.",
@@ -56,7 +56,7 @@
     "verdict": "approved_with_conditions",
     "findings": [
       "Detailed Design Notes was reviewed through the modularity lens by systems_architecture.",
-      "Review covered 5 software requirements and 5 trace links."
+      "Review covered 79 software requirements and 79 trace links."
     ],
     "required_actions": [
       "Keep design decisions traceable to requirements and implementation tasks.",
@@ -72,7 +72,7 @@
     "verdict": "approved_with_conditions",
     "findings": [
       "Detailed Design Notes was reviewed through the testability lens by test_verification.",
-      "Review covered 5 software requirements and 5 trace links."
+      "Review covered 79 software requirements and 79 trace links."
     ],
     "required_actions": [
       "Require executable tests or explicit manual evidence before verification closure.",
@@ -88,7 +88,7 @@
     "verdict": "approved_with_conditions",
     "findings": [
       "Detailed Design Notes was reviewed through the auditability lens by release_quality.",
-      "Review covered 5 software requirements and 5 trace links."
+      "Review covered 79 software requirements and 79 trace links."
     ],
     "required_actions": [
       "Confirm release evidence bundle is complete before approval.",
@@ -104,7 +104,7 @@
     "verdict": "approved_with_conditions",
     "findings": [
       "Test Strategy was reviewed through the acceptance validity lens by product_requirements.",
-      "Review covered 5 software requirements and 5 trace links."
+      "Review covered 79 software requirements and 79 trace links."
     ],
     "required_actions": [
       "Confirm wording with the human requester before final acceptance.",
@@ -120,7 +120,7 @@
     "verdict": "approved_with_conditions",
     "findings": [
       "Test Strategy was reviewed through the coverage lens by test_verification.",
-      "Review covered 5 software requirements and 5 trace links."
+      "Review covered 79 software requirements and 79 trace links."
     ],
     "required_actions": [
       "Require executable tests or explicit manual evidence before verification closure.",
@@ -136,7 +136,7 @@
     "verdict": "approved_with_conditions",
     "findings": [
       "Test Strategy was reviewed through the dependency risk lens by security_review.",
-      "Review covered 5 software requirements and 5 trace links."
+      "Review covered 79 software requirements and 79 trace links."
     ],
     "required_actions": [
       "Run deterministic security tooling before release.",

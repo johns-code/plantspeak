@@ -1,13 +1,28 @@
+import json
+
+import pytest
+
 from plantspeak.cli import main
 
 
-def test_list_requirements_outputs_records(capsys) -> None:
-    assert main(["list-requirements"]) == 0
-    output = capsys.readouterr().out
-    assert "SW-001" in output
+def test_capabilities_command_outputs_json(capsys) -> None:
+    assert main(["capabilities"]) == 0
+    output = json.loads(capsys.readouterr().out)
+    assert output["SW-001"]["command"] == "describe-icd"
 
 
-def test_trace_outputs_verification_status(capsys) -> None:
-    assert main(["trace"]) == 0
-    output = capsys.readouterr().out
-    assert "verification pending" in output
+def test_measure_requires_dev_mode() -> None:
+    with pytest.raises(SystemExit):
+        main(["measure"])
+
+
+def test_measure_dev_mode_outputs_canned_snapshot(capsys) -> None:
+    assert main(["measure", "--dev-mode"]) == 0
+    output = json.loads(capsys.readouterr().out)
+    assert output["source"] == "canned-dev-mode-data"
+
+
+def test_self_test_passes_in_dev_mode(capsys) -> None:
+    assert main(["self-test", "--dev-mode"]) == 0
+    output = json.loads(capsys.readouterr().out)
+    assert all(output.values())

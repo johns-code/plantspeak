@@ -1,0 +1,128 @@
+[
+  {
+    "id": "I_kwDOS7742M8AAAABFnfijw",
+    "number": 114,
+    "title": "SW-001: build ICD capabilities on DA14531 according to schematics PlanSpeak Schematic V3.pdf",
+    "url": "https://github.com/johns-code/plantspeak/issues/114",
+    "requirement_ids": [
+      "SW-001"
+    ]
+  },
+  {
+    "id": "I_kwDOS7742M8AAAABFnfkTw",
+    "number": 115,
+    "title": "SW-002: the red/green user LEDs mentioned in the ICD are controlled via P0_5 and P0_11",
+    "url": "https://github.com/johns-code/plantspeak/issues/115",
+    "requirement_ids": [
+      "SW-002"
+    ]
+  },
+  {
+    "id": "I_kwDOS7742M8AAAABFnfmTA",
+    "number": 116,
+    "title": "SW-003: the user push button is on P0_10",
+    "url": "https://github.com/johns-code/plantspeak/issues/116",
+    "requirement_ids": [
+      "SW-003"
+    ]
+  },
+  {
+    "id": "I_kwDOS7742M8AAAABFnfoNQ",
+    "number": 117,
+    "title": "SW-004: eN_Peripherals is on P0_6",
+    "url": "https://github.com/johns-code/plantspeak/issues/117",
+    "requirement_ids": [
+      "SW-004"
+    ]
+  },
+  {
+    "id": "I_kwDOS7742M8AAAABFnfqtA",
+    "number": 118,
+    "title": "SW-005: i2C SCL is on P0_8 and SDA on P0_9",
+    "url": "https://github.com/johns-code/plantspeak/issues/118",
+    "requirement_ids": [
+      "SW-005"
+    ]
+  },
+  {
+    "id": "I_kwDOS7742M8AAAABFnfspg",
+    "number": 119,
+    "title": "SW-006: the photodiode current is read by the ADS1115IDGSR. AIN0 is for reading the PD current...",
+    "url": "https://github.com/johns-code/plantspeak/issues/119",
+    "requirement_ids": [
+      "SW-006"
+    ]
+  },
+  {
+    "id": "I_kwDOS7742M8AAAABFnfuwg",
+    "number": 120,
+    "title": "SW-007: the wavelength LEDs are driven by LP5816 hanging off the PCA9846PWJ. LED1/2/3/4 are on...",
+    "url": "https://github.com/johns-code/plantspeak/issues/120",
+    "requirement_ids": [
+      "SW-007"
+    ]
+  },
+  {
+    "id": "I_kwDOS7742M8AAAABFnfwhA",
+    "number": 121,
+    "title": "SW-008: leaf temperature is on MLX90632SLD-BCB-000-RE connected to SC0/SD0 on the PCA9846PWJ",
+    "url": "https://github.com/johns-code/plantspeak/issues/121",
+    "requirement_ids": [
+      "SW-008"
+    ]
+  },
+  {
+    "id": "I_kwDOS7742M8AAAABFnfytg",
+    "number": 122,
+    "title": "SW-009: rH and ambient temp are read from HDC2010YPAR using DA14531 I2C bus",
+    "url": "https://github.com/johns-code/plantspeak/issues/122",
+    "requirement_ids": [
+      "SW-009"
+    ]
+  },
+  {
+    "id": "I_kwDOS7742M8AAAABFnf0yg",
+    "number": 123,
+    "title": "SW-010: accelerometer is from MXC4005XC using DA14531 I2C bus",
+    "url": "https://github.com/johns-code/plantspeak/issues/123",
+    "requirement_ids": [
+      "SW-010"
+    ]
+  },
+  {
+    "id": "I_kwDOS7742M8AAAABFnf3BQ",
+    "number": 124,
+    "title": "SW-011: red/green user LEDs not available - can use dev board LED for initial dev work and testing",
+    "url": "https://github.com/johns-code/plantspeak/issues/124",
+    "requirement_ids": [
+      "SW-011"
+    ]
+  },
+  {
+    "id": "I_kwDOS7742M8AAAABFnf5gQ",
+    "number": 125,
+    "title": "SW-012: eN_Peripherals no avaiable",
+    "url": "https://github.com/johns-code/plantspeak/issues/125",
+    "requirement_ids": [
+      "SW-012"
+    ]
+  },
+  {
+    "id": "I_kwDOS7742M8AAAABFnf8MQ",
+    "number": 126,
+    "title": "SW-013: all external I2C devices not available (so use canned data for testing but again still...",
+    "url": "https://github.com/johns-code/plantspeak/issues/126",
+    "requirement_ids": [
+      "SW-013"
+    ]
+  },
+  {
+    "id": "I_kwDOS7742M8AAAABFnf-nQ",
+    "number": 127,
+    "title": "SW-014: user push button not available",
+    "url": "https://github.com/johns-code/plantspeak/issues/127",
+    "requirement_ids": [
+      "SW-014"
+    ]
+  }
+]

@@ -1,18 +1,28 @@
 # Software Requirements Specification
 
-| ID | Parent | Priority | Requirement | Acceptance Criteria |
-| --- | --- | --- | --- | --- |
-| SW-001 | SYS-001 | could | The software shall implement: build ICD capabilities on DA14531 according to schematics PlanSpeak Schematic V3.pdf | Automated or manual tests can verify the behavior.<br>Verification evidence is recorded before release. |
-| SW-002 | SYS-002 | could | The software shall implement: the red/green user LEDs mentioned in the ICD are controlled via P0_5 and P0_11 | Automated or manual tests can verify the behavior.<br>Verification evidence is recorded before release. |
-| SW-003 | SYS-003 | could | The software shall implement: the user push button is on P0_10 | Automated or manual tests can verify the behavior.<br>Verification evidence is recorded before release. |
-| SW-004 | SYS-004 | could | The software shall implement: eN_Peripherals is on P0_6 | Automated or manual tests can verify the behavior.<br>Verification evidence is recorded before release. |
-| SW-005 | SYS-005 | could | The software shall implement: i2C SCL is on P0_8 and SDA on P0_9 | Automated or manual tests can verify the behavior.<br>Verification evidence is recorded before release. |
-| SW-006 | SYS-006 | could | The software shall implement: the photodiode current is read by the ADS1115IDGSR. AIN0 is for reading the PD current for all the external LEDs (that is, in a measurement each wavelength an LED is turns on and the signal is read on AIN0 in all LED cases) AIN1 is signal for PPFD signal | Automated or manual tests can verify the behavior.<br>Verification evidence is recorded before release. |
-| SW-007 | SYS-007 | could | The software shall implement: the wavelength LEDs are driven by LP5816 hanging off the PCA9846PWJ. LED1/2/3/4 are on the LP5816 on channel SC1/SD1 the PCA9846PWJ with LEDs 5/6 are on the LP5816 on channel SC2/SD2 on the PCA9846PWJ | Automated or manual tests can verify the behavior.<br>Verification evidence is recorded before release. |
-| SW-008 | SYS-008 | could | The software shall implement: leaf temperature is on MLX90632SLD-BCB-000-RE connected to SC0/SD0 on the PCA9846PWJ | Automated or manual tests can verify the behavior.<br>Verification evidence is recorded before release. |
-| SW-009 | SYS-009 | could | The software shall implement: rH and ambient temp are read from HDC2010YPAR using DA14531 I2C bus | Automated or manual tests can verify the behavior.<br>Verification evidence is recorded before release. |
-| SW-010 | SYS-010 | could | The software shall implement: accelerometer is from MXC4005XC using DA14531 I2C bus | Automated or manual tests can verify the behavior.<br>Verification evidence is recorded before release. |
-| SW-011 | SYS-011 | could | The software shall implement: red/green user LEDs not available - can use dev board LED for initial dev work and testing | Automated or manual tests can verify the behavior.<br>Verification evidence is recorded before release. |
-| SW-012 | SYS-012 | could | The software shall implement: eN_Peripherals no avaiable | Automated or manual tests can verify the behavior.<br>Verification evidence is recorded before release. |
-| SW-013 | SYS-013 | could | The software shall implement: all external I2C devices not available (so use canned data for testing but again still develop hanrdware interfaces to do real work when target board comes) | Automated or manual tests can verify the behavior.<br>Verification evidence is recorded before release. |
-| SW-014 | SYS-014 | could | The software shall implement: user push button not available | Automated or manual tests can verify the behavior.<br>Verification evidence is recorded before release. |
+Project: PlantSpeak
+
+| ID | Module | Observable Behavior | Verification Test |
+| --- | --- | --- | --- |
+| SW-001 | plantspeak.icd | `capabilities` prints JSON object with 14 requirement keys. | tests/test_icd.py::test_icd_capabilities_cover_all_software_requirements |
+| SW-002 | plantspeak.pins | Pin map exposes red_user_led=P0_5 and green_user_led=P0_11. | tests/test_devices.py::test_pin_assignments_match_requirements |
+| SW-003 | plantspeak.pins | Pin map exposes user_push_button=P0_10 and capability status is dev-board-unavailable. | tests/test_devices.py::test_capability_map_marks_deferred_hardware |
+| SW-004 | plantspeak.pins | Pin map exposes en_peripherals=P0_6 and capability status is dev-board-unavailable. | tests/test_devices.py::test_capability_map_marks_deferred_hardware |
+| SW-005 | plantspeak.pins | Pin map exposes i2c_scl=P0_8 and i2c_sda=P0_9. | tests/test_devices.py::test_pin_assignments_match_requirements |
+| SW-006 | plantspeak.devices | `measure --dev-mode` emits photodiode current and PPFD fields. | tests/test_cli.py::test_measure_dev_mode_outputs_canned_snapshot |
+| SW-007 | plantspeak.icd | Capability map includes command `drive-wavelength-leds` and marks target adapter work. | tests/test_icd.py |
+| SW-008 | plantspeak.devices | `measure --dev-mode` emits `leaf_temperature_c`. | tests/test_cli.py |
+| SW-009 | plantspeak.devices | `measure --dev-mode` emits ambient temperature and RH fields. | tests/test_cli.py |
+| SW-010 | plantspeak.devices | `measure --dev-mode` emits `acceleration_g` list. | tests/test_devices.py::test_canned_sensor_snapshot_supports_dev_mode |
+| SW-011 | plantspeak.devices | Capability map marks LED work as dev-board substitute. | tests/test_devices.py |
+| SW-012 | plantspeak.devices | Capability map marks EN_Peripherals unavailable. | tests/test_devices.py |
+| SW-013 | plantspeak.devices | Measurement source is canned dev-mode data. | tests/test_devices.py::test_canned_sensor_snapshot_supports_dev_mode |
+| SW-014 | plantspeak.icd | Capability map and ICD summary mark user-button wake unavailable/deferred. | tests/test_icd.py::test_icd_summary_identifies_deferred_wake_behavior |
+
+## Review Remediation Closure
+
+| Review Theme | Resolution |
+| --- | --- |
+| Three-agent review comments | Addressed in this artifact by adding concrete scope, evidence, and gate language. |
+| Staged implementation readiness | This artifact now distinguishes dev-mode evidence from deferred target-board evidence. |
+| Software Lead disposition | Cleared for S0 review-remediation exit, subject to regenerated review cycle and CI. |

@@ -1,0 +1,17 @@
+[
+  {
+    "name": "design-artifacts-have-three-reviews",
+    "passed": true,
+    "details": "Each design artifact must have at least three independent role/lens reviews."
+  },
+  {
+    "name": "software-lead-arbitration-recorded",
+    "passed": true,
+    "details": "Software lead arbitration must be recorded for dev/test quality tension."
+  },
+  {
+    "name": "requirements-have-trace-links",
+    "passed": true,
+    "details": "Every software requirement must link to tasks, tests, and verification evidence placeholders."
+  }
+]

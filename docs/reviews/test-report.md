@@ -19,17 +19,18 @@ rootdir: C:\Users\johns\OneDrive\Documents\Software Team\runs\plantspeak-detaile
 configfile: pyproject.toml
 testpaths: tests
 plugins: anyio-4.12.1, langsmith-0.7.30
-collected 17 items
+collected 24 items
 
-tests\test_cli.py ....                                                   [ 23%]
-tests\test_contracts.py ..                                               [ 35%]
-tests\test_devices.py ....                                               [ 58%]
-tests\test_icd.py ..                                                     [ 70%]
-tests\test_requirements.py .                                             [ 76%]
-tests\test_system_evidence.py ..                                         [ 88%]
+tests\test_adapters.py .......                                           [ 29%]
+tests\test_cli.py ....                                                   [ 45%]
+tests\test_contracts.py ..                                               [ 54%]
+tests\test_devices.py ....                                               [ 70%]
+tests\test_icd.py ..                                                     [ 79%]
+tests\test_requirements.py .                                             [ 83%]
+tests\test_system_evidence.py ..                                         [ 91%]
 tests\test_traceability.py ..                                            [100%]
 
-============================= 17 passed in 0.14s ==============================
+============================= 24 passed in 0.12s ==============================
 ```
 
 ## Requirement Coverage
@@ -39,3 +40,5 @@ tests\test_traceability.py ..                                            [100%]
 - Covered behavior: requirement registry, pin map, dev-board fallbacks, ICD capability summary, CLI self-test, contract validation, and mechanical traceability.
 - S1 evidence: `docs/test-evidence/S1-pytest.txt`, `docs/test-evidence/S1-trace-matrix.json`
 - S2 evidence: `docs/test-evidence/S2-pytest.txt`, `docs/test-evidence/s2-devmode/manifest.json`, `docs/test-evidence/s2-devmode/ST-001.json`, `docs/test-evidence/s2-devmode/ST-002.txt`, `docs/test-evidence/s2-devmode/ST-003.json`, `docs/test-evidence/s2-devmode/ST-004.json`
+- S3 evidence: `docs/test-evidence/S3-pytest.txt`
+- S3 covered behavior: mocked I2C bus success, explicit NACK/timeout/missing-device/invalid-data faults, mux channel validation, LED current validation, and target measurement service snapshot assembly.

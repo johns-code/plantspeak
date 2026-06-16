@@ -1,0 +1,239 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "artifact": "runs\\plantspeak-detailed-fresh\\delivery-checkout\\docs\\vmodel\\10-system-test-plan.md",
+      "check": "system-test-required-columns",
+      "passed": true,
+      "message": "All required system test columns are present."
+    },
+    {
+      "artifact": "runs\\plantspeak-detailed-fresh\\delivery-checkout\\docs\\vmodel\\10-system-test-plan.md",
+      "check": "system-test-row-count",
+      "passed": true,
+      "message": "At least five system tests are defined."
+    },
+    {
+      "artifact": "runs\\plantspeak-detailed-fresh\\delivery-checkout\\docs\\vmodel\\10-system-test-plan.md",
+      "check": "system-test-no-vague-coverage",
+      "passed": true,
+      "message": "No vague coverage/evidence phrases detected."
+    },
+    {
+      "artifact": "runs\\plantspeak-detailed-fresh\\delivery-checkout\\docs\\vmodel\\10-system-test-plan.md",
+      "check": "system-test-evidence-artifacts-named",
+      "passed": true,
+      "message": "Required evidence artifacts are named."
+    },
+    {
+      "artifact": "runs\\plantspeak-detailed-fresh\\delivery-checkout\\docs\\vmodel\\10-system-test-plan.md",
+      "check": "system-test-dev-mode-limits-explicit",
+      "passed": true,
+      "message": "Dev-mode limits are explicit."
+    },
+    {
+      "artifact": "runs\\plantspeak-detailed-fresh\\delivery-checkout\\docs\\vmodel\\10-system-test-plan.md",
+      "check": "system-test-failure-action",
+      "passed": true,
+      "message": "Failure action is defined."
+    },
+    {
+      "artifact": "runs\\plantspeak-detailed-fresh\\delivery-checkout\\docs\\planning\\staged-development-test-plan.md",
+      "check": "implementation-plan-required-columns",
+      "passed": true,
+      "message": "All required implementation execution columns are present."
+    },
+    {
+      "artifact": "runs\\plantspeak-detailed-fresh\\delivery-checkout\\docs\\planning\\staged-development-test-plan.md",
+      "check": "implementation-plan-stage-count",
+      "passed": true,
+      "message": "S0 through S7 implementation stages are defined."
+    },
+    {
+      "artifact": "runs\\plantspeak-detailed-fresh\\delivery-checkout\\docs\\planning\\staged-development-test-plan.md",
+      "check": "implementation-plan-exact-branches",
+      "passed": true,
+      "message": "Exact branch names are present."
+    },
+    {
+      "artifact": "runs\\plantspeak-detailed-fresh\\delivery-checkout\\docs\\planning\\staged-development-test-plan.md",
+      "check": "implementation-plan-files-named",
+      "passed": true,
+      "message": "Concrete files/modules are named."
+    },
+    {
+      "artifact": "runs\\plantspeak-detailed-fresh\\delivery-checkout\\docs\\planning\\staged-development-test-plan.md",
+      "check": "implementation-plan-tests-named",
+      "passed": true,
+      "message": "Concrete tests are named."
+    },
+    {
+      "artifact": "runs\\plantspeak-detailed-fresh\\delivery-checkout\\docs\\planning\\staged-development-test-plan.md",
+      "check": "implementation-plan-no-vague-execution",
+      "passed": true,
+      "message": "No vague implementation execution phrases detected."
+    },
+    {
+      "artifact": "runs\\plantspeak-detailed-fresh\\delivery-checkout\\docs\\planning\\staged-development-test-plan.md",
+      "check": "implementation-plan-failure-actions",
+      "passed": true,
+      "message": "Rollback and defect actions are defined."
+    },
+    {
+      "artifact": "runs\\plantspeak-detailed-fresh\\delivery-checkout\\docs\\vmodel\\08-unit-test-plan.md",
+      "check": "unit-test-plan-required-columns",
+      "passed": true,
+      "message": "Unit test plan includes fixture, assertion, negative case, evidence, and stage columns."
+    },
+    {
+      "artifact": "runs\\plantspeak-detailed-fresh\\delivery-checkout\\docs\\vmodel\\08-unit-test-plan.md",
+      "check": "unit-test-plan-row-count",
+      "passed": true,
+      "message": "Unit test plan defines one or more rows for each software requirement."
+    },
+    {
+      "artifact": "runs\\plantspeak-detailed-fresh\\delivery-checkout\\docs\\vmodel\\08-unit-test-plan.md",
+      "check": "unit-test-plan-no-shallow-status-only-rows",
+      "passed": true,
+      "message": "Unit test rows include detailed design intent instead of status-only evidence."
+    },
+    {
+      "artifact": "runs\\plantspeak-detailed-fresh\\delivery-checkout\\docs\\vmodel\\08-unit-test-plan.md",
+      "check": "unit-test-plan-behavior-specificity",
+      "passed": true,
+      "message": "Unit test plan names assertions, fixtures, edge/fault cases, and source metadata."
+    },
+    {
+      "artifact": "runs\\plantspeak-detailed-fresh\\delivery-checkout\\docs\\vmodel\\09-integration-test-plan.md",
+      "check": "integration-test-plan-required-columns",
+      "passed": true,
+      "message": "Integration test plan includes setup, procedure, observability, negative case, evidence, and promotion gate columns."
+    },
+    {
+      "artifact": "runs\\plantspeak-detailed-fresh\\delivery-checkout\\docs\\vmodel\\09-integration-test-plan.md",
+      "check": "integration-test-plan-row-count",
+      "passed": true,
+      "message": "Integration test plan defines staged boundaries beyond the S0 harness."
+    },
+    {
+      "artifact": "runs\\plantspeak-detailed-fresh\\delivery-checkout\\docs\\vmodel\\09-integration-test-plan.md",
+      "check": "integration-test-plan-no-vague-coverage-ranges",
+      "passed": true,
+      "message": "Integration test plan avoids vague requirement ranges and status-only rows."
+    },
+    {
+      "artifact": "runs\\plantspeak-detailed-fresh\\delivery-checkout\\docs\\vmodel\\09-integration-test-plan.md",
+      "check": "integration-test-plan-fault-and-gate-specificity",
+      "passed": true,
+      "message": "Integration test plan names fault paths and promotion gates."
+    },
+    {
+      "artifact": "docs/vmodel/01-user-needs.md",
+      "check": "detailed-design-input-content",
+      "passed": true,
+      "message": "Artifact contains required detailed-design input markers."
+    },
+    {
+      "artifact": "docs/vmodel/02-system-requirements.md",
+      "check": "detailed-design-input-content",
+      "passed": true,
+      "message": "Artifact contains required detailed-design input markers."
+    },
+    {
+      "artifact": "docs/vmodel/03-software-requirements.md",
+      "check": "detailed-design-input-content",
+      "passed": true,
+      "message": "Artifact contains required detailed-design input markers."
+    },
+    {
+      "artifact": "docs/vmodel/04-architecture-design.md",
+      "check": "detailed-design-input-content",
+      "passed": true,
+      "message": "Artifact contains required detailed-design input markers."
+    },
+    {
+      "artifact": "docs/vmodel/05-detailed-design-notes.md",
+      "check": "detailed-design-input-content",
+      "passed": true,
+      "message": "Artifact contains required detailed-design input markers."
+    },
+    {
+      "artifact": "docs/vmodel/06-implementation-task-plan.md",
+      "check": "detailed-design-input-content",
+      "passed": true,
+      "message": "Artifact contains required detailed-design input markers."
+    },
+    {
+      "artifact": "docs/vmodel/07-test-strategy.md",
+      "check": "detailed-design-input-content",
+      "passed": true,
+      "message": "Artifact contains required detailed-design input markers."
+    },
+    {
+      "artifact": "docs/vmodel/08-unit-test-plan.md",
+      "check": "detailed-design-input-content",
+      "passed": true,
+      "message": "Artifact contains required detailed-design input markers."
+    },
+    {
+      "artifact": "docs/vmodel/09-integration-test-plan.md",
+      "check": "detailed-design-input-content",
+      "passed": true,
+      "message": "Artifact contains required detailed-design input markers."
+    },
+    {
+      "artifact": "docs/vmodel/10-system-test-plan.md",
+      "check": "detailed-design-input-content",
+      "passed": true,
+      "message": "Artifact contains required detailed-design input markers."
+    },
+    {
+      "artifact": "docs/vmodel/11-acceptance-test-plan.md",
+      "check": "detailed-design-input-content",
+      "passed": true,
+      "message": "Artifact contains required detailed-design input markers."
+    },
+    {
+      "artifact": "docs/vmodel/12-requirements-traceability-matrix.md",
+      "check": "detailed-design-input-content",
+      "passed": true,
+      "message": "Artifact contains required detailed-design input markers."
+    },
+    {
+      "artifact": "docs/planning/software-lead-execution-plan.md",
+      "check": "detailed-design-input-content",
+      "passed": true,
+      "message": "Artifact contains required detailed-design input markers."
+    },
+    {
+      "artifact": "docs/planning/issue-sequencing-plan.md",
+      "check": "detailed-design-input-content",
+      "passed": true,
+      "message": "Artifact contains required detailed-design input markers."
+    },
+    {
+      "artifact": "docs/planning/risk-register.md",
+      "check": "detailed-design-input-content",
+      "passed": true,
+      "message": "Artifact contains required detailed-design input markers."
+    },
+    {
+      "artifact": "docs/planning/staged-development-test-plan.md",
+      "check": "detailed-design-input-content",
+      "passed": true,
+      "message": "Artifact contains required detailed-design input markers."
+    },
+    {
+      "artifact": "docs/firmware/architecture.md",
+      "check": "detailed-design-input-content",
+      "passed": true,
+      "message": "Artifact contains required detailed-design input markers."
+    },
+    {
+      "artifact": "runs\\plantspeak-detailed-fresh\\delivery-checkout\\docs\\firmware\\architecture.md",
+      "check": "firmware-architecture-specificity",
+      "passed": true,
+      "message": "Firmware architecture names required command, service, HAL, transport, driver, pin, bus, evidence, and stage concepts."
+    }
+  ]
+}

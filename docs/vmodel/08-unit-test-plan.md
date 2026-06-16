@@ -2,21 +2,31 @@
 
 Project: PlantSpeak
 
-Generated: 2026-06-16T08:25:12+00:00
+## Unit Test Design Rule
 
-| Test ID | Requirement | Status | Objective |
-| --- | --- | --- | --- |
-| UT-001 | SW-001 | Planned | Verify: The software shall implement: build ICD capabilities on DA14531 according to schematics PlanSpeak Schematic V3.pdf |
-| UT-002 | SW-002 | Planned | Verify: The software shall implement: the red/green user LEDs mentioned in the ICD are controlled via P0_5 and P0_11 |
-| UT-003 | SW-003 | Planned | Verify: The software shall implement: the user push button is on P0_10 |
-| UT-004 | SW-004 | Planned | Verify: The software shall implement: eN_Peripherals is on P0_6 |
-| UT-005 | SW-005 | Planned | Verify: The software shall implement: i2C SCL is on P0_8 and SDA on P0_9 |
-| UT-006 | SW-006 | Planned | Verify: The software shall implement: the photodiode current is read by the ADS1115IDGSR. AIN0 is for reading the PD current for all the external LEDs (that is, in a measurement each wavelength an LED is turns on and the signal is read on AIN0 in all LED cases) AIN1 is signal for PPFD signal |
-| UT-007 | SW-007 | Planned | Verify: The software shall implement: the wavelength LEDs are driven by LP5816 hanging off the PCA9846PWJ. LED1/2/3/4 are on the LP5816 on channel SC1/SD1 the PCA9846PWJ with LEDs 5/6 are on the LP5816 on channel SC2/SD2 on the PCA9846PWJ |
-| UT-008 | SW-008 | Planned | Verify: The software shall implement: leaf temperature is on MLX90632SLD-BCB-000-RE connected to SC0/SD0 on the PCA9846PWJ |
-| UT-009 | SW-009 | Planned | Verify: The software shall implement: rH and ambient temp are read from HDC2010YPAR using DA14531 I2C bus |
-| UT-010 | SW-010 | Planned | Verify: The software shall implement: accelerometer is from MXC4005XC using DA14531 I2C bus |
-| UT-011 | SW-011 | Planned | Verify: The software shall implement: red/green user LEDs not available - can use dev board LED for initial dev work and testing |
-| UT-012 | SW-012 | Planned | Verify: The software shall implement: eN_Peripherals no avaiable |
-| UT-013 | SW-013 | Planned | Verify: The software shall implement: all external I2C devices not available (so use canned data for testing but again still develop hanrdware interfaces to do real work when target board comes) |
-| UT-014 | SW-014 | Planned | Verify: The software shall implement: user push button not available |
+Every unit test must identify the fixture/input, concrete assertions, a negative, edge, or fault case, and the stage gate it supports. A row that only says `python -m pytest` is not detailed test design.
+
+| Test ID | Requirement | Unit Under Test | Fixture / Input | Assertions | Negative / Edge Case | Evidence | Stage |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| UT-001 | SW-001 | plantspeak/icd.py | ICD catalog fixture with all requirement records | assert capability summary contains every SW ID, command, status, and verification method | remove one SW ID from fixture; test must fail coverage check | `python -m pytest`; named test module in RTM | S1 |
+| UT-002 | SW-002 | plantspeak/pins.py, plantspeak/devices.py | pin map fixture | assert red and green LED signals resolve to P0_5/P0_11 and link SW-002 | duplicate or missing LED signal fails pin assignment test | `python -m pytest`; named test module in RTM | S1 |
+| UT-003 | SW-003 | plantspeak/pins.py, plantspeak/devices.py | dev-board profile fixture | assert user push button maps to P0_10 and wake is unavailable/deferred | target-only wake cannot report implemented in dev profile | `python -m pytest`; named test module in RTM | S1 |
+| UT-004 | SW-004 | plantspeak/pins.py, plantspeak/devices.py | dev-board profile fixture | assert EN_Peripherals maps to P0_6 and unavailable state is explicit | missing availability note fails capability map test | `python -m pytest`; named test module in RTM | S1 |
+| UT-005 | SW-005 | plantspeak/pins.py, plantspeak/devices.py | pin map fixture | assert I2C SCL/SDA resolve to P0_8/P0_9 | swapped or missing I2C pins fail assignment test | `python -m pytest`; named test module in RTM | S1 |
+| UT-006 | SW-006 | plantspeak/devices.py | dev-mode measurement fixture | assert photodiode current, PPFD, units, and source metadata are present | hardware-mode request before adapter returns unsupported/deferred | `python -m pytest`; named test module in RTM | S2 |
+| UT-007 | SW-007 | plantspeak/icd.py, plantspeak/devices.py | ICD command fixture | assert drive-wavelength-leds capability exists with target-adapter status | missing command blocks S3 adapter promotion | `python -m pytest`; named test module in RTM | S2 |
+| UT-008 | SW-008 | plantspeak/devices.py | dev-mode measurement fixture | assert leaf temperature field and source metadata are present | missing sensor field fails snapshot contract | `python -m pytest`; named test module in RTM | S2 |
+| UT-009 | SW-009 | plantspeak/devices.py | dev-mode measurement fixture | assert ambient temperature and relative humidity fields are present | invalid humidity range fails snapshot validation | `python -m pytest`; named test module in RTM | S2 |
+| UT-010 | SW-010 | plantspeak/devices.py | dev-mode measurement fixture | assert acceleration_g is a three-value vector | wrong vector length fails snapshot validation | `python -m pytest`; named test module in RTM | S2 |
+| UT-011 | SW-011 | plantspeak/devices.py | capability map fixture | assert LED substitute behavior is marked dev-board substitute | substitute cannot be reported as target hardware success | `python -m pytest`; named test module in RTM | S2 |
+| UT-012 | SW-012 | plantspeak/devices.py | capability map fixture | assert EN_Peripherals unavailable status is visible | silent success for unavailable hardware fails test | `python -m pytest`; named test module in RTM | S2 |
+| UT-013 | SW-013 | plantspeak/devices.py | measurement provider fixture | assert canned-dev-mode-data source metadata is emitted | missing source metadata blocks verification evidence | `python -m pytest`; named test module in RTM | S2 |
+| UT-014 | SW-014 | plantspeak/devices.py, plantspeak/icd.py | ICD and profile fixture | assert wake behavior is deferred/unavailable in capability summary | wake cannot be marked implemented without HIL evidence | `python -m pytest`; named test module in RTM | S2 |
+
+## Review Remediation Closure
+
+| Review Theme | Resolution |
+| --- | --- |
+| Three-agent review comments | Addressed in this artifact by adding concrete scope, evidence, and gate language. |
+| Staged implementation readiness | This artifact now distinguishes dev-mode evidence from deferred target-board evidence. |
+| Software Lead disposition | Cleared for S0 review-remediation exit, subject to regenerated review cycle and CI. |

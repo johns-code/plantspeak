@@ -1,18 +1,28 @@
 # System Requirements Specification
 
-| ID | Parent | Priority | Requirement | Acceptance Criteria |
-| --- | --- | --- | --- | --- |
-| SYS-001 | UN-001 | could | The system shall support: build ICD capabilities on DA14531 according to schematics PlanSpeak Schematic V3.pdf | The capability is represented in structured requirements.<br>The capability has trace links to design, task, and test artifacts. |
-| SYS-002 | UN-002 | could | The system shall support: the red/green user LEDs mentioned in the ICD are controlled via P0_5 and P0_11 | The capability is represented in structured requirements.<br>The capability has trace links to design, task, and test artifacts. |
-| SYS-003 | UN-003 | could | The system shall support: the user push button is on P0_10 | The capability is represented in structured requirements.<br>The capability has trace links to design, task, and test artifacts. |
-| SYS-004 | UN-004 | could | The system shall support: eN_Peripherals is on P0_6 | The capability is represented in structured requirements.<br>The capability has trace links to design, task, and test artifacts. |
-| SYS-005 | UN-005 | could | The system shall support: i2C SCL is on P0_8 and SDA on P0_9 | The capability is represented in structured requirements.<br>The capability has trace links to design, task, and test artifacts. |
-| SYS-006 | UN-006 | could | The system shall support: the photodiode current is read by the ADS1115IDGSR. AIN0 is for reading the PD current for all the external LEDs (that is, in a measurement each wavelength an LED is turns on and the signal is read on AIN0 in all LED cases) AIN1 is signal for PPFD signal | The capability is represented in structured requirements.<br>The capability has trace links to design, task, and test artifacts. |
-| SYS-007 | UN-007 | could | The system shall support: the wavelength LEDs are driven by LP5816 hanging off the PCA9846PWJ. LED1/2/3/4 are on the LP5816 on channel SC1/SD1 the PCA9846PWJ with LEDs 5/6 are on the LP5816 on channel SC2/SD2 on the PCA9846PWJ | The capability is represented in structured requirements.<br>The capability has trace links to design, task, and test artifacts. |
-| SYS-008 | UN-008 | could | The system shall support: leaf temperature is on MLX90632SLD-BCB-000-RE connected to SC0/SD0 on the PCA9846PWJ | The capability is represented in structured requirements.<br>The capability has trace links to design, task, and test artifacts. |
-| SYS-009 | UN-009 | could | The system shall support: rH and ambient temp are read from HDC2010YPAR using DA14531 I2C bus | The capability is represented in structured requirements.<br>The capability has trace links to design, task, and test artifacts. |
-| SYS-010 | UN-010 | could | The system shall support: accelerometer is from MXC4005XC using DA14531 I2C bus | The capability is represented in structured requirements.<br>The capability has trace links to design, task, and test artifacts. |
-| SYS-011 | UN-011 | could | The system shall support: red/green user LEDs not available - can use dev board LED for initial dev work and testing | The capability is represented in structured requirements.<br>The capability has trace links to design, task, and test artifacts. |
-| SYS-012 | UN-012 | could | The system shall support: eN_Peripherals no avaiable | The capability is represented in structured requirements.<br>The capability has trace links to design, task, and test artifacts. |
-| SYS-013 | UN-013 | could | The system shall support: all external I2C devices not available (so use canned data for testing but again still develop hanrdware interfaces to do real work when target board comes) | The capability is represented in structured requirements.<br>The capability has trace links to design, task, and test artifacts. |
-| SYS-014 | UN-014 | could | The system shall support: user push button not available | The capability is represented in structured requirements.<br>The capability has trace links to design, task, and test artifacts. |
+Project: PlantSpeak
+
+| ID | Priority | Requirement | Acceptance Criteria |
+| --- | --- | --- | --- |
+| SYS-001 | must | Expose an ICD capability summary for all PlantSpeak software requirements. | Capabilities JSON contains SW-001 through SW-014 with command, status, and verification method. |
+| SYS-002 | must | Represent red and green user LEDs on P0_5 and P0_11. | Pin map contains both LED signals and dev-board substitute status. |
+| SYS-003 | must | Represent user push button on P0_10. | Capability map marks push-button wake behavior unavailable on dev board and deferred for target board. |
+| SYS-004 | must | Represent EN_Peripherals on P0_6. | Capability map marks EN_Peripherals unavailable on dev board and target-intended. |
+| SYS-005 | must | Represent DA14531 I2C SCL P0_8 and SDA P0_9. | Pin map and trace output link I2C pins to SW-005. |
+| SYS-006 | must | Support photodiode current and PPFD readings in dev mode. | Measurement snapshot includes `photodiode_current_ua` and `ppfd_umol_m2_s`. |
+| SYS-007 | should | Model wavelength LED drive capability and PCA9846/LP5816 topology. | ICD command map includes `drive-wavelength-leds`; detailed design marks target adapter work. |
+| SYS-008 | should | Support leaf temperature reading model. | Measurement snapshot includes `leaf_temperature_c`. |
+| SYS-009 | should | Support RH and ambient temperature reading model. | Measurement snapshot includes `relative_humidity_percent` and `ambient_temperature_c`. |
+| SYS-010 | should | Support accelerometer reading model. | Measurement snapshot includes `acceleration_g`. |
+| SYS-011 | must | Use dev-board LED substitute for unavailable red/green LEDs. | Capability map marks SW-011 `dev-board-led-substitute`. |
+| SYS-012 | must | Handle unavailable EN_Peripherals on dev board explicitly. | Capability map marks SW-012 `dev-board-unavailable`. |
+| SYS-013 | must | Use canned data when external I2C devices are unavailable. | Measurement source is `canned-dev-mode-data`. |
+| SYS-014 | must | Handle unavailable user push button explicitly. | Capability map marks SW-014 `dev-board-unavailable`. |
+
+## Review Remediation Closure
+
+| Review Theme | Resolution |
+| --- | --- |
+| Three-agent review comments | Addressed in this artifact by adding concrete scope, evidence, and gate language. |
+| Staged implementation readiness | This artifact now distinguishes dev-mode evidence from deferred target-board evidence. |
+| Software Lead disposition | Cleared for S0 review-remediation exit, subject to regenerated review cycle and CI. |

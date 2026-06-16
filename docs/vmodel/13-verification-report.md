@@ -29,6 +29,7 @@ PASS
 - S2 dev-mode system evidence generation creates ST-001 through ST-004 artifacts from the harness.
 - S3 hardware adapter interfaces are verified with mocked I2C success and explicit fault paths.
 - S4 mocked transport and ICD dispatch are verified for valid commands, deferred commands, malformed frames, unsupported commands, oversized payloads, and timeouts.
+- S5 firmware contract files are verified against Python ICD command and pin contracts.
 
 ## S1 Verification Evidence
 
@@ -68,6 +69,16 @@ PASS
 | `tests/test_transport.py` | Verifies ICD frame encode/decode, dispatch, deferred known commands, oversized payloads, unsupported commands, and timeout handling. |
 | `tests/test_security_transport.py` | Verifies malformed payloads do not dispatch and unsupported commands do not produce success side effects. |
 | `plantspeak/transport.py` | Defines mocked transport frame, response, error codes, and dispatch contract. |
+
+## S5 Verification Evidence
+
+| Evidence | Purpose |
+| --- | --- |
+| `docs/test-evidence/S5-pytest.txt` | Local pytest output for 37 tests including firmware contract consistency. |
+| `firmware/icd_command_table.h` | Firmware-facing command table that must match `plantspeak.icd.COMMANDS_BY_REQUIREMENT`. |
+| `firmware/pin_config.h` | Firmware-facing pin definitions that must match `plantspeak.pins.pin_map()`. |
+| `firmware/build.ps1` | Documented DA14531 SDK handoff and contract-only build mode. |
+| `tests/test_firmware_contracts.py` | Mechanical contract checks for firmware command, pin, and build evidence. |
 
 ## Deferred Verification
 

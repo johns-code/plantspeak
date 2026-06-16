@@ -14,6 +14,7 @@ Project: PlantSpeak
 - CLI commands for requirements, traceability, capability summary, measurement, and self-test.
 - Unit, integration, and system-level dev-mode tests.
 - V-model planning, traceability, review, security, and test evidence.
+- Firmware contract headers and build handoff documentation.
 
 ## Included
 
@@ -33,6 +34,10 @@ Project: PlantSpeak
 - DA14531 firmware image.
 - BLE transport implementation.
 - Target-board hardware-in-loop evidence.
+
+## Firmware Note
+
+The repository now contains firmware contract artifacts, but not a flashable DA14531 firmware image. `firmware/build.ps1` runs in contract-only mode unless `DA14531_SDK_PATH` is configured and a project-specific SDK build command is added.
 
 ## Known Deferred Scope
 

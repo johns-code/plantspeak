@@ -1,0 +1,26 @@
+[
+  {
+    "id": "ARB-001",
+    "topic": "Verification standard for Detailed Design Notes",
+    "raised_by": "test_verification",
+    "counterparty": "development_agent",
+    "decision": "Development may proceed only with requirement-linked tests and recorded evidence.",
+    "rationale": "The software lead prioritizes deterministic verification over implementation speed. Dev agents can propose implementation shortcuts, but test evidence remains the release gate.",
+    "required_follow_up": [
+      "Each implementation task must reference at least one software requirement.",
+      "Each software requirement must have planned unit, system, and acceptance test evidence."
+    ]
+  },
+  {
+    "id": "ARB-002",
+    "topic": "Verification standard for Test Strategy",
+    "raised_by": "test_verification",
+    "counterparty": "development_agent",
+    "decision": "Development may proceed only with requirement-linked tests and recorded evidence.",
+    "rationale": "The software lead prioritizes deterministic verification over implementation speed. Dev agents can propose implementation shortcuts, but test evidence remains the release gate.",
+    "required_follow_up": [
+      "Each implementation task must reference at least one software requirement.",
+      "Each software requirement must have planned unit, system, and acceptance test evidence."
+    ]
+  }
+]

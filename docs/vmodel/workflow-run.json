@@ -66,7 +66,7 @@
       ],
       "passed": true,
       "exit_code": 0,
-      "output": "============================= test session starts =============================\nplatform win32 -- Python 3.13.9, pytest-9.1.0, pluggy-1.6.0\nrootdir: C:\\Users\\johns\\OneDrive\\Documents\\Software Team\\runs\\plantspeak-delivery\\generated-project\nconfigfile: pyproject.toml\ntestpaths: tests\nplugins: anyio-4.12.1, langsmith-0.7.30\ncollected 3 items\n\ntests\\test_cli.py ..                                                     [ 66%]\ntests\\test_requirements.py .                                             [100%]\n\n============================== 3 passed in 0.05s =============================="
+      "output": "============================= test session starts =============================\nplatform win32 -- Python 3.13.9, pytest-9.1.0, pluggy-1.6.0\nrootdir: C:\\Users\\johns\\OneDrive\\Documents\\Software Team\\runs\\plantspeak-delivery\\generated-project\nconfigfile: pyproject.toml\ntestpaths: tests\nplugins: anyio-4.12.1, langsmith-0.7.30\ncollected 3 items\n\ntests\\test_cli.py ..                                                     [ 66%]\ntests\\test_requirements.py .                                             [100%]\n\n============================== 3 passed in 0.04s =============================="
     },
     {
       "name": "security-smoke-scan",
@@ -314,5 +314,5 @@
       "details": "Every software requirement must link to tasks, tests, and verification evidence placeholders."
     }
   ],
-  "created_at": "2026-06-16T04:21:30+00:00"
+  "created_at": "2026-06-16T04:22:18+00:00"
 }

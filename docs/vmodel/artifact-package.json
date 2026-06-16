@@ -1,6 +1,6 @@
 {
   "project_name": "PlantSpeak",
-  "created_at": "2026-06-16T04:21:28+00:00",
+  "created_at": "2026-06-16T04:22:16+00:00",
   "source_brief": "- Users must be able to record basic plant observations from a command-line interface.\n- The app should store plant observation entries in a local file.\n- Users must be able to list previously recorded plant observations.\n- The system should provide a traceable test plan for each plant observation requirement.\n- Final acceptance should require human review before release.",
   "user_needs": [
     {

@@ -1,0 +1,14 @@
+SW-001 -> #114 -> describe-icd -> ST-001, ST-002, ST-003
+SW-002 -> #115 -> set-user-led -> ST-002, ST-006
+SW-003 -> #116 -> read-user-button -> ST-002, ST-006
+SW-004 -> #117 -> set-peripheral-enable -> ST-002, ST-006
+SW-005 -> #118 -> scan-i2c-bus -> ST-002, ST-006
+SW-006 -> #119 -> read-light-sensors -> ST-004, ST-006
+SW-007 -> #120 -> drive-wavelength-leds -> ST-006
+SW-008 -> #121 -> read-leaf-temperature -> ST-004, ST-006
+SW-009 -> #122 -> read-ambient-climate -> ST-004, ST-006
+SW-010 -> #123 -> read-acceleration -> ST-004, ST-006
+SW-011 -> #124 -> set-dev-board-led -> ST-001, ST-002
+SW-012 -> #125 -> report-peripheral-enable-unavailable -> ST-002, ST-006
+SW-013 -> #126 -> read-canned-sensor-data -> ST-001, ST-004
+SW-014 -> #127 -> report-user-button-unavailable -> ST-001, ST-006

@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import argparse
 import json
+from pathlib import Path
 
 from plantspeak.devices import build_capability_map, collect_dev_mode_snapshot, default_dev_board_profile
 from plantspeak.icd import build_icd_capabilities, capability_summary
@@ -20,6 +21,8 @@ def build_parser() -> argparse.ArgumentParser:
     measure.add_argument("--dev-mode", action="store_true", help="Use canned data for unavailable external I2C devices.")
     self_test = subparsers.add_parser("self-test", help="Run deterministic dev-board checks.")
     self_test.add_argument("--dev-mode", action="store_true", help="Use dev-board profile and canned data.")
+    evidence = subparsers.add_parser("generate-evidence", help="Generate deterministic dev-mode system evidence.")
+    evidence.add_argument("--output-dir", type=Path, required=True, help="Directory for generated evidence artifacts.")
     return parser
 
 
@@ -62,6 +65,12 @@ def main(argv: list[str] | None = None) -> int:
         }
         print(json.dumps(checks, indent=2, sort_keys=True))
         return 0 if all(checks.values()) else 1
+    if args.command == "generate-evidence":
+        from plantspeak.evidence import generate_system_evidence
+
+        results = generate_system_evidence(args.output_dir)
+        print(json.dumps([result.to_dict() for result in results], indent=2, sort_keys=True))
+        return 0 if all(result.status == "PASS" for result in results) else 1
     raise ValueError(f"unsupported command: {args.command}")
 
 

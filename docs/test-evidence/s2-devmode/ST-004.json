@@ -1,0 +1,13 @@
+{
+  "acceleration_g": [
+    0.01,
+    -0.02,
+    1.0
+  ],
+  "ambient_temperature_c": 23.6,
+  "leaf_temperature_c": 24.2,
+  "photodiode_current_ua": 12.5,
+  "ppfd_umol_m2_s": 245.0,
+  "relative_humidity_percent": 51.0,
+  "source": "canned-dev-mode-data"
+}

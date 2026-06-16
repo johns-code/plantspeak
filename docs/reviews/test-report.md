@@ -19,16 +19,17 @@ rootdir: C:\Users\johns\OneDrive\Documents\Software Team\runs\plantspeak-detaile
 configfile: pyproject.toml
 testpaths: tests
 plugins: anyio-4.12.1, langsmith-0.7.30
-collected 15 items
+collected 17 items
 
-tests\test_cli.py ....                                                   [ 26%]
-tests\test_contracts.py ..                                               [ 40%]
-tests\test_devices.py ....                                               [ 66%]
-tests\test_icd.py ..                                                     [ 80%]
-tests\test_requirements.py .                                             [ 86%]
+tests\test_cli.py ....                                                   [ 23%]
+tests\test_contracts.py ..                                               [ 35%]
+tests\test_devices.py ....                                               [ 58%]
+tests\test_icd.py ..                                                     [ 70%]
+tests\test_requirements.py .                                             [ 76%]
+tests\test_system_evidence.py ..                                         [ 88%]
 tests\test_traceability.py ..                                            [100%]
 
-============================= 15 passed in 0.06s ==============================
+============================= 17 passed in 0.14s ==============================
 ```
 
 ## Requirement Coverage
@@ -37,3 +38,4 @@ tests\test_traceability.py ..                                            [100%]
 - Open delivery issues linked: 14
 - Covered behavior: requirement registry, pin map, dev-board fallbacks, ICD capability summary, CLI self-test, contract validation, and mechanical traceability.
 - S1 evidence: `docs/test-evidence/S1-pytest.txt`, `docs/test-evidence/S1-trace-matrix.json`
+- S2 evidence: `docs/test-evidence/S2-pytest.txt`, `docs/test-evidence/s2-devmode/manifest.json`, `docs/test-evidence/s2-devmode/ST-001.json`, `docs/test-evidence/s2-devmode/ST-002.txt`, `docs/test-evidence/s2-devmode/ST-003.json`, `docs/test-evidence/s2-devmode/ST-004.json`

@@ -4,9 +4,9 @@ Project: PlantSpeak
 
 Status: ready_for_human_acceptance
 
-Generated project: `runs\plantspeak-rerun\generated-project`
+Generated project: `runs\plantspeak-detailed-fresh\generated-project`
 
-Artifact directory: `runs\plantspeak-rerun\artifacts`
+Artifact directory: `runs\plantspeak-detailed-fresh\artifacts`
 
 ## Gates
 

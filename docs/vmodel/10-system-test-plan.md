@@ -2,7 +2,7 @@
 
 Project: PlantSpeak
 
-Generated: 2026-06-16T04:39:11+00:00
+Generated: 2026-06-16T04:57:35+00:00
 
 | Test ID | Requirement | Status | Objective |
 | --- | --- | --- | --- |
@@ -85,3 +85,16 @@ Generated: 2026-06-16T04:39:11+00:00
 | ST-077 | SW-077 | Planned | Verify: The software shall implement: firmware Update and Recovery |
 | ST-078 | SW-078 | Planned | Verify: The software shall implement: recommended SmartDevice Flows |
 | ST-079 | SW-079 | Planned | Verify: The software shall implement: security and Policy Notes |
+| ST-080 | SW-080 | Planned | Verify: The software shall implement: the red/green user LEDs mentioned in the ICD are controlled via P0_5 and P0_11 |
+| ST-081 | SW-081 | Planned | Verify: The software shall implement: the user push button is on P0_10 |
+| ST-082 | SW-082 | Planned | Verify: The software shall implement: eN_Peripherals is on P0_6 |
+| ST-083 | SW-083 | Planned | Verify: The software shall implement: i2C SCL is on P0_8 and SDA on P0_9 |
+| ST-084 | SW-084 | Planned | Verify: The software shall implement: the photodiode current is read by the ADS1115IDGSR. AIN0 is for reading the PD current for all the external LEDs (that is, in a measurement each wavelength an LED is turns on and the signal is read on AIN0 in all LED cases) AIN1 is signal for PPFD signal |
+| ST-085 | SW-085 | Planned | Verify: The software shall implement: the wavelength LEDs are driven by LP5816 hanging off the PCA9846PWJ. LED1/2/3/4 are on the LP5816 on channel SC1/SD1 the PCA9846PWJ with LEDs 5/6 are on the LP5816 on channel SC2/SD2 on the PCA9846PWJ |
+| ST-086 | SW-086 | Planned | Verify: The software shall implement: leaf temperature is on MLX90632SLD-BCB-000-RE connected to SC0/SD0 on the PCA9846PWJ |
+| ST-087 | SW-087 | Planned | Verify: The software shall implement: rH and ambient temp are read from HDC2010YPAR using DA14531 I2C bus |
+| ST-088 | SW-088 | Planned | Verify: The software shall implement: accelerometer is from MXC4005XC using DA14531 I2C bus |
+| ST-089 | SW-089 | Planned | Verify: The software shall implement: red/green user LEDs not available - can use dev board LED for initial dev work and testing |
+| ST-090 | SW-090 | Planned | Verify: The software shall implement: eN_Peripherals no avaiable |
+| ST-091 | SW-091 | Planned | Verify: The software shall implement: all external I2C devices not available (so use canned data for testing but again still develop hanrdware interfaces to do real work when target board comes) |
+| ST-092 | SW-092 | Planned | Verify: The software shall implement: user push button not available |

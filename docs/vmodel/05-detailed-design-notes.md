@@ -2,7 +2,7 @@
 
 Project: PlantSpeak
 
-Generated: 2026-06-16T04:39:11+00:00
+Generated: 2026-06-16T04:57:35+00:00
 
 ## Requirement-Level Design Placeholders
 
@@ -85,3 +85,16 @@ Generated: 2026-06-16T04:39:11+00:00
 - `DES-077`: Design detail for `SW-077` is pending elaboration by the design agent.
 - `DES-078`: Design detail for `SW-078` is pending elaboration by the design agent.
 - `DES-079`: Design detail for `SW-079` is pending elaboration by the design agent.
+- `DES-080`: Design detail for `SW-080` is pending elaboration by the design agent.
+- `DES-081`: Design detail for `SW-081` is pending elaboration by the design agent.
+- `DES-082`: Design detail for `SW-082` is pending elaboration by the design agent.
+- `DES-083`: Design detail for `SW-083` is pending elaboration by the design agent.
+- `DES-084`: Design detail for `SW-084` is pending elaboration by the design agent.
+- `DES-085`: Design detail for `SW-085` is pending elaboration by the design agent.
+- `DES-086`: Design detail for `SW-086` is pending elaboration by the design agent.
+- `DES-087`: Design detail for `SW-087` is pending elaboration by the design agent.
+- `DES-088`: Design detail for `SW-088` is pending elaboration by the design agent.
+- `DES-089`: Design detail for `SW-089` is pending elaboration by the design agent.
+- `DES-090`: Design detail for `SW-090` is pending elaboration by the design agent.
+- `DES-091`: Design detail for `SW-091` is pending elaboration by the design agent.
+- `DES-092`: Design detail for `SW-092` is pending elaboration by the design agent.

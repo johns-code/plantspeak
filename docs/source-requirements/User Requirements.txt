@@ -1,7 +1,21 @@
-Build ICD capabilities on DA14531 according to schematics PlanSpeak Schematic V3.pdf
+Build ICD capabilities on DA14531 according to schematics PlanSpeak Schematic V3.pdf. Specifically, and as they relate to the ICD,
+1) The red/green user LEDs mentioned in the ICD are controlled via P0_5 and P0_11
+2) the user push button is on P0_10
+3) EN_Peripherals is on P0_6
+4) I2C SCL is on P0_8 and SDA on P0_9
+5) The photodiode current is read by the ADS1115IDGSR. AIN0 is for reading the PD current for all the external LEDs (that is, in a measurement each wavelength an LED is turns on and the signal is read on AIN0 in all LED cases) AIN1 is signal for PPFD signal
+6) The wavelength LEDs are driven by LP5816 hanging off the PCA9846PWJ. LED1/2/3/4 are on the LP5816 on channel SC1/SD1 the PCA9846PWJ with LEDs 5/6 are on the LP5816 on channel SC2/SD2 on the PCA9846PWJ
+7) Leaf temperature is on MLX90632SLD-BCB-000-RE connected to SC0/SD0 on the PCA9846PWJ
+8) RH and ambient temp are read from HDC2010YPAR using DA14531 I2C bus
+9) accelerometer is from MXC4005XC using DA14531 I2C bus
 
-Use Renesas DA14531-00FXDEVKT-U dev board connected to this laptop for initial dev and testing purposes - so have dev mode in code for testing all before moving to target board, but produce code for hardware target board as well (no need to test target HW functions right now)
 
-see GENERIC_DA14531_DEV_BOARD_TOOLCHAIN.md 
+Use Renesas DA14531-00FXDEVKT-U dev board connected to this laptop for initial dev and testing purposes - so have dev mode in code for testing all before moving to target board, but produce code for hardware target board as well (no need to test target HW functions right now). So functions not available on the dev board are 
+1) red/green user LEDs not available - can use dev board LED for initial dev work and testing
+2) EN_Peripherals no avaiable
+3) all external I2C devices not available (so use canned data for testing but again still develop hanrdware interfaces to do real work when target board comes)
+4) user push button not available
+
+see GENERIC_DA14531_DEV_BOARD_TOOLCHAIN.md for tools
 
 Use PC as the smart smartdevice for testing

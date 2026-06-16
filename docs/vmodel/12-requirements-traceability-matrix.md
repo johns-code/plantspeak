@@ -2,7 +2,7 @@
 
 Project: PlantSpeak
 
-Generated: 2026-06-16T04:39:11+00:00
+Generated: 2026-06-16T04:57:35+00:00
 
 | User Need | Requirement | Design | Tasks | Tests | Verification | Status |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -85,3 +85,16 @@ Generated: 2026-06-16T04:39:11+00:00
 | UN-077 | SW-077 | DES-077 | TASK-077 | UT-077, ST-077, AT-077 | VER-077 | planned |
 | UN-078 | SW-078 | DES-078 | TASK-078 | UT-078, ST-078, AT-078 | VER-078 | planned |
 | UN-079 | SW-079 | DES-079 | TASK-079 | UT-079, ST-079, AT-079 | VER-079 | planned |
+| UN-080 | SW-080 | DES-080 | TASK-080 | UT-080, ST-080, AT-080 | VER-080 | planned |
+| UN-081 | SW-081 | DES-081 | TASK-081 | UT-081, ST-081, AT-081 | VER-081 | planned |
+| UN-082 | SW-082 | DES-082 | TASK-082 | UT-082, ST-082, AT-082 | VER-082 | planned |
+| UN-083 | SW-083 | DES-083 | TASK-083 | UT-083, ST-083, AT-083 | VER-083 | planned |
+| UN-084 | SW-084 | DES-084 | TASK-084 | UT-084, ST-084, AT-084 | VER-084 | planned |
+| UN-085 | SW-085 | DES-085 | TASK-085 | UT-085, ST-085, AT-085 | VER-085 | planned |
+| UN-086 | SW-086 | DES-086 | TASK-086 | UT-086, ST-086, AT-086 | VER-086 | planned |
+| UN-087 | SW-087 | DES-087 | TASK-087 | UT-087, ST-087, AT-087 | VER-087 | planned |
+| UN-088 | SW-088 | DES-088 | TASK-088 | UT-088, ST-088, AT-088 | VER-088 | planned |
+| UN-089 | SW-089 | DES-089 | TASK-089 | UT-089, ST-089, AT-089 | VER-089 | planned |
+| UN-090 | SW-090 | DES-090 | TASK-090 | UT-090, ST-090, AT-090 | VER-090 | planned |
+| UN-091 | SW-091 | DES-091 | TASK-091 | UT-091, ST-091, AT-091 | VER-091 | planned |
+| UN-092 | SW-092 | DES-092 | TASK-092 | UT-092, ST-092, AT-092 | VER-092 | planned |

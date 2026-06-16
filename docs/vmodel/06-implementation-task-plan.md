@@ -2,7 +2,7 @@
 
 Project: PlantSpeak
 
-Generated: 2026-06-16T04:39:11+00:00
+Generated: 2026-06-16T04:57:35+00:00
 
 | ID | Title | Requirements | Owner Role | Status |
 | --- | --- | --- | --- | --- |
@@ -85,3 +85,16 @@ Generated: 2026-06-16T04:39:11+00:00
 | TASK-077 | Implement SW-077 | SW-077 | development_agent | planned |
 | TASK-078 | Implement SW-078 | SW-078 | development_agent | planned |
 | TASK-079 | Implement SW-079 | SW-079 | development_agent | planned |
+| TASK-080 | Implement SW-080 | SW-080 | development_agent | planned |
+| TASK-081 | Implement SW-081 | SW-081 | development_agent | planned |
+| TASK-082 | Implement SW-082 | SW-082 | development_agent | planned |
+| TASK-083 | Implement SW-083 | SW-083 | development_agent | planned |
+| TASK-084 | Implement SW-084 | SW-084 | development_agent | planned |
+| TASK-085 | Implement SW-085 | SW-085 | development_agent | planned |
+| TASK-086 | Implement SW-086 | SW-086 | development_agent | planned |
+| TASK-087 | Implement SW-087 | SW-087 | development_agent | planned |
+| TASK-088 | Implement SW-088 | SW-088 | development_agent | planned |
+| TASK-089 | Implement SW-089 | SW-089 | development_agent | planned |
+| TASK-090 | Implement SW-090 | SW-090 | development_agent | planned |
+| TASK-091 | Implement SW-091 | SW-091 | development_agent | planned |
+| TASK-092 | Implement SW-092 | SW-092 | development_agent | planned |

@@ -1,0 +1,830 @@
+[
+  {
+    "id": "SW-001",
+    "statement": "The software shall implement: a single bootable image at `0x00000000`",
+    "priority": "could",
+    "acceptance_criteria": [
+      "Automated or manual tests can verify the behavior.",
+      "Verification evidence is recorded before release."
+    ]
+  },
+  {
+    "id": "SW-002",
+    "statement": "The software shall implement: a boot manager plus one or more application slots",
+    "priority": "could",
+    "acceptance_criteria": [
+      "Automated or manual tests can verify the behavior.",
+      "Verification evidence is recorded before release."
+    ]
+  },
+  {
+    "id": "SW-003",
+    "statement": "The software shall implement: a vendor SUOTA layout",
+    "priority": "could",
+    "acceptance_criteria": [
+      "Automated or manual tests can verify the behavior.",
+      "Verification evidence is recorded before release."
+    ]
+  },
+  {
+    "id": "SW-004",
+    "statement": "The software shall implement: a custom recovery-loader layout",
+    "priority": "could",
+    "acceptance_criteria": [
+      "Automated or manual tests can verify the behavior.",
+      "Verification evidence is recorded before release."
+    ]
+  },
+  {
+    "id": "SW-005",
+    "statement": "The software shall implement: a RAM-loaded debug image",
+    "priority": "could",
+    "acceptance_criteria": [
+      "Automated or manual tests can verify the behavior.",
+      "Verification evidence is recorded before release."
+    ]
+  },
+  {
+    "id": "SW-006",
+    "statement": "The software shall implement: which folder is the authoritative project root?",
+    "priority": "could",
+    "acceptance_criteria": [
+      "Automated or manual tests can verify the behavior.",
+      "Verification evidence is recorded before release."
+    ]
+  },
+  {
+    "id": "SW-007",
+    "statement": "The software shall implement: does the Keil project rely on relative paths into a DA14531 SDK tree?",
+    "priority": "could",
+    "acceptance_criteria": [
+      "Automated or manual tests can verify the behavior.",
+      "Verification evidence is recorded before release."
+    ]
+  },
+  {
+    "id": "SW-008",
+    "statement": "The software shall implement: which Keil target should be built?",
+    "priority": "should",
+    "acceptance_criteria": [
+      "Automated or manual tests can verify the behavior.",
+      "Verification evidence is recorded before release."
+    ]
+  },
+  {
+    "id": "SW-009",
+    "statement": "The software shall implement: is the output image raw, bootable, encrypted, signed, compressed, or slot-wrapped?",
+    "priority": "could",
+    "acceptance_criteria": [
+      "Automated or manual tests can verify the behavior.",
+      "Verification evidence is recorded before release."
+    ]
+  },
+  {
+    "id": "SW-010",
+    "statement": "The software shall implement: does the board boot from external SPI flash, OTP, UART, or RAM?",
+    "priority": "could",
+    "acceptance_criteria": [
+      "Automated or manual tests can verify the behavior.",
+      "Verification evidence is recorded before release."
+    ]
+  },
+  {
+    "id": "SW-011",
+    "statement": "The software shall implement: what is the SPI flash size?",
+    "priority": "could",
+    "acceptance_criteria": [
+      "Automated or manual tests can verify the behavior.",
+      "Verification evidence is recorded before release."
+    ]
+  },
+  {
+    "id": "SW-012",
+    "statement": "The software shall implement: what is the expected flash map?",
+    "priority": "could",
+    "acceptance_criteria": [
+      "Automated or manual tests can verify the behavior.",
+      "Verification evidence is recorded before release."
+    ]
+  },
+  {
+    "id": "SW-013",
+    "statement": "The software shall implement: is there a boot manager, secondary bootloader, SUOTA flow, or recovery app?",
+    "priority": "could",
+    "acceptance_criteria": [
+      "Automated or manual tests can verify the behavior.",
+      "Verification evidence is recorded before release."
+    ]
+  },
+  {
+    "id": "SW-014",
+    "statement": "The software shall implement: which interface is used for testing: BLE, UART, RTT, SWD, USB CDC, log-only, or a vendor tool?",
+    "priority": "could",
+    "acceptance_criteria": [
+      "Automated or manual tests can verify the behavior.",
+      "Verification evidence is recorded before release."
+    ]
+  },
+  {
+    "id": "SW-015",
+    "statement": "The software shall implement: what manual reset or power-cycle step is required after programming?",
+    "priority": "must",
+    "acceptance_criteria": [
+      "Automated or manual tests can verify the behavior.",
+      "Verification evidence is recorded before release."
+    ]
+  },
+  {
+    "id": "SW-016",
+    "statement": "The software shall implement: open SmartSnippets Toolbox.",
+    "priority": "could",
+    "acceptance_criteria": [
+      "Automated or manual tests can verify the behavior.",
+      "Verification evidence is recorded before release."
+    ]
+  },
+  {
+    "id": "SW-017",
+    "statement": "The software shall implement: select the board/chip family if needed.",
+    "priority": "could",
+    "acceptance_criteria": [
+      "Automated or manual tests can verify the behavior.",
+      "Verification evidence is recorded before release."
+    ]
+  },
+  {
+    "id": "SW-018",
+    "statement": "The software shall implement: use `Board -> Detect device`.",
+    "priority": "could",
+    "acceptance_criteria": [
+      "Automated or manual tests can verify the behavior.",
+      "Verification evidence is recorded before release."
+    ]
+  },
+  {
+    "id": "SW-019",
+    "statement": "The software shall implement: confirm the J-Link/debug interface and any CDC UART port.",
+    "priority": "could",
+    "acceptance_criteria": [
+      "Automated or manual tests can verify the behavior.",
+      "Verification evidence is recorded before release."
+    ]
+  },
+  {
+    "id": "SW-020",
+    "statement": "The software shall implement: open the project `.uvprojx` in Keil uVision.",
+    "priority": "could",
+    "acceptance_criteria": [
+      "Automated or manual tests can verify the behavior.",
+      "Verification evidence is recorded before release."
+    ]
+  },
+  {
+    "id": "SW-021",
+    "statement": "The software shall implement: select the intended target.",
+    "priority": "could",
+    "acceptance_criteria": [
+      "Automated or manual tests can verify the behavior.",
+      "Verification evidence is recorded before release."
+    ]
+  },
+  {
+    "id": "SW-022",
+    "statement": "The software shall implement: build or rebuild.",
+    "priority": "could",
+    "acceptance_criteria": [
+      "Automated or manual tests can verify the behavior.",
+      "Verification evidence is recorded before release."
+    ]
+  },
+  {
+    "id": "SW-023",
+    "statement": "The software shall implement: confirm the expected `.axf`, `.bin`, or `.hex` output was generated.",
+    "priority": "could",
+    "acceptance_criteria": [
+      "Automated or manual tests can verify the behavior.",
+      "Verification evidence is recorded before release."
+    ]
+  },
+  {
+    "id": "SW-024",
+    "statement": "The software shall implement: check the build log for warnings, image size, RAM usage, and post-build",
+    "priority": "could",
+    "acceptance_criteria": [
+      "Automated or manual tests can verify the behavior.",
+      "Verification evidence is recorded before release."
+    ]
+  },
+  {
+    "id": "SW-025",
+    "statement": "The software shall implement: connect to DA14531 through J-Link/SWD.",
+    "priority": "could",
+    "acceptance_criteria": [
+      "Automated or manual tests can verify the behavior.",
+      "Verification evidence is recorded before release."
+    ]
+  },
+  {
+    "id": "SW-026",
+    "statement": "The software shall implement: download a temporary DA1453x SPI programmer into DA14531 RAM.",
+    "priority": "could",
+    "acceptance_criteria": [
+      "Automated or manual tests can verify the behavior.",
+      "Verification evidence is recorded before release."
+    ]
+  },
+  {
+    "id": "SW-027",
+    "statement": "The software shall implement: use that RAM program to access external SPI flash.",
+    "priority": "could",
+    "acceptance_criteria": [
+      "Automated or manual tests can verify the behavior.",
+      "Verification evidence is recorded before release."
+    ]
+  },
+  {
+    "id": "SW-028",
+    "statement": "The software shall implement: erase, write, read, or verify flash.",
+    "priority": "could",
+    "acceptance_criteria": [
+      "Automated or manual tests can verify the behavior.",
+      "Verification evidence is recorded before release."
+    ]
+  },
+  {
+    "id": "SW-029",
+    "statement": "The software shall implement: optionally add a DA14531 bootable-image header.",
+    "priority": "could",
+    "acceptance_criteria": [
+      "Automated or manual tests can verify the behavior.",
+      "Verification evidence is recorded before release."
+    ]
+  },
+  {
+    "id": "SW-030",
+    "statement": "The software shall implement: reset the device after programming.",
+    "priority": "could",
+    "acceptance_criteria": [
+      "Automated or manual tests can verify the behavior.",
+      "Verification evidence is recorded before release."
+    ]
+  },
+  {
+    "id": "SW-031",
+    "statement": "The software shall implement: running the temporary SmartSnippets RAM programmer",
+    "priority": "could",
+    "acceptance_criteria": [
+      "Automated or manual tests can verify the behavior.",
+      "Verification evidence is recorded before release."
+    ]
+  },
+  {
+    "id": "SW-032",
+    "statement": "The software shall implement: reset into the newly programmed SPI image",
+    "priority": "could",
+    "acceptance_criteria": [
+      "Automated or manual tests can verify the behavior.",
+      "Verification evidence is recorded before release."
+    ]
+  },
+  {
+    "id": "SW-033",
+    "statement": "The software shall implement: halted by the debugger",
+    "priority": "could",
+    "acceptance_criteria": [
+      "Automated or manual tests can verify the behavior.",
+      "Verification evidence is recorded before release."
+    ]
+  },
+  {
+    "id": "SW-034",
+    "statement": "The software shall implement: waiting for a manual power cycle",
+    "priority": "could",
+    "acceptance_criteria": [
+      "Automated or manual tests can verify the behavior.",
+      "Verification evidence is recorded before release."
+    ]
+  },
+  {
+    "id": "SW-035",
+    "statement": "The software shall implement: advertising over BLE",
+    "priority": "could",
+    "acceptance_criteria": [
+      "Automated or manual tests can verify the behavior.",
+      "Verification evidence is recorded before release."
+    ]
+  },
+  {
+    "id": "SW-036",
+    "statement": "The software shall implement: silent because the programmed image is not valid for the selected boot path",
+    "priority": "could",
+    "acceptance_criteria": [
+      "Automated or manual tests can verify the behavior.",
+      "Verification evidence is recorded before release."
+    ]
+  },
+  {
+    "id": "SW-037",
+    "statement": "The software shall implement: confirm the write and verify succeeded.",
+    "priority": "could",
+    "acceptance_criteria": [
+      "Automated or manual tests can verify the behavior.",
+      "Verification evidence is recorded before release."
+    ]
+  },
+  {
+    "id": "SW-038",
+    "statement": "The software shall implement: confirm the image was programmed at the correct offset.",
+    "priority": "could",
+    "acceptance_criteria": [
+      "Automated or manual tests can verify the behavior.",
+      "Verification evidence is recorded before release."
+    ]
+  },
+  {
+    "id": "SW-039",
+    "statement": "The software shall implement: confirm the file was written in the correct mode (`-bootable` vs raw).",
+    "priority": "could",
+    "acceptance_criteria": [
+      "Automated or manual tests can verify the behavior.",
+      "Verification evidence is recorded before release."
+    ]
+  },
+  {
+    "id": "SW-040",
+    "statement": "The software shall implement: reset through SmartSnippets/J-Link.",
+    "priority": "could",
+    "acceptance_criteria": [
+      "Automated or manual tests can verify the behavior.",
+      "Verification evidence is recorded before release."
+    ]
+  },
+  {
+    "id": "SW-041",
+    "statement": "The software shall implement: if still needed, power-cycle or replug the board.",
+    "priority": "could",
+    "acceptance_criteria": [
+      "Automated or manual tests can verify the behavior.",
+      "Verification evidence is recorded before release."
+    ]
+  },
+  {
+    "id": "SW-042",
+    "statement": "The software shall implement: re-read the relevant flash header and compare with the expected bytes.",
+    "priority": "could",
+    "acceptance_criteria": [
+      "Automated or manual tests can verify the behavior.",
+      "Verification evidence is recorded before release."
+    ]
+  },
+  {
+    "id": "SW-043",
+    "statement": "The software shall implement: advertised name",
+    "priority": "could",
+    "acceptance_criteria": [
+      "Automated or manual tests can verify the behavior.",
+      "Verification evidence is recorded before release."
+    ]
+  },
+  {
+    "id": "SW-044",
+    "statement": "The software shall implement: service UUID",
+    "priority": "could",
+    "acceptance_criteria": [
+      "Automated or manual tests can verify the behavior.",
+      "Verification evidence is recorded before release."
+    ]
+  },
+  {
+    "id": "SW-045",
+    "statement": "The software shall implement: rX/control characteristic UUID",
+    "priority": "could",
+    "acceptance_criteria": [
+      "Automated or manual tests can verify the behavior.",
+      "Verification evidence is recorded before release."
+    ]
+  },
+  {
+    "id": "SW-046",
+    "statement": "The software shall implement: tX/notify characteristic UUID",
+    "priority": "could",
+    "acceptance_criteria": [
+      "Automated or manual tests can verify the behavior.",
+      "Verification evidence is recorded before release."
+    ]
+  },
+  {
+    "id": "SW-047",
+    "statement": "The software shall implement: expected MTU",
+    "priority": "could",
+    "acceptance_criteria": [
+      "Automated or manual tests can verify the behavior.",
+      "Verification evidence is recorded before release."
+    ]
+  },
+  {
+    "id": "SW-048",
+    "statement": "The software shall implement: write type expectations",
+    "priority": "could",
+    "acceptance_criteria": [
+      "Automated or manual tests can verify the behavior.",
+      "Verification evidence is recorded before release."
+    ]
+  },
+  {
+    "id": "SW-049",
+    "statement": "The software shall implement: command framing and CRC rules",
+    "priority": "could",
+    "acceptance_criteria": [
+      "Automated or manual tests can verify the behavior.",
+      "Verification evidence is recorded before release."
+    ]
+  },
+  {
+    "id": "SW-050",
+    "statement": "The software shall implement: reset/reconnect behavior",
+    "priority": "could",
+    "acceptance_criteria": [
+      "Automated or manual tests can verify the behavior.",
+      "Verification evidence is recorded before release."
+    ]
+  },
+  {
+    "id": "SW-051",
+    "statement": "The software shall implement: cOM port",
+    "priority": "could",
+    "acceptance_criteria": [
+      "Automated or manual tests can verify the behavior.",
+      "Verification evidence is recorded before release."
+    ]
+  },
+  {
+    "id": "SW-052",
+    "statement": "The software shall implement: baud rate",
+    "priority": "could",
+    "acceptance_criteria": [
+      "Automated or manual tests can verify the behavior.",
+      "Verification evidence is recorded before release."
+    ]
+  },
+  {
+    "id": "SW-053",
+    "statement": "The software shall implement: line ending",
+    "priority": "could",
+    "acceptance_criteria": [
+      "Automated or manual tests can verify the behavior.",
+      "Verification evidence is recorded before release."
+    ]
+  },
+  {
+    "id": "SW-054",
+    "statement": "The software shall implement: shell prompt or binary framing",
+    "priority": "could",
+    "acceptance_criteria": [
+      "Automated or manual tests can verify the behavior.",
+      "Verification evidence is recorded before release."
+    ]
+  },
+  {
+    "id": "SW-055",
+    "statement": "The software shall implement: reset behavior",
+    "priority": "could",
+    "acceptance_criteria": [
+      "Automated or manual tests can verify the behavior.",
+      "Verification evidence is recorded before release."
+    ]
+  },
+  {
+    "id": "SW-056",
+    "statement": "The software shall implement: clean update from production.",
+    "priority": "could",
+    "acceptance_criteria": [
+      "Automated or manual tests can verify the behavior.",
+      "Verification evidence is recorded before release."
+    ]
+  },
+  {
+    "id": "SW-057",
+    "statement": "The software shall implement: reboot into updated production image.",
+    "priority": "could",
+    "acceptance_criteria": [
+      "Automated or manual tests can verify the behavior.",
+      "Verification evidence is recorded before release."
+    ]
+  },
+  {
+    "id": "SW-058",
+    "statement": "The software shall implement: bad or interrupted update.",
+    "priority": "could",
+    "acceptance_criteria": [
+      "Automated or manual tests can verify the behavior.",
+      "Verification evidence is recorded before release."
+    ]
+  },
+  {
+    "id": "SW-059",
+    "statement": "The software shall implement: recovery/fallback behavior.",
+    "priority": "could",
+    "acceptance_criteria": [
+      "Automated or manual tests can verify the behavior.",
+      "Verification evidence is recorded before release."
+    ]
+  },
+  {
+    "id": "SW-060",
+    "statement": "The software shall implement: recovery repair back to production, if supported.",
+    "priority": "could",
+    "acceptance_criteria": [
+      "Automated or manual tests can verify the behavior.",
+      "Verification evidence is recorded before release."
+    ]
+  },
+  {
+    "id": "SW-061",
+    "statement": "The software shall implement: final smoke/regression after repair.",
+    "priority": "could",
+    "acceptance_criteria": [
+      "Automated or manual tests can verify the behavior.",
+      "Verification evidence is recorded before release."
+    ]
+  },
+  {
+    "id": "SW-062",
+    "statement": "The software shall implement: building from a copied folder while the Keil project expects SDK-relative",
+    "priority": "could",
+    "acceptance_criteria": [
+      "Automated or manual tests can verify the behavior.",
+      "Verification evidence is recorded before release."
+    ]
+  },
+  {
+    "id": "SW-063",
+    "statement": "The software shall implement: programming a raw image where a bootable image is required.",
+    "priority": "must",
+    "acceptance_criteria": [
+      "Automated or manual tests can verify the behavior.",
+      "Verification evidence is recorded before release."
+    ]
+  },
+  {
+    "id": "SW-064",
+    "statement": "The software shall implement: programming a bootable image where a raw slot image is required.",
+    "priority": "must",
+    "acceptance_criteria": [
+      "Automated or manual tests can verify the behavior.",
+      "Verification evidence is recorded before release."
+    ]
+  },
+  {
+    "id": "SW-065",
+    "statement": "The software shall implement: assuming another DA14531 project uses the same flash layout.",
+    "priority": "could",
+    "acceptance_criteria": [
+      "Automated or manual tests can verify the behavior.",
+      "Verification evidence is recorded before release."
+    ]
+  },
+  {
+    "id": "SW-066",
+    "statement": "The software shall implement: assuming BLE, UART, SPI, I2C, or a shell exists before inspecting the project.",
+    "priority": "could",
+    "acceptance_criteria": [
+      "Automated or manual tests can verify the behavior.",
+      "Verification evidence is recorded before release."
+    ]
+  },
+  {
+    "id": "SW-067",
+    "statement": "The software shall implement: forgetting to verify the J-Link serial number on the current PC.",
+    "priority": "could",
+    "acceptance_criteria": [
+      "Automated or manual tests can verify the behavior.",
+      "Verification evidence is recorded before release."
+    ]
+  },
+  {
+    "id": "SW-068",
+    "statement": "The software shall implement: forgetting that SmartSnippets may leave its RAM programmer running until a",
+    "priority": "could",
+    "acceptance_criteria": [
+      "Automated or manual tests can verify the behavior.",
+      "Verification evidence is recorded before release."
+    ]
+  },
+  {
+    "id": "SW-069",
+    "statement": "The software shall implement: treating a BLE reconnect failure as firmware failure before checking whether",
+    "priority": "could",
+    "acceptance_criteria": [
+      "Automated or manual tests can verify the behavior.",
+      "Verification evidence is recorded before release."
+    ]
+  },
+  {
+    "id": "SW-070",
+    "statement": "The software shall implement: running destructive image-update tests without first verifying the recovery",
+    "priority": "could",
+    "acceptance_criteria": [
+      "Automated or manual tests can verify the behavior.",
+      "Verification evidence is recorded before release."
+    ]
+  },
+  {
+    "id": "SW-071",
+    "statement": "The software shall implement: roles and Transport",
+    "priority": "could",
+    "acceptance_criteria": [
+      "Automated or manual tests can verify the behavior.",
+      "Verification evidence is recorded before release."
+    ]
+  },
+  {
+    "id": "SW-072",
+    "statement": "The software shall implement: frame Format",
+    "priority": "could",
+    "acceptance_criteria": [
+      "Automated or manual tests can verify the behavior.",
+      "Verification evidence is recorded before release."
+    ]
+  },
+  {
+    "id": "SW-073",
+    "statement": "The software shall implement: production Command Set",
+    "priority": "could",
+    "acceptance_criteria": [
+      "Automated or manual tests can verify the behavior.",
+      "Verification evidence is recorded before release."
+    ]
+  },
+  {
+    "id": "SW-074",
+    "statement": "The software shall implement: status and Measurement Payloads",
+    "priority": "could",
+    "acceptance_criteria": [
+      "Automated or manual tests can verify the behavior.",
+      "Verification evidence is recorded before release."
+    ]
+  },
+  {
+    "id": "SW-075",
+    "statement": "The software shall implement: wavelengths, PPFD, Calibration, and LED Currents",
+    "priority": "could",
+    "acceptance_criteria": [
+      "Automated or manual tests can verify the behavior.",
+      "Verification evidence is recorded before release."
+    ]
+  },
+  {
+    "id": "SW-076",
+    "statement": "The software shall implement: diagnostic Flash Log",
+    "priority": "could",
+    "acceptance_criteria": [
+      "Automated or manual tests can verify the behavior.",
+      "Verification evidence is recorded before release."
+    ]
+  },
+  {
+    "id": "SW-077",
+    "statement": "The software shall implement: firmware Update and Recovery",
+    "priority": "could",
+    "acceptance_criteria": [
+      "Automated or manual tests can verify the behavior.",
+      "Verification evidence is recorded before release."
+    ]
+  },
+  {
+    "id": "SW-078",
+    "statement": "The software shall implement: recommended SmartDevice Flows",
+    "priority": "could",
+    "acceptance_criteria": [
+      "Automated or manual tests can verify the behavior.",
+      "Verification evidence is recorded before release."
+    ]
+  },
+  {
+    "id": "SW-079",
+    "statement": "The software shall implement: security and Policy Notes",
+    "priority": "could",
+    "acceptance_criteria": [
+      "Automated or manual tests can verify the behavior.",
+      "Verification evidence is recorded before release."
+    ]
+  },
+  {
+    "id": "SW-080",
+    "statement": "The software shall implement: the red/green user LEDs mentioned in the ICD are controlled via P0_5 and P0_11",
+    "priority": "could",
+    "acceptance_criteria": [
+      "Automated or manual tests can verify the behavior.",
+      "Verification evidence is recorded before release."
+    ]
+  },
+  {
+    "id": "SW-081",
+    "statement": "The software shall implement: the user push button is on P0_10",
+    "priority": "could",
+    "acceptance_criteria": [
+      "Automated or manual tests can verify the behavior.",
+      "Verification evidence is recorded before release."
+    ]
+  },
+  {
+    "id": "SW-082",
+    "statement": "The software shall implement: eN_Peripherals is on P0_6",
+    "priority": "could",
+    "acceptance_criteria": [
+      "Automated or manual tests can verify the behavior.",
+      "Verification evidence is recorded before release."
+    ]
+  },
+  {
+    "id": "SW-083",
+    "statement": "The software shall implement: i2C SCL is on P0_8 and SDA on P0_9",
+    "priority": "could",
+    "acceptance_criteria": [
+      "Automated or manual tests can verify the behavior.",
+      "Verification evidence is recorded before release."
+    ]
+  },
+  {
+    "id": "SW-084",
+    "statement": "The software shall implement: the photodiode current is read by the ADS1115IDGSR. AIN0 is for reading the PD current for all the external LEDs (that is, in a measurement each wavelength an LED is turns on and the signal is read on AIN0 in all LED cases) AIN1 is signal for PPFD signal",
+    "priority": "could",
+    "acceptance_criteria": [
+      "Automated or manual tests can verify the behavior.",
+      "Verification evidence is recorded before release."
+    ]
+  },
+  {
+    "id": "SW-085",
+    "statement": "The software shall implement: the wavelength LEDs are driven by LP5816 hanging off the PCA9846PWJ. LED1/2/3/4 are on the LP5816 on channel SC1/SD1 the PCA9846PWJ with LEDs 5/6 are on the LP5816 on channel SC2/SD2 on the PCA9846PWJ",
+    "priority": "could",
+    "acceptance_criteria": [
+      "Automated or manual tests can verify the behavior.",
+      "Verification evidence is recorded before release."
+    ]
+  },
+  {
+    "id": "SW-086",
+    "statement": "The software shall implement: leaf temperature is on MLX90632SLD-BCB-000-RE connected to SC0/SD0 on the PCA9846PWJ",
+    "priority": "could",
+    "acceptance_criteria": [
+      "Automated or manual tests can verify the behavior.",
+      "Verification evidence is recorded before release."
+    ]
+  },
+  {
+    "id": "SW-087",
+    "statement": "The software shall implement: rH and ambient temp are read from HDC2010YPAR using DA14531 I2C bus",
+    "priority": "could",
+    "acceptance_criteria": [
+      "Automated or manual tests can verify the behavior.",
+      "Verification evidence is recorded before release."
+    ]
+  },
+  {
+    "id": "SW-088",
+    "statement": "The software shall implement: accelerometer is from MXC4005XC using DA14531 I2C bus",
+    "priority": "could",
+    "acceptance_criteria": [
+      "Automated or manual tests can verify the behavior.",
+      "Verification evidence is recorded before release."
+    ]
+  },
+  {
+    "id": "SW-089",
+    "statement": "The software shall implement: red/green user LEDs not available - can use dev board LED for initial dev work and testing",
+    "priority": "could",
+    "acceptance_criteria": [
+      "Automated or manual tests can verify the behavior.",
+      "Verification evidence is recorded before release."
+    ]
+  },
+  {
+    "id": "SW-090",
+    "statement": "The software shall implement: eN_Peripherals no avaiable",
+    "priority": "could",
+    "acceptance_criteria": [
+      "Automated or manual tests can verify the behavior.",
+      "Verification evidence is recorded before release."
+    ]
+  },
+  {
+    "id": "SW-091",
+    "statement": "The software shall implement: all external I2C devices not available (so use canned data for testing but again still develop hanrdware interfaces to do real work when target board comes)",
+    "priority": "could",
+    "acceptance_criteria": [
+      "Automated or manual tests can verify the behavior.",
+      "Verification evidence is recorded before release."
+    ]
+  },
+  {
+    "id": "SW-092",
+    "statement": "The software shall implement: user push button not available",
+    "priority": "could",
+    "acceptance_criteria": [
+      "Automated or manual tests can verify the behavior.",
+      "Verification evidence is recorded before release."
+    ]
+  }
+]

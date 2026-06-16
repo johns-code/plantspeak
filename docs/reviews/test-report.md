@@ -19,23 +19,24 @@ rootdir: C:\Users\johns\OneDrive\Documents\Software Team\runs\plantspeak-detaile
 configfile: pyproject.toml
 testpaths: tests
 plugins: anyio-4.12.1, langsmith-0.7.30
-collected 42 items
+collected 44 items
 
-tests\hil\test_target_board.py sss                                       [  7%]
-tests\test_adapters.py .......                                           [ 23%]
-tests\test_cli.py ....                                                   [ 33%]
-tests\test_contracts.py ..                                               [ 38%]
-tests\test_devices.py ....                                               [ 47%]
-tests\test_firmware_contracts.py ...                                     [ 54%]
-tests\test_hil_gate.py ..                                                [ 59%]
-tests\test_icd.py ..                                                     [ 64%]
-tests\test_requirements.py .                                             [ 66%]
-tests\test_security_transport.py ..                                      [ 71%]
-tests\test_system_evidence.py ..                                         [ 76%]
-tests\test_traceability.py ..                                            [ 80%]
+tests\hil\test_target_board.py sss                                       [  6%]
+tests\test_adapters.py .......                                           [ 22%]
+tests\test_cli.py ....                                                   [ 31%]
+tests\test_contracts.py ..                                               [ 36%]
+tests\test_devices.py ....                                               [ 45%]
+tests\test_firmware_contracts.py ...                                     [ 52%]
+tests\test_hil_gate.py ..                                                [ 56%]
+tests\test_icd.py ..                                                     [ 61%]
+tests\test_release_evidence.py ..                                        [ 65%]
+tests\test_requirements.py .                                             [ 68%]
+tests\test_security_transport.py ..                                      [ 72%]
+tests\test_system_evidence.py ..                                         [ 77%]
+tests\test_traceability.py ..                                            [ 81%]
 tests\test_transport.py ........                                         [100%]
 
-======================== 39 passed, 3 skipped in 0.14s ========================
+======================== 41 passed, 3 skipped in 0.14s ========================
 ```
 
 ## Requirement Coverage
@@ -53,3 +54,5 @@ tests\test_transport.py ........                                         [100%]
 - S5 covered behavior: firmware command table matches Python ICD commands, firmware pin config matches Python pin map, and firmware build script documents contract-only mode plus DA14531 SDK handoff.
 - S6 evidence: `docs/test-evidence/S6-pytest.txt`, `docs/test-evidence/ST-006-hil-report.md`, `docs/test-evidence/hil-operator-notes.md`
 - S6 covered behavior: HIL gate is disabled by default, can be explicitly enabled by `PLANTSPEAK_TARGET_BOARD=1` or `pytest --target-board`, and target-board tests are skipped in ordinary CI until hardware is present.
+- S7 evidence: `docs/test-evidence/S7-pytest.txt`, `docs/release-evidence/release-candidate-manifest.json`
+- S7 covered behavior: release manifest references existing required artifacts and explicitly keeps target-board validation deferred pending human/hardware evidence.

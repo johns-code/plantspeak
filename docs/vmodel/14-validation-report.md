@@ -32,6 +32,10 @@ Human approval is required before final acceptance, release tagging, or any clai
 
 S6 adds the target-board HIL procedure and gated pytest tests. These tests are skipped by default and only run when the operator explicitly sets `PLANTSPEAK_TARGET_BOARD=1` or invokes pytest with `--target-board`. Final target-board validation remains deferred until real hardware evidence is captured.
 
+## Release Candidate Validation Position
+
+The S7 release candidate is valid as a PC/dev-mode and contract-complete staged candidate. It is not valid as a final target-board product release until ST-006 HIL evidence is executed on physical hardware and accepted by the human approver.
+
 ## Review Remediation Closure
 
 | Review Theme | Resolution |

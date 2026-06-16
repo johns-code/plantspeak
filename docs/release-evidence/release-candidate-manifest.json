@@ -1,0 +1,37 @@
+{
+  "project": "PlantSpeak",
+  "candidate": "0.7.0-staged",
+  "status": "release-candidate-with-deferred-target-board-validation",
+  "automated_gates": {
+    "pytest": "39 passed, 3 skipped",
+    "s1_contracts": "pass",
+    "s2_devmode_evidence": "pass",
+    "s3_mocked_adapters": "pass",
+    "s4_mocked_transport": "pass",
+    "s5_firmware_contract": "pass",
+    "s6_hil_gate": "pass-with-target-board-tests-skipped"
+  },
+  "required_artifacts": [
+    "docs/vmodel/12-requirements-traceability-matrix.md",
+    "docs/vmodel/13-verification-report.md",
+    "docs/vmodel/14-validation-report.md",
+    "docs/vmodel/15-code-review-report.md",
+    "docs/vmodel/16-security-review-report.md",
+    "docs/vmodel/17-release-notes.md",
+    "docs/reviews/test-report.md",
+    "docs/test-evidence/S1-trace-matrix.json",
+    "docs/test-evidence/S2-pytest.txt",
+    "docs/test-evidence/S3-pytest.txt",
+    "docs/test-evidence/S4-pytest.txt",
+    "docs/test-evidence/S5-pytest.txt",
+    "docs/test-evidence/S6-pytest.txt",
+    "docs/test-evidence/ST-006-hil-report.md"
+  ],
+  "deferred_validation": [
+    "physical DA14531 firmware image",
+    "physical BLE transport",
+    "target-board I2C device reads",
+    "target-board push-button wake-from-sleep"
+  ],
+  "human_approval_required": true
+}

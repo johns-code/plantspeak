@@ -19,6 +19,7 @@ Project: PlantSpeak
 | --- | --- | --- | --- |
 | CR-001 | Minor | Dev-mode harness intentionally does not implement firmware/BLE/HIL behavior. | Accepted as deferred; tracked in staged plan S4-S6. |
 | CR-002 | Minor | Canned data values are fixed test fixtures. | Accepted for dev-mode; target adapters must replace values in S3/S6. |
+| CR-003 | Minor | Physical target-board HIL tests are skipped without `PLANTSPEAK_TARGET_BOARD=1`. | Accepted as safety gate; final hardware release remains blocked until real HIL evidence is captured. |
 
 ## Decision
 

@@ -6,6 +6,7 @@ import json
 from plantspeak.devices import build_capability_map, collect_dev_mode_snapshot, default_dev_board_profile
 from plantspeak.icd import build_icd_capabilities, capability_summary
 from plantspeak.requirements import load_issue_links, load_requirements
+from plantspeak.trace import trace_matrix, validate_trace_matrix
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -13,6 +14,7 @@ def build_parser() -> argparse.ArgumentParser:
     subparsers = parser.add_subparsers(dest="command", required=True)
     subparsers.add_parser("list-requirements", help="List implemented software requirements.")
     subparsers.add_parser("trace", help="Print requirement-to-issue and verification trace.")
+    subparsers.add_parser("trace-json", help="Print full requirement trace matrix as JSON.")
     subparsers.add_parser("capabilities", help="Print ICD capability summary as JSON.")
     measure = subparsers.add_parser("measure", help="Collect a sensor snapshot.")
     measure.add_argument("--dev-mode", action="store_true", help="Use canned data for unavailable external I2C devices.")
@@ -28,13 +30,17 @@ def main(argv: list[str] | None = None) -> int:
             print(f"{requirement['id']}: {requirement['statement']}")
         return 0
     if args.command == "trace":
-        issues = {issue["requirement_ids"][0]: issue for issue in load_issue_links()}
-        for capability in build_icd_capabilities():
-            issue = issues.get(capability.requirement_id, {})
+        for row in trace_matrix():
             print(
-                f"{capability.requirement_id} -> #{issue.get('number', 'local')} -> "
-                f"{capability.command} -> {capability.verification_method}"
+                f"{row['requirement_id']} -> #{row['issue_number'] or 'local'} -> "
+                f"{row['command']} -> {', '.join(row['system_tests'])}"
             )
+        return 0
+    if args.command == "trace-json":
+        errors = validate_trace_matrix()
+        if errors:
+            raise SystemExit("; ".join(errors))
+        print(json.dumps(trace_matrix(), indent=2, sort_keys=True))
         return 0
     if args.command == "capabilities":
         print(json.dumps(capability_summary(), indent=2, sort_keys=True))

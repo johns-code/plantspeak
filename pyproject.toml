@@ -20,6 +20,9 @@ plantspeak = "plantspeak.cli:main"
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 pythonpath = ["."]
+markers = [
+    "hil: hardware-in-loop tests requiring an explicitly connected target board",
+]
 
 [tool.setuptools.packages.find]
 include = ["plantspeak*"]

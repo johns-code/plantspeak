@@ -30,6 +30,7 @@ PASS
 - S3 hardware adapter interfaces are verified with mocked I2C success and explicit fault paths.
 - S4 mocked transport and ICD dispatch are verified for valid commands, deferred commands, malformed frames, unsupported commands, oversized payloads, and timeouts.
 - S5 firmware contract files are verified against Python ICD command and pin contracts.
+- S6 HIL procedure and pytest gate are present; physical target-board evidence remains deferred because the board is not connected in CI.
 
 ## S1 Verification Evidence
 
@@ -79,6 +80,16 @@ PASS
 | `firmware/pin_config.h` | Firmware-facing pin definitions that must match `plantspeak.pins.pin_map()`. |
 | `firmware/build.ps1` | Documented DA14531 SDK handoff and contract-only build mode. |
 | `tests/test_firmware_contracts.py` | Mechanical contract checks for firmware command, pin, and build evidence. |
+
+## S6 Verification Evidence
+
+| Evidence | Purpose |
+| --- | --- |
+| `docs/test-evidence/S6-pytest.txt` | Local pytest output for 39 passed tests and 3 intentionally skipped target-board HIL tests. |
+| `docs/test-evidence/ST-006-hil-report.md` | HIL report template and current deferred disposition. |
+| `docs/test-evidence/hil-operator-notes.md` | Operator procedure for enabling target-board HIL with `PLANTSPEAK_TARGET_BOARD=1` or `pytest --target-board`. |
+| `tests/hil/test_target_board.py` | Target-board HIL tests that are gated until physical hardware is explicitly enabled. |
+| `tests/test_hil_gate.py` | Tests that HIL is disabled by default and can be explicitly enabled. |
 
 ## Deferred Verification
 

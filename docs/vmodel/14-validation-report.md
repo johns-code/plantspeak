@@ -8,7 +8,7 @@ Conditionally valid for the first PC/dev-mode acceptance slice plus local DA1453
 
 ## Validation Position
 
-The current PR is valid for the first dev-mode vertical slice, confirms that the local DA14531 Keil target can build with zero errors, and confirms live BLE ICD smoke behavior on the currently flashed `P531-Handheld` target. It is not yet a final product release because flashing this exact generated build and live production-board peripheral HIL remain unvalidated.
+The current PR is valid for the first dev-mode vertical slice, confirms that the local DA14531 Keil target can build with zero errors, confirms SmartSnippets erase/write/verify flash of the generated binary, and confirms post-flash live BLE ICD smoke behavior on `P531-Handheld`. It is not yet a final product release because production-board peripheral HIL and push-button wake remain unvalidated.
 
 ## Human Approval
 
@@ -24,7 +24,6 @@ Human approval is required before final acceptance, release tagging, or any clai
 ## Deferred Validation
 
 - Target-board I2C behavior.
-- Confirmed flash/program operation for this generated build.
 - Push-button wake-from-sleep behavior.
 
 ## HIL Validation Gate
@@ -42,6 +41,10 @@ S8 adds local evidence that uVision can build the DA14531 target and that SEGGER
 ## S9 Live Target Smoke
 
 S9 adds live BLE ICD smoke evidence against `P531-Handheld`. The smoke run passed PING, GET_INFO, GET_STATUS, peripheral power transitions, measurement success/rejection paths, calibration/LED-current round trips, log clear, CRC checks, and final peripheral power-off. This validates live transport behavior on the currently flashed image, not yet a confirmed flash of the newly generated build.
+
+## S10 Confirmed Flash
+
+S10 confirms SmartSnippets CLI erase/write/verify of the generated DA14531 binary and reruns the live BLE ICD smoke after reset. The post-flash smoke passed with CRC-valid command responses and final peripheral power-off.
 
 ## Review Remediation Closure
 

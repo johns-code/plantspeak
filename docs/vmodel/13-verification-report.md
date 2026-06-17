@@ -35,7 +35,8 @@ PASS
 - S8 local DA14531 Keil build evidence was captured from uVision with zero errors and one linker warning.
 - S8 local J-Link probe evidence confirms a USB-connected emulator is visible without flashing or halting the target.
 - S9 live BLE ICD smoke evidence confirms the currently flashed `P531-Handheld` target responds to command, measurement, CRC, and negative-path checks.
-- S9 SmartSnippets flash automation is documented and gated behind explicit `-ConfirmFlash` because it erases and writes target SPI flash.
+- S10 SmartSnippets flash evidence confirms erase, bootable write, and SPI flash verification succeeded for the generated DA14531 binary.
+- S10 post-flash live BLE ICD smoke evidence confirms the freshly programmed target responds to the command regression.
 
 ## S1 Verification Evidence
 
@@ -123,15 +124,16 @@ PASS
 | --- | --- |
 | `docs/test-evidence/live-icd-smoke-raw.log` | Raw live BLE ICD regression output from the connected `P531-Handheld` target. |
 | `docs/test-evidence/live-icd-smoke-summary.json` | Machine-readable live ICD smoke summary and required PASS markers. |
-| `docs/test-evidence/smart-snippets-flash-summary.json` | Operator-gated SmartSnippets flash disposition and configured tool paths. |
+| `docs/test-evidence/smart-snippets-flash-raw.log` | Raw SmartSnippets erase/write/verify log for the confirmed DA14531 flash. |
+| `docs/test-evidence/smart-snippets-flash-summary.json` | Confirmed SmartSnippets flash result, firmware hash, and configured tool paths. |
 | `docs/test-evidence/S9-pytest.txt` | Local pytest output for 45 passed tests and 3 intentionally skipped target-board HIL tests. |
+| `docs/test-evidence/S10-pytest.txt` | Local pytest output after promoting confirmed flash evidence. |
 | `firmware/run-live-icd-smoke.ps1` | Repeatable live BLE smoke runner around the existing P531 `pc_tools` regression. |
 | `firmware/flash-smart-snippets.ps1` | Repeatable SmartSnippets erase/write/verify workflow, disabled unless `-ConfirmFlash` is supplied. |
 | `tests/test_firmware_contracts.py` | Verifies flash gating and live ICD smoke evidence. |
 
 ## Deferred Verification
 
-- Confirmed DA14531 firmware flash for this generated build.
 - Production target-board I2C hardware-in-loop verification.
 - Push-button wake-from-sleep behavior.
 

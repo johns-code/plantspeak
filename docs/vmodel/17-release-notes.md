@@ -19,6 +19,8 @@ Project: PlantSpeak
 - Non-invasive J-Link emulator discovery gate.
 - Operator-gated SmartSnippets flash workflow.
 - Live BLE ICD smoke runner and passed target evidence.
+- Confirmed SmartSnippets erase/write/verify flash evidence.
+- Post-flash live BLE ICD smoke evidence.
 
 ## Included
 
@@ -36,7 +38,6 @@ Project: PlantSpeak
 
 ## Not Included
 
-- DA14531 firmware flash evidence.
 - Production target-board hardware-in-loop evidence.
 
 ## Firmware Note

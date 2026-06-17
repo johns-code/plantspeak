@@ -1,0 +1,111 @@
+COMMAND: C:\Program Files\SmartSnippetsToolbox\SmartSnippetsToolbox5.0.26\SmartSnippetsToolbox.exe -sdk C:\DA14531_SDK6\DA145xx_SDK\6.0.24.1464 -type spi -chip DA14531 -jtag 480045453 -cmd erase -firmware C:\DA14531_SDK6\DA145xx_SDK\6.0.24.1464\config\toolbox_resources\DA1453x\common\jtag_programmer.bin -y
+Launching SmartSnippets Toolbox v5.0.26.4228
+Loaded the following properties from C:\Users\johns\SmartSnippetsToolbox\properties.txt
+{ENABLE_HIDDEN_TOOLS=true, ENABLE_TS=false, ENABLE_MP=false, ENABLE_TE=false}
+Command line arguments: 
+-sdk C:\DA14531_SDK6\DA145xx_SDK\6.0.24.1464 -type spi -chip DA14531 -jtag 480045453 -cmd erase -firmware C:\DA14531_SDK6\DA145xx_SDK\6.0.24.1464\config\toolbox_resources\DA1453x\common\jtag_programmer.bin -y 
+Found SW-DP with ID 0x0BC11477
+DPIDR: 0x0BC11477
+Scanning AP map to find all available APs
+AP[1]: Stopped AP scan as end of AP map has been reached
+AP[0]: AHB-AP (IDR: 0x04770031)
+Iterating through AP map to find AHB-AP to use
+AP[0]: Core found
+AP[0]: AHB-AP ROM base: 0xE00FF000
+CPUID register: 0x410CC601. Implementer code: 0x41 (ARM)
+Found Cortex-M0 r0p1, Little endian.
+FPUnit: 4 code (BP) slots and 0 literal slots
+CoreSight components:
+ROMTbl[0] @ E00FF000
+ROMTbl[0][0]: E000E000, CID: B105E00D, PID: 000BB008 SCS
+ROMTbl[0][1]: E0001000, CID: B105E00D, PID: 000BB00A DWT
+ROMTbl[0][2]: E0002000, CID: B105E00D, PID: 000BB00B FPB
+BTLE device selected.
+Using default max memory size: 0x00200000 bytes.
+Found SW-DP with ID 0x0BC11477
+DPIDR: 0x0BC11477
+AP map detection skipped. Manually configured AP map found.
+AP[0]: AHB-AP (IDR: Not set)
+AP[0]: Core found
+AP[0]: AHB-AP ROM base: 0xE00FF000
+CPUID register: 0x410CC601. Implementer code: 0x41 (ARM)
+Found Cortex-M0 r0p1, Little endian.
+FPUnit: 4 code (BP) slots and 0 literal slots
+CoreSight components:
+ROMTbl[0] @ E00FF000
+ROMTbl[0][0]: E000E000, CID: B105E00D, PID: 000BB008 SCS
+ROMTbl[0][1]: E0001000, CID: B105E00D, PID: 000BB00A DWT
+ROMTbl[0][2]: E0002000, CID: B105E00D, PID: 000BB00B FPB
+Reset: Halt core after reset via DEMCR.VC_CORERESET.
+Reset: Reset device via AIRCR.SYSRESETREQ.
+Firmware File C:\DA14531_SDK6\DA145xx_SDK\6.0.24.1464\config\toolbox_resources\DA1453x\common\jtag_programmer.bin has been selected for downloading.
+Reset: Halt core after reset via DEMCR.VC_CORERESET.
+Reset: Reset device via AIRCR.SYSRESETREQ.
+Reset: Halt core after reset via DEMCR.VC_CORERESET.
+Reset: Reset device via AIRCR.SYSRESETREQ.
+Successfully downloaded firmware file to the board.
+Using default baudrate: 115200 Bd.
+Successfully configured SPI ports and pins.
+Started erasing all memory.
+SPI Flash memory erasing completed successfully.
+COMMAND: C:\Program Files\SmartSnippetsToolbox\SmartSnippetsToolbox5.0.26\SmartSnippetsToolbox.exe -sdk C:\DA14531_SDK6\DA145xx_SDK\6.0.24.1464 -type spi -chip DA14531 -jtag 480045453 -cmd write -file C:\Users\johns\531 Project\P531_Handheld\Keil\out_DA14531\Objects\ble_app_peripheral_531.bin -bootable -verify -max 0x20000 -firmware C:\DA14531_SDK6\DA145xx_SDK\6.0.24.1464\config\toolbox_resources\DA1453x\common\jtag_programmer.bin -y
+Launching SmartSnippets Toolbox v5.0.26.4228
+Loaded the following properties from C:\Users\johns\SmartSnippetsToolbox\properties.txt
+{ENABLE_HIDDEN_TOOLS=true, ENABLE_TS=false, ENABLE_MP=false, ENABLE_TE=false}
+Command line arguments: 
+-sdk C:\DA14531_SDK6\DA145xx_SDK\6.0.24.1464 -type spi -chip DA14531 -jtag 480045453 -cmd write -file C:\Users\johns\531 Project\P531_Handheld\Keil\out_DA14531\Objects\ble_app_peripheral_531.bin -bootable -verify -max 0x20000 -firmware C:\DA14531_SDK6\DA145xx_SDK\6.0.24.1464\config\toolbox_resources\DA1453x\common\jtag_programmer.bin -y 
+Found SW-DP with ID 0x0BC11477
+DPIDR: 0x0BC11477
+Scanning AP map to find all available APs
+AP[1]: Stopped AP scan as end of AP map has been reached
+AP[0]: AHB-AP (IDR: 0x04770031)
+Iterating through AP map to find AHB-AP to use
+AP[0]: Core found
+AP[0]: AHB-AP ROM base: 0xE00FF000
+CPUID register: 0x410CC601. Implementer code: 0x41 (ARM)
+Found Cortex-M0 r0p1, Little endian.
+FPUnit: 4 code (BP) slots and 0 literal slots
+CoreSight components:
+ROMTbl[0] @ E00FF000
+ROMTbl[0][0]: E000E000, CID: B105E00D, PID: 000BB008 SCS
+ROMTbl[0][1]: E0001000, CID: B105E00D, PID: 000BB00A DWT
+ROMTbl[0][2]: E0002000, CID: B105E00D, PID: 000BB00B FPB
+BTLE device selected.
+Found SW-DP with ID 0x0BC11477
+DPIDR: 0x0BC11477
+AP map detection skipped. Manually configured AP map found.
+AP[0]: AHB-AP (IDR: Not set)
+AP[0]: Core found
+AP[0]: AHB-AP ROM base: 0xE00FF000
+CPUID register: 0x410CC601. Implementer code: 0x41 (ARM)
+Found Cortex-M0 r0p1, Little endian.
+FPUnit: 4 code (BP) slots and 0 literal slots
+CoreSight components:
+ROMTbl[0] @ E00FF000
+ROMTbl[0][0]: E000E000, CID: B105E00D, PID: 000BB008 SCS
+ROMTbl[0][1]: E0001000, CID: B105E00D, PID: 000BB00A DWT
+ROMTbl[0][2]: E0002000, CID: B105E00D, PID: 000BB00B FPB
+Reset: Halt core after reset via DEMCR.VC_CORERESET.
+Reset: Reset device via AIRCR.SYSRESETREQ.
+Firmware File C:\DA14531_SDK6\DA145xx_SDK\6.0.24.1464\config\toolbox_resources\DA1453x\common\jtag_programmer.bin has been selected for downloading.
+Reset: Halt core after reset via DEMCR.VC_CORERESET.
+Reset: Reset device via AIRCR.SYSRESETREQ.
+Reset: Halt core after reset via DEMCR.VC_CORERESET.
+Reset: Reset device via AIRCR.SYSRESETREQ.
+Successfully downloaded firmware file to the board.
+Using default baudrate: 115200 Bd.
+Added bootable header to image.
+Successfully configured SPI ports and pins.
+Read 16384 bytes from offset 0x00
+Read 16384 bytes from offset 0x4000
+Read 6672 bytes from offset 0x8000
+Started burning memory with 39440 bytes of data at address 0x00000.
+Burned chunk with size 16384 bytes at offset 0x00
+Burned chunk with size 16384 bytes at offset 0x4000
+Memory burning completed successfully.
+Reading memory to verify its contents after burn...
+Read 16384 bytes from offset 0x00
+Read 16384 bytes from offset 0x4000
+Read 6672 bytes from offset 0x8000
+SPI Flash  memory verification succeeded.
+Sent reset command. If application won't start replug the board.

@@ -84,7 +84,7 @@ foreach ($args in $commands) {
 $logText = [System.IO.File]::ReadAllText($rawLog)
 $passed = ($exitCodes | Where-Object { $_ -ne 0 }).Count -eq 0 -and
     $logText -match "Memory burning completed successfully" -and
-    $logText -match "SPI Flash memory verification succeeded"
+    $logText -match "SPI Flash\s+memory verification succeeded"
 
 if (!$passed) {
     throw "SmartSnippets flash did not produce the expected success and verify messages. See '$rawLog'."

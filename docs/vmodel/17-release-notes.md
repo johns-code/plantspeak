@@ -21,6 +21,8 @@ Project: PlantSpeak
 - Live BLE ICD smoke runner and passed target evidence.
 - Confirmed SmartSnippets erase/write/verify flash evidence.
 - Post-flash live BLE ICD smoke evidence.
+- SmartDevice-Handheld BLE ICD v0.13 source extraction and machine-readable wire contract.
+- Firmware-facing ICD v0.13 opcode header.
 
 ## Included
 
@@ -31,7 +33,7 @@ Project: PlantSpeak
 
 ## Gate Status
 
-- Local tests: 45 passed, 3 skipped
+- Local tests: 56 passed, 3 skipped
 - PR CI: required and tracked in GitHub Actions
 - Human release approval: pending
 - Release candidate manifest: `docs/release-evidence/release-candidate-manifest.json`

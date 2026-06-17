@@ -1,0 +1,511 @@
+table,row,col,text
+0,0,0,Item
+0,0,1,Value
+0,1,0,Applies to
+0,1,1,DA14531MOD-based P531 handheld wand and companion SmartDevice application
+0,2,0,Production BLE name
+0,2,1,P531-Handheld
+0,3,0,Recovery BLE name
+0,3,1,P531-Recovery
+0,4,0,Protocol version
+0,4,1,0x01
+0,5,0,Updated for
+0,5,1,"DEVICE_INFO_SET, PPFD calibration index 6, averaging limits, six wavelength channels, recovery/update flow, flash diagnostic logging, and MTU67 write support with 20-byte TX notification fragments"
+1,0,0,As-built scope: this document describes the current target branch implementation. Reserved commands/events from earlier drafts are omitted unless implemented. Image update regression is handled separately from normal ICD regression because full image transfer is slow.
+2,0,0,Advertised state
+2,0,1,BLE local name
+2,0,2,Meaning
+2,0,3,SmartDevice expectation
+2,1,0,Production application
+2,1,1,P531-Handheld
+2,1,2,Normal measurement/calibration firmware is running.
+2,1,3,Use full command set in this document.
+2,2,0,Recovery application
+2,2,1,P531-Recovery
+2,2,2,Minimal recovery firmware is running and ready for image update.
+2,2,3,"Use PING, GET_INFO, IMAGE_BEGIN, IMAGE_DATA, IMAGE_END, and REBOOT. Other opcodes may return UNKNOWN_OPCODE."
+3,0,0,Field
+3,0,1,Offset
+3,0,2,Size
+3,0,3,Type
+3,0,4,Description
+3,1,0,VER
+3,1,1,0
+3,1,2,1
+3,1,3,u8
+3,1,4,Protocol version. Current value: 0x01.
+3,2,0,OPC
+3,2,1,1
+3,2,2,1
+3,2,3,u8
+3,2,4,Command opcode or event opcode.
+3,3,0,FLAGS
+3,3,1,2
+3,3,2,1
+3,3,3,u8
+3,3,4,"b0 FragStart reserved, b1 FragCont reserved, b2 Resp, b3 AckReq reserved."
+3,4,0,SEQ
+3,4,1,3
+3,4,2,1
+3,4,3,u8
+3,4,4,SmartDevice-selected sequence value. Responses echo this value.
+3,5,0,LEN
+3,5,1,4
+3,5,2,2
+3,5,3,u16le
+3,5,4,Payload length in bytes. Response payloads include RET as byte 0.
+3,6,0,PAYLOAD
+3,6,1,6
+3,6,2,LEN
+3,6,3,bytes
+3,6,4,Command-specific payload. Requests do not include RET. Responses always begin with RET.
+3,7,0,CRC16
+3,7,1,6+LEN
+3,7,2,2
+3,7,3,u16le
+3,7,4,CRC-16/X25 over VER..PAYLOAD.
+4,0,0,RET
+4,0,1,Name
+4,0,2,Meaning
+4,1,0,0x00
+4,1,1,OK
+4,1,2,Command accepted/completed.
+4,2,0,0x01
+4,2,1,UNKNOWN_OPCODE
+4,2,2,Opcode not implemented in the current advertised state.
+4,3,0,0x02
+4,3,1,BAD_PARAM
+4,3,2,Payload length or field value invalid.
+4,4,0,0x03
+4,4,1,BUSY
+4,4,2,Device busy.
+4,5,0,0x04
+4,5,1,NOT_READY
+4,5,2,"Required state is missing, for example peripheral power is off before START_MEAS."
+4,6,0,0x05
+4,6,1,DENIED
+4,6,2,Rejected by security/policy.
+4,7,0,0x06
+4,7,1,CRC_FAIL
+4,7,2,Frame CRC mismatch.
+4,8,0,0x07
+4,8,1,TIMEOUT
+4,8,2,Operation timeout.
+4,9,0,0x08
+4,9,1,TOO_LONG
+4,9,2,Payload too long.
+4,10,0,0x09
+4,10,1,UNSUPPORTED
+4,10,2,Valid field not supported by this build.
+4,11,0,0x0A
+4,11,1,LOW_POWER_GUARD
+4,11,2,Rejected by low-power guard.
+5,0,0,OPC
+5,0,1,Name
+5,0,2,Request
+5,0,3,Response
+5,0,4,Notes
+5,1,0,0x01
+5,1,1,PING
+5,1,2,-
+5,1,3,"RET, UPTIME_MS:u32"
+5,1,4,Liveness check.
+5,2,0,0x02
+5,2,1,GET_INFO
+5,2,2,-
+5,2,3,"RET, FW_VER[3], HW_REV:u8, SERIAL:u32, BUILD_ID:u32"
+5,2,4,SERIAL/HW_REV come from provisioned flash identity.
+5,3,0,0x03
+5,3,1,GET_STATUS
+5,3,2,-
+5,3,3,"RET, status struct"
+5,3,4,See Section 4.
+5,4,0,0x04
+5,4,1,SET_TIME
+5,4,2,EPOCH_S:u32
+5,4,3,RET
+5,4,4,Sets handheld time base used by status/log timestamps.
+5,5,0,0x05
+5,5,1,SET_RED_LED
+5,5,2,"MODE:u8, PERIOD_100MS:u16, DUTY_PCT:u8"
+5,5,3,RET
+5,5,4,"MODE: 0 off, 1 on, 2 blink."
+5,6,0,0x06
+5,6,1,SET_GREEN_LED
+5,6,2,"MODE:u8, PERIOD_100MS:u16, DUTY_PCT:u8"
+5,6,3,RET
+5,6,4,"MODE: 0 off, 1 on, 2 blink."
+5,7,0,0x07
+5,7,1,SET_PERIPH_POWER
+5,7,2,EN:u8 (0/1)
+5,7,3,RET
+5,7,4,Must be ON before START_MEAS. Logs power transitions.
+5,8,0,0x08
+5,8,1,REBOOT
+5,8,2,-
+5,8,3,RET then disconnect/reset
+5,8,4,Commits pending verified image before reset.
+5,9,0,0x09
+5,9,1,ENTER_DEEP_SLEEP
+5,9,2,-
+5,9,3,RET then sleep
+5,9,4,Target-board wake validation deferred; dev-board wake is not authoritative.
+5,10,0,0x0A
+5,10,1,DEVICE_INFO_SET
+5,10,2,"HW_REV:u8, SERIAL:u32"
+5,10,3,RET
+5,10,4,Manufacturing/calibration provisioning. Rejects SERIAL=0xFFFFFFFF.
+5,11,0,0x10
+5,11,1,START_MEAS
+5,11,2,"MODE:u8, COUNT:u16, INTERVAL_MS:u16, MEAS_AVG:u8, FLAGS:u8"
+5,11,3,"RET, measurement frame"
+5,11,4,Only MODE=0 ONESHOT implemented. Requires peripheral power ON.
+5,12,0,0x14
+5,12,1,LOG_GET
+5,12,2,"START_IDX:u16, MAX_ITEMS:u16"
+5,12,3,"RET, N:u16, N records"
+5,12,4,Returns up to 5 compact log records per request.
+5,13,0,0x15
+5,13,1,LOG_CLEAR
+5,13,2,-
+5,13,3,RET
+5,13,4,Erases the log sector and resets log count to 0.
+5,14,0,0x22
+5,14,1,CAL_GET
+5,14,2,W_IDX:u8
+5,14,3,"RET, CAL_VER, CAL_FLAGS, N, CAL_REC"
+5,14,4,"W_IDX 0..5 LEDs, W_IDX 6 PPFD."
+5,15,0,0x23
+5,15,1,CAL_SET
+5,15,2,CAL_REC (11 bytes)
+5,15,3,RET
+5,15,4,"NVM commit. Current local returns: 0 OK, 1 bad len/not found, 2 flash/bounds error."
+5,16,0,0x40
+5,16,1,IMAGE_BEGIN
+5,16,2,"Preferred compact: TYPE:u8, SIZE:u32, VER[3], CRC32:u32. Legacy accepted: TYPE:u8, COMPRESS:u8, SIZE:u32, VER[3], CRC32:u32"
+5,16,3,"RET, WINDOW:u16, SLOT:u8"
+5,16,4,Starts staged production image upload.
+5,17,0,0x41
+5,17,1,IMAGE_DATA
+5,17,2,"OFFSET:u16, BYTES:u8, DATA[BYTES]"
+5,17,3,RET
+5,17,4,"Chunk data. BYTES <= available ICD request payload and <=255. With ATT_MTU 23, use <=12 data bytes per IMAGE_DATA frame. With negotiated ATT_MTU 67, current firmware supports up to 53 data bytes per IMAGE_DATA frame."
+5,18,0,0x42
+5,18,1,IMAGE_END
+5,18,2,-
+5,18,3,"RET, VERIFY:u8"
+5,18,4,"VERIFY: 0 OK, 1 size mismatch, 2 CRC mismatch, 3 other. REBOOT required to run new image."
+5,19,0,0x51
+5,19,1,LED_CUR_SET
+5,19,2,"W_IDX:u8, I_LED_UA:u16"
+5,19,3,RET
+5,19,4,Only W_IDX 0..5. W_IDX 6 is PPFD and is rejected.
+5,20,0,0x52
+5,20,1,LED_CUR_GET
+5,20,2,W_IDX:u8
+5,20,3,"RET, W_IDX:u8, I_LED_UA:u16"
+5,20,4,Reads stored current for physical LED index.
+6,0,0,GET_STATUS field
+6,0,1,Type
+6,0,2,Units
+6,0,3,Description
+6,1,0,UPTIME_MS
+6,1,1,u32
+6,1,2,ms
+6,1,3,Time since application boot.
+6,2,0,BATT_MV
+6,2,1,u16
+6,2,2,mV
+6,2,3,Battery voltage.
+6,3,0,PERIPH_PWR
+6,3,1,u8
+6,3,2,bool
+6,3,3,Peripheral power state.
+6,4,0,SENSOR_FLAGS
+6,4,1,u16
+6,4,2,bitmap
+6,4,3,Current sensor presence/status bitmap.
+6,5,0,FAULT_FLAGS
+6,5,1,u16
+6,5,2,bitmap
+6,5,3,Current fault bitmap.
+6,6,0,RSSI_DBM
+6,6,1,i8
+6,6,2,dBm
+6,6,3,Latest connection RSSI.
+6,7,0,LAST_RESET
+6,7,1,u8
+6,7,2,enum
+6,7,3,Reset reason from platform status.
+6,8,0,HANDHELD_TIME_S
+6,8,1,u32
+6,8,2,s
+6,8,3,Unix time if SET_TIME has been called; otherwise uptime-derived seconds.
+7,0,0,START_MEAS request field
+7,0,1,Type
+7,0,2,Rule
+7,1,0,MODE
+7,1,1,u8
+7,1,2,Only 0=ONESHOT implemented. Other values return BAD_PARAM.
+7,2,0,COUNT
+7,2,1,u16
+7,2,2,Set to 1 for current ONESHOT flow. Parsed for payload shape compatibility.
+7,3,0,INTERVAL_MS
+7,3,1,u16
+7,3,2,Must be >=200. Used for host pacing compatibility.
+7,4,0,MEAS_AVG
+7,4,1,u8
+7,4,2,"Allowed: 0, 1, 2, 4, 8, 16. 0 is treated as 1. Averaging applies only to ADC-derived fields."
+7,5,0,FLAGS
+7,5,1,u8
+7,5,2,Reserved; set 0.
+8,0,0,Measurement response field
+8,0,1,Type
+8,0,2,Units
+8,0,3,Description
+8,1,0,RET
+8,1,1,u8
+8,1,2,-
+8,1,3,"0 OK, or error."
+8,2,0,MEAS_ID
+8,2,1,u16
+8,2,2,-
+8,2,3,Monotonic measurement ID.
+8,3,0,HANDHELD_TIME_S
+8,3,1,u32
+8,3,2,s
+8,3,3,"Current handheld time. Firmware member name is ts_ms, but value is seconds."
+8,4,0,SENSORS
+8,4,1,u16
+8,4,2,bitmap
+8,4,3,Sensor snapshot.
+8,5,0,AMB_TEMP_CC
+8,5,1,i16
+8,5,2,0.01 C
+8,5,3,Ambient temperature from HDC2010.
+8,6,0,RH_CPERCENT
+8,6,1,u16
+8,6,2,0.01 %RH
+8,6,3,Relative humidity from HDC2010.
+8,7,0,PPFD_RAW_MV
+8,7,1,u16
+8,7,2,mV
+8,7,3,PPFD photodiode ADC millivolts. SmartDevice maps mV to PPFD using CAL W_IDX=6.
+8,8,0,LEAF_TEMP_CC
+8,8,1,i16
+8,8,2,0.01 C
+8,8,3,Leaf/object temperature from MLX90632.
+8,9,0,ACCEL_X/Y/Z_MG
+8,9,1,3 x i16
+8,9,2,mg
+8,9,3,MXC4005 axes.
+8,10,0,ADC_V_MV[12]
+8,10,1,12 x u16
+8,10,2,mV
+8,10,3,Physical LED reflectance channels use indices 0..5; remaining entries are reserved/zero.
+8,11,0,BATT_MV
+8,11,1,u16
+8,11,2,mV
+8,11,3,Battery voltage.
+8,12,0,ERRORS
+8,12,1,u16
+8,12,2,bitmap
+8,12,3,b0 indicates target hardware measurement backend failure.
+9,0,0,"START_MEAS state rule: SmartDevice must send SET_PERIPH_POWER=1 before START_MEAS. If peripheral power is off, START_MEAS returns NOT_READY and records a MEAS_REJECT_POWER diagnostic log entry."
+10,0,0,W_IDX
+10,0,1,Physical channel
+10,0,2,Measurement response
+10,0,3,Calibration use
+10,1,0,0
+10,1,1,531 nm LED
+10,1,2,ADC_V_MV[0]
+10,1,3,Reflectance CAL_REC.
+10,2,0,1
+10,2,1,570 nm LED
+10,2,2,ADC_V_MV[1]
+10,2,3,Reflectance CAL_REC.
+10,3,0,2
+10,3,1,705 nm LED
+10,3,2,ADC_V_MV[2]
+10,3,3,Reflectance CAL_REC.
+10,4,0,3
+10,4,1,750 nm LED
+10,4,2,ADC_V_MV[3]
+10,4,3,Reflectance CAL_REC.
+10,5,0,4
+10,5,1,830 nm LED
+10,5,2,ADC_V_MV[4]
+10,5,3,Reflectance CAL_REC.
+10,6,0,5
+10,6,1,970 nm LED
+10,6,2,ADC_V_MV[5]
+10,6,3,Reflectance CAL_REC.
+10,7,0,6
+10,7,1,PPFD photodiode pseudo-index
+10,7,2,"PPFD_RAW_MV field, not ADC_V_MV[6]"
+10,7,3,PPFD two-point mV-to-PPFD calibration. LED_CUR_SET rejects this index.
+11,0,0,CAL_REC field
+11,0,1,Type
+11,0,2,LED W_IDX 0..5
+11,0,3,PPFD W_IDX 6
+11,1,0,W_IDX
+11,1,1,u8
+11,1,2,0..5
+11,1,3,6
+11,2,0,R1
+11,2,1,u16
+11,2,2,Reflectivity point 1 in Q1.15
+11,2,3,"PPFD point 1, PPFD x10"
+11,3,0,V1_MV
+11,3,1,u16
+11,3,2,Measured photodiode mV at R1
+11,3,3,Measured PPFD photodiode mV at point 1
+11,4,0,R2
+11,4,1,u16
+11,4,2,Reflectivity point 2 in Q1.15
+11,4,3,"PPFD point 2, PPFD x10"
+11,5,0,V2_MV
+11,5,1,u16
+11,5,2,Measured photodiode mV at R2
+11,5,3,Measured PPFD photodiode mV at point 2
+11,6,0,COV_MV
+11,6,1,u16
+11,6,2,Cover/window diagnostic mV
+11,6,3,Reserved; set 0
+12,0,0,Code
+12,0,1,Name
+12,0,2,ARG meaning
+12,1,0,0x13
+12,1,1,MEAS_HW_FAIL
+12,1,2,stage<<8 | detail
+12,2,0,0x14
+12,2,1,MEAS_REJECT_PARAM
+12,2,2,mode<<8 | avg
+12,3,0,0x15
+12,3,1,MEAS_REJECT_POWER
+12,3,2,avg
+12,4,0,0x23
+12,4,1,IMAGE_BEGIN_FAIL
+12,4,2,return/status
+12,5,0,0x25
+12,5,1,IMAGE_DATA_FAIL
+12,5,2,return/status
+12,6,0,0x27
+12,6,1,IMG_FLASH_ID_BAD
+12,6,2,flash device id
+12,7,0,0x28
+12,7,1,IMG_BEGIN_BAD
+12,7,2,bad length/size/end low word
+12,8,0,0x29
+12,8,1,IMG_BOOT_HDR_WRITE_FAIL
+12,8,2,written bytes
+12,9,0,0x2A
+12,9,1,IMG_DATA_WRITE_MISMATCH
+12,9,2,actual bytes
+12,10,0,0x2B
+12,10,1,IMG_END_SIZE_MISMATCH
+12,10,2,expected size low word
+12,11,0,0x2D
+12,11,1,IMG_LAYOUT_SANITY_FAIL
+12,11,2,reason
+12,12,0,0x2E
+12,12,1,IMG_FLASH_NOT_READY
+12,12,2,stage
+12,13,0,0x31
+12,13,1,CAL_SAVE_ERR
+12,13,2,W_IDX
+12,14,0,0x33
+12,14,1,LED_CUR_SAVE_ERR
+12,14,2,W_IDX
+12,15,0,0x34..0x38
+12,15,1,CAL backend errors
+12,15,2,backend-specific
+12,16,0,0x39
+12,16,1,DEVICE_INFO_SET
+12,16,2,HW_REV
+12,17,0,0x41
+12,17,1,LOG_CLEAR_OK
+12,17,2,reserved
+12,18,0,0x42
+12,18,1,LOG_CLEAR_ERR
+12,18,2,erase status
+12,19,0,0x50
+12,19,1,ICD_TX_OVERSIZE
+12,19,2,OPC
+12,20,0,0x51
+12,20,1,ICD_LEN_MISMATCH
+12,20,2,received length
+12,21,0,0x52
+12,21,1,ICD_UNKNOWN_OPCODE
+12,21,2,OPC
+12,22,0,0x53
+12,22,1,PERIPH_POWER
+12,22,2,0 off / 1 on
+12,23,0,0x54
+12,23,1,REBOOT_CMD
+12,23,2,0
+12,24,0,0x55
+12,24,1,SLEEP_CMD
+12,24,2,0
+12,25,0,0x60
+12,25,1,BCB_FLASH_NOT_READY
+12,25,2,0
+12,26,0,0x61
+12,26,1,BCB_CRC_BAD
+12,26,2,0
+12,27,0,0x62
+12,27,1,BCB_WRITE_SHORT
+12,27,2,written bytes
+13,0,0,Flash region
+13,0,1,Offset
+13,0,2,Size
+13,0,3,Purpose
+13,1,0,Boot manager
+13,1,1,0x00000
+13,1,2,0x03000
+13,1,3,"Stage-1 boot manager, DA14531 bootable format."
+13,2,0,Slot A
+13,2,1,0x03000
+13,2,2,0x0B000
+13,2,3,Production application slot. IMAGE_* writes here.
+13,3,0,Slot B
+13,3,1,0x0E000
+13,3,2,0x0C000
+13,3,3,Recovery application slot.
+13,4,0,Logs
+13,4,1,0x1A000
+13,4,2,0x04000
+13,4,3,Reserved log region; current logger uses first 4 KB.
+13,5,0,BCB
+13,5,1,0x1E000
+13,5,2,0x01000
+13,5,3,Boot-control block.
+13,6,0,CAL/identity
+13,6,1,0x1F000
+13,6,2,0x01000
+13,6,3,"Calibration, LED currents, hardware revision, serial."
+14,0,0,"Failed update expectation: if production cannot run, the boot manager should fall back to the recovery application. The SmartDevice should scan for P531-Recovery, connect, use GET_INFO to confirm RECOVERY_MODE=1, then repeat IMAGE_BEGIN/DATA/END and REBOOT. Recovery GET_INFO returns the normal first 13 bytes plus MODE:u8, FLAGS:u16, UPTIME_MS:u32, RSSI:i8 fields."
+15,0,0,OPC
+15,0,1,Name
+15,0,2,Recovery support
+15,1,0,0x01
+15,1,1,PING
+15,1,2,Supported.
+15,2,0,0x02
+15,2,1,GET_INFO
+15,2,2,Supported; 24-byte response includes recovery mode and flags.
+15,3,0,0x08
+15,3,1,REBOOT
+15,3,2,Supported; commits pending verified image then resets.
+15,4,0,0x40
+15,4,1,IMAGE_BEGIN
+15,4,2,Supported.
+15,5,0,0x41
+15,5,1,IMAGE_DATA
+15,5,2,Supported.
+15,6,0,0x42
+15,6,1,IMAGE_END
+15,6,2,Supported.
+15,7,0,Other
+15,7,1,-
+15,7,2,Expected to return UNKNOWN_OPCODE.

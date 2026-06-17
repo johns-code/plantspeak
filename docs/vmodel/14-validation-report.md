@@ -46,6 +46,10 @@ S9 adds live BLE ICD smoke evidence against `P531-Handheld`. The smoke run passe
 
 S10 confirms SmartSnippets CLI erase/write/verify of the generated DA14531 binary and reruns the live BLE ICD smoke after reset. The post-flash smoke passed with CRC-valid command responses and final peripheral power-off.
 
+## S11 ICD v0.13 Alignment
+
+S11 ingests the latest SmartDevice-Handheld BLE ICD v0.13 DOCX as a source artifact and turns the implemented wire details into a machine-readable contract. This validates that the software package now knows the current command set, return codes, UUIDs, frame shape, CRC rule, measurement/calibration rules, image-update commands, and recovery subset.
+
 ## Review Remediation Closure
 
 | Review Theme | Resolution |

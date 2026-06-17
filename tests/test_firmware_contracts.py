@@ -3,6 +3,7 @@ import json
 from pathlib import Path
 
 from plantspeak.icd import COMMANDS_BY_REQUIREMENT
+from plantspeak.icd_v013 import COMMANDS_BY_NAME, MAX_ICD_REQUEST_PAYLOAD, PROTOCOL_VERSION, TX_NOTIFICATION_FRAGMENT_BYTES
 from plantspeak.pins import pin_map
 
 
@@ -35,6 +36,16 @@ def test_firmware_build_script_documents_contract_only_mode() -> None:
     assert "PLANTSPEAK_KEIL_PROJECT" in content
     assert "contract-only build evidence" in content
     assert "0 Error" in content
+
+
+def test_firmware_v013_command_table_matches_python_wire_contract() -> None:
+    content = (ROOT / "firmware" / "icd_v013_command_table.h").read_text(encoding="utf-8")
+
+    assert f"PLANTSPEAK_ICD_V013_PROTOCOL_VERSION 0x{PROTOCOL_VERSION:02X}u" in content
+    assert f"PLANTSPEAK_ICD_V013_MAX_REQUEST_PAYLOAD {MAX_ICD_REQUEST_PAYLOAD}u" in content
+    assert f"PLANTSPEAK_ICD_V013_TX_NOTIFY_FRAGMENT_BYTES {TX_NOTIFICATION_FRAGMENT_BYTES}u" in content
+    for name, spec in COMMANDS_BY_NAME.items():
+        assert f'{{0x{int(spec.opcode):02X}u, "{name}"}}' in content
 
 
 def test_real_board_keil_build_evidence_is_captured() -> None:

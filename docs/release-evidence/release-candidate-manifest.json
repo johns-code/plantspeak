@@ -13,7 +13,9 @@
     "s8_keil_build_gate": "pass",
     "s8_jlink_probe": "pass",
     "s9_live_icd_smoke": "pass",
-    "s9_flash_gate": "deferred-requires-confirm-flash"
+    "s9_flash_gate": "pass-confirmed-flash",
+    "s10_confirmed_flash": "pass",
+    "s10_post_flash_live_icd_smoke": "pass"
   },
   "required_artifacts": [
     "docs/vmodel/12-requirements-traceability-matrix.md",
@@ -32,16 +34,17 @@
     "docs/test-evidence/ST-006-hil-report.md",
     "docs/test-evidence/S8-pytest.txt",
     "docs/test-evidence/S9-pytest.txt",
+    "docs/test-evidence/S10-pytest.txt",
     "docs/test-evidence/keil-da14531-build-raw.log",
     "docs/test-evidence/keil-da14531-build-summary.json",
     "docs/test-evidence/jlink-probe-raw.log",
     "docs/test-evidence/jlink-probe-summary.json",
     "docs/test-evidence/live-icd-smoke-raw.log",
     "docs/test-evidence/live-icd-smoke-summary.json",
+    "docs/test-evidence/smart-snippets-flash-raw.log",
     "docs/test-evidence/smart-snippets-flash-summary.json"
   ],
   "deferred_validation": [
-    "confirmed flash/program operation for this generated build",
     "target-board I2C device reads",
     "target-board push-button wake-from-sleep"
   ],

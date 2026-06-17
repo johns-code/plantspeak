@@ -66,14 +66,17 @@ def test_jlink_probe_evidence_is_captured() -> None:
 def test_smart_snippets_flash_gate_is_operator_confirmed() -> None:
     script = (ROOT / "firmware" / "flash-smart-snippets.ps1").read_text(encoding="utf-8")
     summary = json.loads((ROOT / "docs" / "test-evidence" / "smart-snippets-flash-summary.json").read_text(encoding="utf-8"))
+    raw_log = (ROOT / "docs" / "test-evidence" / "smart-snippets-flash-raw.log").read_text(encoding="utf-8")
 
     assert "-ConfirmFlash" in script
     assert "erase" in script
     assert "-bootable" in script
     assert "-verify" in script
     assert summary["gate"] == "smart-snippets-flash"
-    assert summary["status"] == "deferred"
+    assert summary["status"] == "pass"
     assert summary["jlink_serial"]
+    assert "Memory burning completed successfully" in raw_log
+    assert re.search(r"SPI Flash\s+memory verification succeeded", raw_log)
 
 
 def test_live_icd_smoke_evidence_is_captured() -> None:
@@ -87,3 +90,4 @@ def test_live_icd_smoke_evidence_is_captured() -> None:
     for marker in summary["required_pass_markers"]:
         assert marker in raw_log
     assert "crc_ok=True" in raw_log
+    assert "PASS SET_PERIPH_POWER final off" in raw_log

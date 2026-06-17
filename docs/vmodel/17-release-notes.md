@@ -17,6 +17,8 @@ Project: PlantSpeak
 - Firmware contract headers and build handoff documentation.
 - Real local DA14531 Keil build gate with zero-error evidence.
 - Non-invasive J-Link emulator discovery gate.
+- Operator-gated SmartSnippets flash workflow.
+- Live BLE ICD smoke runner and passed target evidence.
 
 ## Included
 
@@ -27,7 +29,7 @@ Project: PlantSpeak
 
 ## Gate Status
 
-- Local tests: 43 passed, 3 skipped
+- Local tests: 45 passed, 3 skipped
 - PR CI: required and tracked in GitHub Actions
 - Human release approval: pending
 - Release candidate manifest: `docs/release-evidence/release-candidate-manifest.json`
@@ -35,8 +37,7 @@ Project: PlantSpeak
 ## Not Included
 
 - DA14531 firmware flash evidence.
-- BLE transport implementation.
-- Target-board hardware-in-loop evidence.
+- Production target-board hardware-in-loop evidence.
 
 ## Firmware Note
 

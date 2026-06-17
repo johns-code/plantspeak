@@ -8,6 +8,8 @@ CI can always validate the reproducible contract layer:
 - DA14531 pin assignments in `pin_config.h`
 - A documented build entry point in `build.ps1`
 - A documented non-invasive J-Link probe entry point in `probe-jlink.ps1`
+- An operator-gated SmartSnippets flash entry point in `flash-smart-snippets.ps1`
+- A live BLE ICD smoke entry point in `run-live-icd-smoke.ps1`
 
 ## Build Evidence Policy
 
@@ -32,3 +34,19 @@ powershell -ExecutionPolicy Bypass -File firmware\probe-jlink.ps1 -RequireProbe
 ```
 
 The probe lists connected emulators only. It does not flash, halt, erase, or program the target.
+
+## Local SmartSnippets Flash
+
+```powershell
+powershell -ExecutionPolicy Bypass -File firmware\flash-smart-snippets.ps1 -ConfirmFlash
+```
+
+The script refuses to erase/write target SPI flash unless `-ConfirmFlash` is supplied.
+
+## Live ICD Smoke
+
+```powershell
+powershell -ExecutionPolicy Bypass -File firmware\run-live-icd-smoke.ps1 -RequireLiveBoard
+```
+
+The smoke runner invokes the existing P531 `pc_tools\test_icd_regression.py` flow and records raw plus summarized evidence under `docs/test-evidence`.

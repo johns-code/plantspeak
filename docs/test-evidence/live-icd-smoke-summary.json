@@ -1,0 +1,20 @@
+{
+    "gate":  "live-icd-smoke",
+    "status":  "pass",
+    "exit_code":  0,
+    "device_name":  "P531-Handheld",
+    "pc_tools_path":  "C:\\Users\\johns\\531 Project\\P531_Handheld",
+    "measurement_burst_count":  1,
+    "required_pass_markers":  [
+                                  "PASS PING",
+                                  "PASS GET_INFO",
+                                  "PASS GET_STATUS",
+                                  "PASS START_MEAS",
+                                  "PASS UNKNOWN_OPCODE",
+                                  "PASS SET_PERIPH_POWER final off"
+                              ],
+    "missing_pass_markers":  [
+
+                             ],
+    "raw_log":  "C:\\Users\\johns\\OneDrive\\Documents\\Software Team\\runs\\plantspeak-detailed-fresh\\delivery-checkout\\docs\\test-evidence\\live-icd-smoke-raw.log"
+}

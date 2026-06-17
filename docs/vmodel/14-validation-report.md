@@ -8,7 +8,7 @@ Conditionally valid for the first PC/dev-mode acceptance slice plus local DA1453
 
 ## Validation Position
 
-The current PR is valid for the first dev-mode vertical slice and confirms that the local DA14531 Keil target can build with zero errors. It is not yet a final product release because flashing, live BLE transport, and live target-board peripheral HIL remain unvalidated.
+The current PR is valid for the first dev-mode vertical slice, confirms that the local DA14531 Keil target can build with zero errors, and confirms live BLE ICD smoke behavior on the currently flashed `P531-Handheld` target. It is not yet a final product release because flashing this exact generated build and live production-board peripheral HIL remain unvalidated.
 
 ## Human Approval
 
@@ -24,8 +24,7 @@ Human approval is required before final acceptance, release tagging, or any clai
 ## Deferred Validation
 
 - Target-board I2C behavior.
-- BLE transport behavior.
-- Firmware flash behavior.
+- Confirmed flash/program operation for this generated build.
 - Push-button wake-from-sleep behavior.
 
 ## HIL Validation Gate
@@ -39,6 +38,10 @@ The S7 release candidate is valid as a PC/dev-mode and contract-complete staged 
 ## S8 Local Hardware Readiness
 
 S8 adds local evidence that uVision can build the DA14531 target and that SEGGER J-Link can discover a connected emulator over USB. This supports moving to an intentional flash-and-HIL stage, but it does not by itself validate live product behavior.
+
+## S9 Live Target Smoke
+
+S9 adds live BLE ICD smoke evidence against `P531-Handheld`. The smoke run passed PING, GET_INFO, GET_STATUS, peripheral power transitions, measurement success/rejection paths, calibration/LED-current round trips, log clear, CRC checks, and final peripheral power-off. This validates live transport behavior on the currently flashed image, not yet a confirmed flash of the newly generated build.
 
 ## Review Remediation Closure
 

@@ -1,0 +1,9 @@
+{
+    "gate":  "smart-snippets-flash",
+    "status":  "deferred",
+    "reason":  "Flash requires -ConfirmFlash because it erases and writes target SPI flash.",
+    "tool_path":  "C:\\Program Files\\SmartSnippetsToolbox\\SmartSnippetsToolbox5.0.26\\SmartSnippetsToolbox.exe",
+    "sdk_path":  "C:\\DA14531_SDK6\\DA145xx_SDK\\6.0.24.1464",
+    "firmware_bin":  "C:\\Users\\johns\\531 Project\\P531_Handheld\\Keil\\out_DA14531\\Objects\\ble_app_peripheral_531.bin",
+    "jlink_serial":  "480045453"
+}

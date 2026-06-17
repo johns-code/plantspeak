@@ -13,6 +13,7 @@ TX_NOTIFY_UUID = "9E0F0003-5310-4C1F-AAAA-BBBBCCCCDD01"
 
 DEFAULT_ATT_MTU = 23
 NEGOTIATED_ATT_MTU_MAX = 67
+TEST_DEFAULT_ATT_MTU = NEGOTIATED_ATT_MTU_MAX
 HEADER_BYTES = 6
 CRC_BYTES = 2
 MAX_ICD_REQUEST_PAYLOAD = 56
@@ -231,6 +232,7 @@ def icd_v013_summary() -> dict[str, object]:
         "transport": {
             "default_att_mtu": DEFAULT_ATT_MTU,
             "negotiated_att_mtu_max": NEGOTIATED_ATT_MTU_MAX,
+            "test_default_att_mtu": TEST_DEFAULT_ATT_MTU,
             "max_request_payload": MAX_ICD_REQUEST_PAYLOAD,
             "tx_notification_fragment_bytes": TX_NOTIFICATION_FRAGMENT_BYTES,
             "att23_image_data_bytes": ATT23_IMAGE_DATA_BYTES,

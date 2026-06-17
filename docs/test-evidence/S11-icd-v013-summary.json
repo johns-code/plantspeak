@@ -181,6 +181,7 @@
     "default_att_mtu": 23,
     "max_request_payload": 56,
     "negotiated_att_mtu_max": 67,
+    "test_default_att_mtu": 67,
     "tx_notification_fragment_bytes": 20
   },
   "uuids": {

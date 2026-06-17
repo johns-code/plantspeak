@@ -23,7 +23,7 @@ Project: PlantSpeak
 - Post-flash live BLE ICD smoke evidence.
 - SmartDevice-Handheld BLE ICD v0.13 source extraction and machine-readable wire contract.
 - Firmware-facing ICD v0.13 opcode header.
-- MTU 67 single-write ICD frame and IMAGE_DATA capacity tests.
+- MTU 67 default test mode for single-write ICD frame and IMAGE_DATA capacity tests.
 
 ## Included
 
@@ -34,7 +34,7 @@ Project: PlantSpeak
 
 ## Gate Status
 
-- Local tests: 59 passed, 3 skipped
+- Local tests: 60 passed, 3 skipped
 - PR CI: required and tracked in GitHub Actions
 - Human release approval: pending
 - Release candidate manifest: `docs/release-evidence/release-candidate-manifest.json`

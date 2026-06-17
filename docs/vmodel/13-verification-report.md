@@ -37,7 +37,7 @@ PASS
 - S9 live BLE ICD smoke evidence confirms the currently flashed `P531-Handheld` target responds to command, measurement, CRC, and negative-path checks.
 - S10 SmartSnippets flash evidence confirms erase, bootable write, and SPI flash verification succeeded for the generated DA14531 binary.
 - S10 post-flash live BLE ICD smoke evidence confirms the freshly programmed target responds to the command regression.
-- S11 captures SmartDevice-Handheld BLE ICD v0.13 as a versioned wire contract with opcode table, return codes, UUIDs, frame encode/decode, CRC-16/X25, measurement/calibration rules, recovery subset, and MTU 67 single-write frame sizing.
+- S11 captures SmartDevice-Handheld BLE ICD v0.13 as a versioned wire contract with opcode table, return codes, UUIDs, frame encode/decode, CRC-16/X25, measurement/calibration rules, recovery subset, and MTU 67 as the default deterministic test MTU for single-write frame sizing.
 
 ## S1 Verification Evidence
 
@@ -140,7 +140,7 @@ PASS
 | `docs/source-requirements/SmartDevice-Handheld_BLE-ICD_v0.13.extract.txt` | Extracted prose from the latest ICD DOCX source. |
 | `docs/source-requirements/SmartDevice-Handheld_BLE-ICD_v0.13.tables.md` | Extracted ICD tables including opcodes, return codes, payload fields, flash layout, and recovery subset. |
 | `docs/test-evidence/S11-icd-v013-summary.json` | Machine-readable v0.13 ICD contract emitted by `python -m plantspeak.cli icd-v013`. |
-| `docs/test-evidence/S11-pytest.txt` | Local pytest output for 59 passed tests and 3 intentionally skipped target-board HIL tests. |
+| `docs/test-evidence/S11-pytest.txt` | Local pytest output for 60 passed tests and 3 intentionally skipped target-board HIL tests. |
 | `plantspeak/icd_v013.py` | Python source of truth for ICD v0.13 wire constants, command specs, CRC, and frame encode/decode. |
 | `firmware/icd_v013_command_table.h` | Firmware-facing v0.13 opcode and frame-size contract header. |
 | `tests/test_icd_v013.py` | Verifies v0.13 metadata, opcodes, return codes, measurement rules, recovery subset, frame CRC behavior, and MTU 67 64-byte single-write IMAGE_DATA capacity. |

@@ -20,6 +20,7 @@ TX_NOTIFICATION_FRAGMENT_BYTES = 20
 ATT23_IMAGE_DATA_BYTES = 12
 ATT67_IMAGE_DATA_BYTES = 53
 RESPONSE_FLAG = 1 << 2
+IMAGE_DATA_PAYLOAD_OVERHEAD_BYTES = 3
 
 
 class ReturnCode(IntEnum):
@@ -204,6 +205,20 @@ def crc16_x25(data: bytes) -> int:
     return (~crc) & 0xFFFF
 
 
+def gatt_write_value_bytes(att_mtu: int) -> int:
+    if att_mtu < DEFAULT_ATT_MTU:
+        raise ValueError("ATT_MTU must be at least the default/fallback value")
+    return att_mtu - 3
+
+
+def icd_payload_bytes_for_mtu(att_mtu: int) -> int:
+    return max(0, gatt_write_value_bytes(att_mtu) - HEADER_BYTES - CRC_BYTES)
+
+
+def image_data_bytes_for_single_write(att_mtu: int) -> int:
+    return max(0, icd_payload_bytes_for_mtu(att_mtu) - IMAGE_DATA_PAYLOAD_OVERHEAD_BYTES)
+
+
 def icd_v013_summary() -> dict[str, object]:
     return {
         "document_version": DOCUMENT_VERSION,
@@ -220,6 +235,9 @@ def icd_v013_summary() -> dict[str, object]:
             "tx_notification_fragment_bytes": TX_NOTIFICATION_FRAGMENT_BYTES,
             "att23_image_data_bytes": ATT23_IMAGE_DATA_BYTES,
             "att67_image_data_bytes": ATT67_IMAGE_DATA_BYTES,
+            "att67_gatt_write_value_bytes": gatt_write_value_bytes(NEGOTIATED_ATT_MTU_MAX),
+            "att67_single_write_icd_payload_bytes": icd_payload_bytes_for_mtu(NEGOTIATED_ATT_MTU_MAX),
+            "att67_single_write_image_data_bytes": image_data_bytes_for_single_write(NEGOTIATED_ATT_MTU_MAX),
         },
         "commands": [spec.to_dict() for spec in COMMAND_SPECS],
         "return_codes": {code.name: int(code) for code in ReturnCode},

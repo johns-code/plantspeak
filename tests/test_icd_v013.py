@@ -21,7 +21,10 @@ from plantspeak.icd_v013 import (
     Opcode,
     ReturnCode,
     crc16_x25,
+    gatt_write_value_bytes,
     icd_v013_summary,
+    icd_payload_bytes_for_mtu,
+    image_data_bytes_for_single_write,
 )
 
 
@@ -36,6 +39,31 @@ def test_icd_v013_metadata_matches_source_document() -> None:
     assert TX_NOTIFICATION_FRAGMENT_BYTES == 20
     assert ATT23_IMAGE_DATA_BYTES == 12
     assert ATT67_IMAGE_DATA_BYTES == 53
+
+
+def test_icd_v013_mtu67_single_write_capacity() -> None:
+    assert gatt_write_value_bytes(67) == 64
+    assert icd_payload_bytes_for_mtu(67) == 56
+    assert image_data_bytes_for_single_write(67) == 53
+    assert image_data_bytes_for_single_write(67) == ATT67_IMAGE_DATA_BYTES
+
+
+def test_icd_v013_mtu67_image_data_frame_uses_full_negotiated_payload() -> None:
+    payload = (0x1234).to_bytes(2, "little") + bytes([ATT67_IMAGE_DATA_BYTES]) + bytes(range(ATT67_IMAGE_DATA_BYTES))
+    frame = WireFrame(opcode=Opcode.IMAGE_DATA, flags=0, sequence=0x44, payload=payload)
+    encoded = frame.encode()
+
+    assert len(payload) == MAX_ICD_REQUEST_PAYLOAD
+    assert len(encoded) == gatt_write_value_bytes(67)
+    assert encoded[4:6] == MAX_ICD_REQUEST_PAYLOAD.to_bytes(2, "little")
+    assert WireFrame.decode(encoded) == frame
+
+
+def test_icd_v013_mtu67_rejects_one_byte_past_single_write_payload() -> None:
+    payload = b"x" * (icd_payload_bytes_for_mtu(67) + 1)
+
+    with pytest.raises(ValueError, match="maximum request payload"):
+        WireFrame(opcode=Opcode.IMAGE_DATA, flags=0, sequence=0x45, payload=payload).encode()
 
 
 def test_icd_v013_opcode_table_matches_source_document() -> None:
@@ -137,3 +165,6 @@ def test_icd_v013_summary_is_machine_readable() -> None:
     assert summary["document_version"] == "0.13"
     assert summary["commands"][0]["name"] == "PING"
     assert summary["transport"]["tx_notification_fragment_bytes"] == 20
+    assert summary["transport"]["att67_gatt_write_value_bytes"] == 64
+    assert summary["transport"]["att67_single_write_icd_payload_bytes"] == 56
+    assert summary["transport"]["att67_single_write_image_data_bytes"] == 53

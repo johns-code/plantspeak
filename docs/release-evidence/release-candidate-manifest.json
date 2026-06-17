@@ -3,7 +3,7 @@
   "candidate": "0.7.0-staged",
   "status": "release-candidate-with-keil-build-and-deferred-live-hil",
   "automated_gates": {
-    "pytest": "56 passed, 3 skipped",
+    "pytest": "59 passed, 3 skipped",
     "s1_contracts": "pass",
     "s2_devmode_evidence": "pass",
     "s3_mocked_adapters": "pass",

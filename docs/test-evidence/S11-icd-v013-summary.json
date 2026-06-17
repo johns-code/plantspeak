@@ -174,7 +174,10 @@
   ],
   "transport": {
     "att23_image_data_bytes": 12,
+    "att67_gatt_write_value_bytes": 64,
     "att67_image_data_bytes": 53,
+    "att67_single_write_icd_payload_bytes": 56,
+    "att67_single_write_image_data_bytes": 53,
     "default_att_mtu": 23,
     "max_request_payload": 56,
     "negotiated_att_mtu_max": 67,

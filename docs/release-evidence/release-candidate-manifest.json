@@ -1,15 +1,17 @@
 {
   "project": "PlantSpeak",
   "candidate": "0.7.0-staged",
-  "status": "release-candidate-with-deferred-target-board-validation",
+  "status": "release-candidate-with-keil-build-and-deferred-live-hil",
   "automated_gates": {
-    "pytest": "39 passed, 3 skipped",
+    "pytest": "43 passed, 3 skipped",
     "s1_contracts": "pass",
     "s2_devmode_evidence": "pass",
     "s3_mocked_adapters": "pass",
     "s4_mocked_transport": "pass",
     "s5_firmware_contract": "pass",
-    "s6_hil_gate": "pass-with-target-board-tests-skipped"
+    "s6_hil_gate": "pass-with-target-board-tests-skipped",
+    "s8_keil_build_gate": "pass",
+    "s8_jlink_probe": "pass"
   },
   "required_artifacts": [
     "docs/vmodel/12-requirements-traceability-matrix.md",
@@ -25,10 +27,14 @@
     "docs/test-evidence/S4-pytest.txt",
     "docs/test-evidence/S5-pytest.txt",
     "docs/test-evidence/S6-pytest.txt",
-    "docs/test-evidence/ST-006-hil-report.md"
+    "docs/test-evidence/ST-006-hil-report.md",
+    "docs/test-evidence/S8-pytest.txt",
+    "docs/test-evidence/keil-da14531-build-raw.log",
+    "docs/test-evidence/keil-da14531-build-summary.json",
+    "docs/test-evidence/jlink-probe-raw.log",
+    "docs/test-evidence/jlink-probe-summary.json"
   ],
   "deferred_validation": [
-    "physical DA14531 firmware image",
     "physical BLE transport",
     "target-board I2C device reads",
     "target-board push-button wake-from-sleep"

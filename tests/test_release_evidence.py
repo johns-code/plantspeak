@@ -12,9 +12,11 @@ def test_release_candidate_manifest_references_existing_artifacts() -> None:
     assert missing == []
 
 
-def test_release_candidate_keeps_target_board_validation_deferred() -> None:
+def test_release_candidate_requires_remaining_target_board_validation() -> None:
     manifest = json.loads((ROOT / "docs" / "release-evidence" / "release-candidate-manifest.json").read_text(encoding="utf-8"))
 
     assert manifest["human_approval_required"] is True
-    assert manifest["automated_gates"]["s6_hil_gate"] == "pass-with-target-board-tests-skipped"
+    assert manifest["automated_gates"]["s8_keil_build_gate"] == "pass"
+    assert manifest["automated_gates"]["s8_jlink_probe"] == "pass"
     assert "target-board I2C device reads" in manifest["deferred_validation"]
+    assert "physical DA14531 firmware build" not in manifest["deferred_validation"]

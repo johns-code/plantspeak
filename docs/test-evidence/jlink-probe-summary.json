@@ -1,0 +1,9 @@
+{
+    "gate":  "jlink-emulator-probe",
+    "status":  "pass",
+    "jlink_exit_code":  0,
+    "jlink_path":  "C:\\Program Files\\SEGGER\\JLink_V856\\JLink.exe",
+    "connected":  true,
+    "serial_number":  "480045453",
+    "raw_log":  "C:\\Users\\johns\\OneDrive\\Documents\\Software Team\\runs\\plantspeak-detailed-fresh\\delivery-checkout\\docs\\test-evidence\\jlink-probe-raw.log"
+}

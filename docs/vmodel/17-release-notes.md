@@ -15,6 +15,8 @@ Project: PlantSpeak
 - Unit, integration, and system-level dev-mode tests.
 - V-model planning, traceability, review, security, and test evidence.
 - Firmware contract headers and build handoff documentation.
+- Real local DA14531 Keil build gate with zero-error evidence.
+- Non-invasive J-Link emulator discovery gate.
 
 ## Included
 
@@ -25,20 +27,20 @@ Project: PlantSpeak
 
 ## Gate Status
 
-- Local tests: 39 passed, 3 skipped
+- Local tests: 43 passed, 3 skipped
 - PR CI: required and tracked in GitHub Actions
 - Human release approval: pending
 - Release candidate manifest: `docs/release-evidence/release-candidate-manifest.json`
 
 ## Not Included
 
-- DA14531 firmware image.
+- DA14531 firmware flash evidence.
 - BLE transport implementation.
 - Target-board hardware-in-loop evidence.
 
 ## Firmware Note
 
-The repository now contains firmware contract artifacts, but not a flashable DA14531 firmware image. `firmware/build.ps1` runs in contract-only mode unless `DA14531_SDK_PATH` is configured and a project-specific SDK build command is added.
+The repository now contains firmware contract artifacts plus repeatable local gates for the known DA14531 Keil project. `firmware/build.ps1` runs in contract-only mode in generic CI unless the local Keil project and uVision paths are supplied.
 
 ## Known Deferred Scope
 

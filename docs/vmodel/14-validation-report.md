@@ -4,11 +4,11 @@ Project: PlantSpeak
 
 ## Validation Status
 
-Conditionally valid for the first PC/dev-mode acceptance slice only.
+Conditionally valid for the first PC/dev-mode acceptance slice plus local DA14531 build/probe readiness.
 
 ## Validation Position
 
-The current PR is valid for the first dev-mode vertical slice if the user accepts that target hardware evidence is deferred. It is not yet a final product release.
+The current PR is valid for the first dev-mode vertical slice and confirms that the local DA14531 Keil target can build with zero errors. It is not yet a final product release because flashing, live BLE transport, and live target-board peripheral HIL remain unvalidated.
 
 ## Human Approval
 
@@ -25,7 +25,7 @@ Human approval is required before final acceptance, release tagging, or any clai
 
 - Target-board I2C behavior.
 - BLE transport behavior.
-- Firmware build/flash behavior.
+- Firmware flash behavior.
 - Push-button wake-from-sleep behavior.
 
 ## HIL Validation Gate
@@ -35,6 +35,10 @@ S6 adds the target-board HIL procedure and gated pytest tests. These tests are s
 ## Release Candidate Validation Position
 
 The S7 release candidate is valid as a PC/dev-mode and contract-complete staged candidate. It is not valid as a final target-board product release until ST-006 HIL evidence is executed on physical hardware and accepted by the human approver.
+
+## S8 Local Hardware Readiness
+
+S8 adds local evidence that uVision can build the DA14531 target and that SEGGER J-Link can discover a connected emulator over USB. This supports moving to an intentional flash-and-HIL stage, but it does not by itself validate live product behavior.
 
 ## Review Remediation Closure
 

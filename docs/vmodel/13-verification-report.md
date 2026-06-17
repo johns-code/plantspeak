@@ -32,6 +32,8 @@ PASS
 - S5 firmware contract files are verified against Python ICD command and pin contracts.
 - S6 HIL procedure and pytest gate are present; physical target-board evidence remains deferred because the board is not connected in CI.
 - S7 release evidence manifest is verified and points to existing artifacts.
+- S8 local DA14531 Keil build evidence was captured from uVision with zero errors and one linker warning.
+- S8 local J-Link probe evidence confirms a USB-connected emulator is visible without flashing or halting the target.
 
 ## S1 Verification Evidence
 
@@ -100,9 +102,22 @@ PASS
 | `docs/release-evidence/release-candidate-manifest.json` | Release-candidate manifest with automated gates, required artifacts, deferred validation, and human approval requirement. |
 | `tests/test_release_evidence.py` | Verifies release-candidate manifest references existing artifacts and keeps target-board validation deferred. |
 
+## S8 Verification Evidence
+
+| Evidence | Purpose |
+| --- | --- |
+| `docs/test-evidence/keil-da14531-build-raw.log` | Raw uVision build log for the DA14531 target. |
+| `docs/test-evidence/keil-da14531-build-summary.json` | Machine-readable summary of build status, output files, sizes, hashes, and zero-error result. |
+| `docs/test-evidence/jlink-probe-raw.log` | Raw SEGGER J-Link commander output from `ShowEmuList`. |
+| `docs/test-evidence/jlink-probe-summary.json` | Machine-readable J-Link probe summary including connected status and emulator serial number. |
+| `docs/test-evidence/S8-pytest.txt` | Local pytest output for 43 passed tests and 3 intentionally skipped target-board HIL tests. |
+| `firmware/build.ps1` | Repeatable Keil build gate for local toolchain runs. |
+| `firmware/probe-jlink.ps1` | Non-invasive J-Link discovery gate. |
+| `tests/test_firmware_contracts.py` | Verifies build/probe evidence shape, zero-error result, output hashes, and connected emulator evidence. |
+
 ## Deferred Verification
 
-- DA14531 firmware build/flash.
+- DA14531 firmware flash.
 - BLE transport execution.
 - Target-board hardware-in-loop verification.
 - Push-button wake-from-sleep behavior.

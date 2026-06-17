@@ -1,0 +1,29 @@
+{
+    "gate":  "keil-da14531-build",
+    "status":  "pass",
+    "uv4_exit_code":  null,
+    "target":  "DA14531",
+    "project_path":  "C:\\Users\\johns\\531 Project\\P531_Handheld\\Keil\\P531_handheld_firmware.uvprojx",
+    "raw_log":  "C:\\Users\\johns\\OneDrive\\Documents\\Software Team\\runs\\plantspeak-detailed-fresh\\delivery-checkout\\docs\\test-evidence\\keil-da14531-build-raw.log",
+    "result":  "\".\\out_DA14531\\Objects\\ble_app_peripheral_531.axf\" - 0 Error(s), 1 Warning(s).\r",
+    "outputs":  [
+                    {
+                        "path":  "C:\\Users\\johns\\531 Project\\P531_Handheld\\Keil\\out_DA14531\\Objects\\ble_app_peripheral_531.axf",
+                        "size_bytes":  561172,
+                        "sha256":  "75d5cb0806534a2ccdd190a9ad9d17a8e9581a42f3069c6be3d5a29e327d8915",
+                        "last_write_time":  "2026-06-17T10:15:01.8889062+07:00"
+                    },
+                    {
+                        "path":  "C:\\Users\\johns\\531 Project\\P531_Handheld\\Keil\\out_DA14531\\Objects\\ble_app_peripheral_531.hex",
+                        "size_bytes":  110691,
+                        "sha256":  "e4bfa003388bfa782e1fbc2f047993aeb45b9067d8b9448c2c1157523c92f271",
+                        "last_write_time":  "2026-06-17T10:15:02.0634320+07:00"
+                    },
+                    {
+                        "path":  "C:\\Users\\johns\\531 Project\\P531_Handheld\\Keil\\out_DA14531\\Objects\\ble_app_peripheral_531.bin",
+                        "size_bytes":  39432,
+                        "sha256":  "20614bd21ea6f6a04ae6367e3b07217ca5c68a3a8e8cd161a97369252953ba1e",
+                        "last_write_time":  "2026-06-17T10:15:02.2793868+07:00"
+                    }
+                ]
+}

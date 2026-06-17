@@ -6,6 +6,7 @@ from pathlib import Path
 
 from plantspeak.devices import build_capability_map, collect_dev_mode_snapshot, default_dev_board_profile
 from plantspeak.icd import build_icd_capabilities, capability_summary
+from plantspeak.icd_v013 import icd_v013_summary
 from plantspeak.requirements import load_issue_links, load_requirements
 from plantspeak.trace import trace_matrix, validate_trace_matrix
 
@@ -17,6 +18,7 @@ def build_parser() -> argparse.ArgumentParser:
     subparsers.add_parser("trace", help="Print requirement-to-issue and verification trace.")
     subparsers.add_parser("trace-json", help="Print full requirement trace matrix as JSON.")
     subparsers.add_parser("capabilities", help="Print ICD capability summary as JSON.")
+    subparsers.add_parser("icd-v013", help="Print SmartDevice-Handheld BLE ICD v0.13 wire contract as JSON.")
     measure = subparsers.add_parser("measure", help="Collect a sensor snapshot.")
     measure.add_argument("--dev-mode", action="store_true", help="Use canned data for unavailable external I2C devices.")
     self_test = subparsers.add_parser("self-test", help="Run deterministic dev-board checks.")
@@ -47,6 +49,9 @@ def main(argv: list[str] | None = None) -> int:
         return 0
     if args.command == "capabilities":
         print(json.dumps(capability_summary(), indent=2, sort_keys=True))
+        return 0
+    if args.command == "icd-v013":
+        print(json.dumps(icd_v013_summary(), indent=2, sort_keys=True))
         return 0
     if args.command == "measure":
         if not args.dev_mode:

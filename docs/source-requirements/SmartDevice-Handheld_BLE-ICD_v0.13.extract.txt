@@ -1,0 +1,55 @@
+P0000 [Normal] SmartDevice-Handheld BLE ICD
+P0001 [Normal] Version 0.13 - DA14531 P531 Handheld as-built interface
+P0004 [Heading 1] 1. Roles and Transport
+P0005 [List Bullet] SmartDevice is the master. It initiates all requests, owns sequencing, retries, and user-facing workflow.
+P0006 [List Bullet] Handheld is the BLE peripheral/slave. It responds using the same OPC with FLAGS.b2=1 and echoes SEQ.
+P0007 [List Bullet] Primary service UUID: 9E0F0001-5310-4C1F-AAAA-BBBBCCCCDD01.
+P0008 [List Bullet] ICD RX/control characteristic UUID: 9E0F0002-5310-4C1F-AAAA-BBBBCCCCDD01. SmartDevice writes request frames here.
+P0009 [List Bullet] ICD TX/notify characteristic UUID: 9E0F0003-5310-4C1F-AAAA-BBBBCCCCDD01. Handheld sends responses/notifications here.
+P0010 [List Bullet] Default/fallback ATT_MTU is 23. Production firmware may negotiate ATT_MTU up to 67 so a complete 64-byte ICD request frame (6-byte header + 56-byte payload + 2-byte CRC) can fit in one GATT write. The CRC belongs to the complete ICD frame.
+P0011 [List Bullet] Handheld TX notifications are intentionally capped at 20-byte GATT values even when ATT_MTU=67 is negotiated. SmartDevice must reassemble fragmented notifications until the complete ICD frame length and CRC are satisfied.
+P0012 [List Bullet] SmartDevice should use the negotiated/platform-reported write capacity for request chunking, but must remain compatible with ATT_MTU 23. Do not assume MTU67 on every platform or connection.
+P0014 [Heading 1] 2. Frame Format
+P0017 [Heading 1] 3. Production Command Set
+P0019 [Heading 2] 3.1 Device Identity Provisioning
+P0020 [List Bullet] GET_INFO is the readback path for firmware version, hardware revision, serial number, and build ID.
+P0021 [List Bullet] DEVICE_INFO_SET writes HW_REV and SERIAL into nonvolatile flash-backed identity storage used by GET_INFO.
+P0022 [List Bullet] FW_VER and BUILD_ID are firmware-derived and are not settable by the SmartDevice.
+P0023 [List Bullet] Blank/unprovisioned devices read back SERIAL=0 and HW_REV=0. SERIAL=0xFFFFFFFF is reserved for erased flash and rejected.
+P0024 [List Bullet] Recommended production flow: provision identity during calibration, immediately verify with GET_INFO, and fail units that still report SERIAL=0 unless intentionally unprovisioned.
+P0025 [Heading 1] 4. Status and Measurement Payloads
+P0030 [Heading 1] 5. Wavelengths, PPFD, Calibration, and LED Currents
+P0033 [List Bullet] CAL_GET request payload is W_IDX:u8. Response payload is RET, CAL_VER:u8, CAL_FLAGS:u16, N:u8, then one 11-byte CAL_REC when N=1.
+P0034 [List Bullet] CAL_SET request payload is exactly one 11-byte CAL_REC.
+P0035 [List Bullet] LED_CUR_SET and LED_CUR_GET apply only to physical LED indices 0..5. LED current is stored in microamps.
+P0036 [List Bullet] For all six LEDs, photocurrent is read from the single LED photodiode ADC channel; there is no per-LED photodiode mapping in the ICD.
+P0037 [Heading 1] 6. Diagnostic Flash Log
+P0038 [List Bullet] The production firmware keeps an append-only diagnostic log in flash for external visibility into issues.
+P0039 [List Bullet] Record size is 8 bytes: TS_S:u32, CODE:u8, ARG:u16, RESERVED:u8.
+P0040 [List Bullet] Current capacity is 512 records in the first 4 KB log sector. Additional reserved log flash is not used by the current logger.
+P0041 [List Bullet] LOG_GET returns a window of compact 7-byte records: TS_S:u32, CODE:u8, ARG:u16. RESERVED is not transmitted.
+P0042 [List Bullet] Current firmware caps each LOG_GET response to 5 records to keep response payload bounded.
+P0043 [List Bullet] LOG_CLEAR erases the log sector and resets count to zero.
+P0045 [Heading 1] 7. Firmware Update and Recovery
+P0047 [List Number] SmartDevice connects to P531-Handheld and confirms identity with GET_INFO.
+P0048 [List Number] SmartDevice sends IMAGE_BEGIN using the preferred compact 12-byte payload with raw production image size and CRC32.
+P0049 [Normal] IMAGE_BEGIN compatibility note: firmware accepts both the compact 12-byte form and the legacy 13-byte form. SmartDevice apps and PC tools should use the compact form so the complete ICD frame fits in a 20-byte ATT write at ATT_MTU 23; when ATT_MTU 67 is available, larger IMAGE_DATA request frames may be sent in one GATT write.
+P0050 [List Number] SmartDevice sends IMAGE_DATA chunks using OFFSET:u16, BYTES:u8, DATA.
+P0051 [List Number] SmartDevice sends IMAGE_END and requires VERIFY=0.
+P0052 [List Number] SmartDevice sends REBOOT. Production firmware marks the staged slot valid before reset.
+P0053 [List Number] After reboot, device should advertise P531-Handheld if the production application is valid.
+P0055 [Heading 2] 7.1 Recovery Command Subset
+P0057 [Heading 1] 8. Recommended SmartDevice Flows
+P0058 [List Number] Connect to P531-Handheld, enable notifications, and send PING.
+P0059 [List Number] Send GET_INFO. If SERIAL=0 during production/calibration, provision with DEVICE_INFO_SET and verify with GET_INFO.
+P0060 [List Number] Send GET_STATUS and inspect PERIPH_PWR, SENSOR_FLAGS, FAULT_FLAGS, RSSI, and time state.
+P0061 [List Number] Optionally send SET_TIME so logs and measurement frames use real time.
+P0062 [List Number] Send SET_PERIPH_POWER=1 before one or more START_MEAS requests.
+P0063 [List Number] Use START_MEAS with MEAS_AVG in {1,2,4,8,16}; use 1 when no averaging is required.
+P0064 [List Number] Read LOG_GET when a command returns an unexpected error. Clear logs only as a deliberate service/manufacturing action.
+P0065 [List Number] Send SET_PERIPH_POWER=0 when measurement session is complete.
+P0066 [Heading 1] 9. Security and Policy Notes
+P0067 [List Bullet] Administrative writes should be treated as secure operations by the SmartDevice/app policy: DEVICE_INFO_SET, CAL_SET, LED_CUR_SET, LOG_CLEAR, IMAGE_*, REBOOT, and ENTER_DEEP_SLEEP.
+P0068 [List Bullet] Manufacturing/calibration tools may allow rewriting identity and calibration values; production user flows should generally hide these controls.
+P0069 [List Bullet] No-image ICD regression covers normal command behavior. Full image-update regression should be run when IMAGE_* or boot/recovery code changes.
+P0070 [Normal] End of Document

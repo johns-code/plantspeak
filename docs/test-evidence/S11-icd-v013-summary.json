@@ -1,0 +1,201 @@
+﻿{
+  "commands": [
+    {
+      "name": "PING",
+      "notes": "Liveness check.",
+      "opcode": 1,
+      "request": "-",
+      "response": "RET, UPTIME_MS:u32"
+    },
+    {
+      "name": "GET_INFO",
+      "notes": "Identity readback.",
+      "opcode": 2,
+      "request": "-",
+      "response": "RET, FW_VER[3], HW_REV:u8, SERIAL:u32, BUILD_ID:u32"
+    },
+    {
+      "name": "GET_STATUS",
+      "notes": "See GET_STATUS_FIELDS.",
+      "opcode": 3,
+      "request": "-",
+      "response": "RET, status struct"
+    },
+    {
+      "name": "SET_TIME",
+      "notes": "Sets handheld time base.",
+      "opcode": 4,
+      "request": "EPOCH_S:u32",
+      "response": "RET"
+    },
+    {
+      "name": "SET_RED_LED",
+      "notes": "MODE 0 off, 1 on, 2 blink.",
+      "opcode": 5,
+      "request": "MODE:u8, PERIOD_100MS:u16, DUTY_PCT:u8",
+      "response": "RET"
+    },
+    {
+      "name": "SET_GREEN_LED",
+      "notes": "MODE 0 off, 1 on, 2 blink.",
+      "opcode": 6,
+      "request": "MODE:u8, PERIOD_100MS:u16, DUTY_PCT:u8",
+      "response": "RET"
+    },
+    {
+      "name": "SET_PERIPH_POWER",
+      "notes": "Must be ON before START_MEAS.",
+      "opcode": 7,
+      "request": "EN:u8",
+      "response": "RET"
+    },
+    {
+      "name": "REBOOT",
+      "notes": "Commits pending verified image before reset.",
+      "opcode": 8,
+      "request": "-",
+      "response": "RET then disconnect/reset"
+    },
+    {
+      "name": "ENTER_DEEP_SLEEP",
+      "notes": "Target-board wake validation deferred.",
+      "opcode": 9,
+      "request": "-",
+      "response": "RET then sleep"
+    },
+    {
+      "name": "DEVICE_INFO_SET",
+      "notes": "Rejects SERIAL=0xFFFFFFFF.",
+      "opcode": 10,
+      "request": "HW_REV:u8, SERIAL:u32",
+      "response": "RET"
+    },
+    {
+      "name": "START_MEAS",
+      "notes": "Only MODE=0 implemented.",
+      "opcode": 16,
+      "request": "MODE:u8, COUNT:u16, INTERVAL_MS:u16, MEAS_AVG:u8, FLAGS:u8",
+      "response": "RET, measurement frame"
+    },
+    {
+      "name": "LOG_GET",
+      "notes": "Returns up to 5 records.",
+      "opcode": 20,
+      "request": "START_IDX:u16, MAX_ITEMS:u16",
+      "response": "RET, N:u16, N records"
+    },
+    {
+      "name": "LOG_CLEAR",
+      "notes": "Erases diagnostic log sector.",
+      "opcode": 21,
+      "request": "-",
+      "response": "RET"
+    },
+    {
+      "name": "CAL_GET",
+      "notes": "W_IDX 0..5 LEDs, W_IDX 6 PPFD.",
+      "opcode": 34,
+      "request": "W_IDX:u8",
+      "response": "RET, CAL_VER, CAL_FLAGS, N, CAL_REC"
+    },
+    {
+      "name": "CAL_SET",
+      "notes": "NVM commit.",
+      "opcode": 35,
+      "request": "CAL_REC (11 bytes)",
+      "response": "RET"
+    },
+    {
+      "name": "IMAGE_BEGIN",
+      "notes": "Starts staged image upload.",
+      "opcode": 64,
+      "request": "TYPE:u8, SIZE:u32, VER[3], CRC32:u32",
+      "response": "RET, WINDOW:u16, SLOT:u8"
+    },
+    {
+      "name": "IMAGE_DATA",
+      "notes": "Use <=12 data bytes at ATT_MTU 23; <=53 at ATT_MTU 67.",
+      "opcode": 65,
+      "request": "OFFSET:u16, BYTES:u8, DATA[BYTES]",
+      "response": "RET"
+    },
+    {
+      "name": "IMAGE_END",
+      "notes": "VERIFY 0 OK, 1 size mismatch, 2 CRC mismatch, 3 other.",
+      "opcode": 66,
+      "request": "-",
+      "response": "RET, VERIFY:u8"
+    },
+    {
+      "name": "LED_CUR_SET",
+      "notes": "Only W_IDX 0..5; W_IDX 6 rejected.",
+      "opcode": 81,
+      "request": "W_IDX:u8, I_LED_UA:u16",
+      "response": "RET"
+    },
+    {
+      "name": "LED_CUR_GET",
+      "notes": "Reads stored physical LED current.",
+      "opcode": 82,
+      "request": "W_IDX:u8",
+      "response": "RET, W_IDX:u8, I_LED_UA:u16"
+    }
+  ],
+  "document_version": "0.13",
+  "protocol_version": 1,
+  "recovery_commands": [
+    "PING",
+    "GET_INFO",
+    "REBOOT",
+    "IMAGE_BEGIN",
+    "IMAGE_DATA",
+    "IMAGE_END"
+  ],
+  "return_codes": {
+    "BAD_PARAM": 2,
+    "BUSY": 3,
+    "CRC_FAIL": 6,
+    "DENIED": 5,
+    "LOW_POWER_GUARD": 10,
+    "NOT_READY": 4,
+    "OK": 0,
+    "TIMEOUT": 7,
+    "TOO_LONG": 8,
+    "UNKNOWN_OPCODE": 1,
+    "UNSUPPORTED": 9
+  },
+  "start_meas_allowed_avg": [
+    0,
+    1,
+    2,
+    4,
+    8,
+    16
+  ],
+  "transport": {
+    "att23_image_data_bytes": 12,
+    "att67_gatt_write_value_bytes": 64,
+    "att67_image_data_bytes": 53,
+    "att67_single_write_icd_payload_bytes": 56,
+    "att67_single_write_image_data_bytes": 53,
+    "default_att_mtu": 23,
+    "max_request_payload": 56,
+    "negotiated_att_mtu_max": 67,
+    "test_default_att_mtu": 67,
+    "tx_notification_fragment_bytes": 20
+  },
+  "uuids": {
+    "primary_service": "9E0F0001-5310-4C1F-AAAA-BBBBCCCCDD01",
+    "rx_control": "9E0F0002-5310-4C1F-AAAA-BBBBCCCCDD01",
+    "tx_notify": "9E0F0003-5310-4C1F-AAAA-BBBBCCCCDD01"
+  },
+  "wavelength_channels": {
+    "0": "531 nm LED",
+    "1": "570 nm LED",
+    "2": "705 nm LED",
+    "3": "750 nm LED",
+    "4": "830 nm LED",
+    "5": "970 nm LED",
+    "6": "PPFD photodiode pseudo-index"
+  }
+}

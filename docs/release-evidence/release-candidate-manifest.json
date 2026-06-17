@@ -3,7 +3,7 @@
   "candidate": "0.7.0-staged",
   "status": "release-candidate-with-keil-build-and-deferred-live-hil",
   "automated_gates": {
-    "pytest": "45 passed, 3 skipped",
+    "pytest": "60 passed, 3 skipped",
     "s1_contracts": "pass",
     "s2_devmode_evidence": "pass",
     "s3_mocked_adapters": "pass",
@@ -15,7 +15,8 @@
     "s9_live_icd_smoke": "pass",
     "s9_flash_gate": "pass-confirmed-flash",
     "s10_confirmed_flash": "pass",
-    "s10_post_flash_live_icd_smoke": "pass"
+    "s10_post_flash_live_icd_smoke": "pass",
+    "s11_icd_v013_contract": "pass"
   },
   "required_artifacts": [
     "docs/vmodel/12-requirements-traceability-matrix.md",
@@ -35,6 +36,11 @@
     "docs/test-evidence/S8-pytest.txt",
     "docs/test-evidence/S9-pytest.txt",
     "docs/test-evidence/S10-pytest.txt",
+    "docs/test-evidence/S11-pytest.txt",
+    "docs/test-evidence/S11-icd-v013-summary.json",
+    "docs/source-requirements/SmartDevice-Handheld_BLE-ICD_v0.13.extract.txt",
+    "docs/source-requirements/SmartDevice-Handheld_BLE-ICD_v0.13.tables.md",
+    "docs/source-requirements/SmartDevice-Handheld_BLE-ICD_v0.13.tables.csv",
     "docs/test-evidence/keil-da14531-build-raw.log",
     "docs/test-evidence/keil-da14531-build-summary.json",
     "docs/test-evidence/jlink-probe-raw.log",
